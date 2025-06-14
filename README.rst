@@ -33,7 +33,7 @@ Project Goals
 
 Depending on how much components will be soldered to the PCB, it could offer many things (at cost of using some pins):
 
-- full breakout of ATmega2560 - like Arduino Mega, but ***all** pins accessible - simply, plain, 86 I/O pins
+- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins
 - USB serial connection - 2 pins
 - memory extended to 64 kB RAM - at cost of 16+4 pins
 - another 128 kB RAM (somehow) accessible - another 24+3 pins 
@@ -70,7 +70,21 @@ Progress
 
 Just starting - 1/9
 
-see `Progress <doc/Progress.rst>`__
+see `Progress <docs/Progress.rst>`__
+
+I have some ideas, but it would need lot of work to bring it into life
+
+.. image:: Idea_001.png
+	:width: 250
+	:target: Idea_001.png
+
+.. image:: Idea_002.png
+	:width: 250
+	:target: Idea_002.png
+
+.. image:: Idea_003.png
+	:width: 250
+	:target: Idea_003.png
 
 License
 -------
@@ -84,4 +98,5 @@ Gilhad - 2025
 	:width: 250
 	:align: top
 	:target: ascii.jpg
+
 
