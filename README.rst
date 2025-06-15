@@ -61,7 +61,7 @@ This project is based on:
 
 It is another step to retrocomputer based on HD6309 - see `some <http://comp24.gilhad.cz/Comp24-specification.html>`__ `pages <http://comp24.gilhad.cz/documentation/Comp24.html>`__ for basic idea.
 
-Video part was successfully tested on NanoHomeComputer, but ATmega328P with only 2kB RAM and 32kB Flash was too limiting for larger project
+Video part was successfully tested on `NanoHomeComputer <https://github.com/githubgilhad/NanoHomeComputer>`__, but ATmega328P with only 2kB RAM and 32kB Flash was too limiting for larger project
 
 |ascii.jpg|
 

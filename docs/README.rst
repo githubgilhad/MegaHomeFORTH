@@ -10,6 +10,7 @@ Two sided PCB with VGA, RCA and PS/2 connectors on front edge, system connector 
 	:target: Idea_001.png
 
 I need two sides to fit everything I want to have
+
 .. image:: ../Idea_002.png
 	:width: 250
 	:target: Idea_002.png
