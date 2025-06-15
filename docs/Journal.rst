@@ -9,7 +9,8 @@ Journal
 	
 	.. code:: FORTH
 	
-		: x DUP 0 PORTE C! DDRE C! PORTE C! PINE C@ FC AND . ; ( clear output on PE, open another pin for output and set it, read the port, ignore bits 0 and 1 (RX TX) )
+		: x DUP 0 PORTE C! DDRE C! PORTE C! PINE C@ FC AND . ; ( clear output on PE, 
+		open another pin for output and set it, read the port, ignore bits 0 and 1 (RX TX) )
 		: p? PINE C@ 0FC AND . ; ( what is on Port E? )
 		: p! PORTE C! p? ; ( set port E to value on Top Of Stack (TOS) )
 		: pp ff PINE C! p? ; ( change all output pins on port E to other values )
@@ -36,23 +37,26 @@ Journal
 	* and osciloscope now see nice 16MHz on D3 :)
 
 * 2025.06.15
-	On ATmega2560 the system clock can be ouput on Port E pin 7 (PE7) - which is not connected to any pin on Arduino Mega, nor on Arduino Mega PRO. But I/O pins on ATmega2560 are by default in read state, which mean high input rezistance, no output signal. Therefore I can connect PE7 to PE5 (which is ~D3 on Arduino), **NEVER** use PE5 for output (or special functions) and "use it just for reading input signal from outside = PE7 = 16MHz" which does not bring any new information, but is easy way how have the 16MHz on Arduino D3 and so usable.
+	On ATmega2560 the system clock can be ouput on Port E pin 7 (PE7) - which is not connected to any pin on Arduino Mega, nor on Arduino Mega PRO.
+	But I/O pins on ATmega2560 are by default in read state, which mean high input rezistance, no output signal.
+	Therefore I can connect PE7 to PE5 (which is ~D3 on Arduino), **NEVER** use PE5 for output (or special functions) 
+	and "use it just for reading input signal from outside = PE7 = 16MHz" which does not bring any new information, but is easy way how have the 16MHz on Arduino D3 and so usable.
 
 	* Here is the trace from Arduino D3 to ATmega2560 PE5 and marked PE7 pin
-		
-		.. image:: 2025.06.15-PE5_trace_1.jpg
-			:width: 250
-			:target: 2025.06.15-PE5_trace_1.jpg
-		
-		.. image:: 2025.06.15-PE5_trace_2.jpg
-			:width: 250
-			:target: 2025.06.15-PE5_trace_2.jpg
+	
+	.. image:: 2025.06.15-PE5_trace_1.jpg
+		:width: 250
+		:target: 2025.06.15-PE5_trace_1.jpg
+	
+	.. image:: 2025.06.15-PE5_trace_2.jpg
+		:width: 250
+		:target: 2025.06.15-PE5_trace_2.jpg
 	
 	* Here is, how it my microskope shows it on close
 	
-		.. image:: 2025.06.15-trace_1.jpg
-			:width: 250
-			:target: 2025.06.15-trace_1.jpg
+	.. image:: 2025.06.15-trace_1.jpg
+		:width: 250
+		:target: 2025.06.15-trace_1.jpg
 
 	* And I took 0.2mm enameled wire
 	
