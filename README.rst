@@ -79,15 +79,15 @@ I have some ideas, but it would need lot of work to bring it into life
 
 .. image:: docs/Idea_001.png
 	:width: 250
-	:target: Idea_001.png
+	:target: docs/Idea_001.png
 
 .. image:: docs/Idea_002.png
 	:width: 250
-	:target: Idea_002.png
+	:target: docs/Idea_002.png
 
 .. image:: docs/Idea_003.png
 	:width: 250
-	:target: Idea_003.png
+	:target: docs/Idea_003.png
 
 License
 -------
