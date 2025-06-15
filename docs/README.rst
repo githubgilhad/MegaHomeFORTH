@@ -1,5 +1,5 @@
 
-See `Progress <Progress.rst>`__ and `Journal <Journal.rst>`__
+See `Progress <Progress.rst>`__ and `Journal <Journal.rst>`__ ( `top <../README.rst>`__ )
 
 I have some ideas, but it would need lot of work to bring it into life
 

@@ -68,7 +68,7 @@ Video part was successfully tested on `NanoHomeComputer <https://github.com/gith
 Progress
 ========
 
-Just starting - 1/9
+Just starting - 2 of many
 
 see `Progress <docs/Progress.rst>`__
 
