@@ -70,6 +70,9 @@ Progress
 
 Just starting - 2 of many
 
+* get Arduino Mega Pro
+* get 16MHz to output
+
 see `Progress <docs/Progress.rst>`__
 
 I have some ideas, but it would need lot of work to bring it into life
