@@ -68,12 +68,35 @@ Video part was successfully tested on `NanoHomeComputer <https://github.com/gith
 Progress
 ========
 
-Just starting - 2 of many
+Just starting.
+
+Done:
 
 * get Arduino Mega Pro
 * get 16MHz to output
+* map pins in NanoHomeComputer
+* map pins on ATmega2560
 
-see `Progress <docs/Progress.rst>`__
+Next steps:
+
+* map timers in NanoHomeComputer
+* assign VGA/RCA/PS2 pins to ATmega2560
+* test VGA output
+* test RCA output
+* test PS/2 direct input
+* test PS/2 8bit input
+* assign rest pins on ATmega2560
+* draw schema
+* draw PCB
+* order PCB
+* get PCB manufactured
+* solder component
+* test each goal
+* physical tests
+* programming
+* enjoy :)
+
+see `Progress <docs/Progress.rst>`__ and `Journal <docs/Journal.rst>`__
 
 I have some ideas, but it would need lot of work to bring it into life
 
