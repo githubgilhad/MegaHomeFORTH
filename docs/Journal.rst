@@ -3,6 +3,17 @@ See also `Progress <Progress.rst>`__ and `index <README.rst>`__ ( `top <../READM
 
 Journal
 =======
+
+
+* 2025.06.17
+	* check, what NanoHomeComputer SW uses:
+		* ATmega328P Timer1 16bits; Timer0 and Timer2 8bits
+		* TIMER0_OVF - millis() in Arduino (prescaler x1024), VGA (prescaler x8)
+		* TIMER0_COMPA - VGA main asm procedure/line loop
+		* TCNT2 - VGA jitter
+		* TIMER1_OVF - frames VGA, lines RCA
+		* TIMER1_COMPB - RCAout
+		* UCSR0x - RCA USART
 * 2025.06.16
 	* The next step is to decide, which ports and pins will be used for needed functions
 		* external memory (the pins are **fixed** in HW)
