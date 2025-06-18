@@ -10,7 +10,7 @@ Journal
 		* ATmega328P Timer1 16bits; Timer0 and Timer2 8bits
 		* TIMER0_OVF - millis() in Arduino (prescaler x1024), VGA (prescaler x8)
 		* TIMER0_COMPA - VGA main asm procedure/line loop
-		* TCNT2 - VGA jitter
+		* TCNT2 - VGA jitter - need prescaler x1 (no prescaling)
 		* TIMER1_OVF - frames VGA, lines RCA
 		* TIMER1_COMPB - RCAout
 		* UCSR0x - RCA USART

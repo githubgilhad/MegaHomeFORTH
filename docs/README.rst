@@ -20,3 +20,9 @@ The schema is evolving just now
 .. image:: Idea_003.png
 	:width: 250
 	:target: Idea_003.png
+
+Some temporary notes:
+=====================
+
+* The CPU needs 4 cycles to prepare itself for servicing the interrupt (save the program counter, load the interrupt vector and clear the I bit in SREG). The interrupt vector itself is a jmp instruction that takes 2 cycles. When the ISR is done, it executes the reti instruction (return from interrupt) that takes 4 cycles. 
+
