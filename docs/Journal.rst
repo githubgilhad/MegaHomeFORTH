@@ -4,7 +4,11 @@ See also `Progress <Progress.rst>`__ and `index <README.rst>`__ ( `top <../READM
 Journal
 =======
 
-
+* 2025.06.18
+	* ATmega2560 sources:
+		* Timer0 8bit PWM (pg.115)
+		* Timer1,3,4,5 16bit (pg.133)
+		* Timer2 8bit PWM+Async mode (pg.169)
 * 2025.06.17
 	* check, what NanoHomeComputer SW uses:
 		* ATmega328P Timer1 16bits; Timer0 and Timer2 8bits
