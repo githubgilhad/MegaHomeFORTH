@@ -12,42 +12,43 @@ Journal
 		* Timer1,3,4,5 16bit (pg.133)
 		* Timer2 8bit PWM+Async mode (pg.169)
 		* Timers and pins:
-			+-------+-------+-------+--------+
-			|Timer  |Cmp    |pin    |Arduino |
-			+=======+=======+=======+========+
-			|Timer 0|OC0A   |PB7    |D13     |
-			+       +-------+-------+--------+
-			|       |OC0B   |PG5    |D4      |
-			+-------+-------+-------+--------+
-			|Timer 1|OC1A   |PB5    |D11     |
-			+       +-------+-------+--------+
-			|       |OC1B   |PB6    |D12     |
-			+       +-------+-------+--------+
-			|       |OC1C   |PB7    |D13     |
-			+-------+-------+-------+--------+
-			|Timer 2|OC2A   |PB4    |D10     |
-			+       +-------+-------+--------+
-			|       |OC2B   |PH6    |D9      |
-			+-------+-------+-------+--------+
-			|Timer 3|OC3A   |PE3    |D5      |
-			+       +-------+-------+--------+
-			|       |OC3B   |PE4    |D2      |
-			+       +-------+-------+--------+
-			|       |OC3C   |PE5    |D3      |
-			+-------+-------+-------+--------+
-			|Timer 4|OC4A   |PH3    |D6      |
-			+       +-------+-------+--------+
-			|       |OC4B   |PH4    |D7      |
-			+       +-------+-------+--------+
-			|       |OC4C   |PH5    |D8      |
-			+-------+-------+-------+--------+
-			|Timer 5|OC5A   |PL3    |D46     |
-			+       +-------+-------+--------+
-			|       |OC5B   |PL4    |D45     |
-			+       +-------+-------+--------+
-			|       |OC5C   |PL5    |D44     |
-			+-------+-------+-------+--------+
-		* (need to check it with manual)
+			+--------+--------+--------+---------+
+			| Timer  | Cmp    | pin    | Arduino |
+			+========+-=======+-=======+-========+
+			| Timer 0| OC0A   | PB7    | D13     |
+			|        +--------+--------+---------+
+			|        | OC0B   | PG5    | D4      |
+			+--------+--------+--------+---------+
+			| Timer 1| OC1A   | PB5    | D11     |
+			|        +--------+--------+---------+
+			|        | OC1B   | PB6    | D12     |
+			|        +--------+--------+---------+
+			|        | OC1C   | PB7    | D13     |
+			+--------+--------+--------+---------+
+			| Timer 2| OC2A   | PB4    | D10     |
+			|        +--------+--------+---------+
+			|        | OC2B   | PH6    | D9      |
+			+--------+--------+--------+---------+
+			| Timer 3| OC3A   | PE3    | D5      |
+			|        +--------+--------+---------+
+			|        | OC3B   | PE4    | D2      |
+			|        +--------+--------+---------+
+			|        | OC3C   | PE5    | D3      |
+			+--------+--------+--------+---------+
+			| Timer 4| OC4A   | PH3    | D6      |
+			|        +--------+--------+---------+
+			|        | OC4B   | PH4    | D7      |
+			|        +--------+--------+---------+
+			|        | OC4C   | PH5    | D8      |
+			+--------+--------+--------+---------+
+			| Timer 5| OC5A   | PL3    | D46     |
+			|        +--------+--------+---------+
+			|        | OC5B   | PL4    | D45     |
+			|        +--------+--------+---------+
+			|        | OC5C   | PL5    | D44     |
+			+--------+--------+--------+---------+
+
+
 * 2025.06.17
 	* check, what NanoHomeComputer SW uses:
 		* ATmega328P Timer1 16bits; Timer0 and Timer2 8bits
@@ -71,9 +72,14 @@ Journal
 			* PD[0..1] I2C/TWI
 		* VGA
 			* PE[7] 16MHz ( **fixed** in HW)
+			* ? PB[6] Timer 1 B
+		* RCA
+			* ? PD[2..3] USART1 RX/TX
 		* free so far:
 			* PB[4..7] TC1
+				* ? PB [4..6,7] --
 			* PD[2..7] USART1
+				* ? PD [4..7] --
 			* PE[2..6] TC3
 			* PF full (JTAG, ADC)
 			* PG[3..5] TC0
@@ -85,14 +91,14 @@ Journal
 		* VGA part:
 			* PC[2..5] (A2-5) VGA colors = i/O
 			* PD[0..7] (D0-7) data out = i/O - 8bits = 1 byte!
-			* PB[0] (D8) PL i/O 16MHz
-			* PB[2] (D10) Vsync i/O
+			* PB[0] (D8) PL i/O 16MHz - HW
+			* PB[2] (D10) Vsync i/O - HW
 			* PB[3] (D11) CP    i/O latch data
-			* PB[4] (D12) Hsync i/O
+			* PB[4] (D12) Hsync i/O - SW
 		* RCA part
-			* PB[1] (D9) Sync
+			* PB[1] (D9) Sync - HW
 			* PD[0..1] (D0-1) USART (both blocked by HW, used only TX PD1)
-			* PD[2] (D2) data Enable (prevents floating pin PD1)
+			* PD[2] (D2) data Enable (prevents floating pin PD1) - SW
 		* PS/2 part
 			* PC[0..1] (A0-1) PS/2 = I/o Input
 			* PB[5] (D13) PS/2 envelope (change?) - Input
