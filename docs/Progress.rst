@@ -17,12 +17,12 @@ Done:
 	* I need to know (and have written to see it), what is used and for what functions
 	* I also need to write all used timers and their connections, as conversion need reassing both pins and timers
 * map pins on ATmega2560
-	* I need evidence what I allready used, what are HW limits and to be able to plan optimal use of the rest
+	* I need to write down what I already used, what are HW limits and to be able to plan optimal use of the rest
+* assign VGA/RCA/PS2 pins to ATmega2560
+* test VGA output
 
 Next steps:
 
-* assign VGA/RCA/PS2 pins to ATmega2560
-* test VGA output
 * test RCA output
 * test PS/2 direct input
 * test PS/2 8bit input

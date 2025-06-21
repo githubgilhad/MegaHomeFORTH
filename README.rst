@@ -68,7 +68,7 @@ Video part was successfully tested on `NanoHomeComputer <https://github.com/gith
 Progress
 ========
 
-Just starting.
+Working concept of VGA.
 
 Done:
 
@@ -76,12 +76,12 @@ Done:
 * get 16MHz to output
 * map pins in NanoHomeComputer
 * map pins on ATmega2560
-
-Next steps:
-
 * map timers in NanoHomeComputer
 * assign VGA/RCA/PS2 pins to ATmega2560
 * test VGA output
+
+Next steps:
+
 * test RCA output
 * test PS/2 direct input
 * test PS/2 8bit input
@@ -95,6 +95,8 @@ Next steps:
 * physical tests
 * programming
 * enjoy :)
+
+Something works now: |DSC_8303.s.jpg|
 
 see `Progress <docs/Progress.rst>`__ and `Journal <docs/Journal.rst>`__
 
@@ -111,6 +113,11 @@ I have some ideas, but it would need lot of work to bring it into life
 .. image:: docs/Idea_003.png
 	:width: 250
 	:target: docs/Idea_003.png
+
+.. |DSC_8303.s.jpg| image:: docs/VGA/DSC_8303.s.jpg
+	:width: 250
+	:align: top
+	:target: docs/VGA/DSC_8303.s.jpg
 
 License
 -------

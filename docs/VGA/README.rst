@@ -20,7 +20,8 @@ VGA theory and pratice
 	* sync pulses are generated in HW independently, but pixels cannot go immediately out, so few `nop` are also after this part to move pixel output safely after end of Hsync (starting soon make unstable picture)
 	* too long interrupt also make picture unstable, so the number of ouput characters may be 40, or less, if there is also other work to do. (comment out few `ONECHAR` to see, if it is the problem)
 
-* This is my test setting - breadboard from `NanoHomeFORTH <https://github.com/githubgilhad/NanoHomeComputer>`__ and Arduino Mega Pro temporally used as ATmega2560 breakout with some wires everywhere |DSC_8303.JPG|
+* This is my test setting - breadboard from `NanoHomeFORTH <https://github.com/githubgilhad/NanoHomeComputer>`__ and Arduino Mega Pro temporally used as ATmega2560 breakout with some wires everywhere 
+	|DSC_8303.s.jpg|
 * Pink VSYNC with 16.4 ms period |SDS00001.png|
 * Width of Vsync pulse is 64 µs |SDS00002.png|
 * Yellow HSYNC have 3.8 µs pulse |SDS00003.png|
@@ -31,10 +32,10 @@ VGA theory and pratice
 * start about 2.8 µs after end of HSYNC |SDS00008.png|
 * finish about 3 µs before start of HSYNC |SDS00009.png|
 
-.. |DSC_8303.JPG| image:: DSC_8303.JPG
+.. |DSC_8303.s.jpg| image:: DSC_8303.s.jpg
 	:width: 250
 	:align: top
-	:target: DSC_8303.JPG
+	:target: DSC_8303.s.jpg
 
 .. |SDS00001.png| image:: SDS00001.png
 	:width: 250

@@ -9,6 +9,7 @@ Journal
 	* Colors are bad, which is expected as I had no access to some pins, so some part of colors was floating+noise. But there is visible, that there are differently colored lines, so it works.
 	* I had some problems with timing, so I reworked the timers and collected some knowledge of VGA and also some osciloscope printscreens for next time - see `<VGA/README.rst>`__
 	* So having tested the more problematick part with newly assigned pins I can now continue to work on the PCB (and documentation)
+	* |DSC_8303.s.jpg|
 * 2025.06.19-21
 	* some learning and reading, 24bit ideas, assigning pins and timers for VGA
 * 2025.06.18
@@ -202,3 +203,7 @@ Journal
 		:width: 250
 		:target: Arduino_mega_2560_PRO_foto_1.png
 
+.. |DSC_8303.s.jpg| image:: VGA/DSC_8303.s.jpg
+	:width: 250
+	:align: top
+	:target: VGA/DSC_8303.s.jpg
