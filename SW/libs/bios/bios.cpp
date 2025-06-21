@@ -3,6 +3,14 @@
 #include <Arduino.h>
 #include "../MemoryFree/MemoryFree.h"
 
+#ifdef __AVR_ATmega2560__
+#define D2 2
+#define D10 10
+#define D11 11
+#define D12 12
+#define D13 13
+#endif
+
 //  {{{ divmod10_asm
 //
 // http://forum.arduino.cc/index.php?topic=167414.msg1293679#msg1293679
@@ -367,6 +375,151 @@ extern "C" {
 void BIOS::VGA_begin(){										// {{{
 	current_output = BIOS_VGA;
 	VGA_hook();
+	// ***************************************
+	// **
+	// ** PE[7] 16MHz ( **fixed** in HW)
+	// ** ? PB[6] Timer 1 B for Hsync
+	// ** ?? PE[4] Timer 3 B for Vsync
+	// ** ?? PF[0..7] for data out
+	// ** ?? PJ[0..7] for colors out
+	// ** ?? PB[7] Latch
+	// ** ?? PB[4..5] PS/2 pins
+	// ***************************************
+	noInterrupts();	// disable interrupts before messing around with timer registers
+		// ports opening
+		pinMode(D12,OUTPUT);	// PB[6] D12 Timer 1 B for Hsync
+			digitalWrite(D12,0);
+		pinMode(D2,OUTPUT);	// PE[4] D2 Timer 3 B for Vsync
+			digitalWrite(D2,0);
+		DDRF	= 0xFF;		// PF[0..7] for data out
+			PORTF=0;
+		DDRJ	= 0xFF;		// PJ[0..7] for colors out
+			PORTJ=0;
+		pinMode(D13,OUTPUT);	// PB[7] D13 Latch
+			digitalWrite(D13,0);
+		pinMode(D10,INPUT_PULLUP);	// PB[4] D10 PS/2 clock
+		pinMode(D11,INPUT_PULLUP);	// PB[5] D11 PS/2 data
+		// timers
+		GTCCR= (1<<TSM) | (1<<PSRASY) | (1 <<PSRSYNC); // stop Timers 0,1,3,4,5 for synchronisation pg. 166:
+			/* Bit 7 - TSM: Timer/Counter Synchronization Mode
+			Writing the TSM bit to one activates the Timer/Counter Synchronization mode. In this mode, the value that is writ-
+			ten to the PSRASY and PSRSYNC bits is kept, hence keeping the corresponding prescaler reset signals asserted.
+			This ensures that the corresponding Timer/Counters are halted and can be configured to the same value without
+			the risk of one of them advancing during configuration. When the TSM bit is written to zero, the PSRASY and
+			PSRSYNC bits are cleared by hardware, and the Timer/Counters start counting simultaneously.
+			
+			Bit 0  PSRSYNC: Prescaler Reset for Synchronous Timer/Counters
+			When this bit is one, Timer/Counter0, Timer/Counter1, Timer/Counter3, Timer/Counter4 and Timer/Counter5 pres-
+			caler will be Reset. This bit is normally cleared immediately by hardware, except if the TSM bit is set. Note that
+			Timer/Counter0, Timer/Counter1, Timer/Counter3, Timer/Counter4 and Timer/Counter5 share the same prescaler
+			and a reset of this prescaler will affect all timers.
+			*/
+
+		// *****************************
+		// ***** Timer1: VGA HSYNC ***** PB[6] D12
+		// *****************************
+// Nastavit timer do režimu Fast PWM s TOP = ICR1
+TCNT1=0;
+TCCR1A = (1 << COM1B1) | (1 << COM1B0) | (1 << WGM11); // COM1B = 0b11, WGM11=1
+TCCR1B = (1 << WGM13) | (1 << WGM12) | (1 << CS10);     // WGM13:2 = 1110 => Fast PWM ICR1 top, prescaler 1
+
+ICR1 = 511;     // perioda = 512 ticků (32 µs)
+// OCR1B = 15;     // výstup LOW prvních 1 µs
+OCR1B = 60;   // 61 ticků LOW ≈ 3.8 µs
+
+// Povolení přerušení na konci periody
+TIMSK1 = (1 << TOIE1); 
+// F_CPU  16 MHz - 1 tick = 62,5 ns
+//
+// For period 32 µs potřebu
+// 32 μs / 62,5 ns = 512 ticks
+// 61 ticks LOW ≈ 3.8 µs
+
+
+
+// ISR timer overflow
+// ISR(TIMER1_OVF_vect) {}
+// Tady se vykoná obsluha po každých 32 µs
+
+// PB6 as output
+DDRB |= (1 << PB6);  
+
+		// *****************************
+		// ***** Timer3: VGA VSYNC ***** PE[4] D2
+		// *****************************
+//	// Mode: Fast PWM, TOP=ICR3, Set on Compare, Clear on Bottom
+	TCCR3A = (1 << COM3B1) | (1 << COM3B0) | (1 << WGM31); 
+	TCCR3B = (1 << WGM33) | (1 << WGM32) | (1 << CS32) | (1 << CS30); // prescaler 1024
+
+
+	ICR3 = 259;   // period = 130 ticks	// // 60cols (24MHz): 389, 40cols (16MHz): 259, compare match register A (TOP) -> 16.64ms
+	OCR3B = 0;    // LOW = 1 tick = 64 µs
+
+	TIMSK3 = (1 << TOIE3);	// enable timer overflow interrupt setting vlines = 0
+
+// Fast PWM mode 14: TOP = ICR3, Clear on BOTTOM, Set on Compare Match
+//	TCNT3=0;
+//	TCCR3A = (1 << COM3B1) | (1 << COM3B0) | (1 << WGM31); 
+//	TCCR3B = (1 << WGM33) | (1 << WGM32) | (1 << CS32);  // prescaler = 256
+//	
+//	ICR3 = 1039;  // perioda = 16640 µs
+//	OCR3B = 3;   // LOW = 4 ticks = 64 µs
+
+/*
+		// *****************************
+		// ***** Timer1: VGA HSYNC ***** PB[6] D12
+		// *****************************
+		TCNT1H = 0;
+		TCNT1L = 4;	// aligns VSYNC and HSYNC pulses (counting starts from 4) (write H first, L then pg.135)
+		// WGM1[3..0] pg.145  17.9.2  Clear Timer on Compare Match (CTC) Mode
+		// 0 1 0 0 CTC OCRnA Immediate MAX - mode 2
+		// COMnA1, COMnA0: pg 155
+			// 0 0 Normal port operation, OCnA/OCnB/OCnC disconnected
+			// 1 1 Set OCnA/OCnB/OCnC on compare match (set output to high level)
+		// 
+		TCCR1A = (1 << COM1B1) | (1 << COM1B0) | // attach  PB[6] D12 Timer 1 B for Hsync
+			( 0 << WGM11) | (0 << WGM10);	// mode 4: Clear Timer on Compare Match (CTC)
+			// ICNC1 ICES1 =0 0 no input noise
+		TCCR1B = (0 << WGM13) | (1 << WGM12) |
+			(0 << CS12) | (1 << CS11) | (0 << CS10); // x8 prescaler -> 0.5µs
+		OCR1AH = 0;
+		OCR1AL = 63;	// 60cols (24MHz): 95, 40cols (16MHz): 63, compare match register A (TOP) -> 32µs
+		OCR1BH = 0;
+		OCR1BL = 1;
+		TIMSK1 = (1 << OCIE1A) ;	// Output Compare Match A Interrupt Enable // REMOVE: (not working: TOIE1 with ISR TIMER0_TOIE1_vect because it is already defined by timing functions)
+/*
+		// *****************************
+		// ***** Timer3: VGA VSYNC ***** PE[4] D2
+		// *****************************
+		TCNT3H	= 0;
+		TCNT3L	= 0;
+		TCCR3A = (1 << COM3B1) | (1 << COM3B0) | // attach PE[4] D2 Timer 3 B for Vsync
+		(1 << WGM31) | (1 << WGM30); // mode 2 CTC, set OC3B on Compare Match, clear OC3B at BOTTOM, controlling OC3B PE[4] D2
+		TCCR3B = (1 << WGM33) | (1 << WGM32) | (1 << CS32) | (0 << CS31) | (1 << CS30); // x1024 prescaler -> 64µs
+//		TCCR3B = (1 << WGM33) | (1 << WGM32) | (1 << CS32) | (0 << CS31) | (0 << CS30); // x1024 prescaler -> 64µs
+		OCR3AH	= 1;	// 60cols (24MHz): 389, 40cols (16MHz): 259, compare match register A (TOP) -> 16.64ms
+		OCR3AL	= 259-256;	// 60cols (24MHz): 389, 40cols (16MHz): 259, compare match register A (TOP) -> 16.64ms
+		OCR3BH	= 0;	
+		OCR3BL	= 0;	// compare match register B -> 64µs
+		TIMSK3 = (1 << TOIE3);	// enable timer overflow interrupt setting vlines = 0
+
+		// ************************************************
+		// ***** Timer4: only used for jitter control *****
+		// ************************************************
+		TCNT4H	= 0;
+		TCNT4L	= 0;
+		TCCR4A = (0<<COM4A1) | (0<<COM4A0) | (1<<WGM41) | (1<<WGM40); // mode 2: Clear Timer on Compare Match (CTC)
+		TCCR4B = (1<<WGM42) | (0<<CS42) | (0<<CS41) | (1<<CS40) ;	// set x1 prescaler -> 62.5ns;
+		OCR4AH = 0;
+		OCR4AL	= 7;			// compare match register A (TOP) -> 250ns
+		TIMSK4 = 0;			// no interrupts here
+*/
+		GTCCR = 0;	// clear TSM => all timers start synchronously
+		UCSR1B = 0;	// brute-force the USART1 off just in case... ??
+
+		interrupts();
+	
+	return; /*
 	for (int i =0; i<=13;++i) pinMode(i, INPUT);
 		noInterrupts();	// disable interrupts before messing around with timer registers
 
@@ -411,6 +564,7 @@ void BIOS::VGA_begin(){										// {{{
 		UCSR0B = 0;	// brute-force the USART off just in case...
 
 		interrupts();
+		*/
 
 }	// }}}
 	volatile uint16_t BIOS::frames = 0;		// VGA counting the displayed frames (60Hz)
@@ -418,22 +572,23 @@ void BIOS::VGA_begin(){										// {{{
 	volatile uint16_t scanline = 0;			// RCA counts 0 - 311 (312 scan lines per frame)
 // Function to enable/disable A0 interrupt
 void disableA0Interrupt() {
-	PCMSK1 &= ~(1 << PCINT8);  // Disable interrupt for A0
+//	PCMSK1 &= ~(1 << PCINT8);  // Disable interrupt for A0
 }
 void enableA0Interrupt() {
-	PCIFR  |= bit (PCIF1);   // clear any outstanding interrupts
-	PCMSK1 |= (1 << PCINT8);   // Enable interrupt for A0
+//	PCIFR  |= bit (PCIF1);   // clear any outstanding interrupts
+//	PCMSK1 |= (1 << PCINT8);   // Enable interrupt for A0
 }
 extern "C" {
 	void RCAout(uint8_t *pScreenRam, const uint8_t *fontSlice, uint16_t tcnt, uint16_t minTCNT);
 	void PS2_cont();
 }
-ISR(TIMER1_OVF_vect) {
-	if ( BIOS::current_output == BIOS_VGA) {	// {{{ timer1 overflow interrupt resets vline counter at HSYNC
+ISR(TIMER3_OVF_vect) {
+	if ( BIOS::current_output == BIOS_VGA) {	// {{{ timer3 overflow interrupt resets vline counter at HSYNC
 		BIOS::vline = 0;
 		BIOS::frames++;
 		memchck();
 	} 						// }}}
+/*
 	else if ( BIOS::current_output == BIOS_RCA) {	// {{{ TIMER1_OVF vector occurs at the start of each scan line's sync pulse
 		if (++scanline == 312) {
 			OCR1A = 948; 		// scan lines 0 - 7 have wide 59.3us sync pulses
@@ -453,6 +608,7 @@ ISR(TIMER1_OVF_vect) {
 			PS2_cont();
 		};
 	};	// }}}
+*/
 }	//
 volatile uint16_t minTCNT = 0xFFFF;
 volatile uint16_t maxTCNT = 0;
@@ -461,10 +617,11 @@ volatile uint16_t maxTCNT = 0;
 // Interrupt Service Routine for Pin Change Interrupt 1 (A0-A5)
 ISR(PCINT1_vect) {
 // asm volatile("SBI %[addr], 3 \n\t" : : [addr] "I" (_SFR_IO_ADDR(PIND)) );
-	PS2_cont();	// pokracovaci funkce od RCAout vlozeneho kodu. Chceme ji volat kdykoli se zmeni A0 a klidne i casteji
+//	PS2_cont();	// pokracovaci funkce od RCAout vlozeneho kodu. Chceme ji volat kdykoli se zmeni A0 a klidne i casteji
 //	++BIOS::vram[0][10];
 // asm volatile("SBI %[addr], 3 \n\t" : : [addr] "I" (_SFR_IO_ADDR(PIND)) );
 }
+/*
 ISR(TIMER1_COMPB_vect) {		// {{{ occurs at start of 'text safe' area of scan lines 51 - 280
 	static uint8_t *pScreenRam;
 	static const uint8_t *fontSlice;
@@ -496,7 +653,7 @@ ISR(TIMER1_COMPB_vect) {		// {{{ occurs at start of 'text safe' area of scan lin
 		}
 	}
 }	// }}}
-
+*/
 void BIOS::VGA_end(){										// {{{
 	current_output = BIOS_none;
 	noInterrupts();	// disable interrupts before messing around with timer registers
@@ -516,6 +673,8 @@ void BIOS::VGA_end(){										// {{{
 #define PIN_PS2DATA A1	// 11
 #define PIN_PS2INSIDE 13
 void BIOS::RCA_begin() {				// {{{
+	BIOS::VGA_begin();	// FIXME
+	return;	// FIXME
 	current_output = BIOS_RCA;
 ///////////////////////////////// better safe than sorry ///////////////////////
 //		EIMSK &= ~(1 << INT1);
@@ -578,6 +737,7 @@ void BIOS::RCA_begin() {				// {{{
 }	// }}}
 void BIOS::RCA_end(){				// {{{
 	// TODO
+	return;	// FIXME
 	current_output = BIOS_none;
 	PCMSK1 &= ~(1 << PCINT8);	// Disable PCINT8 (A0 is PC0)
 	PCICR  &= ~(1 << PCIE1);	// Disable Pin Change Interrupt for PCINT[14:8] (Port C)

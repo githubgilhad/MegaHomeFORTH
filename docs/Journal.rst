@@ -4,8 +4,13 @@ See also `Progress <Progress.rst>`__ and `index <README.rst>`__ ( `top <../READM
 Journal
 =======
 
-* 2025.06.19
-	* 
+* 2025.06.21
+	* Practical test ATmega2560 with VGA with new timers - it works!
+	* Colors are bad, which is expected as I had no access to some pins, so some part of colors was floating+noise. But there is visible, that there are differently colored lines, so it works.
+	* I had some problems with timing, so I reworked the timers and collected some knowledge of VGA and also some osciloscope printscreens for next time - see `<VGA/README.rst>`__
+	* So having tested the more problematick part with newly assigned pins I can now continue to work on the PCB (and documentation)
+* 2025.06.19-21
+	* some learning and reading, 24bit ideas, assigning pins and timers for VGA
 * 2025.06.18
 	* ATmega2560 sources:
 		* Timer0 8bit PWM (pg.115)
@@ -71,20 +76,31 @@ Journal
 			* PE[0..1] RX/TX USART0
 			* PD[0..1] I2C/TWI
 		* VGA
-			* PE[7] 16MHz ( **fixed** in HW)
-			* ? PB[6] Timer 1 B
+			* (PE5)PE[7] 16MHz ( **fixed** in HW)
+			* ? PB[6] Timer 1 B for Hsync
+			* ?? PE[4] Timer 3 B for Vsync
+			* ?? PF[0..7] for data out
+			* ?? PJ[0..7] for colors out
+			* ?? PB[7] Latch
+			* ?? PB[4..5] PS/2 pins
+			* ?? PE[3] PS/2 Envelope
+			* ?? Timer 4 jitter
 		* RCA
 			* ? PD[2..3] USART1 RX/TX
 		* free so far:
 			* PB[4..7] TC1
-				* ? PB [4..6,7] --
+				* ? PB [4..5,7] --
+				* ?? ---
 			* PD[2..7] USART1
 				* ? PD [4..7] --
 			* PE[2..6] TC3
+				* ?? PE[2-3,5-6]
 			* PF full (JTAG, ADC)
+				* ?? ---
 			* PG[3..5] TC0
 			* PH full USART2 TC2,4
 			* PJ full USART3 PCINT
+				* ?? --
 			* PK full ADC, PCINT
 			* PL full TC4,5
 	* in `NanoHomeComputer <https://github.com/githubgilhad/NanoHomeComputer>`__ were pins and timers allocated as this:
