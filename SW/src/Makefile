@@ -26,4 +26,6 @@ asm.S: words.inc
 # words.inc: words.4th
 #	./forth2inc.py
 
-all: disassm
+all: disassm tags
+tags:
+	ctags -R .

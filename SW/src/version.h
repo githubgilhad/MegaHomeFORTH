@@ -1,4 +1,4 @@
 #pragma once
-#define VERSION_STRING "0.0.1-22-g986c781++"
-#define VERSION_COMMIT "986c781"
-#define VERSION_MESSAGE "Merge remote-tracking branch 'origin/master'"
+#define VERSION_STRING "0.0.1-25-g5cf5e33++"
+#define VERSION_COMMIT "5cf5e33"
+#define VERSION_MESSAGE "documentation"
