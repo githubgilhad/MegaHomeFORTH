@@ -16682,7 +16682,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "102"
 			(at 341.63 96.52 90)
 			(effects
 				(font

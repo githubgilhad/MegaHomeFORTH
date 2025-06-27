@@ -3566,7 +3566,7 @@
 			(net 138 "unconnected-(J5-Shield-Pad6)")
 			(pinfunction "Shield")
 			(pintype "passive")
-			(uuid "74b48409-c194-4063-9986-9efa16a668f5")
+			(uuid "eec76707-95bc-4ec8-af3b-970f85f8c490")
 		)
 		(pad "6" smd rect
 			(at -1.2 0.39 270)
@@ -3575,7 +3575,7 @@
 			(net 138 "unconnected-(J5-Shield-Pad6)")
 			(pinfunction "Shield")
 			(pintype "passive")
-			(uuid "74b48409-c194-4063-9986-9efa16a668f5")
+			(uuid "9ab876b1-836d-456f-b3a0-46288de08c0f")
 		)
 		(pad "6" smd rect
 			(at 1.2 0.39 270)
@@ -3584,7 +3584,7 @@
 			(net 138 "unconnected-(J5-Shield-Pad6)")
 			(pinfunction "Shield")
 			(pintype "passive")
-			(uuid "74b48409-c194-4063-9986-9efa16a668f5")
+			(uuid "ee088920-c72a-461b-9038-12a3768f10c9")
 		)
 		(pad "6" thru_hole oval
 			(at 2.825 0.39 270)
@@ -3596,7 +3596,7 @@
 			(net 138 "unconnected-(J5-Shield-Pad6)")
 			(pinfunction "Shield")
 			(pintype "passive")
-			(uuid "74b48409-c194-4063-9986-9efa16a668f5")
+			(uuid "44fef712-09da-460f-843a-7a29f0f8825d")
 		)
 		(pad "6" smd custom
 			(at 3.1 -2.16 270)
@@ -3619,7 +3619,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "74b48409-c194-4063-9986-9efa16a668f5")
+			(uuid "a3a7adc0-f14e-45b2-8751-a3a24454447a")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_XKB_U254-051T-4BH83-F1S.wrl"
@@ -10622,7 +10622,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "102"
 			(at 0 0.0076 0)
 			(layer "F.Fab")
 			(uuid "8516662d-3b4a-4c70-bbf6-151fc29f4c51")
