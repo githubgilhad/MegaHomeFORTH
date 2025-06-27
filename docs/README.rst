@@ -21,6 +21,11 @@ The schema is evolving just now
 	:width: 250
 	:target: Idea_003.png
 
+Some documentation:
+===================
+
+`<Pins.rst>`__
+
 Some temporary notes:
 =====================
 

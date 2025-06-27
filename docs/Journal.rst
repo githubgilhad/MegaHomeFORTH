@@ -69,8 +69,8 @@ Journal
 		* external memory (the pins are **fixed** in HW)
 			* PA[0..7] is AD0-7 and A0-7 for external memory
 			* PC[0..7] is A8-15 for external memory
-			* PG0 is WR (write negated)
-			* PG1 is RD (read negated)
+			* PG0 is WR (write active low)
+			* PG1 is RD (read active low)
 			* PG2 is ALE (address latch enabled)
 		* I/O (Serial/UART, I2C, SPI, ISCP, ...) - I would like to have the basic interfaces available even in the fully populated variant - so let's preliminarily allocate them for now:
 			* PB[0..3] ISCP, SPI
