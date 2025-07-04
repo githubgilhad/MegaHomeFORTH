@@ -36,6 +36,11 @@ Signály
 	* `A_BUS` nastaví Arduino, když chce přístup na systémový bus
 	* `A_READ` používá Arduino pro RAM a Shared RAM
 	* `A_WRITE` používá Arduino pro RAM a Shared RAM
+	* `A_SHARE_WANTED` nastaví GLUE  **HIGH** = CPU chce Shared RAM
+	* `A_SHARE_REQUEST` Arduino nastavi na **HIGH** když chce Shared RAM
+	* `A_SHARE_GRANTED` GLUE nastaví na **HIGH**, když Shared RAM patří Arduinu
+	* `A_SHARE_BUSY` nastaví GLUE  **HIGH** = Shared RAM patří CPU 
+	* `A_SHARE_DIRTY` nastaví GLUE  **HIGH** = Shared RAM byla naposled modifikována CPU 
 * C_* komunikace s CPU
 	* `C_HALT` pullup
 	* `C_READ` CPU chce číst nebo psát
@@ -50,6 +55,10 @@ Signály
 	* `G_A_DIR` a `G_A_OE` address gate dir a OE
 	* `G_D_DIR` a `G_D_OE` data gate dir a OE
 * S_* signály pro Shared RAM
+	* `S_READ` read signal - OE, active low
+	* `S_WRITE` write signal
+	* `S_ENABLE` enable signal
+	* `S_A[12..16]` address 
 
 Boot sekvence
 ==============
@@ -95,6 +104,9 @@ Boot sekvence
 		* GLUE odpojí/ignoruje `A_BUS` 
 		* GLUE nastaví `C_HALT` na HiZ (a vnější pullup ho vytáhne nahoru a CPU se rozběhne)
 
+.. {{{ Registry
+
+
 Registry
 =========
 
@@ -132,6 +144,13 @@ Source-zdroj je to, co se namapuje do 8kB okna - blok paměti z některého z RA
 v registrech je to také pojmenování registru v CPLD
 Při novém zápisu CPLD přeruší (a zapomene) předchozí sekvenci a pokusí se namapovat požadovaný zdroj. 
 Synchronizaci si musí zařídit CPU, opakovaným čtením Statusu (přičemž může mezitím dělat i cokoli jiného). Mapování musí čekat, dokud požadovanou RAM neuvolní Arduino, což v případě zápisu na SD kartu, nebo jiných operacích může trvat velmi dlouho. Situace je obdobná jako u sériové komunikace, kdy protistrana nevysílá a čekání na další znak může trvat, dokud se obsluha nevrátí z oběda.
+
+.. }}}
+
+
+.. {{{ Vložka s umělákem
+
+
 
 Vložka s umělákem
 ===================
@@ -316,10 +335,42 @@ Zjednodušeně:
     Sleduje status čipu přes signály, případně může číst stav přes vlastní I/O
 
 
+.. }}}
+
+
 
 
 Normální stav
 =============
 
-* CPU 
+* `A_HALT` = **HIGH**
+* CPU komunikuje s GLUE přez registry, uvidíme jak. Podstatné stavy:
+	* CPU má namapovanou systémovou RAM, GLUE převádí `C_READ` a `C_CLOCK` na `R_READ` `R_WRITE` `R_ENABLE` a `R_A[12..16]`
+	* CPU chce Shared RAM (a ta je zrovna obsazená)
+		* `A_SHARE_WANTED` nastaví GLUE  **HIGH** = CPU chce Shared RAM
+	* CPU chce Shared RAM (a ta je zrovna volná)
+		* `A_SHARE_BUSY` nastaví GLUE  **HIGH**
+		* `A_SHARE_WANTED` nastaví GLUE  **LOW** 
+		* `G_A_DIR` a `G_A_OE` CPU -> Arduino
+		* `G_D_DIR` a `G_D_OE` podle `C_READ`
+		* `S_READ` read signal - OE, active low
+		* `S_WRITE` write signal
+		* `S_ENABLE` enable signal
+		* `S_A[12..16]` address 
+	* Arduino chce Shared RAM
+		* `A_SHARE_REQUEST` Arduino nastavi na **HIGH** když chce Shared RAM
+	* CPU se vzda Shared RAM
+		* `A_SHARE_BUSY` nastaví GLUE  **LOW**
+		* `A_SHARE_DIRTY` nastaví GLUE  **HIGH** = Shared RAM byla naposled modifikována CPU 
+		* a odpojí co se zapojilo (gates ...)
+	* Arduino dostane Shared RAM
+		* `A_SHARE_GRANTED` GLUE nastaví na **HIGH**, když Shared RAM patří Arduinu
+		* `S_ENABLE` = true
+		* `S_READ` `S_WRITE` podle `A_READ` `A_WRITE`
+	* Arduino vrací Shared RAM
+		* `A_SHARE_REQUEST` Arduino nastavi na **LOW** když vrací Shared RAM
+		* GLUE `A_SHARE_GRANTED` low
+		* GLUE uvolní zdroje
+
+
 
