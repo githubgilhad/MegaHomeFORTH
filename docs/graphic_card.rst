@@ -31,7 +31,7 @@ Základní myšlenka
 Signály
 =======
 
-* A_* komunikace s Arduino
+* A_* komunikace s Arduino (A/B)
 	* `A_HALT` pulldown, **LOW**, Arduino ho nastaví nahoru když už nepotřebuje haltovat CPU
 	* `A_BUS` nastaví Arduino, když chce přístup na systémový bus
 	* `A_READ` používá Arduino pro RAM a Shared RAM
@@ -51,14 +51,14 @@ Signály
 	* `R_ENABLE` enable signal
 	* `R_D[0..7]` data = `C_D[0..7]`
 	* `R_A[0..16]` address = `C_A[0..11]` plus GLUE
-* G_* GLUE logic
+* G_* GLUE logic (A/B)
 	* `G_A_DIR` a `G_A_OE` address gate dir a OE
 	* `G_D_DIR` a `G_D_OE` data gate dir a OE
-* S_* signály pro Shared RAM
+* S_* signály pro Shared RAM (A/B)
 	* `S_READ` read signal - OE, active low
 	* `S_WRITE` write signal
 	* `S_ENABLE` enable signal
-	* `S_A[12..16]` address 
+	* `S_A[16]` address (+R_A[0..15])
 
 Boot sekvence
 ==============
