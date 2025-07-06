@@ -33,18 +33,20 @@ Signály
 
 * A_* komunikace s Arduino (A/B)
 	* `A_HALT` pulldown, **LOW**, Arduino ho nastaví nahoru když už nepotřebuje haltovat CPU
-	* `A_BUS` nastaví Arduino, když chce přístup na systémový bus
-	* `A_READ` používá Arduino pro RAM a Shared RAM
-	* `A_WRITE` používá Arduino pro RAM a Shared RAM
-	* `A_SHARE_WANTED` nastaví GLUE  **HIGH** = CPU chce Shared RAM
-	* `A_SHARE_REQUEST` Arduino nastavi na **HIGH** když chce Shared RAM
-	* `A_SHARE_GRANTED` GLUE nastaví na **HIGH**, když Shared RAM patří Arduinu
-	* `A_SHARE_BUSY` nastaví GLUE  **HIGH** = Shared RAM patří CPU 
+	* XXX `A_BUS` nastaví Arduino, když chce přístup na systémový bus - což je vždy při `A_HALT` ... taky se bez toho obejdu
+	* `A_READ` používá Arduino pro RAM a Shared RAM (a `A_HALT` určuje, pro kterou to GLUE přeloží)
+	* XXX `A_WRITE` používá Arduino pro RAM a Shared RAM - jde natvrdo zakódovat, že `A_WRITE` je negace `A_READ` a díky dobrému časování vše bude fungovat (a odpory to pokryjou při chybě)
+	* XXX `A_SHARE_WANTED` nastaví GLUE  **HIGH** = CPU chce Shared RAM - můžu zrušit, nikdo si nebude nechávat RAM do foroty dlouho a `A_SHARE_DIRTY` mi řekne, zda data ještě platí/jsou nová
+	* `A_SHARE_REQUEST` Arduino nastaví na **HIGH** když chce Shared RAM
+	* `A_SHARE_GRANTED` GLUE nastaví na **HIGH**, když Shared RAM patří Arduinu ( XXX `A_SHARE_BUSY` nastaví GLUE  **HIGH** = Shared RAM patří CPU je jeho negace)
+		* Arduino nastaví `A_SHARE_REQUEST`, GLUE nastaví `A_SHARE_GRANTED`, Arduino může psát pokud jsou oba nahoře. Navíc je zajištěno, že `A_SHARE_GRANTED` nespadne, dokud `A_SHARE_REQUEST` trvá
+		* když Arduino dopíše/dočte, shodí `A_SHARE_REQUEST` a nestará se o `A_SHARE_GRANTED`
 	* `A_SHARE_DIRTY` nastaví GLUE  **HIGH** = Shared RAM byla naposled modifikována CPU 
 * C_* komunikace s CPU
 	* `C_HALT` pullup
 	* `C_READ` CPU chce číst nebo psát
 	* `C_CLOCK` hodiny
+	*  `C_A[13..15]` - rámec 8kB, který nepouštím přímo, ale přepočítávám na posuny v XMS (systémová RAM)
 * R_* signály pro systémovou RAM
 	* `R_READ` read signal - OE, active low
 	* `R_WRITE` write signal
@@ -52,9 +54,10 @@ Signály
 	* `R_D[0..7]` data = `C_D[0..7]`
 	* `R_A[0..16]` address = `C_A[0..11]` plus GLUE
 * G_* GLUE logic (A/B)
-	* `G_A_DIR` a `G_A_OE` address gate dir a OE
-	* `G_D_DIR` a `G_D_OE` data gate dir a OE
-* S_* signály pro Shared RAM (A/B)
+	* `G_A_DIR` address gate dir 
+	* `G_D_DIR` a `G_D_OE` data gate dir 
+	* `G_ENABLE`, nepotřebuju rozlišovat
+* S_* signály pro Shared RAM (A/B) (EMS)
 	* `S_READ` read signal - OE, active low
 	* `S_WRITE` write signal
 	* `S_ENABLE` enable signal
@@ -70,7 +73,7 @@ Boot sekvence
 		* (CPU je v haltu a začne nabíhat jeho reset, všechny signály v HiZ)
 		* (Arduino staruje a má všechny piny HiZ)
 		* (GLUE po resetu odpojilo brány k Arduinu)
-	* `A_BUS`  je pulldownem držený dole
+	* `A_BUS`  je pulldownem držený dole 
 		* GLUE pro `A_HALT`  **LOW** a `A_BUS`  **LOW** drží brány rozpojené
 			* GLUE kopíruje `C_READ` do  `R_READ`
 	* Clock se rozbíhá na nějakých 4 MHz
@@ -81,9 +84,9 @@ Boot sekvence
 	* Arduino nastaví `A_BUS`  na **HIGH**
 		* GLUE pro  `A_HALT`  **LOW** a `A_BUS`  **HIGH**
 			* GLUE nastaví brány pro adresy na Arduino->SYS a otevře je
-				* `G_A_DIR` a `G_A_OE`
+				* `G_A_DIR` a `G_ENABLE`
 			* GLUE kopíruje `A_READ` do směru brány `G_D_DIR` pro data a otevře ji
-				* `G_D_DIR` a `G_D_OE`
+				* `G_D_DIR` a `G_ENABLE`
 			* GLUE kopíruje `A_READ` do  `R_READ` (AND `C_CLOCK` ?)
 			* GLUE kopíruje `A_WRITE` do  `R_WRITE` (AND `C_CLOCK` ?)
 			* strike - GLUE udržuje  `R_ENABLE` (podle hodin) - /strike `R_ENABLE` je zapojený pořád
@@ -103,6 +106,7 @@ Boot sekvence
 	* Arduino nastaví `A_HALT`  = **HIGH**
 		* GLUE odpojí/ignoruje `A_BUS` 
 		* GLUE nastaví `C_HALT` na HiZ (a vnější pullup ho vytáhne nahoru a CPU se rozběhne)
+		* GLUE kopíruje `C_READ` do  `R_READ` a  `C_WRITE` do  `R_WRITE` 
 
 .. {{{ Registry
 
@@ -351,8 +355,9 @@ Normální stav
 	* CPU chce Shared RAM (a ta je zrovna volná)
 		* `A_SHARE_BUSY` nastaví GLUE  **HIGH**
 		* `A_SHARE_WANTED` nastaví GLUE  **LOW** 
-		* `G_A_DIR` a `G_A_OE` CPU -> Arduino
-		* `G_D_DIR` a `G_D_OE` podle `C_READ`
+		* `G_A_DIR` CPU -> Arduino
+		* `G_D_DIR` podle `C_READ`
+		* `G_ENABLE` true
 		* `S_READ` read signal - OE, active low
 		* `S_WRITE` write signal
 		* `S_ENABLE` enable signal
