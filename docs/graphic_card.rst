@@ -35,7 +35,7 @@ Signály
 	* `A_HALT` pulldown, **LOW**, Arduino ho nastaví nahoru když už nepotřebuje haltovat CPU
 	* XXX `A_BUS` nastaví Arduino, když chce přístup na systémový bus - což je vždy při `A_HALT` ... taky se bez toho obejdu
 	* `A_READ` používá Arduino pro RAM a Shared RAM (a `A_HALT` určuje, pro kterou to GLUE přeloží)
-	* XXX `A_WRITE` používá Arduino pro RAM a Shared RAM - jde natvrdo zakódovat, že `A_WRITE` je negace `A_READ` a díky dobrému časování vše bude fungovat (a odpory to pokryjou při chybě)
+	* XXX `A_WRITE` používá Arduino pro RAM a Shared RAM - jde natvrdo zakódovat, že `A_WRITE` je negace `A_READ` a díky dobrému časování vše bude fungovat (a odpory to pokryjou při chybě - odpory nejdou vzhledem k RAM výstupu, ale nejspou potřeba, maximálně tam bude chvilku zápis bez hodnot, nasledovany nastavenim hodnot = není problém)
 	* XXX `A_SHARE_WANTED` nastaví GLUE  **HIGH** = CPU chce Shared RAM - můžu zrušit, nikdo si nebude nechávat RAM do foroty dlouho a `A_SHARE_DIRTY` mi řekne, zda data ještě platí/jsou nová
 	* `A_SHARE_REQUEST` Arduino nastaví na **HIGH** když chce Shared RAM
 	* `A_SHARE_GRANTED` GLUE nastaví na **HIGH**, když Shared RAM patří Arduinu ( XXX `A_SHARE_BUSY` nastaví GLUE  **HIGH** = Shared RAM patří CPU je jeho negace)
