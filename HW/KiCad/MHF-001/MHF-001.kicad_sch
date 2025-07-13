@@ -11179,6 +11179,167 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Crystal"
 			(pin_numbers
 				(hide yes)
@@ -19477,6 +19638,16 @@
 	)
 	(wire
 		(pts
+			(xy 486.9825 41.714) (xy 486.9825 48.064)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fced72c-edba-4a35-bb37-8fcbfa7317ec")
+	)
+	(wire
+		(pts
 			(xy 593.09 67.31) (xy 621.03 67.31)
 		)
 		(stroke
@@ -21317,6 +21488,16 @@
 	)
 	(wire
 		(pts
+			(xy 405.13 127) (xy 405.13 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "393625b4-1ebc-4598-a8da-4290a5000ea4")
+	)
+	(wire
+		(pts
 			(xy 194.31 769.62) (xy 194.31 782.32)
 		)
 		(stroke
@@ -21415,6 +21596,16 @@
 		)
 		(uuid "3bdbe8e7-9445-481c-a60a-3d8dc3651fa8")
 	)
+	(wire
+		(pts
+			(xy 393.7 76.2) (xy 393.7 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3beb7566-da58-4fff-86ea-e2a709f68c34")
+	)
 	(bus
 		(pts
 			(xy 595.63 327.66) (xy 595.63 330.2)
@@ -21454,6 +21645,16 @@
 			(type default)
 		)
 		(uuid "3d1bc2b0-bdee-46a9-807a-61f07883c63b")
+	)
+	(wire
+		(pts
+			(xy 448.31 41.91) (xy 448.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7eedf9-8f9e-4688-9bf1-c94e663c4835")
 	)
 	(wire
 		(pts
@@ -22407,6 +22608,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.89 125.73) (xy 389.89 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50e4ae0f-f19e-4289-b4f8-f9c2481b2741")
+	)
+	(wire
+		(pts
 			(xy 549.91 393.7) (xy 551.18 393.7)
 		)
 		(stroke
@@ -22554,6 +22765,16 @@
 			(type default)
 		)
 		(uuid "54d72bd5-d426-44e6-9523-9415032d353f")
+	)
+	(wire
+		(pts
+			(xy 462.28 43.18) (xy 462.28 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54e3c3ee-326f-4935-91e6-00009b747f95")
 	)
 	(wire
 		(pts
@@ -23327,6 +23548,16 @@
 	)
 	(wire
 		(pts
+			(xy 405.13 43.18) (xy 405.13 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "661a6dde-a0a5-45fc-88aa-cccdb191529d")
+	)
+	(wire
+		(pts
 			(xy 478.79 360.68) (xy 472.44 360.68)
 		)
 		(stroke
@@ -23394,6 +23625,16 @@
 			(type default)
 		)
 		(uuid "68a52e20-169b-48f8-8482-010710ecb553")
+	)
+	(wire
+		(pts
+			(xy 392.43 43.18) (xy 392.43 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6974854c-3f33-4c16-a9b3-fd12b6ae4f09")
 	)
 	(wire
 		(pts
@@ -23974,6 +24215,16 @@
 			(type default)
 		)
 		(uuid "7930d6b7-30af-4889-992e-eb048f0a2394")
+	)
+	(wire
+		(pts
+			(xy 443.23 77.47) (xy 443.23 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7959574d-4e27-480e-8b11-5e5bbc58c9be")
 	)
 	(wire
 		(pts
@@ -25797,6 +26048,16 @@
 	)
 	(wire
 		(pts
+			(xy 430.53 78.74) (xy 430.53 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a532a0c9-4b05-42f6-b657-e5164dae2e92")
+	)
+	(wire
+		(pts
 			(xy 631.19 165.1) (xy 638.81 165.1)
 		)
 		(stroke
@@ -25804,6 +26065,16 @@
 			(type default)
 		)
 		(uuid "a533ed4c-ed98-408c-b878-d74f27c52b38")
+	)
+	(wire
+		(pts
+			(xy 434.34 41.91) (xy 434.34 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5448d3c-e971-4928-a65d-d069e495a07f")
 	)
 	(wire
 		(pts
@@ -26417,6 +26688,16 @@
 	)
 	(wire
 		(pts
+			(xy 406.4 77.47) (xy 406.4 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b12c06ca-d461-41c8-8d06-29597003043a")
+	)
+	(wire
+		(pts
 			(xy 671.83 781.05) (xy 671.83 787.4)
 		)
 		(stroke
@@ -26914,6 +27195,16 @@
 			(type default)
 		)
 		(uuid "bbf05bae-0e53-4546-8e6e-794408fa5590")
+	)
+	(wire
+		(pts
+			(xy 474.1493 41.9392) (xy 474.1493 48.2892)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0cbc46-318a-499c-8fe1-eeebc1a6cc45")
 	)
 	(wire
 		(pts
@@ -28477,6 +28768,16 @@
 	)
 	(wire
 		(pts
+			(xy 417.83 78.74) (xy 417.83 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dedea7f7-cc57-4c03-b07d-03135330bb7b")
+	)
+	(wire
+		(pts
 			(xy 250.19 416.56) (xy 231.14 416.56)
 		)
 		(stroke
@@ -28574,6 +28875,16 @@
 			(type default)
 		)
 		(uuid "e043c897-e623-431e-a5d4-fbb214900056")
+	)
+	(wire
+		(pts
+			(xy 419.1 43.18) (xy 419.1 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0771ae3-a939-409c-a180-876d06b6fdec")
 	)
 	(wire
 		(pts
@@ -37230,6 +37541,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 474.1493 34.3192 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0010dd5c-52bd-4d79-8210-c17d1baf1005")
+		(property "Reference" "#PWR0105"
+			(at 474.1493 38.1292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 474.1493 29.2392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 474.1493 34.3192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 474.1493 34.3192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 474.1493 34.3192 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "373af123-0928-4364-84e8-92e6b1bc1830")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 685.8 711.2 0)
 		(unit 3)
@@ -37781,6 +38158,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 474.1493 38.1292 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0677c4b3-c4e8-4a71-b794-82bd3826d7ce")
+		(property "Reference" "Cx7"
+			(at 477.9593 36.8591 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 477.9593 39.3991 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 475.1145 41.9392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 474.1493 38.1292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 474.1493 38.1292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fef9e44-c8d5-4bd2-b82e-45565ac53a38")
+		)
+		(pin "2"
+			(uuid "d1f0227c-de0f-4e8d-945f-195bfaf3a814")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 346.71 80.01 270)
 		(unit 1)
@@ -37842,6 +38289,76 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 419.1 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07a0e0bc-58d8-463b-a00a-e44339d17fc2")
+		(property "Reference" "Cx3"
+			(at 422.91 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 422.91 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 420.0652 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 419.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 419.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55d185e7-793f-4a8d-95d3-72181d9145e1")
+		)
+		(pin "2"
+			(uuid "6d0d7205-69fd-4ff1-9a8b-f7b25d6fef14")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx3")
 					(unit 1)
 				)
 			)
@@ -37976,6 +38493,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 430.53 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08a7ef9a-f38a-4c06-ba54-6fcff6487147")
+		(property "Reference" "#PWR0116"
+			(at 430.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 430.53 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 430.53 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430.53 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 430.53 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "991ae4d1-5049-4a92-9215-6eac38e3f882")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -38721,6 +39304,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 434.34 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1443eeca-94a8-483b-bb64-5e89338a3ee7")
+		(property "Reference" "Cx4"
+			(at 438.15 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 438.15 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 435.3052 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 434.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 434.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef591a78-79dc-4f7e-8e8c-c46e16317236")
+		)
+		(pin "2"
+			(uuid "baf0be87-bc64-44ff-a0a5-3510d2d5734f")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 313.69 109.22 270)
 		(unit 1)
@@ -39418,6 +40071,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 393.7 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e8256b5-0e7e-45bb-9e79-6f9efb140c12")
+		(property "Reference" "Cx9"
+			(at 397.51 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 397.51 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 394.6652 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 393.7 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 393.7 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00852957-5063-4a0c-a6b6-2b0ac0b4e013")
+		)
+		(pin "2"
+			(uuid "f16c6f16-72ea-4609-8418-3cb34a2596ef")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 462.28 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e94d957-8e1a-4515-8913-b2f707d94e15")
+		(property "Reference" "#PWR0103"
+			(at 462.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 462.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 462.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 462.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 462.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ad93992-f570-41c9-aeae-0609fdc6bcce")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
 		(at 668.02 713.74 180)
 		(unit 1)
@@ -39477,6 +40266,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 462.28 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fa8127e-3027-4152-a054-4f85c5690d1e")
+		(property "Reference" "#PWR0104"
+			(at 462.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 462.28 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 462.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 462.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 462.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c530002-9092-48f3-bad4-cc246a114b09")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -40571,6 +41426,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 448.31 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "296f14f1-c028-429a-92fb-7c647d783882")
+		(property "Reference" "Cx5"
+			(at 452.12 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 452.12 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 449.2752 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 448.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 448.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71d69731-e21d-466c-b788-fbd13bc9508c")
+		)
+		(pin "2"
+			(uuid "50aa30a5-14c7-41fd-9163-e1adcca138ee")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 497.84 713.74 90)
 		(unit 1)
@@ -40841,6 +41766,72 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 419.1 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bd6307e-e225-4d5a-93bd-6012982fddab")
+		(property "Reference" "#PWR098"
+			(at 419.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 419.1 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 419.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 419.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 419.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bd6e5d2-d284-422a-9cac-71d8ee9f7f8f")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -41525,6 +42516,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 393.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36c6d692-a743-4f87-bd3c-1a1e5ce51efe")
+		(property "Reference" "#PWR0109"
+			(at 393.7 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 393.7 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 393.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 393.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cc9e1fb-501d-4876-9ca3-3a46366cbd01")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -42342,6 +43399,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 448.31 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e376b69-4055-43c4-8af9-7e6eef9b3519")
+		(property "Reference" "#PWR0101"
+			(at 448.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 448.31 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 448.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 448.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 448.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95e17264-6869-42e8-88e9-4b471fa390ab")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -43924,6 +45047,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 430.53 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ede9aa5-d8ce-4822-ab46-477aeb301018")
+		(property "Reference" "#PWR0115"
+			(at 430.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 430.53 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 430.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 430.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 430.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0475cbc9-a95c-4702-a960-0aaa92b22835")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 685.8 730.25 0)
 		(unit 4)
@@ -44160,6 +45349,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 486.9825 48.064 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52d5d987-0a66-4013-b80c-4fd31b2f1b8b")
+		(property "Reference" "#PWR0108"
+			(at 486.9825 54.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 486.9825 53.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 486.9825 48.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 486.9825 48.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 486.9825 48.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6031d76-28fd-404c-9df8-25c7824c1be8")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -44423,6 +45678,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 417.83 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5542e0c7-9a18-48b0-9412-cac2c7b2527a")
+		(property "Reference" "Cx11"
+			(at 421.64 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 421.64 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 418.7952 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 417.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 417.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f7371dd-c946-40c1-9054-83a68533b127")
+		)
+		(pin "2"
+			(uuid "255a56a0-4fa8-4e05-b487-441f124f18c2")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 417.83 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "565a188e-9ef5-4426-8dcd-214632242c8c")
+		(property "Reference" "#PWR0113"
+			(at 417.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 417.83 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 417.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 417.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 417.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90d47523-235b-44b4-8cd9-9778e11c6bff")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 422.91 741.68 0)
 		(unit 1)
@@ -44557,6 +45948,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 443.23 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57b448a4-27b9-4591-bc14-361d5508da0c")
+		(property "Reference" "Cx13"
+			(at 447.04 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 447.04 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 444.1952 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 443.23 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 443.23 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d990d928-8bad-4d4f-9650-2a276716bb62")
+		)
+		(pin "2"
+			(uuid "f5185bc8-a794-4b4c-84c8-4bae29aebd7a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 307.34 137.16 90)
 		(unit 1)
@@ -44618,6 +46079,142 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 406.4 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "589db859-4b93-4632-92df-6cea6838ee0c")
+		(property "Reference" "#PWR0112"
+			(at 406.4 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 406.4 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 406.4 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64432207-ab81-47fe-bcdb-187ca7ef6a16")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 389.89 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "592ac158-7d38-4fd9-bc0a-d71ad8af1e08")
+		(property "Reference" "Cx14"
+			(at 393.7 119.7609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 393.7 122.3009 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 390.8552 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 389.89 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 389.89 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59183b91-4c96-43fc-9546-4ad1a52a49ec")
+		)
+		(pin "2"
+			(uuid "10b0a980-b813-4131-afc6-092ff8edb05c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx14")
 					(unit 1)
 				)
 			)
@@ -46549,6 +48146,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 434.34 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ae0ee85-019d-48d1-b9af-20adb253dbf2")
+		(property "Reference" "#PWR099"
+			(at 434.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 434.34 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 434.34 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 434.34 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 434.34 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2927ac30-767b-4b5f-926c-daa271959d23")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_B_Micro")
 		(at 40.64 153.67 0)
 		(unit 1)
@@ -46803,6 +48466,72 @@
 			(project ""
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 405.13 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fbafdba-bdc3-4a77-b2e6-2b7a0747447b")
+		(property "Reference" "#PWR094"
+			(at 405.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 405.13 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 405.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 405.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d3699b1-fbef-400b-b6b8-ce95f5cbca4d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -47816,6 +49545,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 389.89 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b5f9102-c813-4073-ae41-15baf190c631")
+		(property "Reference" "#PWR0120"
+			(at 389.89 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 389.89 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 389.89 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbab32c6-c68e-4002-a083-2b0d6646fe61")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4001")
 		(at 190.5 763.27 0)
 		(unit 1)
@@ -48602,6 +50397,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 405.13 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "895811e9-8858-4ee5-89db-642ca6f8835c")
+		(property "Reference" "#PWR096"
+			(at 405.13 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 405.13 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 405.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 405.13 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3784b43-c742-43f2-ae2e-ceb4a6cf5350")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR096")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 403.86 506.73 90)
 		(unit 1)
@@ -49157,6 +51018,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 486.9825 34.094 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f16c415-0ccf-45c0-820d-c7b50a115785")
+		(property "Reference" "#PWR0107"
+			(at 486.9825 37.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 486.9825 29.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 486.9825 34.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 486.9825 34.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 486.9825 34.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae079f7f-6609-4e85-9085-9ac5b6463b5b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 318.77 231.14 180)
 		(unit 1)
@@ -49366,6 +51293,138 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 405.13 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "937e4833-78fb-4a06-8246-125f2218be02")
+		(property "Reference" "#PWR0121"
+			(at 405.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 405.13 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 405.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 405.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7d7ba94-89ff-4056-9600-3cf864bd3511")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 443.23 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93ec3cf1-eeb5-441d-9ac0-0abc8b521597")
+		(property "Reference" "#PWR0118"
+			(at 443.23 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 443.23 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 443.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 443.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 443.23 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1680a0bd-9190-4cad-b5a9-a6439bdd492d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -49906,6 +51965,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 417.83 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9af29051-e809-4e70-b4b1-498be7691c12")
+		(property "Reference" "#PWR0114"
+			(at 417.83 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 417.83 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 417.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 417.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 417.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c101798-627b-48b9-b1e9-1e71afd05483")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 685.8 431.8 270)
 		(unit 1)
@@ -49968,6 +52093,146 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 406.4 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c0c8cb2-2430-44a0-bf2e-8b97225e5f7e")
+		(property "Reference" "Cx10"
+			(at 410.21 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 410.21 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 407.3652 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 406.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 406.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "992c7eb1-1e06-44cf-a68f-8c88a6a9f876")
+		)
+		(pin "2"
+			(uuid "348b2ba0-3387-41e5-9055-e39e9811254b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 462.28 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c603c23-af43-4345-ad48-4fcd2074207e")
+		(property "Reference" "Cx6"
+			(at 466.09 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 466.09 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 463.2452 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 462.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 462.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f91bb07-62cf-41e1-b37e-c22ac5ca449d")
+		)
+		(pin "2"
+			(uuid "5c859bc3-7b6d-4542-8e65-918aa3b75663")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx6")
 					(unit 1)
 				)
 			)
@@ -50315,6 +52580,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 434.34 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a40d8519-dad1-4fdc-9d2a-8ddf55324569")
+		(property "Reference" "#PWR0100"
+			(at 434.34 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 434.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 434.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 434.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 434.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5442dabc-0f7f-4794-ad29-d8e6108bd75e")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 254 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -50374,6 +52705,76 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 430.53 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a582075a-ed1b-45bd-a026-a43466835c1b")
+		(property "Reference" "Cx12"
+			(at 434.34 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 434.34 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 431.4952 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 430.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 430.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b35d822c-f7a0-4099-9f61-701ee8ee22e2")
+		)
+		(pin "2"
+			(uuid "fdaac74c-eb41-4212-b095-39fd5c96fa13")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx12")
 					(unit 1)
 				)
 			)
@@ -51400,6 +53801,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 405.13 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1bb6e54-a0a6-43be-8e02-0b91e3f846f4")
+		(property "Reference" "Cx15"
+			(at 408.94 121.0309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 408.94 123.5709 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 406.0952 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 405.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 405.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b21e34f5-a4d0-4b72-9d7a-70ef912f6e62")
+		)
+		(pin "2"
+			(uuid "42dcdca6-1093-4238-b50c-5d56be7da281")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 194.31 786.13 0)
 		(unit 1)
@@ -51673,6 +54144,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 392.43 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b59c5cb0-e07e-49ae-aaf2-d07a4d6e8881")
+		(property "Reference" "#PWR092"
+			(at 392.43 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 392.43 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 392.43 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 392.43 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e4cc59b-03c2-48b3-9e08-88b4cf021f5b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR092")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 448.31 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b620eea2-5649-4081-b4f0-488d639f4f11")
+		(property "Reference" "#PWR0102"
+			(at 448.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 448.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 448.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 448.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 448.31 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d97275c-58b7-426e-bd38-b23328dcb562")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 403.86 499.11 90)
 		(unit 1)
@@ -51801,6 +54404,142 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 392.43 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7bfbb1f-ff61-4e10-82c0-0a909d8347cc")
+		(property "Reference" "#PWR093"
+			(at 392.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 392.43 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 392.43 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 392.43 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26e4a6af-3bb4-43a5-9ca6-b4b0f3f3ece0")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 392.43 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7e1ad7a-3f3c-4825-87a5-c138de9352d6")
+		(property "Reference" "Cx1"
+			(at 396.24 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 396.24 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 393.3952 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 392.43 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 392.43 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "988aff27-c2a6-46a3-9085-3726e9384f16")
+		)
+		(pin "2"
+			(uuid "38636371-e62e-4f5f-bc00-b1d62380a48f")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx1")
 					(unit 1)
 				)
 			)
@@ -54085,6 +56824,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 419.1 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d18282a8-cb9a-4a8c-a562-e54936bc9795")
+		(property "Reference" "#PWR097"
+			(at 419.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 419.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 419.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 419.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 419.1 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6547d674-4912-4910-89a1-4eb0129aeb34")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 403.86 401.32 0)
 		(unit 1)
@@ -54662,6 +57467,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 406.4 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8762355-0cb0-4e77-a7f8-b41632da3e7e")
+		(property "Reference" "#PWR0111"
+			(at 406.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 406.4 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 406.4 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa022ca1-6968-4333-b55c-f5faa3a9addc")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 167.64 247.65 270)
 		(unit 1)
@@ -55223,6 +58094,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 405.13 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd8e6cfd-8f2d-4732-8cee-e7cc9a16b49f")
+		(property "Reference" "#PWR0122"
+			(at 405.13 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 405.13 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 405.13 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 405.13 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 405.13 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "151d9272-0cf3-40d8-ae09-7d7c161a9510")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -56062,6 +58999,72 @@
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "U2")
 					(unit 6)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 474.1493 48.2892 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eac3ce81-be5c-44e4-b94b-caf42665b6ad")
+		(property "Reference" "#PWR0106"
+			(at 474.1493 54.6392 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 474.1493 53.3692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 474.1493 48.2892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 474.1493 48.2892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 474.1493 48.2892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b28b3b25-06e9-43ae-a184-80c08f6b832b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0106")
+					(unit 1)
 				)
 			)
 		)
@@ -57208,6 +60211,72 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 443.23 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3a089c7-fd8e-4854-a07a-4f90d999f222")
+		(property "Reference" "#PWR0117"
+			(at 443.23 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 443.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 443.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 443.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 443.23 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2265f85-68fd-4bd1-8107-8099b533c151")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 236.22 725.17 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -57339,6 +60408,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 393.7 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6014809-cb92-497b-88ab-59512636a26f")
+		(property "Reference" "#PWR0110"
+			(at 393.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 393.7 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 393.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 393.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 393.7 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e962cd6-f382-4a2a-8dbe-27d72b33068b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
 		(at 556.26 386.08 0)
 		(mirror x)
@@ -57423,6 +60558,76 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "PC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 486.9825 37.904 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f923a09f-524d-4e19-a6b3-66689cd7f8ef")
+		(property "Reference" "Cx8"
+			(at 490.7925 36.6339 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 490.7925 39.1739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 487.9477 41.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 486.9825 37.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 486.9825 37.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5daa87f5-f3ae-4cc7-98d2-a58025f2e92d")
+		)
+		(pin "2"
+			(uuid "34f89797-ac3d-4e47-99ab-b33b512d4f01")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx8")
 					(unit 1)
 				)
 			)
@@ -57554,6 +60759,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 389.89 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe717061-b36e-40f9-b858-8cf93f47b61f")
+		(property "Reference" "#PWR0119"
+			(at 389.89 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 389.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 389.89 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 389.89 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 389.89 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a99dd7f-1b47-4174-907f-0f6d622baf9b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -57695,6 +60966,76 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 405.13 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff80fe75-206b-47c6-b96c-90d6f80f8fdf")
+		(property "Reference" "Cx2"
+			(at 408.94 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Cx"
+			(at 408.94 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+			(at 406.0952 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 405.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 405.13 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "487cf1bb-568c-4e4b-ae44-13a9f4e883be")
+		)
+		(pin "2"
+			(uuid "3e6e7737-7143-4a61-b068-80b8fb3714df")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "Cx2")
 					(unit 1)
 				)
 			)
