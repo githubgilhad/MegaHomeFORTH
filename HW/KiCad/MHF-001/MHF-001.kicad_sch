@@ -16530,6 +16530,12 @@
 		(uuid "f1486570-4b63-481e-a0b8-afeaca284ab3")
 	)
 	(junction
+		(at 455.93 369.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f18eeeb9-8e64-4f99-8130-a32578488acc")
+	)
+	(junction
 		(at 551.18 388.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16566,20 +16572,56 @@
 		(uuid "fdcb4e7a-f157-435d-81d6-ed795e8c9063")
 	)
 	(no_connect
+		(at 869.95 60.96)
+		(uuid "01b29a26-530c-4b50-85b8-c6a3bf2a45f2")
+	)
+	(no_connect
 		(at 728.98 116.84)
 		(uuid "0549ae75-b187-4bc1-9b4b-72d38b83b8b8")
+	)
+	(no_connect
+		(at 858.52 76.2)
+		(uuid "0c660314-6c37-425c-a8be-1ba814f94cdb")
 	)
 	(no_connect
 		(at 716.28 121.92)
 		(uuid "10884aea-00e2-4c8c-81fc-c27710ff927f")
 	)
 	(no_connect
+		(at 881.38 72.39)
+		(uuid "111e39c1-0aa8-4c98-aad5-c3b1079256ef")
+	)
+	(no_connect
+		(at 892.81 91.44)
+		(uuid "13f6e691-19a8-457b-99ca-260550acba53")
+	)
+	(no_connect
 		(at 633.73 113.03)
 		(uuid "14e00df6-63ff-4962-99c2-c02cd2cad431")
 	)
 	(no_connect
+		(at 904.24 68.58)
+		(uuid "157d9d8f-28ce-4952-a2b6-beeb73fc3233")
+	)
+	(no_connect
 		(at 538.48 731.52)
 		(uuid "15c09930-c78a-4cdf-b937-425d8f01a320")
+	)
+	(no_connect
+		(at 869.95 80.01)
+		(uuid "1612bb43-12b2-471b-a8d0-25f634e8e653")
+	)
+	(no_connect
+		(at 892.81 64.77)
+		(uuid "1890a47b-0c66-4f5b-bad5-d35553fe4c04")
+	)
+	(no_connect
+		(at 858.52 87.63)
+		(uuid "1af2fd74-b225-4fb8-ab6c-a9d1866824e7")
+	)
+	(no_connect
+		(at 927.1 76.2)
+		(uuid "1b775efd-e82d-4c9b-9cf4-33a5bfd49947")
 	)
 	(no_connect
 		(at 728.98 111.76)
@@ -16590,12 +16632,28 @@
 		(uuid "24b01e49-09a5-49b6-9695-2dea3322090d")
 	)
 	(no_connect
+		(at 892.81 87.63)
+		(uuid "2887aab6-57d2-4dfe-b9df-7b67f5eb0a29")
+	)
+	(no_connect
+		(at 892.81 80.01)
+		(uuid "2d562db3-66b3-4488-b9db-e71cfae02017")
+	)
+	(no_connect
 		(at 618.49 113.03)
 		(uuid "2f289d68-f744-4ecf-afcf-c06e7c82a210")
 	)
 	(no_connect
+		(at 881.38 64.77)
+		(uuid "2f3ecc64-2587-4490-af5c-b6628e664554")
+	)
+	(no_connect
 		(at 274.32 745.49)
 		(uuid "358d2e14-9cb6-4599-bf3a-3ddaa5b766dd")
+	)
+	(no_connect
+		(at 881.38 80.01)
+		(uuid "38e5ca62-180b-49c2-9b28-418a2f062ec0")
 	)
 	(no_connect
 		(at 538.48 734.06)
@@ -16610,12 +16668,36 @@
 		(uuid "3bac3cd7-61c1-43d6-bcf5-128875da12f7")
 	)
 	(no_connect
+		(at 938.53 60.96)
+		(uuid "421960ac-c840-415a-8fa3-0791f27bf9d7")
+	)
+	(no_connect
+		(at 869.95 83.82)
+		(uuid "45f07d11-a7e1-424c-b48c-e67a85c57328")
+	)
+	(no_connect
+		(at 938.53 72.39)
+		(uuid "470c42e3-c088-4fd7-a5c9-9f9aada0986b")
+	)
+	(no_connect
 		(at 435.61 759.46)
 		(uuid "48652b9e-26f6-4175-b9cc-fdab49ad287a")
 	)
 	(no_connect
+		(at 915.67 60.96)
+		(uuid "4a977408-7de9-48a5-9c5c-da9d6e802b52")
+	)
+	(no_connect
 		(at 553.72 718.82)
 		(uuid "4c0f289e-84b1-41ef-92eb-f4d6c9e9d051")
+	)
+	(no_connect
+		(at 904.24 91.44)
+		(uuid "4c52d75f-a0bd-4ec8-a67e-710d0939c825")
+	)
+	(no_connect
+		(at 938.53 68.58)
+		(uuid "4d01675f-1aa8-45be-b340-60b74f40b7cf")
 	)
 	(no_connect
 		(at 77.47 695.96)
@@ -16626,20 +16708,76 @@
 		(uuid "4fae176b-6d25-47e7-b310-fa68eb467eec")
 	)
 	(no_connect
+		(at 927.1 80.01)
+		(uuid "55eb0dcf-7ca9-4597-8993-21e86679ec33")
+	)
+	(no_connect
+		(at 892.81 68.58)
+		(uuid "55f35409-55ac-4eb9-bc1a-0e2513460ec3")
+	)
+	(no_connect
+		(at 927.1 87.63)
+		(uuid "567753cf-aa64-493b-a7ca-0873af5415e9")
+	)
+	(no_connect
 		(at 274.32 685.8)
 		(uuid "582e11a6-168c-4fdf-a4ca-438e262510c7")
+	)
+	(no_connect
+		(at 915.67 80.01)
+		(uuid "59105bb7-4196-4865-9f75-35e787fcdaa9")
+	)
+	(no_connect
+		(at 904.24 76.2)
+		(uuid "5b2beb37-1365-4086-98ae-20025833ea83")
 	)
 	(no_connect
 		(at 618.49 123.19)
 		(uuid "5e3a51d7-e20f-4f0f-a2c4-2eb64ad4d1c9")
 	)
 	(no_connect
+		(at 858.52 91.44)
+		(uuid "604d5180-d9a3-4313-ad6f-4cbb9957e190")
+	)
+	(no_connect
+		(at 858.52 60.96)
+		(uuid "604d5eed-c523-4006-8577-b25c9ee7eb86")
+	)
+	(no_connect
+		(at 892.81 83.82)
+		(uuid "6101f41e-e513-4fcb-bfa5-d4dcac3b5fd8")
+	)
+	(no_connect
+		(at 881.38 60.96)
+		(uuid "61828ef3-7521-4bfd-869f-1de9e2609cb5")
+	)
+	(no_connect
+		(at 881.38 68.58)
+		(uuid "635ad889-5c9d-4f9a-b5f3-0911afde81be")
+	)
+	(no_connect
+		(at 892.81 76.2)
+		(uuid "64cc24bc-7c83-44b9-a760-9e3777bd24fe")
+	)
+	(no_connect
 		(at 553.72 723.9)
 		(uuid "69458540-f97f-49d1-8cb8-8309f5e919ae")
 	)
 	(no_connect
+		(at 938.53 80.01)
+		(uuid "6a9c76ee-c99b-4221-b42f-4314558e1c3c")
+	)
+	(no_connect
 		(at 77.47 701.04)
 		(uuid "6d521d8e-8726-4dfa-a766-646a78aadbab")
+	)
+	(no_connect
+		(at 938.53 83.82)
+		(uuid "709fb856-f6e6-4e8e-8f04-f0f3f0d58367")
+	)
+	(no_connect
+		(at 927.1 60.96)
+		(uuid "70ea8083-796e-46e9-9e1c-951f1030ef8c")
 	)
 	(no_connect
 		(at 633.73 118.11)
@@ -16650,12 +16788,40 @@
 		(uuid "7899f64e-3aa7-444f-8b00-243872e15160")
 	)
 	(no_connect
+		(at 858.52 68.58)
+		(uuid "7aa07a5a-bea5-42a0-b2ca-45b1b3c4c064")
+	)
+	(no_connect
+		(at 915.67 87.63)
+		(uuid "7adbdef3-76cb-4cb9-9bb2-95d4718c6d95")
+	)
+	(no_connect
 		(at 274.32 748.03)
 		(uuid "7b457c17-0ee6-4c47-9450-7a41c7416b0a")
 	)
 	(no_connect
+		(at 927.1 72.39)
+		(uuid "7bfc1993-48cd-49d2-a83a-6f51e80c0d53")
+	)
+	(no_connect
+		(at 869.95 68.58)
+		(uuid "7c63e4e7-bc4d-4968-9f3c-fdfc098c1969")
+	)
+	(no_connect
 		(at 728.98 119.38)
 		(uuid "80198959-0129-48ba-a1f9-28b763e13a87")
+	)
+	(no_connect
+		(at 938.53 76.2)
+		(uuid "8243e089-29cc-4537-a5b0-3d3f633060ec")
+	)
+	(no_connect
+		(at 904.24 80.01)
+		(uuid "8bdac33d-8df9-4b4e-8e43-38d1741d56be")
+	)
+	(no_connect
+		(at 915.67 64.77)
+		(uuid "8bff15e7-e11d-4c30-933e-ea7d651b9526")
 	)
 	(no_connect
 		(at 633.73 115.57)
@@ -16666,8 +16832,48 @@
 		(uuid "8ec04ced-5b58-4204-a0ed-22cd013bf54d")
 	)
 	(no_connect
+		(at 938.53 91.44)
+		(uuid "8f11f2d3-29b1-428a-94ac-fcec1e86afba")
+	)
+	(no_connect
+		(at 881.38 87.63)
+		(uuid "8f5744c9-3de3-4910-9e72-fe5a7b4ddf80")
+	)
+	(no_connect
 		(at 180.34 151.13)
 		(uuid "8f76bb7d-3178-490c-8a80-18e6dd9c90dd")
+	)
+	(no_connect
+		(at 904.24 64.77)
+		(uuid "94789eb7-6fda-443b-8d20-3593a5b0498b")
+	)
+	(no_connect
+		(at 881.38 83.82)
+		(uuid "96714d87-b0ae-48e4-a69f-f62a192c1511")
+	)
+	(no_connect
+		(at 927.1 91.44)
+		(uuid "970b34de-82d8-4613-b98e-37b13a1ac71f")
+	)
+	(no_connect
+		(at 927.1 83.82)
+		(uuid "97de0ec6-c3d1-4383-974d-129c5070c87e")
+	)
+	(no_connect
+		(at 881.38 91.44)
+		(uuid "9f429085-58c5-4b4b-a6f8-15f84a4c9744")
+	)
+	(no_connect
+		(at 915.67 83.82)
+		(uuid "a2d3fa02-7482-4363-9bee-d7e9368fccf3")
+	)
+	(no_connect
+		(at 858.52 72.39)
+		(uuid "a532162e-8abe-4466-91a8-44bcbe850772")
+	)
+	(no_connect
+		(at 869.95 76.2)
+		(uuid "a82ece6c-13f2-4948-8eba-6cee026cf857")
 	)
 	(no_connect
 		(at 274.32 683.26)
@@ -16678,8 +16884,24 @@
 		(uuid "a974d427-f8b9-4dee-8189-911d1f4bcc61")
 	)
 	(no_connect
+		(at 938.53 64.77)
+		(uuid "a9979d36-0c22-44d6-9423-39b9bcb226f1")
+	)
+	(no_connect
+		(at 858.52 64.77)
+		(uuid "acbb2e19-27b6-424e-9633-5f034ec408bc")
+	)
+	(no_connect
 		(at 553.72 739.14)
 		(uuid "aeac1690-d4d3-404a-97e1-e499e970f4f7")
+	)
+	(no_connect
+		(at 858.52 83.82)
+		(uuid "b1fa29cf-2d5b-4659-9e6d-82e77cf4a0fa")
+	)
+	(no_connect
+		(at 904.24 60.96)
+		(uuid "b3d93fff-fd87-46da-92d2-d8fe09f0a71b")
 	)
 	(no_connect
 		(at 200.66 161.29)
@@ -16690,6 +16912,10 @@
 		(uuid "b456b380-d04a-4e11-8add-d1e2129fe3f4")
 	)
 	(no_connect
+		(at 904.24 72.39)
+		(uuid "b5e6e647-8890-4b1f-ba66-8cf95406ab7f")
+	)
+	(no_connect
 		(at 633.73 120.65)
 		(uuid "b842db30-44a6-40b8-8f84-c1ba977106da")
 	)
@@ -16698,8 +16924,24 @@
 		(uuid "b9986479-e629-44fa-a7e7-f177a93fb15e")
 	)
 	(no_connect
+		(at 938.53 87.63)
+		(uuid "bb7522c4-dec8-4168-ac96-8a4bf38e443b")
+	)
+	(no_connect
+		(at 869.95 64.77)
+		(uuid "bbfe0e19-953c-499e-9ff6-922271632ac8")
+	)
+	(no_connect
 		(at 728.98 109.22)
 		(uuid "c1572668-4f4c-4e39-a15d-e3eb18c674a4")
+	)
+	(no_connect
+		(at 915.67 68.58)
+		(uuid "c66c66e1-f048-44b2-9a7d-48eb922ce0e1")
+	)
+	(no_connect
+		(at 915.67 76.2)
+		(uuid "c6f52eff-5e0d-4fb1-b78d-737ea3ec5548")
 	)
 	(no_connect
 		(at 716.28 114.3)
@@ -16714,16 +16956,56 @@
 		(uuid "ca8f41c4-a84f-4be9-961f-fc7b31df5d78")
 	)
 	(no_connect
+		(at 915.67 91.44)
+		(uuid "cd1c0225-a111-4fab-aff9-ec494ee76585")
+	)
+	(no_connect
 		(at 618.49 118.11)
 		(uuid "d30dc981-d790-4271-b79f-7cd31375acd4")
+	)
+	(no_connect
+		(at 904.24 83.82)
+		(uuid "d65bfa0c-1e35-4b82-83cb-8a69a8d4453b")
+	)
+	(no_connect
+		(at 869.95 87.63)
+		(uuid "d6a93de7-92b0-44b0-bc08-1872911e9385")
 	)
 	(no_connect
 		(at 716.28 109.22)
 		(uuid "daba80a9-aaac-4751-8585-2fc981c5648f")
 	)
 	(no_connect
+		(at 858.52 80.01)
+		(uuid "dbc00606-a950-4aae-8add-9075ef577954")
+	)
+	(no_connect
 		(at 200.66 163.83)
 		(uuid "dce065d7-c66c-45f0-94d0-6433cc83d696")
+	)
+	(no_connect
+		(at 927.1 64.77)
+		(uuid "dd16198c-d222-4640-97a3-bde722651c55")
+	)
+	(no_connect
+		(at 869.95 91.44)
+		(uuid "de0c5eb5-a4ce-43f0-afd6-373f5d9c78c2")
+	)
+	(no_connect
+		(at 881.38 76.2)
+		(uuid "de98f311-ddaa-45dd-b267-c78c075361c2")
+	)
+	(no_connect
+		(at 892.81 60.96)
+		(uuid "de9caa7e-bf7d-4c06-a266-8f51f73274ed")
+	)
+	(no_connect
+		(at 915.67 72.39)
+		(uuid "dfdcb693-59b4-4578-9533-a0e31d6a772b")
+	)
+	(no_connect
+		(at 892.81 72.39)
+		(uuid "e19e6151-ef72-41dc-8e9e-938ec0350871")
 	)
 	(no_connect
 		(at 618.49 115.57)
@@ -16750,12 +17032,24 @@
 		(uuid "fa066607-3cc9-4a8c-b147-e6218579f7b1")
 	)
 	(no_connect
+		(at 904.24 87.63)
+		(uuid "fa5aeab1-b777-48db-b0df-93d23bd5cb76")
+	)
+	(no_connect
 		(at 200.66 158.75)
 		(uuid "fa5c0266-7185-4a2a-8ce3-bfdf82f9e922")
 	)
 	(no_connect
 		(at 728.98 121.92)
 		(uuid "fdabd3bc-1d82-4f74-8c77-057f36b6ccd4")
+	)
+	(no_connect
+		(at 927.1 68.58)
+		(uuid "ffb84608-c227-4444-9118-1e634a94f713")
+	)
+	(no_connect
+		(at 869.95 72.39)
+		(uuid "ffe5801c-e679-42f4-9230-d9508bb8efeb")
 	)
 	(bus_entry
 		(at 762 60.96)
@@ -19883,6 +20177,16 @@
 	)
 	(wire
 		(pts
+			(xy 441.96 342.9) (xy 441.96 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13f9012f-ac7e-4de4-ac13-0e696d4311b5")
+	)
+	(wire
+		(pts
 			(xy 149.86 441.96) (xy 87.63 441.96)
 		)
 		(stroke
@@ -21363,6 +21667,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 57.15) (xy 96.52 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34f7cfcd-c90e-456e-8808-9fe43bc5be23")
+	)
+	(wire
+		(pts
 			(xy 400.05 499.11) (xy 389.89 499.11)
 		)
 		(stroke
@@ -21920,6 +22234,16 @@
 			(type default)
 		)
 		(uuid "40dfc36e-02d7-4b8b-8c95-766264283cd8")
+	)
+	(wire
+		(pts
+			(xy 114.3 57.15) (xy 111.76 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e9014e-31da-44ff-8670-b0a42a5fea12")
 	)
 	(wire
 		(pts
@@ -22533,6 +22857,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 58.42) (xy 140.97 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd71e75-75ee-484d-9141-26ae79422986")
+	)
+	(wire
+		(pts
 			(xy 378.46 454.66) (xy 478.79 454.66)
 		)
 		(stroke
@@ -23073,6 +23407,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 74.93) (xy 96.52 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c162b49-2594-417f-8ce3-5b6426afc78c")
+	)
+	(wire
+		(pts
 			(xy 407.67 499.11) (xy 420.37 499.11)
 		)
 		(stroke
@@ -23353,6 +23697,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 58.42) (xy 114.3 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611dd0a5-4979-4f90-b71a-707a37030ce8")
+	)
+	(wire
+		(pts
 			(xy 661.67 346.71) (xy 699.77 346.71)
 		)
 		(stroke
@@ -23600,6 +23954,16 @@
 			(type default)
 		)
 		(uuid "665571aa-6fd6-49ee-883c-a5f4de9905df")
+	)
+	(wire
+		(pts
+			(xy 440.69 323.85) (xy 440.69 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671a2db4-b56a-4ac3-ac9d-df64ee390e63")
 	)
 	(wire
 		(pts
@@ -24403,7 +24767,7 @@
 	)
 	(wire
 		(pts
-			(xy 455.93 347.98) (xy 455.93 374.65)
+			(xy 455.93 347.98) (xy 455.93 369.57)
 		)
 		(stroke
 			(width 0)
@@ -25170,6 +25534,16 @@
 			(type default)
 		)
 		(uuid "8e4422c7-8851-4aea-888f-d5365d76ba58")
+	)
+	(wire
+		(pts
+			(xy 455.93 369.57) (xy 455.93 374.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ebb8fa7-d898-4acb-b7b3-c192f1c64e5c")
 	)
 	(wire
 		(pts
@@ -27283,6 +27657,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 73.66) (xy 95.25 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc74e101-8d4b-44ab-a886-9569cb57b523")
+	)
+	(wire
+		(pts
 			(xy 147.32 570.23) (xy 88.9 570.23)
 		)
 		(stroke
@@ -27520,6 +27904,16 @@
 			(type default)
 		)
 		(uuid "bf2b161a-2bc6-4b0a-ab8f-830096a6ab7b")
+	)
+	(wire
+		(pts
+			(xy 114.3 76.2) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf58a0e0-485b-4573-9ebb-875a7ff9c2e1")
 	)
 	(wire
 		(pts
@@ -27853,6 +28247,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 59.69) (xy 143.51 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9b51fc7-d8ac-40ee-b509-e962e56e449b")
+	)
+	(wire
+		(pts
 			(xy 340.36 575.31) (xy 172.72 575.31)
 		)
 		(stroke
@@ -28180,6 +28584,16 @@
 			(type default)
 		)
 		(uuid "d2fc492e-3f9c-4ddd-83d1-0815bb94ca9c")
+	)
+	(wire
+		(pts
+			(xy 95.25 55.88) (xy 95.25 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d30f0f52-15f4-49c9-98f9-1a94cd42b873")
 	)
 	(wire
 		(pts
@@ -29293,6 +29707,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 58.42) (xy 125.73 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c4f245-60e0-4d5b-83a1-8c3433e598b5")
+	)
+	(wire
+		(pts
 			(xy 763.27 391.16) (xy 763.27 367.03)
 		)
 		(stroke
@@ -29740,6 +30164,16 @@
 			(type default)
 		)
 		(uuid "ef914d19-e4dc-4d49-bd22-c8c47def9d48")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 111.76 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb84bb3-927a-49e3-acb4-25439ac34a1d")
 	)
 	(wire
 		(pts
@@ -30590,6 +31024,16 @@
 			(type default)
 		)
 		(uuid "ff746c8b-7cbb-4f7a-b875-2e5041269da7")
+	)
+	(wire
+		(pts
+			(xy 124.46 57.15) (xy 124.46 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa01ea4-6a93-48fa-8c76-144f4b6eafc6")
 	)
 	(wire
 		(pts
@@ -37682,6 +38126,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00205497-aab2-42db-ad4e-e68c03573b47")
+		(property "Reference" "J52"
+			(at 875.03 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4eb34eec-e9ff-4406-9ba7-52cad677ec0b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
 		(at 685.8 711.2 0)
 		(unit 3)
@@ -37785,6 +38296,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0138f470-805d-4a7d-ba00-f58f7f8a4a65")
+		(property "Reference" "J88"
+			(at 920.75 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b627c183-100b-4b79-89b1-37373272298f")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 497.84 717.55 90)
 		(unit 1)
@@ -37856,6 +38434,73 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02323c7d-3ab3-41df-8594-8245fbe91633")
+		(property "Reference" "J58"
+			(at 886.46 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c61e768e-e794-45e8-aec6-b8a5d6fc75ac")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J58")
 					(unit 1)
 				)
 			)
@@ -38116,6 +38761,73 @@
 			(project ""
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 455.93 369.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05c37806-c757-4199-8158-6f0926e3da84")
+		(property "Reference" "#FLG02"
+			(at 454.025 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 452.12 369.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 455.93 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 455.93 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 455.93 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "308e2417-a938-4ee2-bf4d-b82b7d86f8ba")
+		)
+		(instances
+			(project ""
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -38641,7 +39353,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
-		(at 440.69 320.04 90)
+		(at 440.69 318.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38650,7 +39362,7 @@
 		(fields_autoplaced yes)
 		(uuid "08eae8a3-ca70-4a9d-b252-82b80ba46f95")
 		(property "Reference" "J18"
-			(at 443.23 318.7699 90)
+			(at 443.23 317.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38659,7 +39371,7 @@
 			)
 		)
 		(property "Value" "XTAL1"
-			(at 443.23 321.3099 90)
+			(at 443.23 320.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38668,7 +39380,7 @@
 			)
 		)
 		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
-			(at 440.69 320.04 0)
+			(at 440.69 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38677,7 +39389,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 440.69 320.04 0)
+			(at 440.69 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38686,7 +39398,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 440.69 320.04 0)
+			(at 440.69 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38771,6 +39483,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0be39c1c-60c3-4f4c-a07d-264332b75635")
+		(property "Reference" "J93"
+			(at 932.18 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6780f13-c39e-497b-91a1-dcab86ef3dff")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J93")
 					(unit 1)
 				)
 			)
@@ -39374,6 +40153,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "139401a3-057c-4a8b-8cfe-f18fdd1d53ed")
+		(property "Reference" "#PWR0124"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5f2956a-03c8-4805-ab2c-4697b3448f50")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0124")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 716.28 171.45 0)
 		(mirror x)
@@ -39516,6 +40361,72 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 106.68 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1443f07b-2636-4d71-8daf-a8a663b0ba76")
+		(property "Reference" "J112"
+			(at 104.14 76.2001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e872a89-4a54-4a9b-be25-23538558f087")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 313.69 109.22 270)
 		(unit 1)
@@ -39644,6 +40555,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15851ff3-d617-487d-9c04-7b69fc95bcf6")
+		(property "Reference" "J95"
+			(at 932.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69be154d-7d81-47cc-b9cf-ee0e2a398764")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J95")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15f34c1d-2d19-48a3-9a44-cb41678a3747")
+		(property "Reference" "J44"
+			(at 875.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c00d5f7-a7b3-4b3a-bf17-b2ff9c4d011b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J44")
 					(unit 1)
 				)
 			)
@@ -40414,6 +41459,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f50878b-8046-4bb9-89f3-60d4554e8146")
+		(property "Reference" "J53"
+			(at 886.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "376473e9-d921-44d2-ad48-ec6f660cab7a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 462.28 49.53 0)
 		(unit 1)
@@ -40908,6 +42020,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "PA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22eb8eca-b56c-4f90-9bb5-3391629141c7")
+		(property "Reference" "J72"
+			(at 909.32 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b8e6bea-5b09-4e22-957d-adb7440842de")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J72")
 					(unit 1)
 				)
 			)
@@ -42112,6 +43291,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e3ff80d-25c1-4659-b1a4-4f9ec3c1a4bb")
+		(property "Reference" "J21"
+			(at 863.6 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed79157a-480b-464c-9a18-bce12e9716b0")
+		)
+		(instances
+			(project ""
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 132.08 184.15 90)
 		(unit 1)
@@ -42328,6 +43574,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30cd6c8e-6d45-435e-8efd-746d33b5016f")
+		(property "Reference" "J48"
+			(at 875.03 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56375f1e-7b77-4e11-88a1-faf2eac6d871")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 162.56 411.48 0)
 		(mirror y)
@@ -42395,6 +43708,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 124.46 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31d2a5f2-cfd0-4264-9ca3-43deb36f4a18")
+		(property "Reference" "#PWR0125"
+			(at 124.46 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 124.46 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3478ebd5-f419-4c18-b190-b0797b19db1e")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 251.46 34.29 0)
 		(unit 1)
@@ -42455,6 +43834,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "341118c7-4d53-4553-929a-494b02ec030b")
+		(property "Reference" "J85"
+			(at 920.75 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1fb5ab3-8cfd-4181-bc24-d0b6f47aef3c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J85")
 					(unit 1)
 				)
 			)
@@ -42794,6 +44240,72 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "Y2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 106.68 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36e10ca8-4e88-4cd9-888e-791ad40ebfb8")
+		(property "Reference" "J111"
+			(at 104.14 58.4201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c356685-0e35-4623-aedc-1c6f87f41712")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J111")
 					(unit 1)
 				)
 			)
@@ -43952,6 +45464,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 95.25 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4174a504-d0c8-4a84-a6a8-bc17ec3c38c6")
+		(property "Reference" "#PWR0123"
+			(at 95.25 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdba1dce-961c-4237-8c28-7e411e3a66d9")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0123")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 565.15 631.19 0)
 		(unit 1)
@@ -44605,6 +46183,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "493936dc-421e-42e7-8404-59108ca0ff0f")
+		(property "Reference" "J103"
+			(at 943.61 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99479614-6328-4d70-a7db-afae708f370a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x32_Odd_Even")
 		(at 721.36 83.82 0)
 		(unit 1)
@@ -45030,6 +46675,140 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a9e9b7f-310c-4a9d-81cb-880fd9ce1df0")
+		(property "Reference" "J99"
+			(at 943.61 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37863524-b9e2-4784-9c1a-4cce573f4516")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J99")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ae4ae81-da6f-4c2a-be0e-649df2873adf")
+		(property "Reference" "J47"
+			(at 875.03 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2744fcfe-e22e-4373-9395-d92de2294f1d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:AVR-ISP-6")
 		(at 328.93 265.43 0)
 		(unit 1)
@@ -45106,6 +46885,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c33b248-edbd-4bd5-a55b-b9aaf799747f")
+		(property "Reference" "J65"
+			(at 897.89 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "773941e0-293a-4748-921a-a50a37828f7a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d9b3881-e295-4c85-82c9-c8a232967f57")
+		(property "Reference" "J60"
+			(at 886.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81b87e8e-f49b-4ac6-81e6-3df63334b9da")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J60")
 					(unit 1)
 				)
 			)
@@ -45189,6 +47102,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4df05d36-1d45-4250-aa3a-be3a3910f170")
+		(property "Reference" "J71"
+			(at 909.32 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0fc09bf-d8d4-4654-96c3-3e9817f8a2f2")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 430.53 69.85 0)
 		(unit 1)
@@ -45249,6 +47229,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f4b5368-3e31-4f9d-8873-1326ef373a5f")
+		(property "Reference" "J84"
+			(at 920.75 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82977326-1d5a-4884-82af-5b959c19a06a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J84")
 					(unit 1)
 				)
 			)
@@ -45820,6 +47867,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5541547b-a6eb-4728-8884-26899cc78f12")
+		(property "Reference" "J92"
+			(at 932.18 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48858098-fb13-466d-9cbc-bd5aa23cafac")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 417.83 73.66 0)
 		(unit 1)
@@ -45884,6 +47998,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "Cx11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 130.81 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55c2d781-f26c-465b-b8cb-4e4aafadf73a")
+		(property "Reference" "J107"
+			(at 133.35 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 128.27 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1c6a8e7-0dd0-4b86-9b5e-6b73da56f86d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J107")
 					(unit 1)
 				)
 			)
@@ -46022,6 +48203,140 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57358001-306c-46ce-b346-574290ec3c56")
+		(property "Reference" "J89"
+			(at 932.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13b00d50-e0c0-4a03-ba5e-b5a99be2baaa")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "575defbf-5868-40b2-8973-a015f212776f")
+		(property "Reference" "J61"
+			(at 886.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a0edc8b-000f-4ded-9554-1a016becfc58")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 605.79 431.8 0)
 		(unit 1)
@@ -46154,6 +48469,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "Cx13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57d4a715-4d50-4277-967f-6d41418ba826")
+		(property "Reference" "J104"
+			(at 943.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb4c408e-3391-40dd-bfed-de5af78d22c7")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J104")
 					(unit 1)
 				)
 			)
@@ -46565,6 +48947,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ac90e46-14ef-4caa-9a72-b0123e25316d")
+		(property "Reference" "J97"
+			(at 932.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "326e6e93-ed70-4296-bca8-10aa2b5931b9")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Crystal")
 		(at 434.34 334.01 90)
 		(unit 1)
@@ -46629,6 +49078,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5af79764-dde6-4279-b504-5a5c533606d0")
+		(property "Reference" "J50"
+			(at 875.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edd817b3-5f6e-482b-8836-b052fa386248")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J50")
 					(unit 1)
 				)
 			)
@@ -48680,6 +51196,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fde9757-9198-41da-bd41-c866e11cea8b")
+		(property "Reference" "J69"
+			(at 897.89 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78274359-9f2a-44d1-a7c0-0991515d7a4f")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 246.38 768.35 0)
 		(unit 1)
@@ -48816,6 +51399,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70d4dc8e-e711-4149-8655-689aa4af80ef")
+		(property "Reference" "J64"
+			(at 897.89 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db21af7c-aa5b-4ce5-9a56-bd5c4d357c0c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 175.26 245.11 0)
 		(unit 1)
@@ -48883,6 +51533,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "722602ce-ea5e-4b44-ba9d-e0a891e9051a")
+		(property "Reference" "J55"
+			(at 886.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d06d9b2-5242-4444-95ea-032ce97f806e")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 160.02 541.02 0)
 		(mirror y)
@@ -48944,6 +51661,73 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7358db53-d931-4f42-814d-749963d18d1f")
+		(property "Reference" "J101"
+			(at 943.61 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05485e3c-369b-42c9-8dd5-e22c21ae3629")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -49080,6 +51864,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "768b42ae-8c1f-48b8-a356-9c64ee56a3c4")
+		(property "Reference" "J90"
+			(at 932.18 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33c76ee6-ad24-4e19-a51f-5d09472df278")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J90")
 					(unit 1)
 				)
 			)
@@ -49349,6 +52200,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7abf0976-b4ac-4c91-a0c5-50a5270b4ebf")
+		(property "Reference" "J98"
+			(at 943.61 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb0e403f-b637-420f-9dad-95434e7f7c4c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J98")
 					(unit 1)
 				)
 			)
@@ -49753,6 +52671,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ba5a368-cc61-45aa-be45-084be406bc48")
+		(property "Reference" "J22"
+			(at 863.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03bdce75-967d-431b-81e5-944fa1c0d4eb")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
 		(at 472.44 353.06 270)
 		(mirror x)
@@ -50124,6 +53109,274 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "PE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fc1a55c-59ba-42ca-94f1-f70a965acce3")
+		(property "Reference" "J87"
+			(at 920.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6aa954e-27a8-4084-a4f7-0e917041ad11")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "801568d9-a1cd-475a-8794-81b7024b5c26")
+		(property "Reference" "J79"
+			(at 909.32 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58b4614e-f15e-4480-ab1a-7511a2a7ced7")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8053f35c-a5b5-4fa9-a849-f057a3426b78")
+		(property "Reference" "J105"
+			(at 943.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8a14204-ec0b-4776-bd44-a1e2a24af34d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80a0f39f-49b9-4d4b-9c56-88786631e693")
+		(property "Reference" "J39"
+			(at 863.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b240b8f4-caa2-476d-a2bb-e6c14cb79ce5")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J39")
 					(unit 1)
 				)
 			)
@@ -50744,6 +53997,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a1d61c4-6abd-4969-ab39-5d442b059ef7")
+		(property "Reference" "J106"
+			(at 943.61 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1181c42a-32c2-4bc0-8e87-abdf24ee8259")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 199.39 92.71 0)
 		(unit 1)
@@ -50876,6 +54196,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "JP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ac8456d-1abb-4f88-8bbd-ea8954c270fa")
+		(property "Reference" "J100"
+			(at 943.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00bd15fd-33cd-43c0-a4ec-6c672e3fea03")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b172297-234e-4d2f-9a49-ec6b3b1c7e8b")
+		(property "Reference" "J37"
+			(at 863.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3ad2dd1-cfac-4e19-b5ac-219686404d6c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J37")
 					(unit 1)
 				)
 			)
@@ -51369,6 +54823,140 @@
 			(project ""
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90ed3e50-8307-4938-be39-02b425aba9f6")
+		(property "Reference" "J51"
+			(at 875.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca0576bf-d2ad-4908-bacd-c9a994a61881")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9176d7a4-ede4-4400-aa50-f14c48070237")
+		(property "Reference" "J54"
+			(at 886.46 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89a62732-ce9a-4c09-916f-9238b49c3a73")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J54")
 					(unit 1)
 				)
 			)
@@ -52110,6 +55698,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99999f0c-d1d5-4616-b0d1-beb24a87fa04")
+		(property "Reference" "J46"
+			(at 875.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aab178e-5708-4436-ba63-022e4b950652")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 236.22 711.2 0)
 		(unit 1)
@@ -52449,6 +56104,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ced1857-c076-4f62-bf25-282d6a93221b")
+		(property "Reference" "J77"
+			(at 909.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e880199a-c3ba-4158-a815-e2682d39e74e")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 254 92.71 0)
 		(unit 1)
@@ -52585,6 +56307,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "JP99")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0c5101d-cb60-412f-92d5-a1c3ffa9d8bb")
+		(property "Reference" "J68"
+			(at 897.89 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d09c5c1c-7e34-48e3-b720-d51010e6ed2d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J68")
 					(unit 1)
 				)
 			)
@@ -52790,7 +56579,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
-		(at 441.96 346.71 270)
+		(at 441.96 347.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -52799,7 +56588,7 @@
 		(fields_autoplaced yes)
 		(uuid "a325a600-4d00-487b-a7ef-845ec8038ce2")
 		(property "Reference" "J16"
-			(at 444.5 345.4399 90)
+			(at 444.5 346.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52808,7 +56597,7 @@
 			)
 		)
 		(property "Value" "XTAL2"
-			(at 444.5 347.9799 90)
+			(at 444.5 349.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52817,7 +56606,7 @@
 			)
 		)
 		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
-			(at 441.96 346.71 0)
+			(at 441.96 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52826,7 +56615,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 441.96 346.71 0)
+			(at 441.96 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52835,7 +56624,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 441.96 346.71 0)
+			(at 441.96 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52916,6 +56705,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a40e393d-2e0e-46c8-92c2-6e51f6560727")
+		(property "Reference" "J78"
+			(at 909.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48d95bcc-33b0-4161-85fb-a57b5faaa1a4")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J78")
 					(unit 1)
 				)
 			)
@@ -53120,6 +56976,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 943.61 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a669e411-4909-46aa-9061-e8493b01bf1d")
+		(property "Reference" "J102"
+			(at 943.61 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 946.15 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 943.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 943.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 943.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b28bfe79-c36e-4765-930b-c156db472719")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J102")
 					(unit 1)
 				)
 			)
@@ -53470,6 +57393,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "JP100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abf27845-430b-4608-b35b-5f16934ad9b6")
+		(property "Reference" "J70"
+			(at 897.89 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd265b31-b9df-41fb-a5ff-810d4e720987")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J70")
 					(unit 1)
 				)
 			)
@@ -53923,6 +57913,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aebab5d2-634b-453b-950b-0f1b42a0633a")
+		(property "Reference" "J94"
+			(at 932.18 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fdeb2d62-9227-48c7-8ba6-ce5fd1d889a3")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J94")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
 		(at 367.03 181.61 180)
 		(unit 1)
@@ -53997,6 +58054,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af8116ac-2635-41a8-b721-65bb4a9c0c71")
+		(property "Reference" "J40"
+			(at 863.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "487fa42b-a531-408a-b053-a8be9a00be73")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J40")
 					(unit 1)
 				)
 			)
@@ -54219,6 +58343,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 101.6 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2f1d4bf-7bd1-4a85-beb3-20db002616b8")
+		(property "Reference" "J109"
+			(at 104.14 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 99.06 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 101.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3f1ce61-148c-4ff3-a136-b495249c9f1c")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 347.98 71.12 90)
 		(unit 1)
@@ -54347,6 +58538,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b468fd0f-9269-4706-85da-cfdea70d89ff")
+		(property "Reference" "J59"
+			(at 886.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50e598cf-0556-40a7-8462-1207d1ccf7d0")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J59")
 					(unit 1)
 				)
 			)
@@ -54823,6 +59081,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 114.3 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b83d3df5-8b02-4c2c-b203-583246f3dfb3")
+		(property "Reference" "#PWR0127"
+			(at 114.3 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b2a0c54-e09b-4fad-bcc9-cc86fb1f4363")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 645.16 685.8 0)
 		(unit 1)
@@ -55116,6 +59440,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba4bea27-73d7-4b9a-860a-e415679dca17")
+		(property "Reference" "J91"
+			(at 932.18 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cca18d61-4ef6-48af-918e-d8ad679d17e3")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 95.25 732.79 0)
 		(unit 1)
@@ -55176,6 +59567,73 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb351f9a-fd9b-4ab1-bff9-ac36c1784fad")
+		(property "Reference" "J81"
+			(at 920.75 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45e108b0-7c1a-4380-bb85-f30b904667c7")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J81")
 					(unit 1)
 				)
 			)
@@ -55977,6 +60435,140 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 101.6 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c39fd1a2-f84c-4cc7-b1f7-ac63e56b2786")
+		(property "Reference" "J110"
+			(at 104.14 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 99.06 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5debea95-31ed-4370-9a38-412096f9529d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4330f42-9d95-4601-8304-e4a1b7d857b0")
+		(property "Reference" "J75"
+			(at 909.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b90ea42e-3996-4a77-b2f7-aba9e5be9c08")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Mini-DIN-6")
 		(at 85.09 698.5 0)
 		(unit 1)
@@ -56227,6 +60819,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6294ccb-d22d-4849-b0b3-3280632d0601")
+		(property "Reference" "J62"
+			(at 897.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eea38320-455c-4637-a93c-c71f046c0500")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 403.86 403.86 0)
 		(unit 1)
@@ -56365,6 +61024,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9319a35-9331-48a4-b6b2-307d12a86cba")
+		(property "Reference" "J82"
+			(at 920.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48af9e16-ebad-4796-99f0-5b4d717908d8")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 403.86 511.81 90)
 		(unit 1)
@@ -56429,6 +61155,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca8f0683-2ddd-4760-8125-36550377ee9e")
+		(property "Reference" "J74"
+			(at 909.32 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f660a24-0bc1-4b5b-b12c-8101e2ccabdc")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J74")
 					(unit 1)
 				)
 			)
@@ -56680,6 +61473,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 114.3 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb486ffe-9c49-4dd6-8055-e8607acc18b1")
+		(property "Reference" "#PWR0128"
+			(at 114.3 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc35e171-8a1e-494b-8218-75a4f6507877")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 332.74 71.12 270)
 		(unit 1)
@@ -56741,6 +61600,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc0d11eb-fc1d-4526-8840-6b846e291002")
+		(property "Reference" "J73"
+			(at 909.32 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88a6498c-4a2d-4c6a-af0c-d7c864281e6d")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J73")
 					(unit 1)
 				)
 			)
@@ -56884,6 +61810,72 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 135.89 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdf83881-b060-408b-93ed-d0d1772c7102")
+		(property "Reference" "J108"
+			(at 133.35 59.6901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 135.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 135.89 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c631cf8f-6d3f-4bd0-8eab-c552c0de6483")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J108")
 					(unit 1)
 				)
 			)
@@ -57672,6 +62664,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d67ab0ef-7f4c-4e23-b0ab-9be72e8c93cd")
+		(property "Reference" "J49"
+			(at 875.03 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b0aab81-c646-4332-ad9b-964a28dcd5f1")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:SolderJumper_3_Open")
 		(at 651.51 177.8 0)
 		(mirror x)
@@ -57738,6 +62797,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "JP104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d761f5f7-3303-4324-8373-4844151b1ecc")
+		(property "Reference" "J83"
+			(at 920.75 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0cef387-9882-4672-9a94-70f6ef4cac7e")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d79da22d-8819-413d-b09a-1167c5feff80")
+		(property "Reference" "J41"
+			(at 863.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "585bd46b-886d-401c-9712-f43739e678d4")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J41")
 					(unit 1)
 				)
 			)
@@ -57871,6 +63064,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d88e2309-b4fb-449d-a6a4-b21f2a24b0b2")
+		(property "Reference" "J86"
+			(at 920.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ff3f8c8-7ddb-426f-91ee-e4b20ee30919")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 909.32 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8a3ad1d-7e29-438d-afd8-cbfc8f0730cb")
+		(property "Reference" "J76"
+			(at 909.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 911.86 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 909.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 909.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 909.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07960a8b-4de4-42bf-bf6a-e63f279dbb89")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J76")
 					(unit 1)
 				)
 			)
@@ -58026,6 +63353,73 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da80baa5-8c67-455e-9794-46f72ab6f89e")
+		(property "Reference" "J56"
+			(at 886.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0e3a5ab-426a-483e-b670-45b7605d521b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J56")
 					(unit 1)
 				)
 			)
@@ -59244,6 +64638,207 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 875.03 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8e3b3c5-d57c-408e-abb7-c3d2a6b54947")
+		(property "Reference" "J45"
+			(at 875.03 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 877.57 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 875.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 875.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 875.03 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74f7db45-b514-4a5d-83dd-efe2d44d90ee")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e96fe016-1b38-41db-a2c4-c5587120c8b0")
+		(property "Reference" "J63"
+			(at 897.89 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db039f91-1779-4170-bc7a-edd0b2f7ef4b")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 920.75 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9943f99-8feb-492b-8e32-3ed9c8b41cad")
+		(property "Reference" "J80"
+			(at 920.75 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 923.29 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 920.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 920.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 920.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29ced36a-463c-48cc-9b61-e2f7788e12ae")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J80")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC14")
 		(at 684.53 632.46 0)
 		(unit 6)
@@ -59343,6 +64938,73 @@
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "U2")
 					(unit 6)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 886.46 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eaabd03c-ec03-4cde-8458-17161c8ae95a")
+		(property "Reference" "J57"
+			(at 886.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 889 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 886.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 886.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 886.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e233091c-2bfc-4ac8-8edc-49bcdd4a9cf7")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J57")
+					(unit 1)
 				)
 			)
 		)
@@ -60753,6 +66415,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 932.18 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4ca1a60-caca-411c-a033-2b51f105c750")
+		(property "Reference" "J96"
+			(at 932.18 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 934.72 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 932.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 932.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 932.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10cab861-efb6-47b2-8840-7b03ea63a10a")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J96")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 478.79 756.92 0)
 		(unit 1)
@@ -61045,6 +66774,73 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9bf2bd1-3ac6-4c99-98e8-9b8d6d881702")
+		(property "Reference" "J43"
+			(at 863.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1b26814-6348-4e3d-bc73-3dfdc028b7cb")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 335.28 223.52 270)
 		(unit 1)
@@ -61170,6 +66966,140 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbb5438f-df58-4db0-8e70-71f52c41533d")
+		(property "Reference" "J67"
+			(at 897.89 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7f9369-e28a-4f33-8acd-5b77948dfbb9")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc94049c-d052-461d-a034-2108dad3f363")
+		(property "Reference" "J38"
+			(at 863.6 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9c12714-058e-4b84-af04-0902427f2300")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J38")
 					(unit 1)
 				)
 			)
@@ -61303,6 +67233,140 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 95.25 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe99a969-8e9a-4099-8cf5-65f11df04395")
+		(property "Reference" "#PWR0126"
+			(at 95.25 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 95.25 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac30b624-e93a-4a06-9107-59c2cd9c6afa")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 897.89 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe9e3810-fee2-4135-a598-ffa57a7be438")
+		(property "Reference" "J66"
+			(at 897.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 900.43 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 897.89 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 897.89 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 897.89 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14c2b262-218d-4a6a-99b0-c7bd4fb78dad")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J66")
 					(unit 1)
 				)
 			)
@@ -61447,6 +67511,73 @@
 			(project "MHF-001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "Cx2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Gilhad_symbols:Conn_01x01")
+		(at 863.6 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffa2aeaf-bfd5-4597-8f56-db6ae2071ac7")
+		(property "Reference" "J42"
+			(at 863.6 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "x"
+			(at 866.14 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(at 863.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 863.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 863.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5dfce7e-22d3-4532-8171-395d65d76af2")
+		)
+		(instances
+			(project "MHF-001"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "J42")
 					(unit 1)
 				)
 			)
