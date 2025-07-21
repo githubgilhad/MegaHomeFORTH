@@ -3,6 +3,77 @@
 How to use 24 bits addresses
 ===============================
 
+* there are `lo8(symbol)`, `hi8(symbol)` and `hlo8(symbol)` for splitting address
+* also `pm(symbol)` and `gs(symbol)` which should divide by 2 to get address in FLASH words
+* see `<https://sourceware.org/binutils/docs/as/AVR_002dModifiers.html>`__
+
+9.5.2.3 Relocatable Expression Modifiers
+----------------------------------------
+
+The assembler supports several modifiers when using relocatable addresses in AVR instruction operands. The general syntax is the following:
+
+modifier(relocatable-expression)
+
+lo8
+
+	This modifier allows you to use bits 0 through 7 of an address expression as an 8 bit relocatable expression.
+hi8
+
+	This modifier allows you to use bits 7 through 15 of an address expression as an 8 bit relocatable expression. This is useful with, for example, the AVR ‘ldi’ instruction and ‘lo8’ modifier.
+
+	For example
+
+
+.. code::
+
+	ldi r26, lo8(sym+10)
+	ldi r27, hi8(sym+10)
+
+hh8
+
+	This modifier allows you to use bits 16 through 23 of an address expression as an 8 bit relocatable expression. Also, can be useful for loading 32 bit constants.
+hlo8
+
+	Synonym of ‘hh8’.
+hhi8
+
+	This modifier allows you to use bits 24 through 31 of an expression as an 8 bit expression. This is useful with, for example, the AVR ‘ldi’ instruction and ‘lo8’, ‘hi8’, ‘hlo8’, ‘hhi8’, modifier.
+
+	For example
+
+
+.. code::
+
+	ldi r26, lo8(285774925)
+	ldi r27, hi8(285774925)
+	ldi r28, hlo8(285774925)
+	ldi r29, hhi8(285774925)
+	; r29,r28,r27,r26 = 285774925
+
+pm_lo8
+
+	This modifier allows you to use bits 0 through 7 of an address expression as an 8 bit relocatable expression. This modifier is useful for addressing data or code from Flash/Program memory by two-byte words. The use of ‘pm_lo8’ is similar to ‘lo8’.
+pm_hi8
+
+	This modifier allows you to use bits 8 through 15 of an address expression as an 8 bit relocatable expression. This modifier is useful for addressing data or code from Flash/Program memory by two-byte words.
+
+	For example, when setting the AVR ‘Z’ register with the ‘ldi’ instruction for subsequent use by the ‘ijmp’ instruction:
+
+
+.. code::
+
+	ldi r30, pm_lo8(sym)
+	ldi r31, pm_hi8(sym)
+	ijmp
+
+pm_hh8
+
+	This modifier allows you to use bits 15 through 23 of an address expression as an 8 bit relocatable expression. This modifier is useful for addressing data or code from Flash/Program memory by two-byte words.
+
+
+old
+-----
+
 I did not found simple way in **avr-gcc** or **avr-as** 
 
 * `.long symbol` make 32 bit address, not shorter
