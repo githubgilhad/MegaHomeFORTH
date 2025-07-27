@@ -9,22 +9,29 @@
 	kΩ
 
 
-.. image:: MemxFORTHChipandColorfulStack.png
+.. image:: ../../MemxFORTHChipandColorfulStack.png
 	:width: 250
-	:target: MemxFORTHChipandColorfulStack.png
+	:target: ../../MemxFORTHChipandColorfulStack.png
 
-MegaHomeFORTH
-=============
+MegaHomeFORTH - MHF-001
+========================
 
 Mega Home Computer with FORTH on ATmega2560 - step to graphic card for HD6309 - VGA, RCA, PS/2 - see `Larger Picture`_
 
 This project is more about the HW part of solution (but with enought SW to be fully tested and expanded (will be build on the way)).
+
+This is first PCB manufactured.
+
+See `<../../HW/KiCad/MHF-001/>`_
+
 
 Index
 -----
 
 - `MegaHomeFORTH`_
 	- `Project Goals`_
+	- `Also discovered`_
+	- `Errata`_
 	- `Larger Picture`_
 	- `Progress`_
 
@@ -47,6 +54,19 @@ Depending on how much components will be soldered to the PCB, it could offer man
 In full power it can serve as SBC (Single Board Computer) - or as inteligent Video+Keyboard card for 8 bit computer.
 
 
+Also discovered
+================
+
+* VGA timing `<../VGA/>`_
+* SDA card `<../../HW/Foto/SD_card/>`_
+* Arduino Mega Pro - ATmega2560 `<../../HW/KiCad/ATmega2560-MegaPro-001/>`_
+
+Errata
+======
+
+* It would be better to switch `X16` and `CTS` lines, so `CTS` could use interrupt on low. (CTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
+* LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
+* for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 
 Larger Picture
 ===============
@@ -67,8 +87,6 @@ Video part was successfully tested on `NanoHomeComputer <https://github.com/gith
 
 Progress
 ========
-
-`MHF-001 <docs/MHF-001/>`__
 
 Soldering parts and testing.
 
