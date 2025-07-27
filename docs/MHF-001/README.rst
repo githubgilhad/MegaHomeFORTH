@@ -118,7 +118,7 @@ Next steps:
 
 Something works now: |DSC_8303.s.jpg|
 
-see `Progress <docs/Progress.rst>`__ and `Journal <docs/Journal.rst>`__
+see `Progress <../Progress.rst>`__ and `Journal <docs/Journal.rst>`__
 
 I have some ideas, but it would need lot of work to bring it into life
 
@@ -128,57 +128,57 @@ I have some ideas, but it would need lot of work to bring it into life
 
 |Idea_003| |Idea_003_a| |Idea_003_b.png|
 
-.. |Idea_001| image:: docs/Idea_001.png
+.. |Idea_001| image:: ../Idea_001.png
 	:width: 250
-	:target: docs/Idea_001.png
+	:target: ../Idea_001.png
 
-.. |Idea_002| image:: docs/Idea_002.png
+.. |Idea_002| image:: ../Idea_002.png
 	:width: 250
-	:target: docs/Idea_002.png
+	:target: ../Idea_002.png
 
-.. |Idea_003| image:: docs/Idea_003.png
+.. |Idea_003| image:: ../Idea_003.png
 	:width: 250
-	:target: docs/Idea_003.png
+	:target: ../Idea_003.png
 
 
-.. |Idea_001_a| image:: docs/Idea_001_a.png
+.. |Idea_001_a| image:: ../Idea_001_a.png
 	:width: 250
-	:target: docs/Idea_001_a.png
+	:target: ../Idea_001_a.png
 
-.. |Idea_002_a| image:: docs/Idea_002_a.png
+.. |Idea_002_a| image:: ../Idea_002_a.png
 	:width: 250
-	:target: docs/Idea_002_a.png
+	:target: ../Idea_002_a.png
 
-.. |Idea_003_a| image:: docs/Idea_003_a.png
+.. |Idea_003_a| image:: ../Idea_003_a.png
 	:width: 250
-	:target: docs/Idea_003_a.png
+	:target: ../Idea_003_a.png
 
 
 
-.. |Idea_001_b.png| image:: docs/Idea_001_b.png
-	:width: 250
-	:align: top
-	:target: docs/Idea_001_b.png
-
-.. |Idea_002_b.png| image:: docs/Idea_002_b.png
+.. |Idea_001_b.png| image:: ../Idea_001_b.png
 	:width: 250
 	:align: top
-	:target: docs/Idea_002_b.png
+	:target: ../Idea_001_b.png
 
-.. |Idea_003_b.png| image:: docs/Idea_003_b.png
+.. |Idea_002_b.png| image:: ../Idea_002_b.png
 	:width: 250
 	:align: top
-	:target: docs/Idea_003_b.png
+	:target: ../Idea_002_b.png
 
-.. |DSC_8303.s.jpg| image:: docs/VGA/DSC_8303.s.jpg
+.. |Idea_003_b.png| image:: ../Idea_003_b.png
 	:width: 250
 	:align: top
-	:target: docs/VGA/DSC_8303.s.jpg
+	:target: ../Idea_003_b.png
 
-.. |ascii.jpg| image:: ascii.jpg
+.. |DSC_8303.s.jpg| image:: ../VGA/DSC_8303.s.jpg
 	:width: 250
 	:align: top
-	:target: ascii.jpg
+	:target: ../VGA/DSC_8303.s.jpg
+
+.. |ascii.jpg| image:: ../../ascii.jpg
+	:width: 250
+	:align: top
+	:target: ../../ascii.jpg
 
 License
 -------
