@@ -13,6 +13,8 @@
 	:width: 250
 	:target: ../../MemxFORTHChipandColorfulStack.png
 
+Many thanks to `PCBway <https://www.pcbway.com/>`__, which sponsored this project by manufacturing the PCB for free. The code for this PCB is **W828834AS5P3** and I will create it as free project after I populate it with all parts and get it to work somehow (= I will write SW for demonstrating at least some functionality).
+
 MegaHomeFORTH - MHF-001
 ========================
 
@@ -40,7 +42,7 @@ Project Goals
 
 Depending on how much components will be soldered to the PCB, it could offer many things (at cost of using some pins):
 
-- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins
+- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins |DSC_8304.s.jpg| |DSC_8305.s.jpg|  `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__ 
 - USB serial connection - 2 pins
 - memory extended to 64 kB RAM - at cost of 16+4 pins
 - another 128 kB RAM (somehow) accessible - another 24+3 pins
@@ -67,6 +69,7 @@ Errata
 * It would be better to switch `X16` and `CTS` lines, so `CTS` could use interrupt on low. (CTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 * LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
+* `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
 
 Larger Picture
 ===============
@@ -110,7 +113,8 @@ Done:
 
 Next steps:
 
-* solder component
+* solder component |DSC_8304.s.jpg| |DSC_8305.s.jpg|
+
 * test each goal
 * physical tests
 * programming
@@ -179,6 +183,17 @@ I have some ideas, but it would need lot of work to bring it into life
 	:width: 250
 	:align: top
 	:target: ../../ascii.jpg
+
+
+.. |DSC_8304.s.jpg| image:: DSC_8304.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8304.s.jpg
+
+.. |DSC_8305.s.jpg| image:: DSC_8305.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8305.s.jpg
 
 License
 -------

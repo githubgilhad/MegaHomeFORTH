@@ -13,6 +13,8 @@
 	:width: 250
 	:target: MemxFORTHChipandColorfulStack.png
 
+Many thanks to `PCBway <https://www.pcbway.com/>`__, which sponsored this project by manufacturing the PCB for free. The code for this PCB is **W828834AS5P3** and I will create it as free project after I populate it with all parts and get it to work somehow (= I will write SW for demonstrating at least some functionality).
+
 MegaHomeFORTH
 =============
 
@@ -33,7 +35,7 @@ Project Goals
 
 Depending on how much components will be soldered to the PCB, it could offer many things (at cost of using some pins):
 
-- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins
+- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins |DSC_8304.s.jpg| |DSC_8305.s.jpg|  `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__ 
 - USB serial connection - 2 pins
 - memory extended to 64 kB RAM - at cost of 16+4 pins
 - another 128 kB RAM (somehow) accessible - another 24+3 pins
@@ -92,7 +94,8 @@ Done:
 
 Next steps:
 
-* solder component
+* solder component |DSC_8304.s.jpg| |DSC_8305.s.jpg|
+
 * test each goal
 * physical tests
 * programming
@@ -161,6 +164,17 @@ I have some ideas, but it would need lot of work to bring it into life
 	:width: 250
 	:align: top
 	:target: ascii.jpg
+
+
+.. |DSC_8304.s.jpg| image:: docs/MHF-001/DSC_8304.s.jpg
+	:width: 250
+	:align: top
+	:target: docs/MHF-001/DSC_8304.s.jpg
+
+.. |DSC_8305.s.jpg| image:: docs/MHF-001/DSC_8305.s.jpg
+	:width: 250
+	:align: top
+	:target: docs/MHF-001/DSC_8305.s.jpg
 
 License
 -------
