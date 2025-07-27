@@ -68,7 +68,7 @@ Video part was successfully tested on `NanoHomeComputer <https://github.com/gith
 Progress
 ========
 
-Working concept of VGA.
+Soldering parts and testing.
 
 Done:
 
@@ -79,9 +79,6 @@ Done:
 * map timers in NanoHomeComputer
 * assign VGA/RCA/PS2 pins to ATmega2560
 * test VGA output
-
-Next steps:
-
 * test RCA output
 * test PS/2 direct input
 * test PS/2 8bit input
@@ -90,6 +87,9 @@ Next steps:
 * draw PCB
 * order PCB
 * get PCB manufactured
+
+Next steps:
+
 * solder component
 * test each goal
 * physical tests
