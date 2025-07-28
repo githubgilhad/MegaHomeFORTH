@@ -33,7 +33,7 @@ Index
 - `MegaHomeFORTH`_
 	- `Project Goals`_
 	- `Also discovered`_
-	- `Errata`_
+	- `Errata and Improvements`_
 	- `Larger Picture`_
 	- `Progress`_
 
@@ -63,13 +63,14 @@ Also discovered
 * SDA card `<../../HW/Foto/SD_card/>`_
 * Arduino Mega Pro - ATmega2560 `<../../HW/KiCad/ATmega2560-MegaPro-001/>`_
 
-Errata
-======
+Errata and Improvements
+========================
 
 * It would be better to switch `X16` and `CTS` lines, so `CTS` could use interrupt on low. (CTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 * LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
+* make my own footprints with longer pads for SMD ICs to make soldering easier
 
 Larger Picture
 ===============
