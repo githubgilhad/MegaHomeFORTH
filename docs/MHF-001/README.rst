@@ -66,8 +66,16 @@ Also discovered
 Errata and Improvements
 ========================
 
+* The transistor is `S8050`, not BC107
+* the Inside capacitor is `10 nF`, not 100pF
+* the resistor is 20 |kOhm|, no 3k3/22k
+* (and maybe it does not matter)
+* I destroyed the reset button when unsoldering it, so I improvised and used clasical Arduino pushbutton, bend its legs and solder it there - it works
+* I left blink program inside, while soldering all gates chips, which is bad, as there are outputs too. So I hold the reset, until I ISPloaded new program.
+* I also destroyed USB connector while desoldering it, so I bought some replacements, should arrive after month or so ... I may iprovise normal Serial connection or something else.
 * It would be better to switch `X16` and `CTS` lines, so `CTS` could use interrupt on low. (CTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 * LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
+* LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
 * make my own footprints with longer pads for SMD ICs to make soldering easier
