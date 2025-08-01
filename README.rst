@@ -22,6 +22,8 @@ Mega Home Computer with FORTH on ATmega2560 - step to graphic card for HD6309 - 
 
 This project is more about the HW part of solution (but with enought SW to be fully tested and expanded (will be build on the way)).
 
+Look at `MHF-001 <docs/MHF-001/>`__ for actual progress just now
+
 Index
 -----
 
@@ -94,9 +96,9 @@ Done:
 
 Next steps:
 
-* solder component |DSC_8304.s.jpg| |DSC_8305.s.jpg|
+* solder component |DSC_8304.s.jpg| |DSC_8305.s.jpg| ... see `MHF-001 <docs/MHF-001/>`__
 
-* test each goal
+* test each goal ... see `MHF-001 <docs/MHF-001/>`__
 * physical tests
 * programming
 * enjoy :)

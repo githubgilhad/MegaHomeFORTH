@@ -121,11 +121,25 @@ Done:
 * order PCB
 * get PCB manufactured `<HW/KiCad/MHF-001/output.zip>`_
 
+
+* solder component - first we re-use what we have on Arduino Mega Pro (I will use some spacer screws to keep it from contact with table while testing):
+	* Minimal setup - just ISCP conector, ATmega2560, crystal and its capacitors - but it works and we have working breakout of all pins -  |DSC_8304.s.jpg| |DSC_8305.s.jpg|
+	* add LEDs and resistors, and we can also see something :) - |DSC_8306.s.jpg| |DSC_8309.s.jpg|
+	* add USB block - oops, I destroyed the USB connector and Reset button while desoldering, I must find/buy some other - |DSC_8310.s.jpg| 
+	* add voltage stabilisers (and add all other resistors too) - no more parts from Mega Pro left - |DSC_8311.s.jpg|
+	* add connectors and ICs for VGA and PS/2 (I am out of 74HC08 for RCA, need to buy it too) - and add some LEDs to unused ports for testing  |DSC_8312.s.jpg| 	|DSC_8313.s.jpg| |DSC_8314.s.jpg| |DSC_8315.s.jpg|
+		* I improvised Reset button - I bend legs of Arduino push button and solder it there - look stable and usable
+		* I use lot of LEDs for testing, I made small PCBs usually for 8xLED + 8x 1 |kOhm| resistors, here I used sockets instead of pins, as I want pin headers for this SBC/card
+	
+
 Next steps:
 
-* solder component |DSC_8304.s.jpg| |DSC_8305.s.jpg|
+* test each goal -
+	* Minimal setup works - I can program it and with some LEDs I can blink them on my will
+	* Arduino Mega equivalent - not works yet, some problems with USB Serial - so I desoldered the 22 |Ohm| resistors on M8TXD/M8RXD and will try normal Serial instead (after I find some convertor and write programs for that)
+	* VGA, PS/2 - waiting for programs to test
+	* RCA - waiting for IC
 
-* test each goal
 * physical tests
 * programming
 * enjoy :)
@@ -205,6 +219,46 @@ I have some ideas, but it would need lot of work to bring it into life
 	:align: top
 	:target: DSC_8305.s.jpg
 
+.. |DSC_8306.s.jpg| image:: DSC_8306.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8306.s.jpg
+
+.. |DSC_8309.s.jpg| image:: DSC_8309.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8309.s.jpg
+
+.. |DSC_8310.s.jpg| image:: DSC_8310.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8310.s.jpg
+
+.. |DSC_8311.s.jpg| image:: DSC_8311.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8311.s.jpg
+
+.. |DSC_8312.s.jpg| image:: DSC_8312.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8312.s.jpg
+
+.. |DSC_8313.s.jpg| image:: DSC_8313.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8313.s.jpg
+
+.. |DSC_8314.s.jpg| image:: DSC_8314.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8314.s.jpg
+
+.. |DSC_8315.s.jpg| image:: DSC_8315.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8315.s.jpg
+
 License
 -------
 GPL 2 or GPL 3 - choose the one that suits your needs.
@@ -212,4 +266,5 @@ GPL 2 or GPL 3 - choose the one that suits your needs.
 Author
 ------
 Gilhad - 2025
+
 

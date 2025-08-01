@@ -4074,7 +4074,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/0f244f11-d2c3-405b-a473-f475d7844716")
+		(path "/9939baf5-bb6b-411c-ae51-0bdc9b18993c")
 		(sheetname "/")
 		(sheetfile "MHF-002.kicad_sch")
 		(attr through_hole)
@@ -5855,7 +5855,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/ef8b00de-4de0-4f63-aacf-87f49bdacc3f")
+		(path "/ed2f7629-2329-487a-853a-579bb60c12c8")
 		(sheetname "/")
 		(sheetfile "MHF-002.kicad_sch")
 		(attr through_hole)
@@ -39833,7 +39833,7 @@
 			)
 		)
 		(property "Value" "+ 5V -"
-			(at -1.23661 -2.7672 0)
+			(at -1.23661 -2.7672 180)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "45a74161-e881-453c-9d98-4544d22ac8a8")
@@ -51461,7 +51461,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "3.3 V"
+		(property "Value" "AMS1117-3.3"
 			(at 5.62716 -1.77458 270)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -52328,7 +52328,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "5.0V"
+		(property "Value" "AMS1117-5.0"
 			(at 4.55012 -2.31835 90)
 			(unlocked yes)
 			(layer "B.SilkS")
