@@ -66,6 +66,7 @@ Also discovered
 Errata and Improvements
 ========================
 
+* the label **"+ 5V -"** is wrong rotated (probabelly some autocorrect on schema -> PCB)
 * The transistor is `S8050`, not BC107
 * the Inside capacitor is `10 nF`, not 100pF
 * the resistor is 20 |kOhm|, no 3k3/22k

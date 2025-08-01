@@ -15,7 +15,7 @@ prev: .byte 0				// PS/2 previous sample of CLK, used for edge detection
 cnts: .byte 0				// PS/2 received bits counter
 data: .word 0				// PS/2 datagram as it is received bit by bit
 .section .text
-; PORTF F0-7 0-7 8bit data out
+; PORTL PL0-7 D49-42 8bit data out
 ; PORTB B6 D12 HSYNC
 ; PORTB B7 D13 = 74HC166 Latch
 ; PORTE E7 xx - 16 MHZ
@@ -23,7 +23,7 @@ data: .word 0				// PS/2 datagram as it is received bit by bit
 ; PORTB xx xx  INSIDE (not Led)
 ; PINB  B4 D10 Clock PS/2 - handled by regHandler
 ; PINB  B5 D11 Data PS/2
-; PORTJ J0-7 xxxx RGBY out
+; PORTH H0-7 xxxx RGBY out
 .balign 64
 ;.global TIMER1_COMPA_vect		// define this global to make the Arduino IDE integrate the ISR
 .global TIMER1_OVF_vect
@@ -35,7 +35,7 @@ VGA_hook:	ret
 .macro ONECHAR				//     Z: address of char data (MSB is fixed, LSB depends on char), X: current VRAM position (one line)
 	ld    ZL, X+			// 2CP ZL = (X), X = X + 1
 	lpm   r21, Z			// 3CP get font byte from program memory for current chr on current line
-	out   PORTF, r21		// 1CP put data to shift register's parallel input
+	out   PORTL, r21		// 1CP put data to shift register's parallel input
 	
 ;	out   PORTB, r24		// 1CP /PE LOW (next CLK rising edge will load pixel data)
 ;	out   PORTB, r23		// 1CP /PE HIGH (now CLK will pump out 8 pixels)
@@ -114,17 +114,17 @@ n3:
 	movw r30, r0			// RESULT r0-1 to r30-31 (Z): index of VRAM row
 
 	ldi r24, 0			// needed for add with carry (see below)
-	ldi XL, lo8(cram)		// output the row color to pins (J0-7)
+	ldi XL, lo8(cram)		// output the row color to pins (H0-7)
 	ldi XH, hi8(cram)
 	add XL, r21			// add row number index to start address
 	adc XH, r24			// takes a potential carry flag into account
 	ld r21, X 			// load row color from (X)
 ;; now we have full port
-;;	lsl r21				// shift color info 2 steps up to J2..5
+;;	lsl r21				// shift color info 2 steps up to H2..5
 ;;	lsl r21
 ;;	ori r21, 3			// make sure the 20k-pull-ups stay always on for PS/2 CLK and DAT
-;;	out PORTJ, r21			// output color information
-	sts PORTJ,r21
+;;	out PORTH, r21			// output color information
+	sts PORTH,r21
 
 	ldi XL, lo8(vram)
 	ldi XH, hi8(vram)
