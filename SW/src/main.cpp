@@ -35,18 +35,19 @@ void setup(){
 	bios << YX(2,2) << COLOR(VGA_GREEN) << F("Free: RAM: ") << freeMemory() << F(" B; FLASH: ") << uint32_t(HEX_MAXIMUM_SIZE - (uintptr_t)&__data_load_end) << F(" B");
 	bios << YX(3,2) << COLOR(VGA_CYAN) << F("Used: FLASH ") <<  (uintptr_t)&__data_load_end << F(" / ") << uint32_t(HEX_MAXIMUM_SIZE) << F(" B");
 	bios << YX(4,2) << F("Screen size: ") <<COLOR(VGA_GREEN) << ' ' << BIOS_COLS << 'x' << BIOS_ROWS;
-	bios << YX(5,2) << F("Compiled: " _DATE_ " " __TIME__ " \r\n");
-	bios <<(F(VERSION_STRING ));
+	bios << YX(5,2) << COLOR(VGA_GRAY+VGA_B_WHITE) << F("Compiled: " _DATE_ " " __TIME__ " \r\n");
+	bios << COLOR(VGA_BLACK+VGA_B_GRAY) <<(F(VERSION_STRING ));
 	bios <<(F("  based on " VERSION_COMMIT " - " VERSION_MESSAGE  "\r\n"));
-	bios <<(F("---- ==== #### FORTH #### ==== ---- \r\n"));
-	bios <<(F("Hint: 0 nodebug 0 noinfo 0 notrace LAST D@ 20 + dump  \r\n"));
+	bios << COLOR(VGA_B_GREEN + VGA_RED) << (F("---- ==== #### FORTH #### ==== ---- \r\n"));
+	bios << COLOR(VGA_none) <<(F("Hint: 0 nodebug 0 noinfo 0 notrace LAST D@ 20 + dump  \r\n"));
 #if defined(__AVR_ATmega2560__)
 	bios <<(F("Hint: hex ff DDRF !C aa PORTF !C ff DDRK !C aa PORTK !C : x ff  PINF !C ff  PINK !C ; x  \r\n"));
 	bios <<(F(": count- 0 BEGIN DUP c2C PORTF !C PORTK !C 1- DUP 0= UNTIL c2C PORTF !C PORTK !C ; \r\n"));
 	bios <<(F(": count+ 0 BEGIN DUP c2C PORTF !C PORTK !C 1 + DUP 0= UNTIL c2C PORTF !C PORTK !C ; \r\n"));
 #endif
 	bios <<(F("Test: : xx 0BRANCH [ 0 0C , ] 0 ; : xxx IF 1111 ELSE 2222 FI 3333 + ; \r\n")); 
-	bios << F(
+	bios << COLOR(VGA_GRAY)
+	<< F(
 	STR_2LESS "<" // '«'
 	STR_2MORE ">" // '»'
 	STR_UP "^" // '^'
@@ -54,7 +55,7 @@ void setup(){
 	STR_LEFT "<-" // '«-'
 	STR_RIGHT "->" // '-»'
 	"\r\n"
-	);
+	) << COLOR(VGA_none)  ;
 	while (!bios.get_key()){;};
 
 	my_setup();

@@ -21377,7 +21377,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 130.81) (xy 307.34 130.81)
+			(xy 309.88 130.81) (xy 306.07 130.81)
 		)
 		(stroke
 			(width 0)
@@ -33947,7 +33947,7 @@
 	)
 	(global_label "RTS"
 		(shape input)
-		(at 307.34 130.81 180)
+		(at 306.07 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -33957,7 +33957,7 @@
 		)
 		(uuid "183007b3-f568-416c-a5eb-74d63b868e3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 300.9077 130.81 0)
+			(at 299.6377 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)

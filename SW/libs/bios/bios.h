@@ -5,7 +5,7 @@
 #define BIOS_H
 
 #define BIOS_ROWS		25					// number of rows of VGA text output
-#define BIOS_COLS		37					// number of columns of VGA text output (more than 37 means noise from PS/2 input)
+#define BIOS_COLS		40					// number of columns of VGA text output (more than 37 means noise from PS/2 input)
 #define RCA_PIXELS_PER_CHARACTER 9
 
 // time into scanline when pixel pumper awakes (but it takes time to get going because of the interrupt handler etc.
@@ -30,24 +30,40 @@
 // #include "VGA.h"
 //#include "bios_test.h"
 
-enum BIOS_Color {
-	VGA_BLACK 	 = 0b0000,
-	VGA_DKGRAY 	 = 0b0001,
-	VGA_DKRED 	 = 0b0010,
-	VGA_DKGREEN 	 = 0b0100,
-	VGA_DKYELLOW 	 = 0b0110,
-	VGA_DKBLUE 	 = 0b1000,
-	VGA_DKMAGENTA 	 = 0b1010,
-	VGA_DKCYAN 	 = 0b1100,
-	VGA_RED 	 = 0b0011,
-	VGA_GREEN 	 = 0b0101,
-	VGA_YELLOW 	 = 0b0111,
-	VGA_BLUE 	 = 0b1001,
-	VGA_MAGENTA 	 = 0b1011,
-	VGA_CYAN 	 = 0b1101,
-	VGA_GRAY 	 = 0b1110,
-	VGA_WHITE 	 = 0b1111,
-	VGA_none 	 = 0xFF,
+enum BIOS_Color {         // rgbi
+	VGA_BLACK 	 = 0b0000 <<4,
+	VGA_DKGRAY 	 = 0b0001 <<4,
+	VGA_DKRED 	 = 0b1000 <<4,
+	VGA_DKGREEN 	 = 0b0100 <<4,
+	VGA_DKYELLOW 	 = 0b1100 <<4,
+	VGA_DKBLUE 	 = 0b0010 <<4,
+	VGA_DKMAGENTA 	 = 0b1010 <<4,
+	VGA_DKCYAN 	 = 0b0110 <<4,
+	VGA_RED 	 = 0b1001 <<4,
+	VGA_GREEN 	 = 0b0101 <<4,
+	VGA_YELLOW 	 = 0b1101 <<4,
+	VGA_BLUE 	 = 0b0011 <<4,
+	VGA_MAGENTA 	 = 0b1011 <<4,
+	VGA_CYAN 	 = 0b0111 <<4,
+	VGA_GRAY 	 = 0b1110 <<4,
+	VGA_WHITE 	 = 0b1111 <<4,
+	VGA_B_BLACK 	 = 0b0000,
+	VGA_B_DKGRAY 	 = 0b0001,
+	VGA_B_DKRED 	 = 0b1000,
+	VGA_B_DKGREEN 	 = 0b0100,
+	VGA_B_DKYELLOW 	 = 0b1100,
+	VGA_B_DKBLUE 	 = 0b0010,
+	VGA_B_DKMAGENTA	 = 0b1010,
+	VGA_B_DKCYAN 	 = 0b0110,
+	VGA_B_RED 	 = 0b1001,
+	VGA_B_GREEN 	 = 0b0101,
+	VGA_B_YELLOW 	 = 0b1101,
+	VGA_B_BLUE 	 = 0b0011,
+	VGA_B_MAGENTA 	 = 0b1011,
+	VGA_B_CYAN 	 = 0b0111,
+	VGA_B_GRAY 	 = 0b1110,
+	VGA_B_WHITE 	 = 0b1111,
+	VGA_none 	 = 0xF0,
 	};
 
 enum BIOS_output {
@@ -117,7 +133,7 @@ public:
 		static void write(const char *c);
 		//
 		static void scroll();	// cursor not scrolled
-		static void clear(char c = ' ', BIOS_Color col = VGA_WHITE);	// cursor to 0,0
+		static void clear(char c = ' ', BIOS_Color col = VGA_none);	// cursor to 0,0
 		//
 		static void set_cursor(uint8_t row, uint8_t col);
 		//

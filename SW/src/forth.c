@@ -203,6 +203,12 @@ void forth_loop(uint32_t cw_addr) {	// {{{
 		DEBUG_DUMP(IP,"IP:	");
 		DEBUG_DUMP(DT,"DT:	");
 		IP+=4;
+/*
+DDRF=0xFF;
+DDRK=0xFF;
+PORTF=DT &0xff;
+PORTK=(DT >>8) &0xff;
+*/
 		jmp_indirect_24(DT);
 //		((void (*)(void))B4at(DT))();
 //		((void (*)(void))B3PTR(B4at(DT)))();

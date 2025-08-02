@@ -378,27 +378,37 @@ void BIOS::VGA_begin(){										// {{{
 	// ***************************************
 	// **
 	// ** PE[7] 16MHz ( **fixed** in HW)
-	// ** ? PB[6] Timer 1 B for Hsync
-	// ** ?? PE[4] Timer 3 B for Vsync
-	// ** ?? PF[0..7] for data out
-	// ** ?? PJ[0..7] for colors out
-	// ** ?? PB[7] Latch
-	// ** ?? PB[4..5] PS/2 pins
+	// ** PB[6] D12 Timer 1 B for Hsync
+	// ** PE[4] D2 Timer 3 B for Vsync
+	// ** PB[7] D13 Latch
+	// ** PL[0..7] for data out
+	// ** PH[0..7] for colors out
+	// ** PH[0..7] PS/2 data 8bit
+	// ** PE[6] XX PS/2 INSIDE
+	// ** PB[4] #PS2-OE active LOW
 	// ***************************************
 	noInterrupts();	// disable interrupts before messing around with timer registers
 		// ports opening
-		pinMode(D12,OUTPUT);	// PB[6] D12 Timer 1 B for Hsync
-			digitalWrite(D12,0);
-		pinMode(D2,OUTPUT);	// PE[4] D2 Timer 3 B for Vsync
-			digitalWrite(D2,0);
-		DDRF	= 0xFF;		// PF[0..7] for data out
-			PORTF=0;
-		DDRJ	= 0xFF;		// PJ[0..7] for colors out
-			PORTJ=0;
-		pinMode(D13,OUTPUT);	// PB[7] D13 Latch
-			digitalWrite(D13,0);
-		pinMode(D10,INPUT_PULLUP);	// PB[4] D10 PS/2 clock
-		pinMode(D11,INPUT_PULLUP);	// PB[5] D11 PS/2 data
+// {{{ pinMode
+//		pinMode(D12,OUTPUT);	// PB[6] D12 Timer 1 B for Hsync
+//			digitalWrite(D12,0);
+//		pinMode(D2,OUTPUT);	// PE[4] D2 Timer 3 B for Vsync
+//			digitalWrite(D2,0);
+//		pinMode(D13,OUTPUT);	// PB[7] D13 Latch
+//			digitalWrite(D13,0);
+//		pinMode(D10,INPUT_PULLUP);	// PB[4] D10 PS/2 clock
+//		pinMode(D11,INPUT_PULLUP);	// PB[5] D11 PS/2 data
+// }}}
+		DDRE |= _BV(7) | _BV(4) ;	// 16MHz | Vsync | ! INSIDE
+		DDRB |= _BV(6) | _BV(7) | _BV(4);		// Hsync | Latch | PS2-OE
+		PORTB |=  _BV(4); // PS2-OE not enabled by default
+		DDRL	= 0xFF;		// PL[0..7] for data out
+			PORTL=0;
+		DDRH	= 0xFF;		// PH[0..7] for colors out
+			PORTH=0;
+// Debug
+DDRF = 0xFF;
+DDRK = 0xFF;
 		// timers
 		GTCCR= (1<<TSM) | (1<<PSRASY) | (1 <<PSRSYNC); // stop Timers 0,1,3,4,5 for synchronisation pg. 166:
 			/* Bit 7 - TSM: Timer/Counter Synchronization Mode
@@ -440,9 +450,6 @@ TIMSK1 = (1 << TOIE1);
 // ISR timer overflow
 // ISR(TIMER1_OVF_vect) {}
 // Tady se vykoná obsluha po každých 32 µs
-
-// PB6 as output
-DDRB |= (1 << PB6);  
 
 		// *****************************
 		// ***** Timer3: VGA VSYNC ***** PE[4] D2

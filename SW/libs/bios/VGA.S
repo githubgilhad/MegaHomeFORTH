@@ -11,19 +11,24 @@
 //.extern BIOS::charset
 .extern BIOS::chardef
 .section .bss
-prev: .byte 0				// PS/2 previous sample of CLK, used for edge detection
+prev: .byte 0				// PS/2 previous sample of CLK, used for edge detection		// PS/2 previous value of INSIDE
 cnts: .byte 0				// PS/2 received bits counter
 data: .word 0				// PS/2 datagram as it is received bit by bit
 .section .text
 ; PORTL PL0-7 D49-42 8bit data out
-; PORTB B6 D12 HSYNC
-; PORTB B7 D13 = 74HC166 Latch
-; PORTE E7 xx - 16 MHZ
-; PORTB xx xx - VSYNC od RCA = unused
-; PORTB xx xx  INSIDE (not Led)
-; PINB  B4 D10 Clock PS/2 - handled by regHandler
-; PINB  B5 D11 Data PS/2
-; PORTH H0-7 xxxx RGBY out
+; PORTB PB6 D12 HSYNC
+; PORTB PB7 D13 = 74HC166 Latch
+; PORTE PE7 xx - 16 MHZ
+; PORTE PE4 - VSYNC
+; PORTE PE6  INSIDE (not Led)
+; XX PINB  PB2 D10 Clock PS/2 - handled by regHandler
+; XX PINB  PB1 D11 Data PS/2
+; PORTH PH0-7 xxxx RGBY out
+; PORTH PH0-7 xxxx PS/2 data in
+; PORTB PB4 #PS2-OE active LOW
+
+; one PS/2 character is like 15 rows, it is possible to get like 5 characters per frame - so managing it in between lines is possible and easy
+
 .balign 64
 ;.global TIMER1_COMPA_vect		// define this global to make the Arduino IDE integrate the ISR
 .global TIMER1_OVF_vect
@@ -35,15 +40,21 @@ VGA_hook:	ret
 .macro ONECHAR				//     Z: address of char data (MSB is fixed, LSB depends on char), X: current VRAM position (one line)
 	ld    ZL, X+			// 2CP ZL = (X), X = X + 1
 	lpm   r21, Z			// 3CP get font byte from program memory for current chr on current line
-	out   PORTL, r21		// 1CP put data to shift register's parallel input
+;	out   PORTL, r21	// 1CP put data to shift register's parallel input
+	sts PORTL,r21			// 2CP - L cannot be `out`
 	
-;	out   PORTB, r24		// 1CP /PE LOW (next CLK rising edge will load pixel data)
-;	out   PORTB, r23		// 1CP /PE HIGH (now CLK will pump out 8 pixels)
+;	out   PORTB, r24	// 1CP /PE LOW (next CLK rising edge will load pixel data)
+;	out   PORTB, r23	// 1CP /PE HIGH (now CLK will pump out 8 pixels)
 	
 	out   PINB, r24			// 1CP flip B7 LOW
 	out   PINB, r24			// 1CP flip B7 HIGH
-	nop
+;	nop			// 1CP
  .endm
+.macro check number
+	cpi r20, \number
+	brlo 1f
+1:
+.endm
 
 // ***************************************************************
 
@@ -61,21 +72,21 @@ TIMER1_OVF_vect:
 ;	nop
 ;	nop
 	lds  r20, TCNT1			// interrupt jitter compensation using timer TCNT1 too
-	andi r20, 3	// also cpi r20,0
-	breq n1
-n1:
-	cpi  r20, 2
-	brlo n2
-n2:
-	cpi  r20, 3
-	brlo n3
-n3:
+;	out PORTF,r20
+	andi r20, 7	// also cpi r20,0
+	check 7
+	check 6
+	check 5
+	check 4
+	check 3
+	check 2
+	check 1
 ;	nop
 ;	nop
-	nop
-	nop
-	nop
-	nop
+;	nop
+;	nop
+;	nop
+;	nop
 	
 ;;	cbi PORTB, 4			// start HSYNC pulse by hand
 	
@@ -101,7 +112,7 @@ n3:
 
 ;;	sbi PORTB, 4			// ??? end HSYNC (after only 1µ, should be 3,8µs but this buys valuable time here)
 
-	in r22, PINB			// r22 = scan PS/2 keyboard state (CLK and DAT) every 32µs
+;	in r22, PINB			// r22 = scan PS/2 keyboard state (CLK and DAT) every 32µs
 	// Note: This is not quite fast enough to cover the full PS/2 spec
 	// (10.0 - 16.7kHz) but works fine with all PS/2 keyboards I have checked.
 	
@@ -147,10 +158,14 @@ n3:
 ;	andi r24, 0x7F			// r24: B7=0
 	
 	ldi r24, 0x80			// mask for B7 pin (Latch)
-	in r23, PORTB			//
-	or r23, r24			// set it high
-	out PORTB, r23			//
-	ldi r24, 0x80
+;	in r23, PORTB			//
+;	or r23, r24			// set it high
+;	out PORTB, r23			//
+;	ldi r24, 0x80
+	sbis PORTB, 7			// skip next instruction if bit is Set (2 CP) / execute it otherwise (1 CP)
+	out PINB, r24			// 1 CP Flip the bit
+					// now the bit is up
+
 
 	cpi r20, 200			// draw 200 scanlines (25 x 8)
 	brcs drawPixels
@@ -194,9 +209,9 @@ wait:	dec r20
 	ONECHAR
 	ONECHAR
 	
-	ONECHAR
-	ONECHAR
-	ONECHAR
+;	ONECHAR
+;	ONECHAR
+;	ONECHAR
 	ONECHAR
 	ONECHAR
 	ONECHAR
@@ -209,66 +224,48 @@ wait:	dec r20
 ;	ONECHAR
 	
 regHandler:				// regHandler handles PS/2                                                 ;
-jmp regEnd
-;sei; ???
-	mov r23, r22                                                                                               ;
-	andi r23, 0x10			// r23 = isolated DAT in bit1                                              ;
-	sbrc r23, 5			// if r23 bit 5=0x10 is zero, skip next instruction                        ;
-	ldi  r23, 0x02			// set bit1 instead of 5                                                   ;
-	andi r22, 0x08			// r22 = isolated current CLK in bit0, operation sets Z flag               ;
-	breq regLow			// CLK = 0?                                                                ;
+	in r22,PINE			// read INSIDE - PE6
+	andi r22, 0x40			// isolate the bit, set zero
+	brne regEndSave			// if we are INSIDE, data are still incoming, just save state
+	lds r23, prev			// we are not INSIDE, is it the first time?
+	sbrs r23, 6			// ? if we were INSIDE last time, skip next instruction
+	rjmp regEnd			// no, we was not INSIDE, so just finish (nothing new)
+	// now we have data, get it
+	clr r24				// 0x00
+	sts DDRH, r24			// enable input from PORTH
+	cbi PORTB,4			// enable output from PS/2
+	nop
+	nop
+	nop
+	nop
+	lds r25,PORTH			// get PS/2 data into r25
+	sbi PORTB,4			// disable output from PS/2
+	ser r26				// 0xFF
+	sts DDRH, r26			// set PORTH for output again
                                                                                                                    ;
-	lds r30, data+1			// CLK = 1!                                                                ;
-	cpi r30, 0			// high byte will contain at least the high stop bit if data is present    ;
-	breq regEnd			// don't do anything if no data is present                                 ;
-                                                                                                                   ;
-	lds r30, cnts			// we have data! => Check for end of datagram...                           ;
-	inc r30                                                                                                    ;
-	sts cnts, r30			// cnts++                                                                  ;
-	cpi r30, 8			// cnts >= 8?                                                              ;
-	brlo regEnd                                                                                                ;
-                                                                                                                   ;
-	ldi ZH, hi8(BIOS_buffer)	// DATAGRAM finished! => prepare Z for an indirect store                   ;
+
+	ldi ZH, hi8(BIOS_buffer)	// prepare Z for an indirect store                                         ;
 	ldi ZL, lo8(BIOS_buffer)                                                                                   ;
 	lds r21, BIOS_buffer_head_ptr	// load direct from data space: "BIOS_buffer_head_ptr" index               ;
-	mov r24,r21			// save for later
 	add ZL, r21                                                                                                ;
-	ldi r21, 0                                                                                                 ;
-	adc ZH, r21                                                                                                ;
+	adc ZH, r24                                                                                                ;
 	                                                                                                           ;
-	lds r21, data+0			// load low PS/2 data byte (start bit is shifted out)                      ;
-	st Z, r21			// store scan code -> (Z)                                                  ;
-	                                                                                                           ;
-;	lds r30, BIOS_buffer_head_ptr	// again load "BIOS_buffer_head_ptr" index for incrementation              ;
-	; let use r24 instead
-	inc r24				// BIOS_buffer_head_ptr++                                                  ;
-	andi r24, BUFFER_MASK		// only use 16 bytes for KEYBUFSIZE (wrap around)                          ;
-	lds r21, BIOS_buffer_tail_ptr	// check if full                                                           ;
-	cp r21, r24                                                                                                ;
-	breq buf_is_full                                                                                           ;
-	sts BIOS_buffer_head_ptr, r24	// store BIOS_buffer_head_ptr back to data space                           ;
-buf_is_full:                                                                                                       ;
-	ldi r30, 0                                                                                                 ;
-	sts data+1, r30			// invalidate the PS/2 data by setting MSB to zero                         ;
-	jmp regEnd                                                                                                 ;
-                                                                                                                   ;
-regLow:                                                                                                            ;
-	lds r21, prev			// CLK = 0! => load previous CLK state                                     ;
-	cp r22, r21			// compare the two CLK states for a change                                 ;
-	breq regEnd			// CLK falling edge?                                                       ;
-                                                                                                                   ;
-	ldi r30, 0                                                                                                 ;
-	sts cnts, r30			// reset the counter after rising edge                                     ;
-	lds r20, data			// load data into r20-21                                                   ;
-	lds r21, data+1                                                                                            ;
-	lsr r21				// shift data one step down                                                ;
-	ror r20                                                                                                    ;
-	or  r21, r23			// insert the (previous) DAT as bit9                                       ;
-	sts data+0, r20   		// store data                                                              ;
-	sts data+1, r21                                                                                            ;
-                                                                                                                   ;
-regEnd:                                                                                                            ;
+	st Z, r25			// store scan code -> (Z)                                                  ;
+
+out PORTF,r25                                                                                                      ;
+	inc r21				// BIOS_buffer_head_ptr++                                                  ;
+	andi r21, BUFFER_MASK		// only use 16 bytes for KEYBUFSIZE (wrap around)                          ;
+	lds r26, BIOS_buffer_tail_ptr	// check if full                                                           ;
+	cpse r21, r26                   // compare skip next if equel                                              ;
+	sts BIOS_buffer_head_ptr, r21	// store BIOS_buffer_head_ptr back to data space                           ;
+        
+sts PORTK,r21
+; }}}                                                                                                                   ;
+regEndSave:                                                                                                            ;
 	sts prev, r22			// remember the state of CLK                                               ;
+regEnd:                                                                                                            ;
+	clr r21
+	sts PORTH,r21
 	pop r31				// restore previous values of used registers                               ;
 	pop r30				// Z                                                                       ;
 	pop r27                                                                                                    ;
