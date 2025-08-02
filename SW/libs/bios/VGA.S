@@ -209,21 +209,26 @@ wait:	dec r20
 	ONECHAR
 	ONECHAR
 	
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
+	ONECHAR
 ;	ONECHAR
-;	ONECHAR
-;	ONECHAR
-	ONECHAR
-	ONECHAR
-	ONECHAR
-	ONECHAR
-	ONECHAR
-	ONECHAR
-	ONECHAR
 	
 ;	ONECHAR
 ;	ONECHAR
 	
 regHandler:				// regHandler handles PS/2                                                 ;
+				// all is nice, but at least 8 cycles we need to keep fore- and back-ground colors ;
+				// as bits are still clocked out by 74HC166
+	clr r21
+	ser r27				// 0xFF
+	
 	in r22,PINE			// read INSIDE - PE6
 	andi r22, 0x40			// isolate the bit, set zero
 	brne regEndSave			// if we are INSIDE, data are still incoming, just save state
@@ -231,41 +236,35 @@ regHandler:				// regHandler handles PS/2                                       
 	sbrs r23, 6			// ? if we were INSIDE last time, skip next instruction
 	rjmp regEnd			// no, we was not INSIDE, so just finish (nothing new)
 	// now we have data, get it
-	clr r24				// 0x00
-	sts DDRH, r24			// enable input from PORTH
+	sts PORTH,r21			// clear Colors
+	sts DDRH, r21			// enable input from PORTH
 	cbi PORTB,4			// enable output from PS/2
-	nop
-	nop
-	nop
-	nop
-	lds r25,PORTH			// get PS/2 data into r25
-	sbi PORTB,4			// disable output from PS/2
-	ser r26				// 0xFF
-	sts DDRH, r26			// set PORTH for output again
-                                                                                                                   ;
-
+	
 	ldi ZH, hi8(BIOS_buffer)	// prepare Z for an indirect store                                         ;
 	ldi ZL, lo8(BIOS_buffer)                                                                                   ;
-	lds r21, BIOS_buffer_head_ptr	// load direct from data space: "BIOS_buffer_head_ptr" index               ;
-	add ZL, r21                                                                                                ;
-	adc ZH, r24                                                                                                ;
+	lds r24, BIOS_buffer_head_ptr	// load direct from data space: "BIOS_buffer_head_ptr" index               ;
+	add ZL, r24                                                                                                ;
+	adc ZH, r21                                                                                                ;
 	                                                                                                           ;
+	lds r25,PINH			// get PS/2 data into r25
+	
+	sbi PORTB,4			// disable output from PS/2
+	sts DDRH, r27			// set PORTH for output again
+	sts PORTH, r21
+                                                                                                                   ;
 	st Z, r25			// store scan code -> (Z)                                                  ;
 
-out PORTF,r25                                                                                                      ;
-	inc r21				// BIOS_buffer_head_ptr++                                                  ;
-	andi r21, BUFFER_MASK		// only use 16 bytes for KEYBUFSIZE (wrap around)                          ;
+	inc r24				// BIOS_buffer_head_ptr++                                                  ;
+	andi r24, BUFFER_MASK		// only use 16 bytes for KEYBUFSIZE (wrap around)                          ;
 	lds r26, BIOS_buffer_tail_ptr	// check if full                                                           ;
-	cpse r21, r26                   // compare skip next if equel                                              ;
-	sts BIOS_buffer_head_ptr, r21	// store BIOS_buffer_head_ptr back to data space                           ;
+	cpse r24, r26                   // compare skip next if equel                                              ;
+	sts BIOS_buffer_head_ptr, r24	// store BIOS_buffer_head_ptr back to data space                           ;
         
-sts PORTK,r21
 ; }}}                                                                                                                   ;
 regEndSave:                                                                                                            ;
 	sts prev, r22			// remember the state of CLK                                               ;
 regEnd:                                                                                                            ;
-	clr r21
-	sts PORTH,r21
+	sts PORTH, r21
 	pop r31				// restore previous values of used registers                               ;
 	pop r30				// Z                                                                       ;
 	pop r27                                                                                                    ;

@@ -1709,7 +1709,7 @@ void f_storeVRAM_yx() {	// {{{ // ( y x c -- ) y row, x column, c character in V
 
 void f_CLS() {	// {{{
 	INFO("CLS");
-	BIOS_clear(' ', 0b1111);
+	BIOS_clear(' ', 0b11110000);
 	NEXT;
 }	// }}}
 void f_CUR_yx() {	// {{{ // ( y x -- ) move cursor to  y row, x column
