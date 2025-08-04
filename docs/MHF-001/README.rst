@@ -42,7 +42,9 @@ Project Goals
 
 Depending on how much components will be soldered to the PCB, it could offer many things (at cost of using some pins):
 
-- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins |DSC_8304.s.jpg| |DSC_8305.s.jpg|  `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__ 
+- full breakout of ATmega2560 - like Arduino Mega, but **all** pins accessible - simply, plain, 86 I/O pins 
+	|DSC_8304.s.jpg| |DSC_8305.s.jpg|
+	`blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__ 
 - USB serial connection - 2 pins
 - memory extended to 64 kB RAM - at cost of 16+4 pins
 - another 128 kB RAM (somehow) accessible - another 24+3 pins
@@ -123,11 +125,16 @@ Done:
 
 
 * solder component - first we re-use what we have on Arduino Mega Pro (I will use some spacer screws to keep it from contact with table while testing):
-	* Minimal setup - just ISCP conector, ATmega2560, crystal and its capacitors - but it works and we have working breakout of all pins -  |DSC_8304.s.jpg| |DSC_8305.s.jpg|
-	* add LEDs and resistors, and we can also see something :) - |DSC_8306.s.jpg| |DSC_8309.s.jpg|
-	* add USB block - oops, I destroyed the USB connector and Reset button while desoldering, I must find/buy some other - |DSC_8310.s.jpg| 
-	* add voltage stabilisers (and add all other resistors too) - no more parts from Mega Pro left - |DSC_8311.s.jpg|
-	* add connectors and ICs for VGA and PS/2 (I am out of 74HC08 for RCA, need to buy it too) - and add some LEDs to unused ports for testing  |DSC_8312.s.jpg| 	|DSC_8313.s.jpg| |DSC_8314.s.jpg| |DSC_8315.s.jpg|
+	* Minimal setup - just ISCP conector, ATmega2560, crystal and its capacitors - but it works and we have working breakout of all pins -  
+		|DSC_8304.s.jpg| |DSC_8305.s.jpg|
+	* add LEDs and resistors, and we can also see something :) -
+		|DSC_8306.s.jpg| |DSC_8309.s.jpg|
+	* add USB block - oops, I destroyed the USB connector and Reset button while desoldering, I must find/buy some other -
+		|DSC_8310.s.jpg| 
+	* add voltage stabilisers (and add all other resistors too) - no more parts from Mega Pro left - 
+		|DSC_8311.s.jpg|
+	* add connectors and ICs for VGA and PS/2 (I am out of 74HC08 for RCA, need to buy it too) - and add some LEDs to unused ports for testing  
+		|DSC_8312.s.jpg| |DSC_8313.s.jpg| |DSC_8314.s.jpg| |DSC_8315.s.jpg|
 		* I improvised Reset button - I bend legs of Arduino push button and solder it there - look stable and usable
 		* I use lot of LEDs for testing, I made small PCBs usually for 8xLED + 8x 1 |kOhm| resistors, here I used sockets instead of pins, as I want pin headers for this SBC/card
 	
