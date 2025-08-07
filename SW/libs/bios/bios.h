@@ -5,7 +5,7 @@
 #define BIOS_H
 
 #define BIOS_ROWS		25					// number of rows of VGA text output
-#define BIOS_COLS		39					// number of columns of VGA text output (more than 37 means noise from PS/2 input)
+#define BIOS_COLS		40					// number of columns of VGA text output (more than 37 means noise from PS/2 input)
 #define RCA_PIXELS_PER_CHARACTER 9
 
 // time into scanline when pixel pumper awakes (but it takes time to get going because of the interrupt handler etc.

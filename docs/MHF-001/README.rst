@@ -76,12 +76,16 @@ Errata and Improvements
 * I destroyed the reset button when unsoldering it, so I improvised and used clasical Arduino pushbutton, bend its legs and solder it there - it works
 * I left blink program inside, while soldering all gates chips, which is bad, as there are outputs too. So I hold the reset, until I ISPloaded new program.
 * I also destroyed USB connector while desoldering it, so I bought some replacements, should arrive after month or so ... I may iprovise normal Serial connection or something else.
-* It would be better to switch `X16` and `CTS` lines, so `CTS` could use interrupt on low. (CTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
+* It would be better to switch `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
+	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
 * LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
 * LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
 * make my own footprints with longer pads for SMD ICs to make soldering easier
+* PROBLEM - 74HC165 doubles the first bit (as it is shifted out and latched again before level latch returns inactive) and so ONECHAR have to be 9 clocks long (or lose the last bit) - 74HC166 should be better (as it is edge latched) but now I cannot feed it each 8 clocks, so last bit will be errornerous
+	* I should use some port A..F for VGA data **out** isnstead of **STS** too, to fit in 8 clocks
+* each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
 
 Larger Picture
 ===============
@@ -137,6 +141,8 @@ Done:
 		|DSC_8312.s.jpg| |DSC_8313.s.jpg| |DSC_8314.s.jpg| |DSC_8315.s.jpg|
 		* I improvised Reset button - I bend legs of Arduino push button and solder it there - look stable and usable
 		* I use lot of LEDs for testing, I made small PCBs usually for 8xLED + 8x 1 |kOhm| resistors, here I used sockets instead of pins, as I want pin headers for this SBC/card
+		* I also improved the VGA.S routine, so there are on color artefacts and the size is full 40x25 characters
+			|DSC_8326.s.jpg|
 	
 
 Next steps:
@@ -265,6 +271,12 @@ I have some ideas, but it would need lot of work to bring it into life
 	:width: 250
 	:align: top
 	:target: DSC_8315.s.jpg
+
+.. |DSC_8326.s.jpg| image:: DSC_8326.s.jpg
+	:width: 250
+	:align: top
+	:target: DSC_8326.s.jpg
+
 
 License
 -------

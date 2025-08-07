@@ -110,6 +110,11 @@ TIMER1_OVF_vect:
 	ror r20
 	subi r20, 30			// r20 = pixel line "lin"
 
+
+	cpi r20, 200			// draw only 200 scanlines (25 x 8) (vline 60-460)
+	brcs 1f				// regHandler too far for brcc
+	jmp regHandler			// regHandler handles PS/2 (do not show anything out of range)
+1:
 ;;	sbi PORTB, 4			// ??? end HSYNC (after only 1µ, should be 3,8µs but this buys valuable time here)
 
 ;	in r22, PINB			// r22 = scan PS/2 keyboard state (CLK and DAT) every 32µs
@@ -166,15 +171,10 @@ TIMER1_OVF_vect:
 	out PINB, r24			// 1 CP Flip the bit
 					// now the bit is up
 
-
-	cpi r20, 200			// draw 200 scanlines (25 x 8)
-	brcs drawPixels
-	jmp regHandler			// regHandler handles PS/2
-
 drawPixels:
-	ldi r20, 1 ;10			// shifts screen left BUT BE CAREFUL: if routine takes too long, it won't fit into a scanline!
-wait:	dec r20
-	brne wait
+;	ldi r20, 1 ;10			// shifts screen left BUT BE CAREFUL: if routine takes too long, it won't fit into a scanline!
+;wait:	dec r20
+;	brne wait
 	
 	ONECHAR			// transmit 40 characters at a rate of 2MHz (16MHz pixel clock)
 	ONECHAR
@@ -218,7 +218,7 @@ wait:	dec r20
 	ONECHAR
 	ONECHAR
 	ONECHAR
-;	ONECHAR
+	ONECHAR
 	
 ;	ONECHAR
 ;	ONECHAR
