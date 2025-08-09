@@ -90,6 +90,8 @@ Errata and Improvements
 * PROBLEM - 74HC165 doubles the first bit (as it is shifted out and latched again before level latch returns inactive) and so ONECHAR have to be 9 clocks long (or lose the last bit) - 74HC166 should be better (as it is edge latched) but now I cannot feed it each 8 clocks, so last bit will be errornerous
 	* I should use some port A..F for VGA data **out** isnstead of **STS** too, to fit in 8 clocks
 * each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
+* SD card reader needed little edge filing to not collide with ISCP connector and 3V3 connector - make little more place for it next time and add mounting holes in corner. Sitting just on Koptan tape looks good. (Alternatively unsolder all components and move them on PCB directly. Qualify MISO and MOSI (and maybe clock too) by CS, let CS go inside all the time. Use another pin than ISCP)
+* mark areas on SysBus, at least separate blocks as Data, Address, A, B, Other with lines
 
 Larger Picture
 ===============
@@ -154,6 +156,7 @@ Done:
 
 Next steps:
 
+* Test Reset over DTR
 * test each goal -
 	* Minimal setup works - I can program it and with some LEDs I can blink them on my will
 	* Arduino Mega equivalent - not works yet, some problems with USB Serial - so I desoldered the 22 |Ohm| resistors on M8TXD/M8RXD and will try normal Serial instead (after I find some convertor and write programs for that)
