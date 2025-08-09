@@ -18,6 +18,9 @@
 	#define PEDANT
 	#include <unistd.h>
 #endif
+extern void ff_SD();
+void wx(const char * p) { write_str((const __memx char *)p);}
+
 extern uint8_t B1at(uint32_t p);			// asm.S	read 1 byte at address p (somewhere), return 1 byte
 extern uint16_t B2at(uint32_t p);			// asm.S	read 2 bytes at address p (somewhere), return 2 bytes
 extern uint32_t B3at(uint32_t p);			// asm.S	read 3 bytes at address p (somewhere), return 4 bytes (top cleared)
@@ -1956,6 +1959,21 @@ void f_find() {	// {{{ ; WORD FIND return Addr_of_header (or 0 0 )
 	NEXT;
 }	// }}}
 // }}}
+
+// void ff_SD() {	// {{{ called by f_SD to get stack right
+// }	// }}}
+void f_SD() {	// {{{ SD - initialise and test
+	wait_for_char();
+	write_str("to SD \r\n##");
+	wait_for_char();
+	write_str("NOW really: to SD \r\n##");
+	ff_SD();
+	wait_for_char();
+	write_str("back from SD \r\n##");
+	wait_for_char();
+	NEXT;
+}	// }}}
+
 const __flash char f_words_name[]="WORDS2";
 void my_setup(){	// {{{
 	notrace=false;

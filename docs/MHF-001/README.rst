@@ -139,10 +139,13 @@ Done:
 		|DSC_8311.s.jpg|
 	* add connectors and ICs for VGA and PS/2 (I am out of 74HC08 for RCA, need to buy it too) - and add some LEDs to unused ports for testing  
 		|DSC_8312.s.jpg| |DSC_8313.s.jpg| |DSC_8314.s.jpg| |DSC_8315.s.jpg|
+		
 		* I improvised Reset button - I bend legs of Arduino push button and solder it there - look stable and usable
 		* I use lot of LEDs for testing, I made small PCBs usually for 8xLED + 8x 1 |kOhm| resistors, here I used sockets instead of pins, as I want pin headers for this SBC/card
-		* I also improved the VGA.S routine, so there are on color artefacts and the size is full 40x25 characters
+		* VGA, PS/2 - now works
+		* I also improved the VGA.S routine, so there are no color artefacts and the size is full 40x25 characters
 			|DSC_8326.s.jpg|
+	* I connected CD card reader and it works (when tested without VGA running), but there are conflict with interrupts and it uses millis() for timeouts (witch do not run without interrupts) - so some SW solution is needed (maybe emulate millis and run SD only in vertical blanks? - TODO)
 	
 
 Next steps:
@@ -150,7 +153,6 @@ Next steps:
 * test each goal -
 	* Minimal setup works - I can program it and with some LEDs I can blink them on my will
 	* Arduino Mega equivalent - not works yet, some problems with USB Serial - so I desoldered the 22 |Ohm| resistors on M8TXD/M8RXD and will try normal Serial instead (after I find some convertor and write programs for that)
-	* VGA, PS/2 - waiting for programs to test
 	* RCA - waiting for IC
 
 * physical tests
