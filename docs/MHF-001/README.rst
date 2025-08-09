@@ -76,9 +76,13 @@ Errata and Improvements
 * I destroyed the reset button when unsoldering it, so I improvised and used clasical Arduino pushbutton, bend its legs and solder it there - it works
 * I left blink program inside, while soldering all gates chips, which is bad, as there are outputs too. So I hold the reset, until I ISPloaded new program.
 * I also destroyed USB connector while desoldering it, so I bought some replacements, should arrive after month or so ... I may iprovise normal Serial connection or something else.
+	* breakout all USB pins to its own pinheader
+	* include USB A male connector for better durability somewhere (or at least module like SD card reader)
+* breakout VGA, PS/2 and RCA conectors to pinheader
+* possibly enable to enable SBC use Shared RAM via open solderpads for signals X-A-B interconnected
 * It would be better to switch `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
-* LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch`)
+* LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch` so it will shine with VGA attached - like 10 |kOhm| green LED?)
 * LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
