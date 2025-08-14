@@ -428,6 +428,9 @@ CONST2(R_END,B3U32(&Rstck[RSTACK_LEN]))
 void	print_stack() { 	// {{{ just simple debug print
 	for (int8_t p=0;p<stack;p++) {write_char('[');write_hex16(stck[p]);write_char(']');};
 }	// }}}
+void	print_Rstack() { 	// {{{ just simple debug print
+	for (int8_t p=1;p<Rstack;p++) {write_char('<');write_hex32(Rstck[p]);write_char('>');};
+}	// }}}
 // {{{ dup, plus, ...
 void f_dup(){	// {{{
 	TRACE("DUP");
@@ -1811,6 +1814,7 @@ void f_interpret(){	 // {{{
 	DEBUG_DUMP((HERE),("HERE	"));
 	if (stack>1) DEBUG_DUMP(peek2(),("*stack	"));
 	print_stack();
+	print_Rstack();
 	if (STATE==st_executing) {
 		write_str(F(PROMPT));
 	} else {
@@ -1974,6 +1978,155 @@ void f_SD() {	// {{{ SD - initialise and test
 	NEXT;
 }	// }}}
 
+#define emWRITE 1
+#define emREAD  2
+#define emLATCH 4
+#define emA16   8
+#define NOP4()  __asm__ __volatile__ ( \
+	"nop\n\t" \
+	"nop\n\t" \
+	"nop\n\t" \
+	"nop\n\t" )
+
+static inline void delay4cycles(void) {
+    __asm__ __volatile__ (
+        "nop\n\t"
+        "nop\n\t"
+        "nop\n\t"
+        "nop\n\t"
+    );
+}
+
+void f_emON() {	// {{{ // ( -- ) enable External Memory Read chip bit bang (set ports etc)
+	INFO("emON");
+	uint8_t al;
+	uint8_t ah;
+	uint8_t b;
+	bool OK;
+	DDRF = 0xFF;
+	DDRK = 0xFF;
+	
+	// -------------- write
+	DDRG |= 0x0F; // write to EM lines
+	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
+	DDRA = 0xFF; // low addresses to be writeable
+	DDRC = 0xFF; // high addresses to be writeable
+
+	for (uint32_t i=0; i< 0x10000L; ++i) {
+		al = (i & 0xFF);
+		ah = ((i >> 8) & 0xFF);
+		b = (al+ah) & 0xFF;
+		PORTK = ah;
+		PORTF = al;
+
+		PORTA = al;
+		PORTC = ah;
+		NOP4();
+		PING = emLATCH; // LATCH down
+		NOP4();
+		PORTA = b;
+		PING = emWRITE; // flip write
+		NOP4();
+		PING = emWRITE; // flip write
+		PING = emLATCH; // LATCH up
+		};
+	DDRA = 0;
+	DDRC = 0;
+	// ------------------------------------------- read
+	OK = true;
+	
+	DDRG |= 0x0F; // write to EM lines
+	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
+	DDRA = 0xFF; // low addresses to be writeable
+	DDRC = 0xFF; // high addresses to be writeable
+	
+	for (uint32_t i=0; i< 0x10000L; ++i) {
+		al = (i & 0xFF);
+		ah = ((i >> 8) & 0xFF);
+		PORTK = ah;
+		PORTF = al;
+
+		PORTA = al;
+		PORTC = ah;
+		NOP4();
+		PING = emLATCH; // LATCH down
+		DDRA = 0; // read
+		NOP4();
+		PING = emREAD; // flip read
+		NOP4();
+		NOP4();
+		b = PINA;
+		PING = emREAD; // flip read
+		if (b != ((al+ah) & 0xFF)) {
+			OK = false;
+			write_str("em["); write_hex32(i);write_str("] = ");write_hex8(((al+ah) & 0xFF));write_str(" vs. ");write_hex8(b); write_eoln();
+			b=wait_for_char(); write_hex8(b);
+			if (b == 0x1B) { // Escape
+				DDRA = 0;
+				DDRC = 0;
+				NEXT;
+				return;
+				};
+			};
+		};
+	DDRA = 0;
+	DDRC = 0;
+	
+	if (OK) {
+		write_str("External memory OK ");
+	} else {
+		write_str("External memory FAILED ");
+	};
+	
+	NEXT;
+}	// }}}
+void f_emR() {	// {{{ // (addr2 -- b) External Memory Read (chip bit bang)
+	INFO("em@");
+	uint16_t a=pop();
+	uint8_t al;
+	uint8_t ah;
+	al=a &0xFF;
+	ah= (a>>8) &0xFF;
+
+	uint8_t b;
+	DDRG |= 0x0F; // write to EM lines
+	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
+	DDRA = 0xFF; // low addresses to be writeable
+	PORTA = al;
+	DDRC = 0xFF; // high addresses to be writeable
+	PORTC = ah;
+	PING = emLATCH; // LATCH down
+	DDRA = 0; // read
+	PING = emREAD; // flip read
+	b = PINA;
+	PING = emREAD; // flip read
+	DDRA = 0;
+	DDRC = 0;
+	push(b);
+	NEXT;
+}	// }}}
+void f_emW() {	// {{{ // (b addr2 -- )) External Memory Write (chip bit bang)
+	INFO("emW");
+	uint16_t a=pop();
+	uint8_t al;
+	uint8_t ah;
+	al=a &0xFF;
+	ah= (a>>8) &0xFF;
+	uint8_t b=pop();
+	DDRG |= 0x0F; // write to EM lines
+	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
+	DDRA = 0xFF; // low addresses to be writeable
+	PORTA = al;
+	DDRC = 0xFF; // high addresses to be writeable
+	PORTC = ah;
+	PING = emLATCH; // LATCH down
+	PORTA = b;
+	PING = emWRITE; // flip write
+	PING = emWRITE; // flip write
+	DDRA = 0;
+	DDRC = 0;
+	NEXT;
+}	// }}}
 const __flash char f_words_name[]="WORDS2";
 void my_setup(){	// {{{
 	notrace=false;
