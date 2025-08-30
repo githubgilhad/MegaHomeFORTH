@@ -1,3 +1,5 @@
+#   LDFLAGS += -Wl,--section-start=.fartext=0x30000
+
 DEBUG_FLAGS = -Os -g
 #DEBUG=1
 #BOARD_TAG = nano

@@ -11,6 +11,17 @@
 #define D13 13
 #endif
 
+
+volatile void_fn_t frame_hook = default_frame_hook;	// called at end of frame
+
+// void default_frame_hook() __attribute__((section(".fartext")));
+void default_frame_hook(){ timer0_millis+=20; }	// fake millis
+
+
+extern "C" {
+	void VGA_hook();
+};
+
 //  {{{ divmod10_asm
 //
 // http://forum.arduino.cc/index.php?topic=167414.msg1293679#msg1293679
@@ -106,6 +117,7 @@ void memchck(){
 }
 BIOS::BIOS() {											// {{{
 	charset_hook();
+	frame_hook = default_frame_hook;
 	BIOS::chardef=&charset;
 	BIOS::current_output = BIOS_output::BIOS_none;
 	BIOS::set_output(BIOS_VGA);
@@ -369,9 +381,6 @@ uint8_t BIOS::get_scancode() {									// {{{
 	return BIOS_buffer_get_char();
 return 0;
 }	// }}}
-extern "C" {
-	void VGA_hook();
-};
 void BIOS::VGA_begin(){										// {{{
 	current_output = BIOS_VGA;
 	VGA_hook();
@@ -572,6 +581,7 @@ TIMSK1 = (1 << TOIE1);
 
 		interrupts();
 		*/
+	lib_VGA_begin();
 
 }	// }}}
 	volatile uint16_t BIOS::frames = 0;		// VGA counting the displayed frames (60Hz)
@@ -668,6 +678,7 @@ void BIOS::VGA_end(){										// {{{
 	TIMSK1=0;
 	TIMSK2=0;
 	interrupts();
+	lib_VGA_end();
 }	// }}}
 
 

@@ -157,8 +157,22 @@ public:
 		static BIOS_output current_output;	// BIOS_none
 
 }; 
+
+
 extern BIOS bios;
-// extern int main(void);
+
+extern "C" {
+	typedef void (*void_fn_t)();
+	extern volatile void_fn_t frame_hook;	// called at end of frame (as soon, as posiible, to enable work inside porches)
+	void default_frame_hook();	// fake millis
+
+	extern volatile unsigned long timer0_millis;
+	
+	extern void lib_VGA_begin();
+	extern void lib_VGA_end();
+}
+
+
 #else
 	// assembler here
 #endif

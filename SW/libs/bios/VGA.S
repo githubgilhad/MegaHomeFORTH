@@ -10,10 +10,13 @@
 #include "bios.h"
 //.extern BIOS::charset
 .extern BIOS::chardef
+.extern frame_hook
 .section .bss
 prev: .byte 0				// PS/2 previous sample of CLK, used for edge detection		// PS/2 previous value of INSIDE
 cnts: .byte 0				// PS/2 received bits counter
 data: .word 0				// PS/2 datagram as it is received bit by bit
+old_frame_hook:				// 16bit - func or trampoline
+	.word 0
 .section .text
 ; PORTL PL0-7 D49-42 8bit data out
 ; PORTB PB6 D12 HSYNC
@@ -34,6 +37,41 @@ data: .word 0				// PS/2 datagram as it is received bit by bit
 .global TIMER1_OVF_vect
 .global VGA_hook
 VGA_hook:	ret
+.global vga_frame_hook
+.type vga_frame_hook,@function
+vga_frame_hook:
+	// intro
+				// call previous hook
+	lds r30, frame_hook
+	lds r31, frame_hook+1
+	sbiw r30, 0	// only nonzero address
+	breq 1f
+	icall
+1:
+	// outro
+	ret
+
+.global lib_VGA_begin
+lib_VGA_begin:
+	lds	r24, frame_hook
+	lds	r25, frame_hook+1
+	sts	old_frame_hook,r24
+	sts	old_frame_hook+1,r25
+	
+	ldi	r24, lo8(gs(vga_frame_hook))
+	ldi	r25, hi8(gs(vga_frame_hook))
+	sts	frame_hook,r24
+	sts	frame_hook+1,r25
+	
+	ret
+.global lib_VGA_end
+lib_VGA_end:
+	lds	r24, old_frame_hook
+	lds	r25, old_frame_hook+1
+	sts	frame_hook,r24
+	sts	frame_hook+1,r25
+	
+	ret
 
 // ***************************************************************
 
@@ -111,9 +149,18 @@ TIMER1_OVF_vect:
 	subi r20, 30			// r20 = pixel line "lin"
 
 
-	cpi r20, 200			// draw only 200 scanlines (25 x 8) (vline 60-460)
+	cpi r20, 200			// draw only 200 double-scanlines (25 x 8) (vline 60-460)
 	brcs 1f				// regHandler too far for brcc
-	jmp regHandler			// regHandler handles PS/2 (do not show anything out of range)
+		cpi r20, 201			// ?first blank line after visible part
+		brne 2f				// ?no? then skip
+						// call hook
+		lds r30, frame_hook
+		lds r31, frame_hook+1
+		sbiw r30, 0	// only nonzero address
+		breq 2f
+		icall
+	2:
+		jmp regHandler			// regHandler handles PS/2 (do not show anything out of range)
 1:
 ;;	sbi PORTB, 4			// ??? end HSYNC (after only 1µ, should be 3,8µs but this buys valuable time here)
 
