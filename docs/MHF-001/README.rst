@@ -94,6 +94,9 @@ Errata and Improvements
 * each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
 * SD card reader needed little edge filing to not collide with ISCP connector and 3V3 connector - make little more place for it next time and add mounting holes in corner. Sitting just on Koptan tape looks good. (Alternatively unsolder all components and move them on PCB directly. Qualify MISO and MOSI (and maybe clock too) by CS, let CS go inside all the time. Use another pin than ISCP)
 * mark areas on SysBus, at least separate blocks as Data, Address, A, B, Other with lines
+* WARNING: When manually manipulating external RAM, there MUST be NOP (or other pause) between enabling Read and actually reading the value, like this  **cbi PORTG,2; NOP; in r24,PINA** (it probably is **NOT** problem for automatic use. just be sure to initialise all.)
+
+
 
 Larger Picture
 ===============
