@@ -43,6 +43,7 @@ char file_ver='A';
   File myFile;
 void ff_SD() {	// {{{ called by f_SD to get stack right
 file_ver++;
+/*
 wait_for_char();
 	wx("In SD ...");
 wait_for_char();
@@ -52,12 +53,15 @@ wait_for_char();
 	interrupts();
 wait_for_char();
 
+*/
 	bios.wait(1);
 	noInterrupts();
 	if (!SD.begin(53)) { interrupts(); wx("SD ini failed!"); return;};
 	interrupts();
+/*
 	wx("SD ini done.");
 wait_for_char();
+*/
 bios.wait(1);
 noInterrupts();
   char * fname="0_test.txt";
@@ -70,25 +74,55 @@ noInterrupts();
 bios.wait(1);
 noInterrupts();
   if (myFile) {
-    wx("Writing to test.txt...");
-    wx(fname);
+//    wx("Writing to test.txt...");
+//    wx(fname);
     myFile.println("testing 1, 2, 3.");
     // close the file:
     myFile.close();
-    wx("done.");
+//    wx("done.");
   } else {
     // if the file didn't open, print an error:
     wx("error opening test.txt");
   }
 interrupts();
-wait_for_char();
+// wait_for_char();
 bios.wait(1);
 noInterrupts();
 
+wx("\r\n");
 	myFile  = SD.open("/");
 	printDirectory(myFile, 0);
 	interrupts();
-	wx("SD Done");
+//	wx("SD Done");
 }	// }}}
-
+void ff_SD_CAT(char * name){	 // {{{
+	bios.wait(1);
+	noInterrupts();
+	if (!SD.begin(53)) { interrupts(); wx("SD ini failed!"); return;};
+	interrupts();
+	//
+	bios.wait(1);
+	noInterrupts();
+	myFile=SD.open(name, FILE_READ);
+	interrupts();
+	char c[2]={0,0};
+	if (myFile) {
+		while (myFile.available()) {
+			bios.wait(1);
+			noInterrupts();
+			c[0]=myFile.read();
+			interrupts();
+			wx(c);
+			};
+		bios.wait(1);
+		noInterrupts();
+		myFile.close();
+		interrupts();
+	} else {
+		wx("error opening file");
+		wx(name);
+	};
+	wx("\r\n");
+	
+}	// }}}
 }

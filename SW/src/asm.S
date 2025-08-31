@@ -574,6 +574,7 @@ DEFWORD w_semicol,FLG_IMMEDIATE,";",f_docol
 	.long w_left_brac_cw, w_exit_cw			// back to immediate
 
 DEFWORD w_SD,  	0,	"SD",	f_SD
+DEFWORD w_SD_CAT,  	0,	"SD_CAT",	f_SD_CAT	// ( -- ) read fname and cat its content
 DEFWORD w_emON,	0,	"emON",	f_emON			// ( -- ) enable External Memory Read chip bit bang (set ports etc)
 DEFWORD w_emR, 	0,	"em@",	f_emR			// (addr2 -- b) External Memory Read (chip bit bang)
 DEFWORD w_emW, 	0,	"emW",	f_emW			// (b addr2 -- )) External Memory Write (chip bit bang)

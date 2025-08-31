@@ -19,6 +19,7 @@
 	#include <unistd.h>
 #endif
 extern void ff_SD();
+extern void ff_SD_CAT(char * name);
 void wx(const char * p) { write_str((const __memx char *)p);}
 
 extern uint8_t B1at(uint32_t p);			// asm.S	read 1 byte at address p (somewhere), return 1 byte
@@ -1967,14 +1968,30 @@ void f_find() {	// {{{ ; WORD FIND return Addr_of_header (or 0 0 )
 // void ff_SD() {	// {{{ called by f_SD to get stack right
 // }	// }}}
 void f_SD() {	// {{{ SD - initialise and test
-	wait_for_char();
+/*	wait_for_char();
 	write_str("to SD \r\n##");
 	wait_for_char();
 	write_str("NOW really: to SD \r\n##");
+*/
 	ff_SD();
-	wait_for_char();
+/*	wait_for_char();
 	write_str("back from SD \r\n##");
 	wait_for_char();
+*/
+	NEXT;
+}	// }}}
+void f_SD_CAT() {	// {{{ SD - ask for file and type it
+/*	wait_for_char();
+	write_str("to SD \r\n##");
+	wait_for_char();
+	write_str("NOW really: to SD \r\n##");
+*/
+	get_word();
+	ff_SD_CAT(word_buf);
+/*	wait_for_char();
+	write_str("back from SD \r\n##");
+	wait_for_char();
+*/
 	NEXT;
 }	// }}}
 
@@ -1982,6 +1999,8 @@ void f_SD() {	// {{{ SD - initialise and test
 #define emREAD  2
 #define emLATCH 4
 #define emA16   8
+#define NOP()  __asm__ __volatile__ ( \
+	"nop\n\t" )
 #define NOP4()  __asm__ __volatile__ ( \
 	"nop\n\t" \
 	"nop\n\t" \
