@@ -1,0 +1,36 @@
+--- a/drivers/usb/serial/ch341.c
++++ b/drivers/usb/serial/ch341.c
+@@ -63,6 +63,7 @@
+ #define CH341_REG_DIVISOR      0x13
+ #define CH341_REG_LCR          0x18
+ #define CH341_REG_LCR2         0x25
++#define CH341_REG_RTSCTS       0x27
+ 
+ #define CH341_NBREAK_BITS      0x01
+ 
+@@ -684,6 +685,7 @@ static int ch341_tiocmset(struct tty_struct *tty,
+ 	struct ch341_private *priv = usb_get_serial_port_data(port);
+ 	unsigned long flags;
+ 	u8 control;
++	int r;
+ 
+ 	spin_lock_irqsave(&priv->lock, flags);
+ 	if (set & TIOCM_RTS)
+@@ -697,6 +699,17 @@ static int ch341_tiocmset(struct tty_struct *tty,
+ 	control = priv->mcr;
+ 	spin_unlock_irqrestore(&priv->lock, flags);
+ 
++	if (tty->termios.c_cflag & CRTSCTS) {
++		r = ch341_control_out(port->serial->dev, CH341_REQ_WRITE_REG,
++			CH341_REG_RTSCTS | ((uint16_t)CH341_REG_RTSCTS << 8),
++			0x0101);
++		if (r < 0) {
++			dev_err(&port->dev, "%s - USB control write error (%d)\n",
++				__func__, r);
++			tty->termios.c_cflag &= ~CRTSCTS;
++		}
++	}
++
+ 	return ch341_set_handshake(port->serial->dev, control);
+ }
+ 

@@ -68,6 +68,8 @@ Also discovered
 Errata and Improvements
 ========================
 
+* fix for **__memx** pointers usage `<https://gcc.gnu.org/bugzilla/show_bug.cgi?id=119989>`__ (already applied)
+* fix for kernel driver **drivers/usb/serial/ch341.c** - `<ch341.patch>`__ (DIY) `<https://bugzilla.kernel.org/show_bug.cgi?id=197109>`__
 * the label **"+ 5V -"** is wrong rotated (probabelly some autocorrect on schema -> PCB)
 * The transistor is `S8050`, not BC107
 * the Inside capacitor is `10 nF`, not 100pF
