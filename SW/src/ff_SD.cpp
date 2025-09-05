@@ -62,34 +62,34 @@ wait_for_char();
 	wx("SD ini done.");
 wait_for_char();
 */
-bios.wait(1);
-noInterrupts();
-  char * fname="0_test.txt";
-  fname[0]=file_ver;
-  myFile = SD.open(fname, FILE_WRITE);
-  interrupts();
+	bios.wait(1);
+	noInterrupts();
+	char * fname="0_test.txt";
+	fname[0]=file_ver;
+	myFile = SD.open(fname, FILE_WRITE);
+	interrupts();
 
   // if the file opened okay, write to it:
 //if (false) {
-bios.wait(1);
-noInterrupts();
-  if (myFile) {
-//    wx("Writing to test.txt...");
-//    wx(fname);
-    myFile.println("testing 1, 2, 3.");
-    // close the file:
-    myFile.close();
-//    wx("done.");
-  } else {
-    // if the file didn't open, print an error:
-    wx("error opening test.txt");
-  }
-interrupts();
-// wait_for_char();
-bios.wait(1);
-noInterrupts();
+	bios.wait(1);
+	noInterrupts();
+	if (myFile) {
+	//    wx("Writing to test.txt...");
+	//    wx(fname);
+		myFile.println("testing 1, 2, 3.");
+		// close the file:
+		myFile.close();
+	//    wx("done.");
+	} else {
+		// if the file didn't open, print an error:
+		wx("error opening test.txt");
+	};
+	interrupts();
+	// wait_for_char();
+	bios.wait(1);
+	noInterrupts();
 
-wx("\r\n");
+	wx("\r\n");
 	myFile  = SD.open("/");
 	printDirectory(myFile, 0);
 	interrupts();
@@ -113,6 +113,7 @@ void ff_SD_CAT(char * name){	 // {{{
 			c[0]=myFile.read();
 			interrupts();
 			wx(c);
+			if (c[0]==10) {c[0]=13;wx(c);};
 			};
 		bios.wait(1);
 		noInterrupts();

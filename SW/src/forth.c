@@ -2016,38 +2016,33 @@ static inline void delay4cycles(void) {
     );
 }
 
-void f_emON() {	// {{{ // ( -- ) enable External Memory Read chip bit bang (set ports etc)
-	INFO("emON");
+void f_test_em_manual() {	// {{{ // ( -- ) 
+	INFO("test_em_manual");
 	uint8_t al;
 	uint8_t ah;
 	uint8_t b;
 	bool OK;
-	DDRF = 0xFF;
-	DDRK = 0xFF;
 	
 	// -------------- write
 	DDRG |= 0x0F; // write to EM lines
-	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
+	PORTG = emA16 | emREAD | emWRITE; // bank 1, latch keep, /R disabled, /W disabled
 	DDRA = 0xFF; // low addresses to be writeable
 	DDRC = 0xFF; // high addresses to be writeable
 
 	for (uint32_t i=0; i< 0x10000L; ++i) {
 		al = (i & 0xFF);
 		ah = ((i >> 8) & 0xFF);
-		b = (al+ah) & 0xFF;
-		PORTK = ah;
-		PORTF = al;
-
+		b = (al+ah+3) & 0xFF;
 		PORTA = al;
 		PORTC = ah;
 		NOP4();
-		PING = emLATCH; // LATCH down
+		PING = emLATCH; // LATCH up (follow)
 		NOP4();
+		PING = emLATCH; // LATCH down (keep)
 		PORTA = b;
 		PING = emWRITE; // flip write
 		NOP4();
 		PING = emWRITE; // flip write
-		PING = emLATCH; // LATCH up
 		};
 	DDRA = 0;
 	DDRC = 0;
@@ -2055,38 +2050,31 @@ void f_emON() {	// {{{ // ( -- ) enable External Memory Read chip bit bang (set 
 	OK = true;
 	
 	DDRG |= 0x0F; // write to EM lines
-	PORTG |= 0x0F; // bank 1, latch open, /R disabled, /W disabled
-	DDRA = 0xFF; // low addresses to be writeable
-	DDRC = 0xFF; // high addresses to be writeable
+	PORTG = emA16 | emREAD | emWRITE; // bank 1, latch keep, /R disabled, /W disabled
 	
 	for (uint32_t i=0; i< 0x10000L; ++i) {
 		al = (i & 0xFF);
 		ah = ((i >> 8) & 0xFF);
-		PORTK = ah;
-		PORTF = al;
-
+		DDRA = 0xFF; // low addresses to be writeable
+		DDRC = 0xFF; // high addresses to be writeable
 		PORTA = al;
 		PORTC = ah;
-		NOP4();
-		PING = emLATCH; // LATCH down
+		PORTG |= emLATCH; // LATCH up (follow)
+		PORTG &= ~emLATCH; // LATCH down (keep)
 		DDRA = 0; // read
-		NOP4();
-		PING = emREAD; // flip read
-		NOP4();
-		NOP4();
+		PORTG &= ~emREAD; // Read down
+		NOP();
 		b = PINA;
-		PING = emREAD; // flip read
-		if (b != ((al+ah) & 0xFF)) {
+		if (b != ((al+ah+3) & 0xFF)) {
 			OK = false;
-			write_str("em["); write_hex32(i);write_str("] = ");write_hex8(((al+ah) & 0xFF));write_str(" vs. ");write_hex8(b); write_eoln();
+			write_str("em["); write_hex32(i);write_str("] = ");write_hex8(((al+ah+3) & 0xFF));write_str(" vs. ");write_hex8(b); write_eoln();
 			b=wait_for_char(); write_hex8(b);
 			if (b == 0x1B) { // Escape
-				DDRA = 0;
-				DDRC = 0;
 				NEXT;
 				return;
 				};
 			};
+		PORTG |= emREAD; // Read up
 		};
 	DDRA = 0;
 	DDRC = 0;
@@ -2117,8 +2105,10 @@ void f_emR() {	// {{{ // (addr2 -- b) External Memory Read (chip bit bang)
 	PING = emLATCH; // LATCH down
 	DDRA = 0; // read
 	PING = emREAD; // flip read
+	NOP();
 	b = PINA;
 	PING = emREAD; // flip read
+	PING = emLATCH; // LATCH up
 	DDRA = 0;
 	DDRC = 0;
 	push(b);
@@ -2146,6 +2136,54 @@ void f_emW() {	// {{{ // (b addr2 -- )) External Memory Write (chip bit bang)
 	DDRC = 0;
 	NEXT;
 }	// }}}
+
+static volatile uint8_t *extmem = (uint8_t *)(8 * 1024); // 0x2000
+
+void test_em_auto() {
+	for (uint16_t i = 0; i<32768; ++i) {
+		extmem[i] = (i+1) & 0xFF;
+	};
+	for (uint16_t i = 0; i<32768; ++i) {
+		if (extmem[i] != ((i+1) & 0xFF)) {
+			ERROR("Failed");
+			write_str("exm["); write_hex16(i);write_str("] = ");write_hex8(((i+1) & 0xFF));write_str(" vs. ");write_hex8(extmem[i]); write_eoln();
+			return;
+			};
+		};
+	ERROR("OK");
+}
+
+void f_test_em_auto() {	// {{{ ( -- ) test 32kB of extmem
+	DDRG |= 0x0F; // write to EM lines
+	PORTG = emA16 | emREAD | emWRITE; // bank 1, latch keep, /R disabled, /W disabled
+	DDRA = 0xFF; // low addresses to be writeable
+	DDRC = 0xFF; // high addresses to be writeable
+	// Enabling external memory interface
+	XMCRA |= _BV(SRE);  // enable externalmemory
+	
+	ERROR("1. Wait cycles: 2 + 1");
+	XMCRA |=  _BV(SRW11);
+	XMCRA |=  _BV(SRW10);
+	test_em_auto();
+	
+	ERROR("2. Wait cycles: 2");
+	XMCRA |=  _BV(SRW11);
+	XMCRA &= ~ _BV(SRW10);
+	test_em_auto();
+	
+	ERROR("3. Wait cycles: 1");
+	XMCRA &= ~ _BV(SRW11);
+	XMCRA |=  _BV(SRW10);
+	test_em_auto();
+	
+	ERROR("4. Wait cycles: 0");
+	XMCRA &= ~ _BV(SRW11);
+	XMCRA &= ~ _BV(SRW10);
+	test_em_auto();
+	
+	XMCRA &= ~ _BV(SRE);  // disable externalmemory
+}	// }}}
+
 const __flash char f_words_name[]="WORDS2";
 void my_setup(){	// {{{
 	notrace=false;
