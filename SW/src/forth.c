@@ -17,6 +17,7 @@
 #endif
 extern void ff_SD();
 extern void ff_SD_CAT(char * name);
+extern void ff_SD_TYPE(char * name);
 void wx(const char * p) { write_str((const __memx char *)p);}
 
 extern uint8_t B1at(uint32_t p);			// asm.S	read 1 byte at address p (somewhere), return 1 byte
@@ -40,6 +41,7 @@ _Static_assert(sizeof(const __memx void *) == 3, "const __memx void * must be 24
 _Static_assert(sizeof(const __memx void *) == 4, "const __memx void * must be 32 bits");
 void do_traceback();	// forward
 extern char a_read_char();
+
 char read_char() {
 	char c=a_read_char();
 	if (c==0x7E) do_traceback();
@@ -2011,6 +2013,21 @@ void f_SD_CAT() {	// {{{ SD - ask for file and type it
 */
 	get_word();
 	ff_SD_CAT(word_buf);
+/*	wait_for_char();
+	write_str("back from SD \r\n##");
+	wait_for_char();
+*/
+	NEXT;
+}	// }}}
+
+void f_SD_TYPE() {	// {{{ SD - ask for file and type it
+/*	wait_for_char();
+	write_str("to SD \r\n##");
+	wait_for_char();
+	write_str("NOW really: to SD \r\n##");
+*/
+	get_word();
+	ff_SD_TYPE(word_buf);
 /*	wait_for_char();
 	write_str("back from SD \r\n##");
 	wait_for_char();

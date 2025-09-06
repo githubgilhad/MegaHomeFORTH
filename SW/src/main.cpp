@@ -64,7 +64,19 @@ extern uint8_t  __DATA_REGION_LENGTH__;
 extern "C" {
 	extern void my_setup();
 	extern void my_loop();
+extern int (*file_read)();
+extern uint8_t vram[BIOS_ROWS][BIOS_COLS];
 	char read_char() {
+		int cc=-1;
+		if (NULL != file_read) {
+			cc=file_read();
+			vram[0][BIOS_COLS-1]='!';
+			vram[0][0]=cc;
+		} else {
+			vram[0][BIOS_COLS-1]='x';
+		};
+		if (cc >0 ) return cc;
+		//
 		uint16_t c=bios.get_key();
 		if (c== xF12) { if(bios.current_output==BIOS_VGA) { bios.set_output(BIOS_RCA); } else { bios.set_output(BIOS_VGA);} ; return 0; };
 		return c;

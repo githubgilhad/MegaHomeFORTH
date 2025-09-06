@@ -126,4 +126,42 @@ void ff_SD_CAT(char * name){	 // {{{
 	wx("\r\n");
 	
 }	// }}}
+int (*file_read)()=NULL;
+
+int f_fileread(){
+	int c=-1;
+	if (myFile.available()) {
+		bios.wait(1);
+		noInterrupts();
+		c=myFile.read();
+		interrupts();
+	} else {
+		bios.wait(1);
+		noInterrupts();
+		myFile.close();
+		interrupts();
+		file_read=NULL;
+	};
+	return c;
+};
+void ff_SD_TYPE(char * name){	 // {{{
+	bios.wait(1);
+	noInterrupts();
+	if (!SD.begin(53)) { interrupts(); wx("SD ini failed!"); return;};
+	interrupts();
+	//
+	bios.wait(1);
+	noInterrupts();
+	myFile=SD.open(name, FILE_READ);
+	interrupts();
+	if (myFile) {
+		file_read=&f_fileread;
+		wx("serving");
+	} else {
+		wx("error opening file");
+		wx(name);
+	};
+	wx("\r\n");
+	
+}	// }}}
 }
