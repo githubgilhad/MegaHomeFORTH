@@ -472,6 +472,7 @@ DEFWORD w_word, 	0,	"WORD",	f_word
 DEFWORD w_comma,	0,	",",	f_comma
 DEFWORD w_number,	0,	"NUMBER",	f_number
 DEFWORD w_dot,  	0,	".",	f_dot
+DEFWORD w_dotD,  	0,	".D",	f_dotD
 DEFWORD w_branch,	FLG_ARG,	"BRANCH",	f_branch
 DEFWORD w_0branch,	FLG_ARG,	"0BRANCH",	f_0branch	// branch if zero
 DEFWORD w_interpret,	0,	"INTERPRET",	f_interpret
