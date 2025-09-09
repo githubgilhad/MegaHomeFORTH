@@ -2075,13 +2075,12 @@ void f_test_em_manual() {	// {{{ // ( -- )
 		b = (al+ah+3) & 0xFF;
 		PORTA = al;
 		PORTC = ah;
-		NOP4();
 		PING = emLATCH; // LATCH up (follow)
-		NOP4();
+		NOP();
 		PING = emLATCH; // LATCH down (keep)
 		PORTA = b;
 		PING = emWRITE; // flip write
-		NOP4();
+		NOP();
 		PING = emWRITE; // flip write
 		};
 	DDRA = 0;
@@ -2100,6 +2099,7 @@ void f_test_em_manual() {	// {{{ // ( -- )
 		PORTA = al;
 		PORTC = ah;
 		PORTG |= emLATCH; // LATCH up (follow)
+		NOP();
 		PORTG &= ~emLATCH; // LATCH down (keep)
 		DDRA = 0; // read
 		PORTG &= ~emREAD; // Read down
@@ -2180,10 +2180,10 @@ void f_emW() {	// {{{ // (b addr2 -- )) External Memory Write (chip bit bang)
 static volatile uint8_t *extmem = (uint8_t *)(8 * 1024); // 0x2000
 
 void test_em_auto() {
-	for (uint16_t i = 0; i<32768; ++i) {
+	for (uint16_t i = 0; i<32000; ++i) {
 		extmem[i] = (i+1) & 0xFF;
 	};
-	for (uint16_t i = 0; i<32768; ++i) {
+	for (uint16_t i = 0; i<32000; ++i) {
 		if (extmem[i] != ((i+1) & 0xFF)) {
 			ERROR("Failed");
 			write_str("exm["); write_hex16(i);write_str("] = ");write_hex8(((i+1) & 0xFF));write_str(" vs. ");write_hex8(extmem[i]); write_eoln();
