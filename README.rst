@@ -45,7 +45,7 @@ All in all - I will make another PCB. This one is OK, but I have much better des
 
 For compatibility current status was set to branch **MHF-001**
 
-
+|MHF-001.png|
 
 
 MegaHomeFORTH
@@ -211,6 +211,12 @@ I have some ideas, but it would need lot of work to bring it into life
 	:align: top
 	:target: docs/MHF-001/DSC_8305.s.jpg
 
+.. |MHF-001.png| image:: MHF-001.png
+	:width: 250
+	:align: top
+	:target: MHF-001.png
+
+
 License
 -------
 GPL 2 or GPL 3 - choose the one that suits your needs.
@@ -218,4 +224,6 @@ GPL 2 or GPL 3 - choose the one that suits your needs.
 Author
 ------
 Gilhad - 2025
+
+
 
