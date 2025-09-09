@@ -43,6 +43,8 @@ I did run into lot of problems in this project, many of them was on my part, som
 
 All in all - I will make another PCB. This one is OK, but I have much better design ideas now.
 
+For compatibility current status was set to branch **MHF-001**
+
 
 
 
