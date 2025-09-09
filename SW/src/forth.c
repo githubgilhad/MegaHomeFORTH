@@ -2103,7 +2103,7 @@ void f_test_em_manual() {	// {{{ // ( -- )
 		PORTG &= ~emLATCH; // LATCH down (keep)
 		DDRA = 0; // read
 		PORTG &= ~emREAD; // Read down
-		NOP();
+		NOP();		// README: here MUST be at least 1 tick pause between open for read and actual reading
 		b = PINA;
 		if (b != ((al+ah+3) & 0xFF)) {
 			OK = false;

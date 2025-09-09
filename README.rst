@@ -15,6 +15,37 @@
 
 Many thanks to `PCBway <https://www.pcbway.com/>`__, which sponsored this project by manufacturing the PCB for free. The code for this PCB is **W828834AS5P3** and I will create it as free project after I populate it with all parts and get it to work somehow (= I will write SW for demonstrating at least some functionality).
 
+**MHF-001** results:
+====================
+
+The **PCBway** PCB was excelent. Communications with PCBway was easy and straightforward, PCB was made exactly to my specification and it was delivered in good time too. Packaging was standart and the PCB was perfect. It was easy to solder, desolder, resolder parts as the testing went and the PCB was not damaged even with some parts (like USB connector) was resoldered many times.
+
+The PCB was perfect, there is nothing what could be improved on the manufacturing. Bad design decisions are problem on my side, PCBway could not discover or prevent them :)
+
+**I will fully recomend PCBway as PCB manufacturer.**
+
+Also their sponsorship encouraged me to speed progress on this project and to write about it, which is really important part. I thank PCBway for their encouragement.
+
+I did run into lot of problems in this project, many of them was on my part, some not (none on PCBway part)
+
+- I found error in compiler (it is fixed now and was really obscure `<https://gcc.gnu.org/bugzilla/show_bug.cgi?id=119989>`__ )
+- CH341G is not fully supported in kernel. There is an unofficial fix, but I may add another option too. And I need way to disable this chip alltogether, to be able use Serial + DTR + line flow over connector (and not fight signalling from chip)
+- I underestimated how difficult is to reliably handsolder MCU and memories - I will make better footprints for it, and for USB too
+- I had no testing program for the HW
+- bad understanding of some technicalities (like that RTS/CTS are crossed between MCU and CH341G in similar way as RX/TX)
+- bad planning for port usage 
+	- VGA output must be on lower port, which allows **OUT** instruction - **STS** is one tick slower and it matter
+	- CTS(in) should be on some Pin Change Interrupt pin
+- **74HC165** is level driven so manipulating it "manually" leads to doubled first bit value, I will use **74KC166**, which is edge driven, to prevent this problem
+- USB connector is better to be massive (like USB A) and easily repaired (as it is physically manipulated often) - and rather be on small module for repairability
+- I need even better testability - more pinheaders, add GND (and maybe +5V) to each connector etc...
+- see `<https://github.com/githubgilhad/MegaHomeFORTH/tree/master/docs/MHF-001#errata-and-improvements>`__ for more details
+
+All in all - I will make another PCB. This one is OK, but I have much better design ideas now.
+
+
+
+
 MegaHomeFORTH
 =============
 
