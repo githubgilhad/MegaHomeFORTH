@@ -13,7 +13,8 @@
 	:width: 250
 	:target: MemxFORTHChipandColorfulStack.png
 
-Many thanks to `PCBway <https://www.pcbway.com/>`__, which sponsored this project by manufacturing the PCB for free. The code for this PCB is **W828834AS5P3** and I will create it as free project after I populate it with all parts and get it to work somehow (= I will write SW for demonstrating at least some functionality).
+Many thanks to `PCBway <https://www.pcbway.com/>`__, which sponsored this project by manufacturing the PCB for free. The code for this PCB is **W828834AS5P3** and I created it as free project  here `<https://www.pcbway.com/project/shareproject/W828834AS5P3_MegaHomeFORTH_MHF_001_cheap_computer_with_VGA_PS_2_SD_card_ba_2abd40e2.html>`__
+
 
 **MHF-001** results:
 ====================
