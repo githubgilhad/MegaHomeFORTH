@@ -1,4 +1,4 @@
-25703889310957911
+25710919717742535
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -67994,6 +67994,34 @@ LED_THT
 LED_VCCLite_5381H7_6.35x6.35mm
 Yellow 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
 Yellow 5381 Series LED
+0
+2
+2
+MHF
+G_SOIC-16_3.9x9.9mm_HandSolder
+SOIC, 16 Pin (JEDEC MS-012, variation AC, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO 16-pin-NSOP R-16 R-16-S D0016A M2B SO16 SOT109-1 751B SOIC_N narrow
+0
+16
+16
+MHF
+G_TQFP-100_14x14mm_HandSolder
+TQFP, 100 Pin (JEDEC MS-026 variation AED, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=683), generated with kicad-footprint-generator ipc_gullwing_generator.py modified by Gilhad
+TQFP QFP VQ100 CASE-932AN 983B-01 SOT386-1 C100-1
+0
+100
+100
+MHF
+G_TSOP-I-32_18.4x8mm_HandSolder
+TSOP-I, 32 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation BD), generated with kicad-footprint-generator ipc_gullwing_generator.py modifyed by Gilhad
+TSOP-I SO
+0
+32
+32
+MHF
+G_rework_jumper_2.54mm
+Rework Jumper - pin+hole
+
 0
 2
 2

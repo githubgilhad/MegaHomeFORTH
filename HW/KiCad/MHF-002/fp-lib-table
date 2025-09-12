@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MHF")(type "KiCad")(uri "${KIPRJMOD}/footprints/MHF.pretty")(options "")(descr "Library for MegaHomeFORTH"))
+)
