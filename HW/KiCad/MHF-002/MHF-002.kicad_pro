@@ -466,9 +466,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "MHF"
+    ],
     "pinned_symbol_libs": [
-      "PCM_Gilhad_symbols"
+      "PCM_Gilhad_symbols",
+      "MHF"
     ]
   },
   "meta": {

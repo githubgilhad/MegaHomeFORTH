@@ -1,4 +1,4 @@
-25710919717742535
+25717950481888056
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -67998,12 +67998,33 @@ Yellow 5381 Series LED
 2
 2
 MHF
+CUI_RCJ-047_Yellow
+RCA connector
+
+0
+2
+2
+MHF
+G_CP2102
+USB-UART module
+
+0
+14
+14
+MHF
 G_SOIC-16_3.9x9.9mm_HandSolder
 SOIC, 16 Pin (JEDEC MS-012, variation AC, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO 16-pin-NSOP R-16 R-16-S D0016A M2B SO16 SOT109-1 751B SOIC_N narrow
 0
 16
 16
+MHF
+G_SOIC-20W_7.5x12.8mm_P1.27mm_HandSolder
+SOIC, 20 Pin (JEDEC MS-013AC, https://www.analog.com/media/en/package-pcb-resources/package/233848rw_20.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+20
+20
 MHF
 G_TQFP-100_14x14mm_HandSolder
 TQFP, 100 Pin (JEDEC MS-026 variation AED, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=683), generated with kicad-footprint-generator ipc_gullwing_generator.py modified by Gilhad
@@ -68025,6 +68046,13 @@ Rework Jumper - pin+hole
 0
 2
 2
+MHF
+J_Mini-DIN-6
+Mini-DIN-6 Jack. CUI Devices # MD-60SM (with shield can on outer two pins). alt: # MD-60S (no shield can)
+
+0
+9
+9
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
