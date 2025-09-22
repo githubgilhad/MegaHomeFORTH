@@ -1,0 +1,221 @@
+(footprint "J_Mini-DIN-6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Mini-DIN-6 Jack. CUI Devices # MD-60SM (with shield can on outer two pins). alt: # MD-60S (no shield can)")
+	(property "Reference" "REF**"
+		(at -7.3795 9.7252 270)
+		(layer "F.SilkS")
+		(uuid "1a2c187d-ad27-42fd-8b4d-62a09e16498d")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "J_Mini-DIN-6"
+		(at 0 -1.27 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aaa5a1bd-18cf-4d8b-9f74-21bbe3ceb9d7")
+		(effects
+			(font
+				(size 0.64 0.64)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7449e418-ac8f-4e7c-907e-c1a31d012103")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1d6f66d9-8d2e-4172-8d61-d01f3d4bf604")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files)
+	(fp_line
+		(start -6.35 1.27)
+		(end -6.35 12.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "63438499-19e1-42d9-92dd-db1df06523a1")
+	)
+	(fp_line
+		(start -6.35 12.7)
+		(end 6.35 12.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51d3e6ff-cf27-4730-9747-218e3beb0e92")
+	)
+	(fp_line
+		(start 6.35 12.7)
+		(end 6.35 1.27)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b52eae8b-0b18-4897-8e14-bd2aa75c5fd5")
+	)
+	(fp_line
+		(start -6.35 0)
+		(end -6.35 1.27)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "a73fcada-a47b-4a23-ba59-bd71fd013f11")
+	)
+	(fp_line
+		(start -6.35 0)
+		(end 6.35 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "c54a4669-05e3-46ad-b2e6-0c13e7ea2cce")
+	)
+	(fp_line
+		(start 6.35 0)
+		(end 6.35 1.27)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "791c4ebb-079f-4cea-87a4-6769cb4d8fcd")
+	)
+	(fp_rect
+		(start -6.25 0)
+		(end 6.25 12.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d7666618-bd2e-4737-b9da-a464b6b65d4d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.25 1.75 0)
+		(layer "F.Fab")
+		(uuid "7a00371b-f3be-4dd2-8402-e2b71cee4ac3")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.3 8.5)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cec10b0d-d00d-4e66-8476-5449c9f334fd")
+	)
+	(pad "2" thru_hole circle
+		(at 1.3 8.5)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d7d9aaaa-2728-42e7-993f-01fcf8391d20")
+	)
+	(pad "3" thru_hole circle
+		(at -3.4 8.5)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a7845e11-e517-42dd-ac87-f058a5cab2c7")
+	)
+	(pad "4" thru_hole circle
+		(at 3.4 8.5)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6e621511-133b-4cd1-9b34-5f0f91d11a81")
+	)
+	(pad "5" thru_hole circle
+		(at -3.4 11)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "73235cb5-7ff3-4618-bbc3-22eb13277881")
+	)
+	(pad "6" thru_hole circle
+		(at 3.4 11)
+		(size 1.778 1.778)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f915010f-6fbf-427c-aa84-91fc86ba85d7")
+	)
+	(pad "C1" thru_hole circle
+		(at -6.75 5.5)
+		(size 3.81 3.81)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "25f1a32e-e3c1-4545-b295-211dabb8f6a4")
+	)
+	(pad "C2" thru_hole circle
+		(at 6.75 5.5)
+		(size 3.81 3.81)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1e35e302-6852-4200-93ab-4e7e9685cf50")
+	)
+	(pad "SH" thru_hole circle
+		(at 0 4.7)
+		(size 3.81 3.81)
+		(drill 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7ac52842-2cbf-4a81-b9a7-07b20669b8e3")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/J_Mini-DIN-6.step"
+		(offset
+			(xyz 0 -1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
