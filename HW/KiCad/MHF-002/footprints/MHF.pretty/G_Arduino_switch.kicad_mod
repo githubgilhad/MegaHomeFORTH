@@ -1,0 +1,169 @@
+(footprint "G_Arduino_switch"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Arduino switch")
+	(property "Reference" "SW2"
+		(at 2.3 3.2 0)
+		(layer "F.SilkS")
+		(uuid "e62a22e5-bb8d-4c78-952f-829a9f842d9b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "SW"
+		(at 2 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "3cb35d7e-0c23-41ac-8da2-b8e785181bb6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c187a380-9c67-43ed-9cd0-f254698f62af")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Arduino switch"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9e6697f-d26f-48c4-ac89-906df9fddcdd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.9 1.4)
+		(end -0.9 5.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b27f131a-f6d2-4fdb-b4b0-8023d8d6ab1b")
+	)
+	(fp_line
+		(start -0.7 1.4)
+		(end -0.7 5.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff53234a-eb5b-4fc1-ac1f-300ad894b867")
+	)
+	(fp_line
+		(start 1.1 0.2)
+		(end 3.3 0.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "afdd9fe5-9e3c-4422-9691-53196a0670a7")
+	)
+	(fp_line
+		(start 1.2 6.4)
+		(end 3.4 6.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8bc9a318-080b-4e6b-bec4-ad4e1888bd56")
+	)
+	(fp_line
+		(start 5.2 1.4)
+		(end 5.2 5.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "292ce24e-3ff6-4537-a051-df50a6e48b4e")
+	)
+	(fp_line
+		(start 5.4 1.4)
+		(end 5.4 5.1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "181a9ec8-16e3-419e-8e23-bd39e6e5ec4d")
+	)
+	(fp_circle
+		(center 2.3 3.2)
+		(end 2.3 5.4)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c8e1f30a-8ef0-4817-936d-eecbf6079b9a")
+	)
+	(pad "1" thru_hole oval
+		(at 4.5 0)
+		(size 2 3)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "1042f245-52f1-49ca-9b93-9d618787327b")
+	)
+	(pad "2" thru_hole oval
+		(at 4.5 6.5)
+		(size 2 3)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "1782b63f-f6ab-40f7-9fa6-b9519af6810a")
+	)
+	(pad "3" thru_hole oval
+		(at 0 0)
+		(size 2 3)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "d806c74f-8507-4748-8f00-4cc5fda4451a")
+	)
+	(pad "4" thru_hole oval
+		(at 0 6.5)
+		(size 2 3)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "29e850c5-cb13-4b50-bb9d-c3288918d44f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/G_Arduino_switch.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

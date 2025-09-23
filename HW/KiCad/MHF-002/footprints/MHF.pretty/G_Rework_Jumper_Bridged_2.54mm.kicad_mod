@@ -1,4 +1,4 @@
-(footprint "G_rework_jumper_2.54mm"
+(footprint "G_Rework_Jumper_Bridged_2.54mm"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -230,7 +230,7 @@
 	(pad "2" thru_hole circle
 		(at 2.54 0)
 		(size 1.8 1.8)
-		(drill 0.8)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "1740034a-765d-40b8-91b7-a61853103bd2")

@@ -40,6 +40,8 @@ Changes agains MHF-001
 * the Inside capacitor is `10 nF`, not 100pF
 * the resistor is 20 |kOhm|, no 3k3/22k
 * breakout VGA, PS/2 and RCA conectors to pinheader
+* LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch` so it will shine with VGA attached - like 10 |kOhm| green LED?)
+* LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
 
 ToDo changes
 ================================================================================
@@ -54,8 +56,6 @@ ToDo changes
 	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
 	* enable isolate  **CH340G** via closed solderpads (to freely use Serial headers)
 	* breakout `DTR` to Serial headers
-* LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch` so it will shine with VGA attached - like 10 |kOhm| green LED?)
-* LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
 * make my own footprints with longer pads for SMD ICs to make soldering easier

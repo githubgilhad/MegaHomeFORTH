@@ -12536,6 +12536,222 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "MHF:Arduino_Switch"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0.635 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Arduino_Switch"
+				(at 0 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "MHF:G_Arduino_switch"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MEC 5E single pole normally-open tactile switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*MEC*5G* *Switch*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Arduino_Switch_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 3.81) (xy 2.286 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MHF:Conn_Coaxial"
 			(pin_names
 				(offset 1.016)
@@ -12596,7 +12812,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL* *RCJ*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13508,7 +13724,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MHF:ReworkJumper_2_Bridged"
+		(symbol "MHF:Rework_Jumper_2_Bridged"
 			(pin_numbers
 				(hide yes)
 			)
@@ -13528,7 +13744,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "ReworkJumper_2_Bridged"
+			(property "Value" "Rework_Jumper_2_Bridged"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -13572,7 +13788,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Bridged*"
+			(property "ki_fp_filters" "*Rework_Jumper*Bridged*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13581,7 +13797,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ReworkJumper_2_Bridged_0_1"
+			(symbol "Rework_Jumper_2_Bridged_0_1"
 				(rectangle
 					(start -0.254 0.508)
 					(end 0.254 -0.508)
@@ -13594,7 +13810,7 @@
 					)
 				)
 			)
-			(symbol "ReworkJumper_2_Bridged_1_1"
+			(symbol "Rework_Jumper_2_Bridged_1_1"
 				(rectangle
 					(start -1.778 0.762)
 					(end -0.254 -0.762)
@@ -14783,7 +14999,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* PinHole*1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -15100,222 +15316,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_MEC_5E"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0.635 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_MEC_5E_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 3.81) (xy 2.286 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.778 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.778 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -20704,6 +20704,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 156.21) (xy 345.44 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "099280ee-9350-43b0-8478-a997dd75ecca")
+	)
+	(wire
+		(pts
 			(xy 190.5 96.52) (xy 199.39 96.52)
 		)
 		(stroke
@@ -21161,6 +21171,16 @@
 			(type default)
 		)
 		(uuid "13c19e3b-a6d0-4c91-acb2-d2e135ef13b9")
+	)
+	(wire
+		(pts
+			(xy 307.34 151.13) (xy 311.15 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ccc841-1699-438b-bbae-934d53251f1e")
 	)
 	(wire
 		(pts
@@ -22631,6 +22651,16 @@
 			(type default)
 		)
 		(uuid "3344455b-b172-43e4-b50a-45389d472ea4")
+	)
+	(wire
+		(pts
+			(xy 331.47 151.13) (xy 318.77 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33481369-042b-42cd-944f-905050a7eb37")
 	)
 	(wire
 		(pts
@@ -25264,6 +25294,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 156.21) (xy 311.15 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed1c63d-a531-4bfc-80f6-9173d25f0a55")
+	)
+	(wire
+		(pts
 			(xy 346.71 260.35) (xy 339.09 260.35)
 		)
 		(stroke
@@ -25831,6 +25871,16 @@
 			(type default)
 		)
 		(uuid "7c21cb45-9281-45da-a71b-bc57df45560e")
+	)
+	(wire
+		(pts
+			(xy 339.09 151.13) (xy 345.44 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c2aa2d9-5cfb-4d9e-ab01-502ce84f4c37")
 	)
 	(wire
 		(pts
@@ -28221,6 +28271,16 @@
 			(type default)
 		)
 		(uuid "adc6e4a6-d544-4f0e-ac6d-93f86344bace")
+	)
+	(wire
+		(pts
+			(xy 331.47 156.21) (xy 318.77 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade12d0e-8925-44e9-8eaa-975348198ab9")
 	)
 	(wire
 		(pts
@@ -36342,6 +36402,28 @@
 			)
 		)
 	)
+	(global_label "Reset"
+		(shape input)
+		(at 345.44 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49e0ebd4-df28-4fa7-9066-0cf2d35d9a6b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 353.6262 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_SHARE_REQUEST"
 		(shape input)
 		(at 731.52 156.21 90)
@@ -36712,6 +36794,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VGA Latch"
+		(shape input)
+		(at 307.34 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a436d36-5120-4c6e-b7ea-08f969891a29")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 294.7996 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -46534,7 +46638,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "22p"
 			(at 425.45 320.04 90)
 			(effects
 				(font
@@ -46919,6 +47023,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 335.28 156.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d76aadb-143d-453e-9ffb-22793ff82e77")
+		(property "Reference" "LED10"
+			(at 335.5975 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Reset"
+			(at 329.2475 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 335.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 335.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 335.28 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2d4a667c-de6c-470b-82e4-469e4389a3eb")
+		)
+		(pin "1"
+			(uuid "06eee459-5e6b-4ba3-9b1a-34b3ff9bd36f")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 226.06 34.29 0)
 		(unit 1)
@@ -47142,7 +47323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SDCard:SDCard"
+		(property "Footprint" "MHF:SDCard"
 			(at 454.025 196.85 0)
 			(effects
 				(font
@@ -47601,7 +47782,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
+		(lib_id "MHF:Arduino_Switch")
 		(at 148.59 327.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -47626,7 +47807,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Arduino Mega 2560:SW_TS06-667-30-BK-100-G-SMT-TR"
+		(property "Footprint" "MHF:G_Arduino_switch"
 			(at 148.59 320.04 0)
 			(effects
 				(font
@@ -47774,6 +47955,72 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 307.34 156.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43dca240-e529-468a-825c-bb33e4562ea2")
+		(property "Reference" "#PWR0134"
+			(at 311.15 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 303.53 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 307.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 307.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 307.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0af399e3-b8d5-4e1b-af12-4e8547f9520c")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0134")
 					(unit 1)
 				)
 			)
@@ -50316,7 +50563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:ReworkJumper_2_Bridged")
+		(lib_id "MHF:Rework_Jumper_2_Bridged")
 		(at 40.64 187.96 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -50343,7 +50590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MHF:G_rework_jumper_2.54mm"
+		(property "Footprint" "MHF:G_Rework_Jumper_Bridged_2.54mm"
 			(at 40.64 187.96 0)
 			(effects
 				(font
@@ -50798,7 +51045,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "586babbb-3b9f-4805-8b4d-c7f01c3cd487")
 		(property "Reference" "#PWR079"
 			(at 311.15 137.16 0)
@@ -52926,7 +53172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 127.9652 336.55 0)
 			(effects
 				(font
@@ -58569,6 +58815,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 314.96 156.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a87aa5c-5484-4b75-8595-85abe14cf5d7")
+		(property "Reference" "R47"
+			(at 314.96 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 314.96 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 314.96 154.432 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 314.96 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 314.96 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "305a36c2-4a32-4c31-aae3-054a05779fb7")
+		)
+		(pin "1"
+			(uuid "b418e46f-9836-44bf-8524-136e5dea4b6e")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 417.83 83.82 0)
 		(unit 1)
@@ -60723,6 +61037,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 314.96 151.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae6f1db9-5253-48b1-9450-65c8279570c2")
+		(property "Reference" "R46"
+			(at 314.96 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 314.96 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 314.96 149.352 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 314.96 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 314.96 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "68c48a9e-702b-41a1-a5f9-f03404568ded")
+		)
+		(pin "1"
+			(uuid "9ae0139c-c715-438a-b695-c0f2981fb145")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 814.07 370.84 0)
 		(unit 1)
@@ -62599,7 +62981,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "22p"
 			(at 426.72 336.55 90)
 			(effects
 				(font
@@ -67546,6 +67928,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 345.44 151.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e48b73d5-630d-4cc7-9c58-784bc2429696")
+		(property "Reference" "#PWR0133"
+			(at 351.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 350.52 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 345.44 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 345.44 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 345.44 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45a21e9d-a36d-4d8e-91fe-e547c2140811")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 759.46 431.8 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -69456,6 +69904,83 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 335.28 151.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eff2a634-55d6-4611-84ca-6d0b5ef668a5")
+		(property "Reference" "LED9"
+			(at 335.5975 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYSTEM"
+			(at 329.2475 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 335.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 335.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 335.28 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe5efbd8-e583-4338-b500-ad5c7627ba2b")
+		)
+		(pin "1"
+			(uuid "6009820d-2cc7-4290-8e1a-f73be4abe421")
+		)
+		(instances
+			(project "MHF-002"
+				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
+					(reference "LED9")
 					(unit 1)
 				)
 			)

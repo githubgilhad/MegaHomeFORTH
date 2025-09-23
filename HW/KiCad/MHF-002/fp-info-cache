@@ -1,4 +1,4 @@
-25719709060068779
+25721468738000752
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -68005,12 +68005,26 @@ RCA connector
 2
 2
 MHF
+G_Arduino_switch
+Arduino switch
+
+0
+4
+4
+MHF
 G_CP2102
 USB-UART module
 
 0
 14
 14
+MHF
+G_Rework_Jumper_Bridged_2.54mm
+Rework Jumper - pin+hole
+
+0
+2
+2
 MHF
 G_SOIC-16_3.9x9.9mm_HandSolder
 SOIC, 16 Pin (JEDEC MS-012, variation AC, https://www.jedec.org/document_search?search_api_views_fulltext=MS-012, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -68039,13 +68053,6 @@ TSOP-I SO
 0
 32
 32
-MHF
-G_rework_jumper_2.54mm
-Rework Jumper - pin+hole
-
-0
-2
-2
 MHF
 J_Mini-DIN-6
 Mini-DIN-6 Jack. CUI Devices # MD-60SM (with shield can on outer two pins). alt: # MD-60S (no shield can)
