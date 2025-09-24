@@ -133,66 +133,14 @@
 		(uuid "4a0b57d9-65fd-49d4-81fa-7f63fccf4046")
 	)
 	(fp_line
-		(start 0 3)
-		(end 0 -3)
+		(start 0 2.7)
+		(end 0 -2.7)
 		(stroke
 			(width 0.127)
 			(type solid)
 		)
 		(layer "F.SilkS")
 		(uuid "ebc832aa-8537-40cd-ab66-e8e362b3b2a1")
-	)
-	(fp_line
-		(start 0.25 -4.15)
-		(end 8.89 -4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f204b281-cdfc-46b1-9a2c-4e3e4e499985")
-	)
-	(fp_line
-		(start 9.11 4.15)
-		(end 0.25 4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "efe9c422-a170-4e32-abc9-cf4b30d9698a")
-	)
-	(fp_line
-		(start 9.5 -3.54)
-		(end 9.5 3.76)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "67524ba4-d487-4a73-b163-3a9d142e9972")
-	)
-	(fp_arc
-		(start 8.89 -4.15)
-		(mid 9.321335 -3.971335)
-		(end 9.5 -3.54)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "d3d603d3-3432-4721-b423-61174909a593")
-	)
-	(fp_arc
-		(start 9.5 3.76)
-		(mid 9.385772 4.035772)
-		(end 9.11 4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c67e7d43-f88c-4c2e-bae0-ad90ca0be141")
 	)
 	(fp_circle
 		(center -3.99 5.513)
@@ -204,6 +152,110 @@
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "99ff0e78-8ffb-412f-9938-07e3b1f35265")
+	)
+	(fp_line
+		(start 0 -4.15)
+		(end 8.91 -4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "67bd6245-f755-4ad9-be4f-4aa4172c0a4b")
+	)
+	(fp_line
+		(start 0.25 -4.15)
+		(end 8.89 -4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "f204b281-cdfc-46b1-9a2c-4e3e4e499985")
+	)
+	(fp_line
+		(start 9.11 4.15)
+		(end 0 4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "377d8a9c-ac37-4b25-9792-e87d50ae89ba")
+	)
+	(fp_line
+		(start 9.11 4.15)
+		(end 0.25 4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "efe9c422-a170-4e32-abc9-cf4b30d9698a")
+	)
+	(fp_line
+		(start 9.5 -3.56)
+		(end 9.5 3.76)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "edcb5e43-7114-45de-bbe9-baf1a84bf9d7")
+	)
+	(fp_line
+		(start 9.5 -3.54)
+		(end 9.5 3.76)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "67524ba4-d487-4a73-b163-3a9d142e9972")
+	)
+	(fp_arc
+		(start 8.89 -4.15)
+		(mid 9.321335 -3.971335)
+		(end 9.5 -3.54)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "d3d603d3-3432-4721-b423-61174909a593")
+	)
+	(fp_arc
+		(start 8.91 -4.15)
+		(mid 9.327193 -3.977193)
+		(end 9.5 -3.56)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "c7888c00-2f83-41f6-98a2-cfb4c57a0b9c")
+	)
+	(fp_arc
+		(start 9.5 3.76)
+		(mid 9.385772 4.035772)
+		(end 9.11 4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "78851dd1-0014-463e-b910-aba24125bc90")
+	)
+	(fp_arc
+		(start 9.5 3.76)
+		(mid 9.385772 4.035772)
+		(end 9.11 4.15)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "c67e7d43-f88c-4c2e-bae0-ad90ca0be141")
 	)
 	(fp_line
 		(start -1.7 -5.15)
@@ -486,16 +538,6 @@
 		(uuid "c6610ec8-d726-4142-8fbe-d0250d9ce4af")
 	)
 	(fp_line
-		(start 0 -4.15)
-		(end 8.91 -4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "67bd6245-f755-4ad9-be4f-4aa4172c0a4b")
-	)
-	(fp_line
 		(start 0 4.15)
 		(end 0 5)
 		(stroke
@@ -514,48 +556,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "9d74d734-e6db-4fc5-be45-79ee13848f7c")
-	)
-	(fp_line
-		(start 9.11 4.15)
-		(end 0 4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "377d8a9c-ac37-4b25-9792-e87d50ae89ba")
-	)
-	(fp_line
-		(start 9.5 -3.56)
-		(end 9.5 3.76)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "edcb5e43-7114-45de-bbe9-baf1a84bf9d7")
-	)
-	(fp_arc
-		(start 8.91 -4.15)
-		(mid 9.327193 -3.977193)
-		(end 9.5 -3.56)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "c7888c00-2f83-41f6-98a2-cfb4c57a0b9c")
-	)
-	(fp_arc
-		(start 9.5 3.76)
-		(mid 9.385772 4.035772)
-		(end 9.11 4.15)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "78851dd1-0014-463e-b910-aba24125bc90")
 	)
 	(fp_circle
 		(center -3.99 3.1)
