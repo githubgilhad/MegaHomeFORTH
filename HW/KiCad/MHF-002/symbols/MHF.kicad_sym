@@ -278,7 +278,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "MHF:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 0 0 0)
 			(effects
 				(font
@@ -442,7 +442,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -486,7 +486,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W7.62mm*"
+		(property "ki_fp_filters" "DIP*W7.62mm* *SOIC*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1411,7 +1411,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1455,7 +1455,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP*W7.62mm*"
+		(property "ki_fp_filters" "DIP*W7.62mm* *SOIC*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1996,7 +1996,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2032,7 +2032,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "DIP?16*"
+		(property "ki_fp_filters" "DIP?16* SOIC*16*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4024,7 +4024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 			(at 0 5.08 0)
 			(effects
 				(font
@@ -4161,7 +4161,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 			(at 0 5.08 0)
 			(effects
 				(font
@@ -4299,7 +4299,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_SO:TSOP-I-32_11.8x8mm_P0.5mm"
+		(property "Footprint" "MHF:G_TSOP-I-32_18.4x8mm_HandSolder"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4962,7 +4962,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+		(property "Footprint" "MHF:G_TQFP-100_14x14mm_HandSolder"
 			(at 30.48 76.2 0)
 			(effects
 				(font
@@ -7768,7 +7768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 1.27 -13.97 0)
 			(effects
 				(font
@@ -8305,7 +8305,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8341,7 +8341,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_* PinHole*1x??_*"
+		(property "ki_fp_filters" "Connector*:*_1x??_* Pin*1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8418,7 +8418,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:PinHeader_1x02_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8454,7 +8454,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
+		(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8560,7 +8560,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:PinHeader_1x04_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8596,7 +8596,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
+		(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8760,7 +8760,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8796,7 +8796,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
+		(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9018,7 +9018,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9054,7 +9054,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
+		(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9334,7 +9334,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MHF:PinSocket_2x03_P2.54mm_Vertical"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9370,7 +9370,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_2x??_*"
+		(property "ki_fp_filters" "Connector*:*_2x??_* Pin*_2x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9628,7 +9628,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "Connector*:*_2x??_*"
+		(property "ki_fp_filters" "Connector*:*_2x??_* Pin*_2x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13264,7 +13264,7 @@
 			)
 		)
 		(property "Value" "Mini-DIN-6"
-			(at 0 -6.35 0)
+			(at 0 -7.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13317,6 +13317,17 @@
 			)
 		)
 		(symbol "Mini-DIN-6_0_1"
+			(rectangle
+				(start -5.08 7.62)
+				(end 5.08 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
 					(xy -4.318 -2.54) (xy -3.048 -2.54) (xy -3.048 -4.064)
@@ -13388,7 +13399,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.032 -3.048) (xy -2.032 -3.556) (xy -5.08 -3.556) (xy -5.08 -2.54)
+					(xy -2.032 -3.048) (xy -2.032 -3.556) (xy -6.3301 -3.5554) (xy -6.3301 -2.5394)
 				)
 				(stroke
 					(width 0)
@@ -13470,7 +13481,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.032 -3.048) (xy 2.032 -3.556) (xy 5.08 -3.556) (xy 5.08 -2.54)
+					(xy 2.032 -3.048) (xy 2.032 -3.556) (xy 6.3282 -3.5606) (xy 6.3282 -2.5446)
 				)
 				(stroke
 					(width 0)
@@ -13528,7 +13539,31 @@
 			)
 			(polyline
 				(pts
+					(xy 5.08 5.08) (xy 7.62 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy 5.08 0) (xy 3.81 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 5.08) (xy 7.62 5.08)
 				)
 				(stroke
 					(width 0)
@@ -13578,7 +13613,7 @@
 			)
 			(pin passive line
 				(at -7.62 -2.54 0)
-				(length 2.54)
+				(length 1.27)
 				(name "~"
 					(effects
 						(font
@@ -13594,53 +13629,17 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 12.7 0)
+			(pin passive line
+				(at 7.62 5.08 180)
 				(length 0)
-				(name "SH"
+				(name "Shield"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 10.16 0)
-				(length 0)
-				(name "C1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect non_logic
-				(at -5.08 7.62 0)
-				(length 0)
-				(name "C2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
+				(number "S"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -13686,7 +13685,7 @@
 			)
 			(pin passive line
 				(at 7.62 -2.54 180)
-				(length 2.54)
+				(length 1.27)
 				(name "~"
 					(effects
 						(font
@@ -14487,7 +14486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "MHF:TO-92_Inline"
 			(at 5.08 -1.905 0)
 			(effects
 				(font
@@ -14690,7 +14689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SDCard:SDCard"
+		(property "Footprint" "MHF:SDCard"
 			(at -29.21 -7.874 0)
 			(effects
 				(font

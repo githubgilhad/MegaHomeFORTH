@@ -1,0 +1,244 @@
+(footprint "D_1210_3225Metric_HandSolder"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Diode SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+	(tags "diode")
+	(property "Reference" "REF**"
+		(at -0.02 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c4790420-b3c5-46ee-8340-9eb27ea97f50")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D"
+		(at -1.80054 -2.33045 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e177b66f-ba7c-4581-9672-a3d84d3a22a5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55c78618-80fc-4477-bc46-c221800f72fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Diode"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a09ef37b-c57e-416d-abc4-07dcbf2f6358")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Device" "D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26f834e2-94a8-4c55-9b44-085691a1a515")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" "1=K 2=A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "582c6ce9-25ab-4548-9983-7b5ee9fd905f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.429 1.585)
+		(end 1.6 1.585)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "21006391-826f-4e6a-acf1-f40fa5123916")
+	)
+	(fp_line
+		(start -3.428 -1.585)
+		(end -3.428 1.585)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "65ac1905-8015-4e17-a451-d529993862a9")
+	)
+	(fp_line
+		(start 1.6 -1.585)
+		(end -3.429 -1.585)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4df8d341-1555-4d1a-85ae-b682da55eb4a")
+	)
+	(fp_line
+		(start -3.423 -1.58)
+		(end 3.429 -1.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5f26c65c-c1b3-4364-9580-cecb752be474")
+	)
+	(fp_line
+		(start -3.423 1.58)
+		(end -3.423 -1.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b5b13201-b750-4a10-9118-57ddaebf15c0")
+	)
+	(fp_line
+		(start 3.423 -1.58)
+		(end 3.423 1.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1b7730e5-abfc-4e9a-80cb-93ca3f618522")
+	)
+	(fp_line
+		(start 3.429 1.58)
+		(end -3.423 1.58)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fba0ff6c-80b1-4241-a9bd-e8fc8def8cd1")
+	)
+	(fp_line
+		(start -3.378 -1.016)
+		(end -3.378 1.377)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "484b1c05-a18e-42e5-833e-e815b90218b9")
+	)
+	(fp_line
+		(start -3.378 1.377)
+		(end 3.378 1.377)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1e5190d9-de73-4854-9b53-ff9d2d22c94c")
+	)
+	(fp_line
+		(start -3.065323 -1.377)
+		(end -3.378 -1.016)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "779f22df-9688-483a-90e4-6bda21f139dc")
+	)
+	(fp_line
+		(start 3.378 -1.377)
+		(end -3.048 -1.377)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "375eb126-98a8-4c22-9ed5-4fe2d548c637")
+	)
+	(fp_line
+		(start 3.378 1.377)
+		(end 3.378 -1.377)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2addc294-f87e-4373-9ac5-89cc702366ff")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6aa17b96-2054-4175-8a66-9a5d494edf15")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2 0)
+		(size 2.5 2.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "2a63c89a-8bd1-46b4-8525-824465c00334")
+	)
+	(pad "2" smd roundrect
+		(at 2 0)
+		(size 2.5 2.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.2)
+		(uuid "bcdb1120-7a38-4f6b-9aad-47684c567847")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_2010_5025Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

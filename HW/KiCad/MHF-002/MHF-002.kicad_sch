@@ -281,7 +281,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(property "Footprint" "MHF:D_DO-41_SOD81_P10.16mm_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -445,7 +445,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -489,7 +489,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm* *SOIC*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1414,7 +1414,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1458,7 +1458,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm* *SOIC*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1999,7 +1999,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2035,7 +2035,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP?16*"
+			(property "ki_fp_filters" "DIP?16* SOIC*16*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4027,7 +4027,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -4164,7 +4164,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -4302,7 +4302,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Package_SO:TSOP-I-32_11.8x8mm_P0.5mm"
+			(property "Footprint" "MHF:G_TSOP-I-32_18.4x8mm_HandSolder"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4965,7 +4965,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Package_QFP:TQFP-100_14x14mm_P0.5mm"
+			(property "Footprint" "MHF:G_TQFP-100_14x14mm_HandSolder"
 				(at 30.48 76.2 0)
 				(effects
 					(font
@@ -7771,7 +7771,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 				(at 1.27 -13.97 0)
 				(effects
 					(font
@@ -8308,7 +8308,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+			(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8344,7 +8344,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_* PinHole*1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Pin*1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8421,7 +8421,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:PinHeader_1x02_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8457,7 +8457,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8563,7 +8563,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:PinHeader_1x04_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8599,7 +8599,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8763,7 +8763,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8799,7 +8799,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9021,7 +9021,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9057,7 +9057,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Pin*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9337,7 +9337,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "MHF:PinSocket_2x03_P2.54mm_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9373,7 +9373,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(property "ki_fp_filters" "Connector*:*_2x??_* Pin*_2x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -9631,7 +9631,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(property "ki_fp_filters" "Connector*:*_2x??_* Pin*_2x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13267,7 +13267,7 @@
 				)
 			)
 			(property "Value" "Mini-DIN-6"
-				(at 0 -6.35 0)
+				(at 0 -7.366 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -13320,6 +13320,17 @@
 				)
 			)
 			(symbol "Mini-DIN-6_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy -4.318 -2.54) (xy -3.048 -2.54) (xy -3.048 -4.064)
@@ -13391,7 +13402,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -3.048) (xy -2.032 -3.556) (xy -5.08 -3.556) (xy -5.08 -2.54)
+						(xy -2.032 -3.048) (xy -2.032 -3.556) (xy -6.3301 -3.5554) (xy -6.3301 -2.5394)
 					)
 					(stroke
 						(width 0)
@@ -13473,7 +13484,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.032 -3.048) (xy 2.032 -3.556) (xy 5.08 -3.556) (xy 5.08 -2.54)
+						(xy 2.032 -3.048) (xy 2.032 -3.556) (xy 6.3282 -3.5606) (xy 6.3282 -2.5446)
 					)
 					(stroke
 						(width 0)
@@ -13531,7 +13542,31 @@
 				)
 				(polyline
 					(pts
+						(xy 5.08 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 5.08 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 5.08)
 					)
 					(stroke
 						(width 0)
@@ -13581,7 +13616,7 @@
 				)
 				(pin passive line
 					(at -7.62 -2.54 0)
-					(length 2.54)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -13597,53 +13632,17 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -5.08 12.7 0)
+				(pin passive line
+					(at 7.62 5.08 180)
 					(length 0)
-					(name "SH"
+					(name "Shield"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -5.08 10.16 0)
-					(length 0)
-					(name "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect non_logic
-					(at -5.08 7.62 0)
-					(length 0)
-					(name "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
+					(number "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -13689,7 +13688,7 @@
 				)
 				(pin passive line
 					(at 7.62 -2.54 180)
-					(length 2.54)
+					(length 1.27)
 					(name "~"
 						(effects
 							(font
@@ -14490,7 +14489,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "MHF:TO-92_Inline"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -14693,7 +14692,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "SDCard:SDCard"
+			(property "Footprint" "MHF:SDCard"
 				(at -29.21 -7.874 0)
 				(effects
 					(font
@@ -16158,7 +16157,7 @@
 	)
 	(text "External RAM for Arduino"
 		(exclude_from_sim no)
-		(at 751.84 308.61 0)
+		(at 852.17 308.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16359,12 +16358,6 @@
 		(uuid "0bf0e1a8-dc11-43ff-89b3-7ee541161090")
 	)
 	(junction
-		(at 703.58 339.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0cd3edd5-62b0-4ba3-b6e7-4d85fb672794")
-	)
-	(junction
 		(at 551.18 449.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16461,6 +16454,12 @@
 		(uuid "1f382dc7-ad42-439d-8bee-f40a6070aefc")
 	)
 	(junction
+		(at 95.25 698.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f71e7f6-adfb-4600-9db3-c7eef91d2abe")
+	)
+	(junction
 		(at 478.79 452.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -16537,6 +16536,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b22cf3f-f50c-498b-b488-d9ff7b11bee6")
+	)
+	(junction
+		(at 680.72 349.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cc18644-2af4-4102-a866-8e2dfc6393ca")
 	)
 	(junction
 		(at 645.16 713.74)
@@ -16719,22 +16724,10 @@
 		(uuid "5335bf2e-ef74-436b-88ca-babbfb633b7f")
 	)
 	(junction
-		(at 699.77 346.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "534035a5-60aa-4301-bec4-1a1dd24fecc0")
-	)
-	(junction
 		(at 645.16 692.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "534ee641-4aa6-4fcb-855c-dd9b61469737")
-	)
-	(junction
-		(at 698.5 349.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "572e7a20-e093-4f4a-9f56-ab4cf213f254")
 	)
 	(junction
 		(at 551.18 457.2)
@@ -16789,12 +16782,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62662352-2836-4055-98e0-4cf54d314d26")
-	)
-	(junction
-		(at 706.12 334.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64fb6e34-a1c8-4b5f-bf42-ffb75ef013d8")
 	)
 	(junction
 		(at 177.8 88.9)
@@ -16875,16 +16862,16 @@
 		(uuid "799c124e-356c-4429-a442-5f5701345096")
 	)
 	(junction
-		(at 707.39 331.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a9797ee-a6ee-4d02-a491-bde17aff0edc")
-	)
-	(junction
 		(at 323.85 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ed30083-1bac-4c26-b07a-2d013b330be9")
+	)
+	(junction
+		(at 689.61 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f53c160-c80e-4e9f-bb5f-33422dc04aa8")
 	)
 	(junction
 		(at 107.95 701.04)
@@ -16903,6 +16890,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "827e9768-4a83-4401-bbab-65585168c77c")
+	)
+	(junction
+		(at 683.26 344.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82eaf33b-6c27-46c5-8025-7c69ef160448")
 	)
 	(junction
 		(at 228.6 402.59)
@@ -16953,22 +16946,10 @@
 		(uuid "8c144d82-7c33-478d-a62b-f74f2a7d4b00")
 	)
 	(junction
-		(at 701.04 344.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8cda0e4e-9dd1-4059-a9ee-afe91d2ea28a")
-	)
-	(junction
 		(at 435.61 353.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e2039a6-5133-47cd-9afa-e74f455f4376")
-	)
-	(junction
-		(at 702.31 341.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f4b5a00-66d2-4701-897a-613f748a0dc9")
 	)
 	(junction
 		(at 417.83 464.82)
@@ -16999,6 +16980,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9677234e-78e2-47e1-8c73-ede2493a942f")
+	)
+	(junction
+		(at 688.34 334.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "977881f5-6dd2-4eb6-bdef-b9e2c72790a5")
 	)
 	(junction
 		(at 127 339.09)
@@ -17091,6 +17078,12 @@
 		(uuid "ac939b96-a0fc-4809-a4ef-30966cf4730d")
 	)
 	(junction
+		(at 685.8 339.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acfbfe8e-0ee7-4020-bab1-2d55d42ec2fb")
+	)
+	(junction
 		(at 551.18 378.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17119,6 +17112,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b26e0dcb-0e55-46f1-bd7c-ffc288085efd")
+	)
+	(junction
+		(at 681.99 346.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2b45fe7-b711-4034-b0de-9358d27647c9")
 	)
 	(junction
 		(at 571.5 731.52)
@@ -17337,12 +17336,6 @@
 		(uuid "d7e408a0-ffed-4786-bb81-0ce846083453")
 	)
 	(junction
-		(at 704.85 336.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db0350d5-60de-4a97-a5c2-d8077586ed44")
-	)
-	(junction
 		(at 551.18 383.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -17383,6 +17376,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e884287c-908c-498a-ae90-206dce0adadf")
+	)
+	(junction
+		(at 687.07 336.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9ae0198-6a63-4bf8-9bee-dfcdd950e579")
 	)
 	(junction
 		(at 472.44 358.14)
@@ -17485,6 +17484,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa17861a-3d11-4456-9e6b-91efe1901152")
+	)
+	(junction
+		(at 684.53 341.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fad7227b-c722-4b22-b328-e6187a6cd530")
 	)
 	(junction
 		(at 434.34 325.12)
@@ -20222,16 +20227,6 @@
 	)
 	(wire
 		(pts
-			(xy 717.55 331.47) (xy 722.63 331.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00303c81-29cb-4e7a-9651-e3f0fca903b6")
-	)
-	(wire
-		(pts
 			(xy 463.55 751.84) (xy 463.55 746.76)
 		)
 		(stroke
@@ -20272,13 +20267,33 @@
 	)
 	(wire
 		(pts
-			(xy 702.31 295.91) (xy 702.31 341.63)
+			(xy 848.36 334.01) (xy 886.46 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01164531-a73c-4f9c-9a6a-8ecc19752958")
+	)
+	(wire
+		(pts
+			(xy 684.53 295.91) (xy 684.53 341.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0124259f-ead4-4c2b-bd3e-1afb8a544894")
+	)
+	(wire
+		(pts
+			(xy 732.79 334.01) (xy 720.09 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "015c3ac3-16f3-44e5-bd36-4f9c163eb8cf")
 	)
 	(wire
 		(pts
@@ -20292,7 +20307,7 @@
 	)
 	(wire
 		(pts
-			(xy 551.18 472.44) (xy 769.62 472.44)
+			(xy 551.18 472.44) (xy 869.95 472.44)
 		)
 		(stroke
 			(width 0)
@@ -20342,7 +20357,7 @@
 	)
 	(wire
 		(pts
-			(xy 703.58 297.18) (xy 703.58 339.09)
+			(xy 685.8 297.18) (xy 685.8 339.09)
 		)
 		(stroke
 			(width 0)
@@ -20422,7 +20437,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 334.01) (xy 706.12 334.01)
+			(xy 661.67 334.01) (xy 688.34 334.01)
 		)
 		(stroke
 			(width 0)
@@ -20499,6 +20514,16 @@
 			(type default)
 		)
 		(uuid "0581b27f-6cc0-4979-a0c9-c9bda75092c1")
+	)
+	(wire
+		(pts
+			(xy 848.36 339.09) (xy 886.46 339.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05c05c93-9582-4e98-b8a4-a404ce0fb884")
 	)
 	(wire
 		(pts
@@ -20600,16 +20625,6 @@
 		)
 		(uuid "0772a076-aed6-4a32-a034-091aeab5660d")
 	)
-	(wire
-		(pts
-			(xy 721.36 334.01) (xy 722.63 334.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07c6aec9-b8f0-4b36-887c-248be433854b")
-	)
 	(bus
 		(pts
 			(xy 659.13 331.47) (xy 659.13 334.01)
@@ -20652,13 +20667,23 @@
 	)
 	(wire
 		(pts
-			(xy 715.01 354.33) (xy 722.63 354.33)
+			(xy 815.34 354.33) (xy 822.96 354.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0867ab77-5368-4ef4-a538-954951764225")
+	)
+	(wire
+		(pts
+			(xy 92.71 693.42) (xy 95.25 693.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ba65b8-3b04-47d0-a7e1-a2258244c907")
 	)
 	(wire
 		(pts
@@ -20832,7 +20857,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 351.79) (xy 786.13 351.79)
+			(xy 848.36 351.79) (xy 886.46 351.79)
 		)
 		(stroke
 			(width 0)
@@ -20842,7 +20867,7 @@
 	)
 	(wire
 		(pts
-			(xy 760.73 364.49) (xy 786.13 364.49)
+			(xy 861.06 364.49) (xy 886.46 364.49)
 		)
 		(stroke
 			(width 0)
@@ -20949,6 +20974,16 @@
 			(type default)
 		)
 		(uuid "0fedc4f7-9e21-48ff-8fd2-e5db49faec2e")
+	)
+	(wire
+		(pts
+			(xy 736.6 331.47) (xy 754.38 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1069fa1a-07fe-4e3f-9381-d1a41702db9d")
 	)
 	(wire
 		(pts
@@ -21062,6 +21097,16 @@
 	)
 	(wire
 		(pts
+			(xy 868.68 349.25) (xy 861.06 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1233b08f-1faa-49b5-bada-54a4e0091fcc")
+	)
+	(wire
+		(pts
 			(xy 408.94 337.82) (xy 408.94 332.74)
 		)
 		(stroke
@@ -21072,7 +21117,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 356.87) (xy 786.13 356.87)
+			(xy 853.44 356.87) (xy 886.46 356.87)
 		)
 		(stroke
 			(width 0)
@@ -21199,16 +21244,6 @@
 			(type default)
 		)
 		(uuid "145939d4-3267-4068-9719-b065c0eacaaa")
-	)
-	(wire
-		(pts
-			(xy 748.03 344.17) (xy 786.13 344.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "145cfb48-0481-4259-9845-77c4193b26fd")
 	)
 	(wire
 		(pts
@@ -21362,16 +21397,6 @@
 	)
 	(wire
 		(pts
-			(xy 721.36 336.55) (xy 718.82 334.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17ad29f2-9356-4237-8d9a-c5405d22bed9")
-	)
-	(wire
-		(pts
 			(xy 450.85 325.12) (xy 458.47 325.12)
 		)
 		(stroke
@@ -21462,7 +21487,7 @@
 	)
 	(wire
 		(pts
-			(xy 769.62 372.11) (xy 786.13 372.11)
+			(xy 869.95 372.11) (xy 886.46 372.11)
 		)
 		(stroke
 			(width 0)
@@ -21612,7 +21637,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 354.33) (xy 814.07 354.33)
+			(xy 911.86 354.33) (xy 914.4 354.33)
 		)
 		(stroke
 			(width 0)
@@ -21702,7 +21727,7 @@
 	)
 	(wire
 		(pts
-			(xy 750.57 354.33) (xy 786.13 354.33)
+			(xy 850.9 354.33) (xy 886.46 354.33)
 		)
 		(stroke
 			(width 0)
@@ -21742,7 +21767,7 @@
 	)
 	(wire
 		(pts
-			(xy 704.85 298.45) (xy 704.85 336.55)
+			(xy 687.07 298.45) (xy 687.07 336.55)
 		)
 		(stroke
 			(width 0)
@@ -21822,16 +21847,6 @@
 	)
 	(wire
 		(pts
-			(xy 699.77 346.71) (xy 722.63 346.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2105e953-2fea-49a2-bd3f-b55e8cb3a29d")
-	)
-	(wire
-		(pts
 			(xy 40.64 175.26) (xy 40.64 185.42)
 		)
 		(stroke
@@ -21872,7 +21887,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 344.17) (xy 819.15 344.17)
+			(xy 911.86 344.17) (xy 919.48 344.17)
 		)
 		(stroke
 			(width 0)
@@ -21912,7 +21927,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 378.46) (xy 750.57 378.46)
+			(xy 660.4 378.46) (xy 850.9 378.46)
 		)
 		(stroke
 			(width 0)
@@ -22222,6 +22237,16 @@
 	)
 	(wire
 		(pts
+			(xy 848.36 346.71) (xy 876.3 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "291ef987-28c9-4e91-931c-39ad656225b9")
+	)
+	(wire
+		(pts
 			(xy 378.46 449.58) (xy 478.79 449.58)
 		)
 		(stroke
@@ -22262,7 +22287,7 @@
 	)
 	(wire
 		(pts
-			(xy 817.88 341.63) (xy 817.88 295.91)
+			(xy 918.21 341.63) (xy 918.21 295.91)
 		)
 		(stroke
 			(width 0)
@@ -22392,7 +22417,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 375.92) (xy 748.03 351.79)
+			(xy 848.36 375.92) (xy 848.36 351.79)
 		)
 		(stroke
 			(width 0)
@@ -22439,6 +22464,16 @@
 			(type default)
 		)
 		(uuid "2ecd710c-fc57-4cd0-b262-897f01742f61")
+	)
+	(wire
+		(pts
+			(xy 683.26 344.17) (xy 707.39 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ee41a3d-f33f-4529-88cc-07a88283c3d1")
 	)
 	(wire
 		(pts
@@ -22532,7 +22567,7 @@
 	)
 	(wire
 		(pts
-			(xy 820.42 346.71) (xy 820.42 293.37)
+			(xy 920.75 346.71) (xy 920.75 293.37)
 		)
 		(stroke
 			(width 0)
@@ -22742,6 +22777,16 @@
 	)
 	(wire
 		(pts
+			(xy 886.46 349.25) (xy 868.68 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3664a6d2-958f-49fb-b602-3d2f4eb5564b")
+	)
+	(wire
+		(pts
 			(xy 551.18 474.98) (xy 577.85 474.98)
 		)
 		(stroke
@@ -22772,7 +22817,7 @@
 	)
 	(wire
 		(pts
-			(xy 819.15 294.64) (xy 701.04 294.64)
+			(xy 919.48 294.64) (xy 683.26 294.64)
 		)
 		(stroke
 			(width 0)
@@ -22822,7 +22867,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 391.16) (xy 763.27 391.16)
+			(xy 660.4 391.16) (xy 863.6 391.16)
 		)
 		(stroke
 			(width 0)
@@ -22872,16 +22917,6 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 331.47) (xy 786.13 331.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a07b780-8f1e-4ad2-9b3c-80186b2fc0a3")
-	)
-	(wire
-		(pts
 			(xy 528.32 726.44) (xy 538.48 726.44)
 		)
 		(stroke
@@ -22892,7 +22927,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 300.99) (xy 812.8 300.99)
+			(xy 689.61 300.99) (xy 913.13 300.99)
 		)
 		(stroke
 			(width 0)
@@ -23132,7 +23167,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 331.47) (xy 707.39 331.47)
+			(xy 661.67 331.47) (xy 689.61 331.47)
 		)
 		(stroke
 			(width 0)
@@ -23212,7 +23247,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 383.54) (xy 755.65 383.54)
+			(xy 660.4 383.54) (xy 855.98 383.54)
 		)
 		(stroke
 			(width 0)
@@ -23272,6 +23307,16 @@
 	)
 	(wire
 		(pts
+			(xy 848.36 349.25) (xy 861.06 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "427b519c-42b9-455a-937f-dc594b667979")
+	)
+	(wire
+		(pts
 			(xy 551.18 429.26) (xy 593.09 429.26)
 		)
 		(stroke
@@ -23292,7 +23337,7 @@
 	)
 	(wire
 		(pts
-			(xy 812.8 331.47) (xy 812.8 300.99)
+			(xy 913.13 331.47) (xy 913.13 300.99)
 		)
 		(stroke
 			(width 0)
@@ -23309,16 +23354,6 @@
 			(type default)
 		)
 		(uuid "42e05787-b1cd-4e07-a0f5-e9ae1961e836")
-	)
-	(wire
-		(pts
-			(xy 702.31 341.63) (xy 722.63 341.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42e2b62c-3112-43d6-b244-a279a9177c0f")
 	)
 	(bus
 		(pts
@@ -23382,7 +23417,7 @@
 	)
 	(wire
 		(pts
-			(xy 699.77 293.37) (xy 699.77 346.71)
+			(xy 681.99 293.37) (xy 681.99 346.71)
 		)
 		(stroke
 			(width 0)
@@ -23482,6 +23517,16 @@
 	)
 	(wire
 		(pts
+			(xy 878.84 346.71) (xy 886.46 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "478024cb-0468-46b2-9a84-43c9ad571f1e")
+	)
+	(wire
+		(pts
 			(xy 102.87 673.1) (xy 107.95 673.1)
 		)
 		(stroke
@@ -23542,17 +23587,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 331.47) (xy 709.93 331.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b6c53a-261c-4d66-bfc8-b780316d7b62")
-	)
-	(wire
-		(pts
-			(xy 755.65 359.41) (xy 786.13 359.41)
+			(xy 855.98 359.41) (xy 886.46 359.41)
 		)
 		(stroke
 			(width 0)
@@ -23612,13 +23647,13 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 336.55) (xy 786.13 336.55)
+			(xy 704.85 341.63) (xy 702.31 339.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "49d22e50-df74-40b3-a00c-31edf425ff60")
+		(uuid "4a0aa66c-860a-4649-bfaa-81d877b6e067")
 	)
 	(wire
 		(pts
@@ -23652,13 +23687,23 @@
 	)
 	(wire
 		(pts
-			(xy 798.83 379.73) (xy 798.83 377.19)
+			(xy 899.16 379.73) (xy 899.16 377.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4ab14add-b6b8-42be-8aec-7b5578f3ca52")
+	)
+	(wire
+		(pts
+			(xy 681.99 346.71) (xy 720.09 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ac59610-d86e-4ae0-9be9-6a215f1dcee1")
 	)
 	(wire
 		(pts
@@ -23802,7 +23847,7 @@
 	)
 	(wire
 		(pts
-			(xy 821.69 292.1) (xy 821.69 349.25)
+			(xy 922.02 292.1) (xy 922.02 349.25)
 		)
 		(stroke
 			(width 0)
@@ -23842,7 +23887,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 344.17) (xy 701.04 344.17)
+			(xy 661.67 344.17) (xy 683.26 344.17)
 		)
 		(stroke
 			(width 0)
@@ -23892,7 +23937,7 @@
 	)
 	(wire
 		(pts
-			(xy 815.34 336.55) (xy 815.34 298.45)
+			(xy 915.67 336.55) (xy 915.67 298.45)
 		)
 		(stroke
 			(width 0)
@@ -23922,6 +23967,16 @@
 	)
 	(wire
 		(pts
+			(xy 684.53 341.63) (xy 702.31 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee1c0a7-0aa1-46f8-beb0-7c6622104fcf")
+	)
+	(wire
+		(pts
 			(xy 688.34 50.8) (xy 716.28 50.8)
 		)
 		(stroke
@@ -23939,16 +23994,6 @@
 			(type default)
 		)
 		(uuid "4f9d75c8-8f97-4980-bdc0-416dffcf947c")
-	)
-	(wire
-		(pts
-			(xy 703.58 339.09) (xy 709.93 339.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fe84cac-e596-48a7-ad0a-6461ce318cbf")
 	)
 	(bus
 		(pts
@@ -24112,6 +24157,16 @@
 	)
 	(wire
 		(pts
+			(xy 732.79 346.71) (xy 720.09 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5466ceba-c37e-4cf6-97f9-f1468a78470e")
+	)
+	(wire
+		(pts
 			(xy 318.77 71.12) (xy 323.85 71.12)
 		)
 		(stroke
@@ -24242,7 +24297,7 @@
 	)
 	(wire
 		(pts
-			(xy 755.65 383.54) (xy 755.65 359.41)
+			(xy 855.98 383.54) (xy 855.98 359.41)
 		)
 		(stroke
 			(width 0)
@@ -24692,7 +24747,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 386.08) (xy 758.19 386.08)
+			(xy 660.4 386.08) (xy 858.52 386.08)
 		)
 		(stroke
 			(width 0)
@@ -24719,16 +24774,6 @@
 			(type default)
 		)
 		(uuid "5f5b1c07-8814-4ea1-b7ff-0024d001ed6f")
-	)
-	(wire
-		(pts
-			(xy 748.03 341.63) (xy 786.13 341.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f72899b-ec30-4ebd-b51f-32d9aa07e5e9")
 	)
 	(wire
 		(pts
@@ -24772,7 +24817,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 346.71) (xy 699.77 346.71)
+			(xy 661.67 346.71) (xy 681.99 346.71)
 		)
 		(stroke
 			(width 0)
@@ -25042,6 +25087,16 @@
 	)
 	(wire
 		(pts
+			(xy 848.36 331.47) (xy 886.46 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "679cfb0e-304b-437f-98d2-9b9e0f767e45")
+	)
+	(wire
+		(pts
 			(xy 618.49 118.11) (xy 621.03 118.11)
 		)
 		(stroke
@@ -25069,6 +25124,16 @@
 			(type default)
 		)
 		(uuid "68221fb9-b405-4715-a375-545cd6901225")
+	)
+	(wire
+		(pts
+			(xy 822.96 341.63) (xy 704.85 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684fa7b7-2372-47f0-bce4-ee4ea09f0e00")
 	)
 	(bus
 		(pts
@@ -25132,7 +25197,7 @@
 	)
 	(wire
 		(pts
-			(xy 815.34 298.45) (xy 704.85 298.45)
+			(xy 915.67 298.45) (xy 687.07 298.45)
 		)
 		(stroke
 			(width 0)
@@ -25420,6 +25485,16 @@
 		)
 		(uuid "71e825aa-f4fd-4bc9-b917-abf7e440168e")
 	)
+	(wire
+		(pts
+			(xy 848.36 341.63) (xy 861.06 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "725095ba-ce69-4dc2-921e-ce8664918898")
+	)
 	(bus
 		(pts
 			(xy 228.6 411.48) (xy 228.6 414.02)
@@ -25542,7 +25617,7 @@
 	)
 	(wire
 		(pts
-			(xy 814.07 334.01) (xy 814.07 299.72)
+			(xy 914.4 334.01) (xy 914.4 299.72)
 		)
 		(stroke
 			(width 0)
@@ -25582,7 +25657,7 @@
 	)
 	(wire
 		(pts
-			(xy 814.07 354.33) (xy 814.07 370.84)
+			(xy 914.4 354.33) (xy 914.4 370.84)
 		)
 		(stroke
 			(width 0)
@@ -25612,23 +25687,13 @@
 	)
 	(wire
 		(pts
-			(xy 701.04 294.64) (xy 701.04 344.17)
+			(xy 683.26 294.64) (xy 683.26 344.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7818736e-b98f-43ca-90f3-9eccdd949636")
-	)
-	(wire
-		(pts
-			(xy 717.55 331.47) (xy 709.93 339.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78310201-a3b9-48c8-ab63-80e17ac337f1")
 	)
 	(bus
 		(pts
@@ -25749,6 +25814,26 @@
 			(type default)
 		)
 		(uuid "79fe04a2-8bc2-44e4-87d4-ef259c1ef6d1")
+	)
+	(wire
+		(pts
+			(xy 822.96 349.25) (xy 754.38 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a8007a4-2780-41a7-b632-311e3ea0e2c5")
+	)
+	(wire
+		(pts
+			(xy 868.68 341.63) (xy 886.46 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac1d26f-045a-49d7-953c-bd7c22165cfc")
 	)
 	(bus
 		(pts
@@ -25982,7 +26067,7 @@
 	)
 	(wire
 		(pts
-			(xy 821.69 349.25) (xy 811.53 349.25)
+			(xy 922.02 349.25) (xy 911.86 349.25)
 		)
 		(stroke
 			(width 0)
@@ -26152,7 +26237,7 @@
 	)
 	(wire
 		(pts
-			(xy 750.57 378.46) (xy 750.57 354.33)
+			(xy 850.9 378.46) (xy 850.9 354.33)
 		)
 		(stroke
 			(width 0)
@@ -26172,7 +26257,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 300.99) (xy 707.39 331.47)
+			(xy 689.61 300.99) (xy 689.61 331.47)
 		)
 		(stroke
 			(width 0)
@@ -26202,7 +26287,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 349.25) (xy 698.5 349.25)
+			(xy 661.67 349.25) (xy 680.72 349.25)
 		)
 		(stroke
 			(width 0)
@@ -26329,6 +26414,16 @@
 			(type default)
 		)
 		(uuid "867d9b7c-ef21-4e21-94b2-41d5be6027cf")
+	)
+	(wire
+		(pts
+			(xy 751.84 331.47) (xy 739.14 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86dd97c9-4a11-4d99-bbb5-7dcceec88059")
 	)
 	(wire
 		(pts
@@ -26602,7 +26697,7 @@
 	)
 	(wire
 		(pts
-			(xy 760.73 388.62) (xy 760.73 364.49)
+			(xy 861.06 388.62) (xy 861.06 364.49)
 		)
 		(stroke
 			(width 0)
@@ -26689,6 +26784,16 @@
 			(type default)
 		)
 		(uuid "8ebb8fa7-d898-4acb-b7b3-c192f1c64e5c")
+	)
+	(wire
+		(pts
+			(xy 822.96 344.17) (xy 715.01 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f6e52e5-3782-45dd-96fa-0569cbfe32d2")
 	)
 	(wire
 		(pts
@@ -26942,7 +27047,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 356.87) (xy 825.5 356.87)
+			(xy 911.86 356.87) (xy 925.83 356.87)
 		)
 		(stroke
 			(width 0)
@@ -27402,16 +27507,6 @@
 	)
 	(wire
 		(pts
-			(xy 717.55 339.09) (xy 709.93 331.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cac5abf-8b8d-4e2b-bba9-2865ecdccb98")
-	)
-	(wire
-		(pts
 			(xy 478.79 408.94) (xy 441.96 408.94)
 		)
 		(stroke
@@ -27530,6 +27625,16 @@
 		)
 		(uuid "9f82cadc-4114-495e-a90b-4b770657ab9b")
 	)
+	(wire
+		(pts
+			(xy 715.01 336.55) (xy 707.39 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a05dbdda-75dd-488c-9285-29af90c044b0")
+	)
 	(bus
 		(pts
 			(xy 342.9 582.93) (xy 342.9 585.47)
@@ -27542,7 +27647,7 @@
 	)
 	(wire
 		(pts
-			(xy 816.61 297.18) (xy 703.58 297.18)
+			(xy 916.94 297.18) (xy 685.8 297.18)
 		)
 		(stroke
 			(width 0)
@@ -27599,6 +27704,16 @@
 			(type default)
 		)
 		(uuid "a1dbf12a-a12c-4dc5-9f43-e53d5462fd28")
+	)
+	(wire
+		(pts
+			(xy 715.01 344.17) (xy 707.39 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a207f51e-b535-42d3-9a90-462f4e6ff708")
 	)
 	(wire
 		(pts
@@ -27749,6 +27864,16 @@
 			(type default)
 		)
 		(uuid "a5255044-ae8d-422b-91de-1b38abf0e114")
+	)
+	(wire
+		(pts
+			(xy 95.25 693.42) (xy 95.25 698.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a531a0d1-bc84-40b8-b2ce-e21915b0cc65")
 	)
 	(wire
 		(pts
@@ -27962,16 +28087,6 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 339.09) (xy 786.13 339.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f2b40b-1a4a-4967-8738-8ada7c2b4c6e")
-	)
-	(wire
-		(pts
 			(xy 478.79 373.38) (xy 472.44 373.38)
 		)
 		(stroke
@@ -28002,6 +28117,16 @@
 	)
 	(wire
 		(pts
+			(xy 687.07 336.55) (xy 707.39 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97c14f6-5027-4fc6-9c94-1eaecd2e78b0")
+	)
+	(wire
+		(pts
 			(xy 177.8 96.52) (xy 190.5 96.52)
 		)
 		(stroke
@@ -28009,16 +28134,6 @@
 			(type default)
 		)
 		(uuid "a97d6be3-0675-4c8b-87c9-b110195287ca")
-	)
-	(wire
-		(pts
-			(xy 717.55 339.09) (xy 722.63 339.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9b3b620-e303-4d3c-bcf7-0b9b96663d91")
 	)
 	(wire
 		(pts
@@ -28179,16 +28294,6 @@
 			(type default)
 		)
 		(uuid "ac5073af-642e-4ee5-9ba1-f534e4a7252f")
-	)
-	(wire
-		(pts
-			(xy 701.04 344.17) (xy 722.63 344.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acb82426-dc0b-4aa3-84cb-18117ec7c764")
 	)
 	(bus
 		(pts
@@ -28362,7 +28467,7 @@
 	)
 	(wire
 		(pts
-			(xy 825.5 354.33) (xy 825.5 356.87)
+			(xy 925.83 354.33) (xy 925.83 356.87)
 		)
 		(stroke
 			(width 0)
@@ -28392,7 +28497,7 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 381) (xy 753.11 356.87)
+			(xy 853.44 381) (xy 853.44 356.87)
 		)
 		(stroke
 			(width 0)
@@ -28482,7 +28587,7 @@
 	)
 	(wire
 		(pts
-			(xy 824.23 359.41) (xy 811.53 359.41)
+			(xy 924.56 359.41) (xy 911.86 359.41)
 		)
 		(stroke
 			(width 0)
@@ -28559,6 +28664,16 @@
 			(type default)
 		)
 		(uuid "b3d3a900-fb85-45e9-8788-cf194c88184d")
+	)
+	(wire
+		(pts
+			(xy 878.84 344.17) (xy 876.3 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41a4d7e-651c-4f03-890b-a111133fe02a")
 	)
 	(bus
 		(pts
@@ -28660,6 +28775,16 @@
 		)
 		(uuid "b5b8610c-9ae3-4456-9574-6177a1edfe1e")
 	)
+	(wire
+		(pts
+			(xy 704.85 339.09) (xy 702.31 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5eaa5f7-b863-4f84-90cf-543758c97601")
+	)
 	(bus
 		(pts
 			(xy 86.36 504.19) (xy 86.36 506.73)
@@ -28672,7 +28797,7 @@
 	)
 	(wire
 		(pts
-			(xy 758.19 386.08) (xy 758.19 361.95)
+			(xy 858.52 386.08) (xy 858.52 361.95)
 		)
 		(stroke
 			(width 0)
@@ -28712,7 +28837,7 @@
 	)
 	(wire
 		(pts
-			(xy 706.12 299.72) (xy 706.12 334.01)
+			(xy 688.34 299.72) (xy 688.34 334.01)
 		)
 		(stroke
 			(width 0)
@@ -28722,7 +28847,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 375.92) (xy 748.03 375.92)
+			(xy 660.4 375.92) (xy 848.36 375.92)
 		)
 		(stroke
 			(width 0)
@@ -28810,6 +28935,16 @@
 		)
 		(uuid "b90c9da2-05a0-4580-8b32-c10effa230d6")
 	)
+	(wire
+		(pts
+			(xy 689.61 331.47) (xy 736.6 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b93e22af-edac-4b8a-ac57-828c93a9ef20")
+	)
 	(bus
 		(pts
 			(xy 685.8 179.07) (xy 685.8 173.99)
@@ -28892,7 +29027,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 381) (xy 753.11 381)
+			(xy 660.4 381) (xy 853.44 381)
 		)
 		(stroke
 			(width 0)
@@ -28922,7 +29057,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 388.62) (xy 760.73 388.62)
+			(xy 660.4 388.62) (xy 861.06 388.62)
 		)
 		(stroke
 			(width 0)
@@ -28982,7 +29117,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 336.55) (xy 815.34 336.55)
+			(xy 911.86 336.55) (xy 915.67 336.55)
 		)
 		(stroke
 			(width 0)
@@ -29042,7 +29177,7 @@
 	)
 	(wire
 		(pts
-			(xy 816.61 339.09) (xy 816.61 297.18)
+			(xy 916.94 339.09) (xy 916.94 297.18)
 		)
 		(stroke
 			(width 0)
@@ -29262,7 +29397,7 @@
 	)
 	(wire
 		(pts
-			(xy 765.81 393.7) (xy 765.81 369.57)
+			(xy 866.14 393.7) (xy 866.14 369.57)
 		)
 		(stroke
 			(width 0)
@@ -29272,13 +29407,13 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 334.01) (xy 786.13 334.01)
+			(xy 822.96 331.47) (xy 751.84 331.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c054bc9f-d7d3-449a-9061-09f996ced88d")
+		(uuid "c041e10d-87a4-4aec-a013-ca5aad3b68ef")
 	)
 	(wire
 		(pts
@@ -29340,6 +29475,16 @@
 		)
 		(uuid "c1a34688-0a3d-4b16-b44b-e4a9c0de3214")
 	)
+	(wire
+		(pts
+			(xy 848.36 344.17) (xy 876.3 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2292eb8-646a-4a42-85a0-8cc9e5796f67")
+	)
 	(bus
 		(pts
 			(xy 685.8 73.66) (xy 685.8 76.2)
@@ -29349,6 +29494,16 @@
 			(type default)
 		)
 		(uuid "c2c17780-3962-4865-adcd-4cbbd0fd27e9")
+	)
+	(wire
+		(pts
+			(xy 876.3 344.17) (xy 878.84 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ecc770-0991-4116-8b63-ad7a9aba7b8c")
 	)
 	(wire
 		(pts
@@ -29389,16 +29544,6 @@
 			(type default)
 		)
 		(uuid "c4998168-7a70-49c0-af07-7a92860ccde8")
-	)
-	(wire
-		(pts
-			(xy 704.85 336.55) (xy 718.82 336.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4a1f185-4060-4387-a181-e9f1e4842f44")
 	)
 	(bus
 		(pts
@@ -29532,7 +29677,7 @@
 	)
 	(wire
 		(pts
-			(xy 769.62 372.11) (xy 769.62 472.44)
+			(xy 869.95 372.11) (xy 869.95 472.44)
 		)
 		(stroke
 			(width 0)
@@ -29542,7 +29687,7 @@
 	)
 	(wire
 		(pts
-			(xy 763.27 367.03) (xy 786.13 367.03)
+			(xy 863.6 367.03) (xy 886.46 367.03)
 		)
 		(stroke
 			(width 0)
@@ -29572,7 +29717,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 339.09) (xy 816.61 339.09)
+			(xy 911.86 339.09) (xy 916.94 339.09)
 		)
 		(stroke
 			(width 0)
@@ -29582,7 +29727,7 @@
 	)
 	(wire
 		(pts
-			(xy 698.5 292.1) (xy 698.5 349.25)
+			(xy 680.72 292.1) (xy 680.72 349.25)
 		)
 		(stroke
 			(width 0)
@@ -29702,6 +29847,16 @@
 	)
 	(wire
 		(pts
+			(xy 861.06 349.25) (xy 868.68 341.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caf36f3b-cd11-4a8c-bf6c-a790d6da7031")
+	)
+	(wire
+		(pts
 			(xy 140.97 683.26) (xy 226.06 683.26)
 		)
 		(stroke
@@ -29792,13 +29947,23 @@
 	)
 	(wire
 		(pts
-			(xy 699.77 293.37) (xy 820.42 293.37)
+			(xy 681.99 293.37) (xy 920.75 293.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cd5afb3a-2744-4c93-a204-a2506c0bc393")
+	)
+	(wire
+		(pts
+			(xy 822.96 339.09) (xy 704.85 339.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd74b8b9-e669-4f98-9a73-f608f4b2b36c")
 	)
 	(wire
 		(pts
@@ -29822,7 +29987,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 346.71) (xy 820.42 346.71)
+			(xy 911.86 346.71) (xy 920.75 346.71)
 		)
 		(stroke
 			(width 0)
@@ -29839,6 +30004,16 @@
 			(type default)
 		)
 		(uuid "cf39bc21-03a2-427f-be83-69b671a4e920")
+	)
+	(wire
+		(pts
+			(xy 680.72 349.25) (xy 739.14 349.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfa84d84-13d0-48cb-9d54-e32fde29e67f")
 	)
 	(wire
 		(pts
@@ -29869,6 +30044,16 @@
 			(type default)
 		)
 		(uuid "d00945d3-7bc4-4388-9363-386e7d7ea425")
+	)
+	(wire
+		(pts
+			(xy 848.36 336.55) (xy 886.46 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0692ced-46a3-4161-8a51-23b3c05df8fb")
 	)
 	(wire
 		(pts
@@ -29922,7 +30107,7 @@
 	)
 	(wire
 		(pts
-			(xy 817.88 295.91) (xy 702.31 295.91)
+			(xy 918.21 295.91) (xy 684.53 295.91)
 		)
 		(stroke
 			(width 0)
@@ -29949,6 +30134,16 @@
 			(type default)
 		)
 		(uuid "d1c22062-c56f-4ee3-9696-97a8014aec74")
+	)
+	(wire
+		(pts
+			(xy 688.34 334.01) (xy 720.09 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2183a2d-29e4-42b4-8d71-7d8293d04bde")
 	)
 	(wire
 		(pts
@@ -30009,16 +30204,6 @@
 			(type default)
 		)
 		(uuid "d33f251b-2a9d-451a-afb7-36d88e6cd542")
-	)
-	(wire
-		(pts
-			(xy 698.5 349.25) (xy 722.63 349.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d37a0d5d-e325-4725-a314-25b49956b6eb")
 	)
 	(wire
 		(pts
@@ -30112,7 +30297,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 339.09) (xy 703.58 339.09)
+			(xy 661.67 339.09) (xy 685.8 339.09)
 		)
 		(stroke
 			(width 0)
@@ -30232,7 +30417,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 361.95) (xy 822.96 361.95)
+			(xy 911.86 361.95) (xy 923.29 361.95)
 		)
 		(stroke
 			(width 0)
@@ -30332,7 +30517,7 @@
 	)
 	(wire
 		(pts
-			(xy 698.5 292.1) (xy 821.69 292.1)
+			(xy 680.72 292.1) (xy 922.02 292.1)
 		)
 		(stroke
 			(width 0)
@@ -30342,7 +30527,7 @@
 	)
 	(wire
 		(pts
-			(xy 814.07 299.72) (xy 706.12 299.72)
+			(xy 914.4 299.72) (xy 688.34 299.72)
 		)
 		(stroke
 			(width 0)
@@ -30572,7 +30757,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 336.55) (xy 704.85 336.55)
+			(xy 661.67 336.55) (xy 687.07 336.55)
 		)
 		(stroke
 			(width 0)
@@ -30602,7 +30787,7 @@
 	)
 	(wire
 		(pts
-			(xy 819.15 344.17) (xy 819.15 294.64)
+			(xy 919.48 344.17) (xy 919.48 294.64)
 		)
 		(stroke
 			(width 0)
@@ -30682,7 +30867,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 341.63) (xy 817.88 341.63)
+			(xy 911.86 341.63) (xy 918.21 341.63)
 		)
 		(stroke
 			(width 0)
@@ -30742,7 +30927,7 @@
 	)
 	(wire
 		(pts
-			(xy 660.4 393.7) (xy 765.81 393.7)
+			(xy 660.4 393.7) (xy 866.14 393.7)
 		)
 		(stroke
 			(width 0)
@@ -30832,6 +31017,16 @@
 	)
 	(wire
 		(pts
+			(xy 685.8 339.09) (xy 702.31 339.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0f2b0ed-1825-4597-a889-b3eac0209bae")
+	)
+	(wire
+		(pts
 			(xy 505.46 604.52) (xy 516.89 604.52)
 		)
 		(stroke
@@ -30859,6 +31054,16 @@
 			(type default)
 		)
 		(uuid "e1ce2b2d-88bd-47b2-bad5-ba329028e559")
+	)
+	(wire
+		(pts
+			(xy 822.96 336.55) (xy 715.01 336.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e3a224-f123-44b1-9c6b-6a405bf5f631")
 	)
 	(wire
 		(pts
@@ -30962,7 +31167,7 @@
 	)
 	(wire
 		(pts
-			(xy 735.33 322.58) (xy 735.33 323.85)
+			(xy 835.66 322.58) (xy 835.66 323.85)
 		)
 		(stroke
 			(width 0)
@@ -30979,6 +31184,16 @@
 			(type default)
 		)
 		(uuid "e3cfeebf-08ef-4c34-8116-e3eeb12b0d32")
+	)
+	(wire
+		(pts
+			(xy 822.96 334.01) (xy 732.79 334.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3dc30b3-cdb6-485f-a7c0-3fa3cdfe5ffe")
 	)
 	(bus
 		(pts
@@ -31162,7 +31377,7 @@
 	)
 	(wire
 		(pts
-			(xy 763.27 391.16) (xy 763.27 367.03)
+			(xy 863.6 391.16) (xy 863.6 367.03)
 		)
 		(stroke
 			(width 0)
@@ -31462,7 +31677,7 @@
 	)
 	(wire
 		(pts
-			(xy 758.19 361.95) (xy 786.13 361.95)
+			(xy 858.52 361.95) (xy 886.46 361.95)
 		)
 		(stroke
 			(width 0)
@@ -31482,7 +31697,7 @@
 	)
 	(wire
 		(pts
-			(xy 722.63 356.87) (xy 722.63 363.22)
+			(xy 822.96 356.87) (xy 822.96 363.22)
 		)
 		(stroke
 			(width 0)
@@ -31632,7 +31847,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 331.47) (xy 812.8 331.47)
+			(xy 911.86 331.47) (xy 913.13 331.47)
 		)
 		(stroke
 			(width 0)
@@ -31689,16 +31904,6 @@
 			(type default)
 		)
 		(uuid "f03c961a-c893-41c9-81c1-f90940eedbd2")
-	)
-	(wire
-		(pts
-			(xy 721.36 334.01) (xy 718.82 336.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0464062-82f0-4e0d-b0d8-c1841f49f04b")
 	)
 	(wire
 		(pts
@@ -31932,7 +32137,7 @@
 	)
 	(wire
 		(pts
-			(xy 661.67 341.63) (xy 702.31 341.63)
+			(xy 661.67 341.63) (xy 684.53 341.63)
 		)
 		(stroke
 			(width 0)
@@ -31962,16 +32167,6 @@
 	)
 	(wire
 		(pts
-			(xy 722.63 336.55) (xy 721.36 336.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5ebb0fc-e50b-4bfa-89c5-a37811640690")
-	)
-	(wire
-		(pts
 			(xy 679.45 431.8) (xy 693.42 431.8)
 		)
 		(stroke
@@ -31982,7 +32177,7 @@
 	)
 	(wire
 		(pts
-			(xy 765.81 369.57) (xy 786.13 369.57)
+			(xy 866.14 369.57) (xy 886.46 369.57)
 		)
 		(stroke
 			(width 0)
@@ -32019,16 +32214,6 @@
 			(type default)
 		)
 		(uuid "f6772a35-4af5-49f7-a119-ba83c1510af8")
-	)
-	(wire
-		(pts
-			(xy 748.03 349.25) (xy 786.13 349.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a7749a-c78b-41f8-a65f-382ebbbf6c91")
 	)
 	(wire
 		(pts
@@ -32072,7 +32257,7 @@
 	)
 	(wire
 		(pts
-			(xy 798.83 325.12) (xy 798.83 326.39)
+			(xy 899.16 325.12) (xy 899.16 326.39)
 		)
 		(stroke
 			(width 0)
@@ -32262,16 +32447,6 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 346.71) (xy 786.13 346.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa520234-ffe7-469e-b14f-f1e1ad22d36c")
-	)
-	(wire
-		(pts
 			(xy 226.06 41.91) (xy 226.06 48.26)
 		)
 		(stroke
@@ -32299,16 +32474,6 @@
 			(type default)
 		)
 		(uuid "fb0ffeb9-5b6c-4876-9c8a-8fb85c9e9891")
-	)
-	(wire
-		(pts
-			(xy 706.12 334.01) (xy 718.82 334.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb3eafd0-d0c9-48b4-981b-3d5c190ea648")
 	)
 	(bus
 		(pts
@@ -32362,6 +32527,16 @@
 	)
 	(wire
 		(pts
+			(xy 886.46 344.17) (xy 878.84 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce1263e-423d-41a8-9654-fa7cf6291698")
+	)
+	(wire
+		(pts
 			(xy 246.38 695.96) (xy 256.54 695.96)
 		)
 		(stroke
@@ -32399,6 +32574,16 @@
 			(type default)
 		)
 		(uuid "fd4dfcdb-1dcf-4314-a480-511c81271e9a")
+	)
+	(wire
+		(pts
+			(xy 822.96 346.71) (xy 732.79 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd5bbbcf-ccbd-44f1-b0c2-9a0c98ee3257")
 	)
 	(bus
 		(pts
@@ -32492,7 +32677,7 @@
 	)
 	(wire
 		(pts
-			(xy 811.53 334.01) (xy 814.07 334.01)
+			(xy 911.86 334.01) (xy 914.4 334.01)
 		)
 		(stroke
 			(width 0)
@@ -32611,7 +32796,7 @@
 		(uuid "028e0fb9-e679-40fe-b037-f038452c28d9")
 	)
 	(label "L7"
-		(at 763.27 349.25 0)
+		(at 852.17 349.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -32721,7 +32906,7 @@
 		(uuid "0e3fde27-dec7-457c-9d2a-e8a608e24d73")
 	)
 	(label "L5"
-		(at 758.19 344.17 0)
+		(at 852.17 344.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -32749,6 +32934,16 @@
 			(justify right bottom)
 		)
 		(uuid "0f85a13c-0aa1-40d1-92d5-2fb1859bd6ce")
+	)
+	(label "L2"
+		(at 852.17 336.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "101e3ad3-e877-4647-9eb2-5fbe8df554f8")
 	)
 	(label "B_HALT"
 		(at 762 171.45 180)
@@ -32850,6 +33045,16 @@
 		)
 		(uuid "1a8dbf12-e986-4234-9e39-2aa6af613c80")
 	)
+	(label "L1"
+		(at 852.17 334.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bb39625-c2ce-429d-b779-8be1663ea047")
+	)
 	(label "XAA1"
 		(at 675.64 378.46 180)
 		(effects
@@ -32859,16 +33064,6 @@
 			(justify right bottom)
 		)
 		(uuid "1c578666-8c57-4e03-a0b1-4ce6f0416556")
-	)
-	(label "L3"
-		(at 764.54 331.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1cd7fa35-d32f-4d9c-a864-76750fe67e24")
 	)
 	(label "A_SHARE_GRANTED"
 		(at 689.61 88.9 0)
@@ -32969,6 +33164,16 @@
 			(justify left bottom)
 		)
 		(uuid "261e73f2-b239-48df-9196-404972b41fd5")
+	)
+	(label "L3"
+		(at 852.17 339.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26205ead-54c4-4442-977d-28a61a548031")
 	)
 	(label "A1"
 		(at 91.44 509.27 180)
@@ -33241,7 +33446,7 @@
 		(uuid "3b37c7fe-f849-419e-aa88-7431c7db6ac3")
 	)
 	(label "L6"
-		(at 762 346.71 0)
+		(at 852.17 346.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33329,16 +33534,6 @@
 			(justify right bottom)
 		)
 		(uuid "45d4293b-a62c-4ee7-b061-7b8865ada494")
-	)
-	(label "L2"
-		(at 760.73 334.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "488787bd-f14e-4866-a93b-f5474cd36c7a")
 	)
 	(label "Shared_data_D6"
 		(at 461.01 396.24 180)
@@ -33970,6 +34165,16 @@
 		)
 		(uuid "8f9359b1-8942-4a88-96cb-7e4a718b6d57")
 	)
+	(label "L0"
+		(at 852.17 331.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fe8edec-5ac2-4300-91b4-d5dff41c02e9")
+	)
 	(label "Shared_Address_A3"
 		(at 410.21 449.58 0)
 		(effects
@@ -34440,16 +34645,6 @@
 		)
 		(uuid "bb646d57-f0fc-410f-a5b1-c19a26ea983d")
 	)
-	(label "L0"
-		(at 753.11 339.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc1e1d13-7199-4a4c-9bf2-774eb7cd0db2")
-	)
 	(label "A5"
 		(at 660.4 64.77 0)
 		(effects
@@ -34641,7 +34836,7 @@
 		(uuid "d28ec8cf-1626-44db-9b4e-f1b3f0f0d87d")
 	)
 	(label "L4"
-		(at 755.65 341.63 0)
+		(at 852.17 341.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -34949,16 +35144,6 @@
 			(justify left bottom)
 		)
 		(uuid "f666c626-13cd-4395-8af7-1a5e60d2107f")
-	)
-	(label "L1"
-		(at 756.92 336.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f74a9bf9-d77d-40ae-8bc4-11136ad3400a")
 	)
 	(label "PSDat3"
 		(at 246.38 698.5 0)
@@ -35830,7 +36015,7 @@
 	)
 	(global_label "ALE"
 		(shape input)
-		(at 715.01 354.33 180)
+		(at 815.34 354.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -35840,7 +36025,7 @@
 		)
 		(uuid "23e30d76-5da3-4d3b-9c87-8d6125fe854f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 708.7591 354.33 0)
+			(at 809.0891 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36160,7 +36345,7 @@
 	)
 	(global_label "XAA16"
 		(shape input)
-		(at 783.59 372.11 180)
+		(at 883.92 372.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -36170,7 +36355,7 @@
 		)
 		(uuid "3af3f567-ce6a-4af0-a201-d4ea888853b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 774.7991 372.11 0)
+			(at 875.1291 372.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39284,7 +39469,7 @@
 	)
 	(global_label "WE"
 		(shape input)
-		(at 822.96 361.95 0)
+		(at 923.29 361.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39294,7 +39479,7 @@
 		)
 		(uuid "e7edf980-742c-42a4-9187-0b9413458252")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 828.5456 361.95 0)
+			(at 928.8756 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39746,7 +39931,7 @@
 	)
 	(global_label "RD"
 		(shape input)
-		(at 824.23 359.41 0)
+		(at 924.56 359.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -39756,7 +39941,7 @@
 		)
 		(uuid "fa16a0a8-5f6e-4c73-9034-3dc5180729c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 829.7552 359.41 0)
+			(at 930.0852 359.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39992,7 +40177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 91.44 0)
 			(effects
 				(font
@@ -40056,7 +40241,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 685.8 711.2 0)
 			(effects
 				(font
@@ -40162,7 +40347,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 600.71 370.078 90)
 			(effects
 				(font
@@ -40232,7 +40417,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 91.44 0)
 			(effects
 				(font
@@ -40297,7 +40482,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 497.84 719.328 90)
 			(effects
 				(font
@@ -40376,7 +40561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 80.01 0)
 			(effects
 				(font
@@ -40509,7 +40694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 508 182.88 0)
 			(effects
 				(font
@@ -40645,7 +40830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-15-HD_Socket_Horizontal_P2.29x2.54mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm"
+		(property "Footprint" "MHF:DSUB-15-HD_Socket_Horizontal_P2.29x2.54mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm"
 			(at 521.97 718.82 0)
 			(effects
 				(font
@@ -40663,7 +40848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "15-pin D-SUB connector, socket (female), High density (3 columns), Triple Row, Generic, VGA-connector, Mounting Hole"
 			(at 546.1 728.98 0)
 			(effects
 				(font
@@ -40757,7 +40942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 475.9452 43.18 0)
 			(effects
 				(font
@@ -40894,7 +41079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 420.0652 43.18 0)
 			(effects
 				(font
@@ -41164,7 +41349,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 440.69 318.77 0)
 			(effects
 				(font
@@ -41231,7 +41416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 239.7252 41.91 0)
 			(effects
 				(font
@@ -41301,7 +41486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 76.2 0)
 			(effects
 				(font
@@ -41367,7 +41552,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 210.82 166.37 0)
 			(effects
 				(font
@@ -41501,7 +41686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 685.8 694.69 0)
 			(effects
 				(font
@@ -41605,7 +41790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 660.4 632.46 0)
 			(effects
 				(font
@@ -41651,7 +41836,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "0fbefd8f-18ea-4cbb-b0a0-13e1ca257eea")
 		(property "Reference" "R42"
 			(at 332.74 68.58 90)
@@ -41669,7 +41854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 332.74 64.262 90)
 			(effects
 				(font
@@ -41713,7 +41898,7 @@
 	)
 	(symbol
 		(lib_id "MHF:AS6C1008-xxST")
-		(at 798.83 351.79 0)
+		(at 899.16 351.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -41721,7 +41906,7 @@
 		(dnp no)
 		(uuid "0fef7230-32d2-420b-bd3c-b380af6eaa91")
 		(property "Reference" "M3"
-			(at 800.7859 327.66 0)
+			(at 901.1159 327.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41730,7 +41915,7 @@
 			)
 		)
 		(property "Value" "CY7C109D-10ZXI"
-			(at 799.5159 329.565 0)
+			(at 899.8459 329.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41740,7 +41925,7 @@
 			)
 		)
 		(property "Footprint" "MHF:G_TSOP-I-32_18.4x8mm_HandSolder"
-			(at 798.83 351.79 0)
+			(at 899.16 351.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41749,7 +41934,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf"
-			(at 798.83 351.79 0)
+			(at 899.16 351.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41758,7 +41943,7 @@
 			)
 		)
 		(property "Description" "1-Mbit (128K X 8-bit) Low Power CMOS SRAM, single 2.7V ~ 5.5V power supply, 55ns, TSOP-I-32"
-			(at 798.83 351.79 0)
+			(at 899.16 351.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41882,24 +42067,22 @@
 		(fields_autoplaced yes)
 		(uuid "10d9d350-57db-4f07-931b-de6c39fb1fea")
 		(property "Reference" "C4"
-			(at 130.8099 160.02 0)
+			(at 132.08 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 133.3499 160.02 0)
+		(property "Value" "22n"
+			(at 132.08 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 135.89 162.8648 0)
 			(effects
 				(font
@@ -41967,7 +42150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 727.71 0)
 			(effects
 				(font
@@ -42099,7 +42282,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 716.28 171.45 0)
 			(effects
 				(font
@@ -42172,7 +42355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 435.3052 43.18 0)
 			(effects
 				(font
@@ -42241,7 +42424,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 106.68 74.93 0)
 			(effects
 				(font
@@ -42306,7 +42489,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 107.442 90)
 			(effects
 				(font
@@ -42442,7 +42625,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 83.82 0)
 			(effects
 				(font
@@ -42509,7 +42692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 60.96 0)
 			(effects
 				(font
@@ -42706,7 +42889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 749.3 431.8 0)
 			(effects
 				(font
@@ -43051,7 +43234,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 408.94 0)
 			(effects
 				(font
@@ -43271,7 +43454,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 394.6652 77.47 0)
 			(effects
 				(font
@@ -43405,7 +43588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 713.74 0)
 			(effects
 				(font
@@ -43472,7 +43655,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 60.96 0)
 			(effects
 				(font
@@ -43670,7 +43853,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 64.77 151.892 90)
 			(effects
 				(font
@@ -43870,7 +44053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 495.3 730.758 90)
 			(effects
 				(font
@@ -44057,7 +44240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 340.36 0)
 			(effects
 				(font
@@ -44145,7 +44328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 64.77 0)
 			(effects
 				(font
@@ -44212,7 +44395,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 498.348 90)
 			(effects
 				(font
@@ -44281,7 +44464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 651.51 426.72 0)
 			(effects
 				(font
@@ -44476,7 +44659,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 130.81 76.2 0)
 			(effects
 				(font
@@ -44606,7 +44789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 593.09 735.838 90)
 			(effects
 				(font
@@ -44867,7 +45050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 449.2752 43.18 0)
 			(effects
 				(font
@@ -44935,7 +45118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 497.84 715.518 90)
 			(effects
 				(font
@@ -45012,7 +45195,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 727.71 0)
 			(effects
 				(font
@@ -45056,7 +45239,7 @@
 	)
 	(symbol
 		(lib_id "MHF:+5V")
-		(at 825.5 354.33 0)
+		(at 925.83 354.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -45064,7 +45247,7 @@
 		(dnp no)
 		(uuid "2b088403-cbe5-46a5-a6d5-21dbbc859054")
 		(property "Reference" "#PWR027"
-			(at 825.5 358.14 0)
+			(at 925.83 358.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45073,7 +45256,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 825.5 351.155 0)
+			(at 925.83 351.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45081,7 +45264,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 825.5 354.33 0)
+			(at 925.83 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45090,7 +45273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 825.5 354.33 0)
+			(at 925.83 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45099,7 +45282,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 825.5 354.33 0)
+			(at 925.83 354.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45144,7 +45327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 593.09 730.758 90)
 			(effects
 				(font
@@ -45412,7 +45595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 60.96 0)
 			(effects
 				(font
@@ -45462,24 +45645,22 @@
 		(fields_autoplaced yes)
 		(uuid "2f073137-03b8-42b1-9e98-535bb72db8af")
 		(property "Reference" "C3"
-			(at 130.8099 180.34 0)
+			(at 132.08 176.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 133.3499 180.34 0)
+		(property "Value" "22n"
+			(at 132.08 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 135.89 183.1848 0)
 			(effects
 				(font
@@ -45547,7 +45728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 137.16 0)
 			(effects
 				(font
@@ -45625,7 +45806,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 88.392 325.12 90)
 			(effects
 				(font
@@ -45695,7 +45876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 76.2 0)
 			(effects
 				(font
@@ -45961,7 +46142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 80.01 0)
 			(effects
 				(font
@@ -46026,7 +46207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 692.15 0)
 			(effects
 				(font
@@ -46161,7 +46342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 708.66 0)
 			(effects
 				(font
@@ -46297,7 +46478,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_HC49-SD"
+		(property "Footprint" "MHF:Crystal_SMD_HC49-SD"
 			(at 144.78 172.72 0)
 			(effects
 				(font
@@ -46366,7 +46547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 106.68 57.15 0)
 			(effects
 				(font
@@ -46431,7 +46612,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 713.74 0)
 			(effects
 				(font
@@ -46499,7 +46680,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 697.23 0)
 			(effects
 				(font
@@ -46567,7 +46748,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 130.81 0)
 			(effects
 				(font
@@ -46712,7 +46893,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 429.26 324.1548 0)
 			(effects
 				(font
@@ -46782,7 +46963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 146.05 304.8 0)
 			(effects
 				(font
@@ -46849,7 +47030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 197.8152 135.89 0)
 			(effects
 				(font
@@ -47049,7 +47230,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 692.15 0)
 			(effects
 				(font
@@ -47114,7 +47295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 335.28 156.21 0)
 			(effects
 				(font
@@ -47537,7 +47718,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 503.428 90)
 			(effects
 				(font
@@ -47673,7 +47854,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 331.47 78.232 90)
 			(effects
 				(font
@@ -47963,7 +48144,7 @@
 	)
 	(symbol
 		(lib_id "MHF:+5V")
-		(at 798.83 325.12 0)
+		(at 899.16 325.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -47971,7 +48152,7 @@
 		(dnp no)
 		(uuid "43c51314-1d1a-4d93-896a-09a184794265")
 		(property "Reference" "#PWR021"
-			(at 798.83 328.93 0)
+			(at 899.16 328.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47980,7 +48161,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 798.83 321.945 0)
+			(at 899.16 321.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47988,7 +48169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 798.83 325.12 0)
+			(at 899.16 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -47997,7 +48178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 798.83 325.12 0)
+			(at 899.16 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48006,7 +48187,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 798.83 325.12 0)
+			(at 899.16 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48118,7 +48299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 335.28 98.552 90)
 			(effects
 				(font
@@ -48252,7 +48433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 160.782 173.99 90)
 			(effects
 				(font
@@ -48454,7 +48635,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 505.968 90)
 			(effects
 				(font
@@ -48524,7 +48705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 80.01 0)
 			(effects
 				(font
@@ -48589,7 +48770,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x32_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_2x32_P2.54mm_Vertical"
 			(at 721.36 83.82 0)
 			(effects
 				(font
@@ -48842,7 +49023,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 215.9 768.35 0)
 			(effects
 				(font
@@ -48946,7 +49127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 656.59 732.79 0)
 			(effects
 				(font
@@ -49016,7 +49197,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 64.77 0)
 			(effects
 				(font
@@ -49083,7 +49264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 72.39 0)
 			(effects
 				(font
@@ -49150,7 +49331,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_2x03_P2.54mm_Vertical"
 			(at 322.58 264.16 90)
 			(effects
 				(font
@@ -49302,7 +49483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 72.39 0)
 			(effects
 				(font
@@ -49368,7 +49549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 58.42 250.19 0)
 			(effects
 				(font
@@ -49438,7 +49619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 87.63 0)
 			(effects
 				(font
@@ -49503,7 +49684,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 124.46 0)
 			(effects
 				(font
@@ -49582,7 +49763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 60.96 0)
 			(effects
 				(font
@@ -49715,7 +49896,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 76.2 0)
 			(effects
 				(font
@@ -49846,7 +50027,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 685.8 730.25 0)
 			(effects
 				(font
@@ -50153,7 +50334,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MHF:G_SOIC-16_3.9x9.9mm_HandSolder"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 424.18 774.7 0)
 			(effects
 				(font
@@ -50455,7 +50636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 706.12 632.46 0)
 			(effects
 				(font
@@ -50522,7 +50703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 72.39 0)
 			(effects
 				(font
@@ -50589,7 +50770,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 418.7952 77.47 0)
 			(effects
 				(font
@@ -50659,7 +50840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 130.81 58.42 0)
 			(effects
 				(font
@@ -50862,7 +51043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 60.96 0)
 			(effects
 				(font
@@ -50929,7 +51110,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 91.44 0)
 			(effects
 				(font
@@ -50994,7 +51175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 648.97 431.8 0)
 			(effects
 				(font
@@ -51064,7 +51245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 444.1952 77.47 0)
 			(effects
 				(font
@@ -51134,7 +51315,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 83.82 0)
 			(effects
 				(font
@@ -51333,7 +51514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+		(property "Footprint" "MHF:CP_Radial_D5.0mm_P2.50mm"
 			(at 390.8552 125.73 0)
 			(effects
 				(font
@@ -51403,7 +51584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 236.22 740.41 0)
 			(effects
 				(font
@@ -51517,7 +51698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 454.66 0)
 			(effects
 				(font
@@ -51605,7 +51786,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 91.44 0)
 			(effects
 				(font
@@ -51672,7 +51853,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_HC49-SD"
+		(property "Footprint" "MHF:Crystal_SMD_HC49-SD"
 			(at 434.34 334.01 0)
 			(effects
 				(font
@@ -51742,7 +51923,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 83.82 0)
 			(effects
 				(font
@@ -51808,7 +51989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 508 180.34 0)
 			(effects
 				(font
@@ -51942,7 +52123,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 495.3 723.138 90)
 			(effects
 				(font
@@ -52021,7 +52202,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 236.22 693.42 0)
 			(effects
 				(font
@@ -52200,7 +52381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 135.89 76.2 0)
 			(effects
 				(font
@@ -52265,7 +52446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 679.45 436.88 0)
 			(effects
 				(font
@@ -52694,7 +52875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 178.7652 96.52 0)
 			(effects
 				(font
@@ -52964,7 +53145,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+		(property "Footprint" "MHF:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
 			(at 52.07 132.08 0)
 			(effects
 				(font
@@ -53035,7 +53216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x02_P2.54mm_Vertical"
 			(at 118.11 695.96 0)
 			(effects
 				(font
@@ -53170,7 +53351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 593.09 179.07 0)
 			(effects
 				(font
@@ -53241,7 +53422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 708.66 0)
 			(effects
 				(font
@@ -53308,7 +53489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 127.9652 336.55 0)
 			(effects
 				(font
@@ -53510,7 +53691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 473.71 472.44 0)
 			(effects
 				(font
@@ -53661,7 +53842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_Micro-B_XKB_U254-051T-4BH83-F1S"
+		(property "Footprint" "MHF:USB_Micro-B_XKB_U254-051T-4BH83-F1S"
 			(at 44.45 166.37 0)
 			(effects
 				(font
@@ -53741,7 +53922,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 497.84 711.708 90)
 			(effects
 				(font
@@ -53818,7 +53999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 524.51 601.98 0)
 			(effects
 				(font
@@ -53990,7 +54171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 87.63 0)
 			(effects
 				(font
@@ -54055,7 +54236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 246.38 768.35 0)
 			(effects
 				(font
@@ -54123,7 +54304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 112.522 90)
 			(effects
 				(font
@@ -54193,7 +54374,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 68.58 0)
 			(effects
 				(font
@@ -54257,7 +54438,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 132.842 311.15 90)
 			(effects
 				(font
@@ -54327,7 +54508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 68.58 0)
 			(effects
 				(font
@@ -54461,7 +54642,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 72.39 0)
 			(effects
 				(font
@@ -54594,7 +54775,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 511.048 90)
 			(effects
 				(font
@@ -54664,7 +54845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 64.77 0)
 			(effects
 				(font
@@ -54863,7 +55044,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 189.23 771.398 90)
 			(effects
 				(font
@@ -55000,7 +55181,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 60.96 0)
 			(effects
 				(font
@@ -55065,7 +55246,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 495.3 738.378 90)
 			(effects
 				(font
@@ -55143,7 +55324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x32_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinSocket_2x32_P2.54mm_Vertical"
 			(at 626.11 85.09 0)
 			(effects
 				(font
@@ -55465,7 +55646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 64.77 0)
 			(effects
 				(font
@@ -55597,7 +55778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 472.44 353.06 0)
 			(effects
 				(font
@@ -55665,7 +55846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" "MHF:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 190.5 763.27 0)
 			(effects
 				(font
@@ -55887,7 +56068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 431.8 0)
 			(effects
 				(font
@@ -55975,7 +56156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 87.63 0)
 			(effects
 				(font
@@ -56042,7 +56223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 91.44 0)
 			(effects
 				(font
@@ -56109,7 +56290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 87.63 0)
 			(effects
 				(font
@@ -56176,7 +56357,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 76.2 0)
 			(effects
 				(font
@@ -56243,7 +56424,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+		(property "Footprint" "MHF:BarrelJack_Horizontal"
 			(at 132.08 121.666 0)
 			(effects
 				(font
@@ -56476,7 +56657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 712.47 166.37 0)
 			(effects
 				(font
@@ -56549,7 +56730,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 671.83 768.35 0)
 			(effects
 				(font
@@ -56787,7 +56968,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 508.508 90)
 			(effects
 				(font
@@ -56857,7 +57038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 91.44 0)
 			(effects
 				(font
@@ -56924,7 +57105,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 200.3552 96.52 0)
 			(effects
 				(font
@@ -56992,7 +57173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 648.97 632.46 0)
 			(effects
 				(font
@@ -57062,7 +57243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 68.58 0)
 			(effects
 				(font
@@ -57129,7 +57310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 68.58 0)
 			(effects
 				(font
@@ -57194,7 +57375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 109.22 0)
 			(effects
 				(font
@@ -57339,7 +57520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 227.0252 41.91 0)
 			(effects
 				(font
@@ -57408,7 +57589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 209.55 156.21 0)
 			(effects
 				(font
@@ -57476,7 +57657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 117.602 90)
 			(effects
 				(font
@@ -57611,7 +57792,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 76.2 260.35 0)
 			(effects
 				(font
@@ -57748,7 +57929,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 576.58 728.98 0)
 			(effects
 				(font
@@ -57828,7 +58009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 318.77 231.14 0)
 			(effects
 				(font
@@ -57910,7 +58091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 87.63 0)
 			(effects
 				(font
@@ -57977,7 +58158,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 64.77 0)
 			(effects
 				(font
@@ -58044,7 +58225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 105.1052 336.55 0)
 			(effects
 				(font
@@ -58112,7 +58293,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 697.23 0)
 			(effects
 				(font
@@ -58446,7 +58627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 416.2552 365.76 0)
 			(effects
 				(font
@@ -58515,7 +58696,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 590.55 368.3 0)
 			(effects
 				(font
@@ -58584,7 +58765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinSocket_2x03_P2.54mm_Vertical"
 			(at 134.62 92.71 0)
 			(effects
 				(font
@@ -58665,7 +58846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 720.09 176.53 0)
 			(effects
 				(font
@@ -58738,7 +58919,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 109.728 689.61 90)
 			(effects
 				(font
@@ -58808,7 +58989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 693.42 769.62 0)
 			(effects
 				(font
@@ -58914,7 +59095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 68.58 0)
 			(effects
 				(font
@@ -59045,7 +59226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 154.432 90)
 			(effects
 				(font
@@ -59179,7 +59360,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 728.98 430.022 90)
 			(effects
 				(font
@@ -59249,7 +59430,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 407.3652 77.47 0)
 			(effects
 				(font
@@ -59318,7 +59499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 463.2452 43.18 0)
 			(effects
 				(font
@@ -59388,7 +59569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 83.82 0)
 			(effects
 				(font
@@ -59455,7 +59636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 254.9652 96.52 0)
 			(effects
 				(font
@@ -59524,7 +59705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 727.71 186.69 0)
 			(effects
 				(font
@@ -59597,7 +59778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 83.82 0)
 			(effects
 				(font
@@ -59662,7 +59843,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 335.28 93.472 90)
 			(effects
 				(font
@@ -59732,7 +59913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MHF:MountingHole_3.2mm_M3_Pad"
 			(at 326.39 46.99 0)
 			(effects
 				(font
@@ -59750,7 +59931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 326.39 46.99 0)
 			(effects
 				(font
@@ -59770,7 +59951,7 @@
 	)
 	(symbol
 		(lib_id "MHF:+5V")
-		(at 735.33 322.58 0)
+		(at 835.66 322.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -59779,7 +59960,7 @@
 		(fields_autoplaced yes)
 		(uuid "a250de19-7b0a-4dcf-9309-3b846963a8e6")
 		(property "Reference" "#PWR026"
-			(at 735.33 326.39 0)
+			(at 835.66 326.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59788,7 +59969,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 735.33 319.405 0)
+			(at 835.66 319.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59796,7 +59977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 735.33 322.58 0)
+			(at 835.66 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59805,7 +59986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 735.33 322.58 0)
+			(at 835.66 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59814,7 +59995,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 735.33 322.58 0)
+			(at 835.66 322.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59862,7 +60043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 441.96 347.98 0)
 			(effects
 				(font
@@ -59995,7 +60176,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 87.63 0)
 			(effects
 				(font
@@ -60128,7 +60309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 431.4952 77.47 0)
 			(effects
 				(font
@@ -60196,7 +60377,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 122.682 90)
 			(effects
 				(font
@@ -60266,7 +60447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 943.61 76.2 0)
 			(effects
 				(font
@@ -60331,7 +60512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 707.39 694.69 0)
 			(effects
 				(font
@@ -60397,7 +60578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 60.96 250.19 0)
 			(effects
 				(font
@@ -60466,7 +60647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 585.47 168.91 0)
 			(effects
 				(font
@@ -60537,7 +60718,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 			(at 190.5 83.82 0)
 			(effects
 				(font
@@ -60609,7 +60790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 76.2 262.89 0)
 			(effects
 				(font
@@ -60679,7 +60860,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 104.648 689.61 90)
 			(effects
 				(font
@@ -60748,7 +60929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 731.52 191.77 0)
 			(effects
 				(font
@@ -60821,7 +61002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 91.44 0)
 			(effects
 				(font
@@ -60886,7 +61067,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 707.39 730.25 0)
 			(effects
 				(font
@@ -60952,7 +61133,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 478.79 728.98 0)
 			(effects
 				(font
@@ -61129,7 +61310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 647.7 171.45 0)
 			(effects
 				(font
@@ -61267,7 +61448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 149.352 90)
 			(effects
 				(font
@@ -61311,7 +61492,7 @@
 	)
 	(symbol
 		(lib_id "MHF:GND")
-		(at 814.07 370.84 0)
+		(at 914.4 370.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -61320,7 +61501,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae894ed1-894c-4886-8523-1e9269dd8289")
 		(property "Reference" "#PWR025"
-			(at 814.07 377.19 0)
+			(at 914.4 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61329,7 +61510,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 814.07 375.92 0)
+			(at 914.4 375.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61337,7 +61518,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 814.07 370.84 0)
+			(at 914.4 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61346,7 +61527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 814.07 370.84 0)
+			(at 914.4 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61355,7 +61536,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 814.07 370.84 0)
+			(at 914.4 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -61403,7 +61584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 80.01 0)
 			(effects
 				(font
@@ -61468,7 +61649,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 488.95 182.88 0)
 			(effects
 				(font
@@ -61550,7 +61731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 80.01 0)
 			(effects
 				(font
@@ -61617,7 +61798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "MHF:TO-92_Inline"
 			(at 553.72 625.475 0)
 			(effects
 				(font
@@ -61692,7 +61873,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+		(property "Footprint" "MHF:CP_Radial_D5.0mm_P2.50mm"
 			(at 406.0952 125.73 0)
 			(effects
 				(font
@@ -61763,7 +61944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+		(property "Footprint" "MHF:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 195.2752 789.94 0)
 			(effects
 				(font
@@ -61899,7 +62080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 101.6 57.15 0)
 			(effects
 				(font
@@ -62100,7 +62281,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 83.82 0)
 			(effects
 				(font
@@ -62165,7 +62346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 129.032 90)
 			(effects
 				(font
@@ -62367,7 +62548,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 500.888 90)
 			(effects
 				(font
@@ -62437,7 +62618,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MHF:MountingHole_3.2mm_M3_Pad"
 			(at 326.39 53.34 0)
 			(effects
 				(font
@@ -62455,7 +62636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 326.39 53.34 0)
 			(effects
 				(font
@@ -62567,7 +62748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 393.3952 43.18 0)
 			(effects
 				(font
@@ -62836,7 +63017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 473.71 449.58 0)
 			(effects
 				(font
@@ -62923,7 +63104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 643.89 165.1 0)
 			(effects
 				(font
@@ -62996,7 +63177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 68.58 0)
 			(effects
 				(font
@@ -63129,7 +63310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 64.77 0)
 			(effects
 				(font
@@ -63194,7 +63375,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 430.53 340.6648 0)
 			(effects
 				(font
@@ -63263,7 +63444,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 209.55 148.59 0)
 			(effects
 				(font
@@ -63333,7 +63514,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 552.958 595.63 90)
 			(effects
 				(font
@@ -63401,7 +63582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 707.39 711.2 0)
 			(effects
 				(font
@@ -63537,7 +63718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 363.22 0)
 			(effects
 				(font
@@ -63625,7 +63806,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MHF:MountingHole_3.2mm_M3_Pad"
 			(at 326.39 40.64 0)
 			(effects
 				(font
@@ -63643,7 +63824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 326.39 40.64 0)
 			(effects
 				(font
@@ -63688,7 +63869,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 508 185.42 0)
 			(effects
 				(font
@@ -63821,7 +64002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 171.45 695.96 0)
 			(effects
 				(font
@@ -63924,7 +64105,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 449.072 335.28 90)
 			(effects
 				(font
@@ -64060,7 +64241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 101.6 74.93 0)
 			(effects
 				(font
@@ -64127,7 +64308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 76.2 0)
 			(effects
 				(font
@@ -64236,14 +64417,8 @@
 		(pin "4"
 			(uuid "7e9fbd5e-9484-4fe0-a8ba-b2f2f8279db3")
 		)
-		(pin "7"
+		(pin "S"
 			(uuid "9d401ad2-1213-47e7-8f14-60cfd48002ae")
-		)
-		(pin "9"
-			(uuid "b72bf4b1-a0a0-4a04-b948-d6027c41700a")
-		)
-		(pin "8"
-			(uuid "6337ff83-0c48-461f-b327-e185bfe55b4d")
 		)
 		(instances
 			(project ""
@@ -64346,7 +64521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 701.04 431.8 0)
 			(effects
 				(font
@@ -64452,7 +64627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 60.96 0)
 			(effects
 				(font
@@ -64520,7 +64695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+		(property "Footprint" "MHF:NetTie-2_SMD_Pad0.5mm"
 			(at 626.11 454.66 0)
 			(effects
 				(font
@@ -64588,7 +64763,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 544.83 603.758 90)
 			(effects
 				(font
@@ -64658,7 +64833,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 68.58 0)
 			(effects
 				(font
@@ -64725,7 +64900,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 513.588 90)
 			(effects
 				(font
@@ -64795,7 +64970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 72.39 0)
 			(effects
 				(font
@@ -64862,7 +65037,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 435.61 358.14 0)
 			(effects
 				(font
@@ -64992,7 +65167,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 332.74 69.342 90)
 			(effects
 				(font
@@ -65062,7 +65237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x02_P2.54mm_Vertical"
 			(at 581.66 615.95 0)
 			(effects
 				(font
@@ -65132,7 +65307,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 68.58 0)
 			(effects
 				(font
@@ -65197,7 +65372,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 114.3 0)
 			(effects
 				(font
@@ -65250,7 +65425,7 @@
 	)
 	(symbol
 		(lib_id "MHF:GND")
-		(at 735.33 364.49 0)
+		(at 835.66 364.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -65259,7 +65434,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd7e95e3-fe0e-4712-9aec-586989bc2628")
 		(property "Reference" "#PWR023"
-			(at 735.33 370.84 0)
+			(at 835.66 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65268,7 +65443,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 735.33 369.57 0)
+			(at 835.66 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65276,7 +65451,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 735.33 364.49 0)
+			(at 835.66 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65285,7 +65460,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 735.33 364.49 0)
+			(at 835.66 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65294,7 +65469,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 735.33 364.49 0)
+			(at 835.66 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65341,7 +65516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 135.89 58.42 0)
 			(effects
 				(font
@@ -65472,7 +65647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 334.01 119.38 0)
 			(effects
 				(font
@@ -65525,7 +65700,7 @@
 	)
 	(symbol
 		(lib_id "MHF:GND")
-		(at 722.63 363.22 0)
+		(at 822.96 363.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -65534,7 +65709,7 @@
 		(fields_autoplaced yes)
 		(uuid "ceb9e195-0d36-4fdc-a439-ec374f812189")
 		(property "Reference" "#PWR024"
-			(at 722.63 369.57 0)
+			(at 822.96 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65543,7 +65718,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 722.63 368.3 0)
+			(at 822.96 368.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65551,7 +65726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 722.63 363.22 0)
+			(at 822.96 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65560,7 +65735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 722.63 363.22 0)
+			(at 822.96 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65569,7 +65744,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 722.63 363.22 0)
+			(at 822.96 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65616,7 +65791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 590.55 365.76 0)
 			(effects
 				(font
@@ -65685,7 +65860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 76.2 265.43 0)
 			(effects
 				(font
@@ -65822,7 +65997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+		(property "Footprint" "MHF:NetTie-2_SMD_Pad0.5mm"
 			(at 595.63 429.26 0)
 			(effects
 				(font
@@ -65892,7 +66067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 252.4252 41.91 0)
 			(effects
 				(font
@@ -65960,7 +66135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 332.74 84.582 90)
 			(effects
 				(font
@@ -66004,7 +66179,7 @@
 	)
 	(symbol
 		(lib_id "MHF:74HC573")
-		(at 735.33 344.17 0)
+		(at 835.66 344.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -66013,7 +66188,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3b965ed-2b41-490f-b47e-afd8d0de3d59")
 		(property "Reference" "U4"
-			(at 737.4733 323.85 0)
+			(at 837.8033 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66022,7 +66197,7 @@
 			)
 		)
 		(property "Value" "74AHC573"
-			(at 737.4733 326.39 0)
+			(at 837.8033 326.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66030,8 +66205,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-20_4.4x5mm_P0.5mm"
-			(at 735.33 344.17 0)
+		(property "Footprint" "MHF:TSSOP-20_4.4x6.5mm_P0.65mm_HandSolder"
+			(at 835.66 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66040,7 +66215,7 @@
 			)
 		)
 		(property "Datasheet" "74xx/74hc573.pdf"
-			(at 735.33 344.17 0)
+			(at 835.66 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66049,7 +66224,7 @@
 			)
 		)
 		(property "Description" "8-bit Latch 3-state outputs"
-			(at 735.33 344.17 0)
+			(at 835.66 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -66153,7 +66328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 589.28 173.99 0)
 			(effects
 				(font
@@ -66225,7 +66400,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 723.9 181.61 0)
 			(effects
 				(font
@@ -66296,7 +66471,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1210_3225Metric"
+		(property "Footprint" "MHF:D_1210_3225Metric_HandSolder"
 			(at 171.45 88.9 0)
 			(effects
 				(font
@@ -66384,7 +66559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 80.01 0)
 			(effects
 				(font
@@ -66450,7 +66625,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 651.51 177.8 0)
 			(effects
 				(font
@@ -66523,7 +66698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 72.39 0)
 			(effects
 				(font
@@ -66590,7 +66765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 83.82 0)
 			(effects
 				(font
@@ -66654,7 +66829,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 64.77 154.432 90)
 			(effects
 				(font
@@ -66790,7 +66965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 83.82 0)
 			(effects
 				(font
@@ -66857,7 +67032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 909.32 80.01 0)
 			(effects
 				(font
@@ -66924,7 +67099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
+		(property "Footprint" "MHF:D_1210_3225Metric_HandSolder"
 			(at 127 313.69 0)
 			(effects
 				(font
@@ -67079,7 +67254,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 72.39 0)
 			(effects
 				(font
@@ -67146,7 +67321,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 403.86 495.808 90)
 			(effects
 				(font
@@ -67214,7 +67389,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 313.69 135.382 90)
 			(effects
 				(font
@@ -67348,7 +67523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 335.28 144.78 0)
 			(effects
 				(font
@@ -67425,7 +67600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 717.55 440.69 0)
 			(effects
 				(font
@@ -67689,7 +67864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 539.75 625.348 90)
 			(effects
 				(font
@@ -67759,7 +67934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "MHF:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 191.77 172.72 0)
 			(effects
 				(font
@@ -67913,7 +68088,7 @@
 	)
 	(symbol
 		(lib_id "MHF:GND")
-		(at 798.83 379.73 0)
+		(at 899.16 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -67922,7 +68097,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3783787-c5e0-4f83-9dbe-30d8abd0b1c2")
 		(property "Reference" "#PWR022"
-			(at 798.83 386.08 0)
+			(at 899.16 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67931,7 +68106,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 798.83 384.81 0)
+			(at 899.16 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67939,7 +68114,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 798.83 379.73 0)
+			(at 899.16 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67948,7 +68123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 798.83 379.73 0)
+			(at 899.16 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -67957,7 +68132,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 798.83 379.73 0)
+			(at 899.16 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -68005,7 +68180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 473.71 403.86 0)
 			(effects
 				(font
@@ -68424,7 +68599,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 600.71 367.538 90)
 			(effects
 				(font
@@ -68494,7 +68669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 875.03 64.77 0)
 			(effects
 				(font
@@ -68561,7 +68736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 64.77 0)
 			(effects
 				(font
@@ -68628,7 +68803,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 920.75 60.96 0)
 			(effects
 				(font
@@ -68693,7 +68868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 684.53 632.46 0)
 			(effects
 				(font
@@ -68799,7 +68974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 886.46 76.2 0)
 			(effects
 				(font
@@ -68931,7 +69106,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 209.55 151.13 0)
 			(effects
 				(font
@@ -69132,7 +69307,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 314.96 143.002 90)
 			(effects
 				(font
@@ -69267,7 +69442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 528.32 623.57 0)
 			(effects
 				(font
@@ -69374,7 +69549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 556.26 474.98 0)
 			(effects
 				(font
@@ -69454,7 +69629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x06_P2.54mm_Vertical"
 			(at 318.77 181.61 0)
 			(effects
 				(font
@@ -69534,7 +69709,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 668.02 732.79 0)
 			(effects
 				(font
@@ -69601,7 +69776,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 455.93 379.73 0)
 			(effects
 				(font
@@ -69666,7 +69841,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x04_P2.54mm_Vertical"
 			(at 318.77 210.82 0)
 			(effects
 				(font
@@ -69742,7 +69917,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 473.71 426.72 0)
 			(effects
 				(font
@@ -69827,7 +70002,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "MHF:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 156.21 695.96 0)
 			(effects
 				(font
@@ -69933,7 +70108,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "MHF:C_0805_2012Metric_HandSolder"
 			(at 214.3252 96.52 0)
 			(effects
 				(font
@@ -70002,7 +70177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
 			(at 508 187.96 0)
 			(effects
 				(font
@@ -70072,7 +70247,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "MHF:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 512.318 593.09 90)
 			(effects
 				(font
@@ -70140,7 +70315,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "MHF:LED_0805_2012Metric"
 			(at 335.28 151.13 0)
 			(effects
 				(font
@@ -70417,7 +70592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 932.18 87.63 0)
 			(effects
 				(font
@@ -70684,7 +70859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x08_P2.54mm_Vertical"
 			(at 556.26 386.08 0)
 			(effects
 				(font
@@ -70772,7 +70947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 488.6452 43.18 0)
 			(effects
 				(font
@@ -70842,7 +71017,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 91.44 0)
 			(effects
 				(font
@@ -70975,7 +71150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "MHF:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 210.82 168.91 0)
 			(effects
 				(font
@@ -71045,7 +71220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
+		(property "Footprint" "MHF:MountingHole_3.2mm_M3_Pad"
 			(at 326.39 34.29 0)
 			(effects
 				(font
@@ -71063,7 +71238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 326.39 34.29 0)
 			(effects
 				(font
@@ -71109,7 +71284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 80.01 0)
 			(effects
 				(font
@@ -71176,7 +71351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 72.39 0)
 			(effects
 				(font
@@ -71443,7 +71618,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 897.89 76.2 0)
 			(effects
 				(font
@@ -71508,7 +71683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_1x04_P2.54mm_Vertical"
 			(at 497.84 185.42 0)
 			(effects
 				(font
@@ -71584,7 +71759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "MHF:C_Disc_D3.0mm_W2.0mm_P2.50mm"
 			(at 406.0952 43.18 0)
 			(effects
 				(font
@@ -71654,7 +71829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gilhad:PinHole_1x01_2.54xrectangle"
+		(property "Footprint" "MHF:PinHole_1x01_2.54xrectangle"
 			(at 863.6 87.63 0)
 			(effects
 				(font
@@ -71719,7 +71894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "MHF:SOT-223-3_TabPin2_HandSolder"
 			(at 240.03 83.82 0)
 			(effects
 				(font

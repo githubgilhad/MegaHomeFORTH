@@ -5,11 +5,11 @@
 	(layer "F.Cu")
 	(descr "USB-UART module")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -0.499999 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "d0f603cf-6e39-4de9-833c-69ba42901771")
+		(uuid "e162d63f-1110-4d16-a892-0f7b580b2489")
 		(effects
 			(font
 				(size 1 1)
@@ -17,12 +17,11 @@
 			)
 		)
 	)
-	(property "Value" "G_CP2102"
-		(at 0 1 0)
+	(property "Value" "CP2102"
+		(at 3.0226 -0.0414 270)
 		(unlocked yes)
 		(layer "F.Fab")
-		(hide yes)
-		(uuid "08edce80-eb44-49bc-b189-47c908e9c607")
+		(uuid "fff974a9-e7c3-4e55-a06f-1d455110b2c0")
 		(effects
 			(font
 				(size 1 1)
@@ -35,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ce3f29b3-cdb5-49bc-852d-24c8ffc89c38")
+		(uuid "07c8a11e-1f7d-47f7-bf7f-c62614aafb4c")
 		(effects
 			(font
 				(size 1 1)
@@ -43,12 +42,12 @@
 			)
 		)
 	)
-	(property "Description" "USB-UART module"
+	(property "Description" "USB-UART Module"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "191e0986-102a-44c9-990a-88cb2d248af2")
+		(uuid "d67bf5c9-37b0-43cd-b8ad-d39c91db5dc8")
 		(effects
 			(font
 				(size 1 1)
@@ -56,7 +55,7 @@
 			)
 		)
 	)
-	(attr through_hole)
+	(attr through_hole exclude_from_bom)
 	(fp_rect
 		(start -19.05 -6.35)
 		(end 6.35 8.89)
@@ -66,7 +65,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "6eaf50a0-2c48-4f35-996f-ba6ded3b6744")
+		(uuid "6410c042-d052-4208-8a2d-27eacb47732f")
 	)
 	(fp_rect
 		(start -8.89 -6.35)
@@ -77,7 +76,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "0927ccfd-f6ef-40c5-8d6c-4057245f5e1a")
+		(uuid "8adddc71-2488-45d5-abb7-23232d90ea72")
 	)
 	(fp_rect
 		(start -8.89 6.35)
@@ -88,7 +87,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "6c26ac00-7832-4964-81e7-0128b47e0e09")
+		(uuid "7107abfc-17ed-4c27-b844-7e50f95775d3")
 	)
 	(fp_rect
 		(start 3.81 -6.35)
@@ -99,7 +98,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "f55244de-99b9-4774-933e-68198ebe893c")
+		(uuid "374e019c-690f-4d25-9f12-f448768cb64f")
 	)
 	(fp_rect
 		(start -34.29 -3.81)
@@ -110,7 +109,7 @@
 		)
 		(fill no)
 		(layer "Dwgs.User")
-		(uuid "98d825be-2aba-4a36-97cc-56455168f91a")
+		(uuid "096cdc87-39fa-4f3a-b4ce-7b32689dd0fd")
 	)
 	(fp_rect
 		(start -8.8 -6.4)
@@ -121,7 +120,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "ebbaae36-b2c0-4a04-9209-2a53d34b0223")
+		(uuid "d73ece8d-8cfe-4b33-ad1d-57dc7731936c")
 	)
 	(fp_rect
 		(start -8.8 6.4)
@@ -132,7 +131,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "e8a69250-e2d0-4b2a-8e63-251f6cb3aced")
+		(uuid "10afa1ab-9269-47a8-ad6b-a6c36aec6583")
 	)
 	(fp_rect
 		(start 3.9 -6.3)
@@ -143,7 +142,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "30a26654-d0ec-4776-8c1c-4596c4719524")
+		(uuid "9aaf183f-3d73-42ba-9360-0b8ac2161f00")
 	)
 	(pad "1" thru_hole circle
 		(at -7.62 -5.08)
@@ -151,7 +150,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "4f2f116f-933d-4dc0-a00a-8ce58c4141ba")
+		(uuid "43ca9bc0-c71d-4e49-b2ed-db1ac8382cca")
 	)
 	(pad "2" thru_hole circle
 		(at -5.08 -5.08)
@@ -159,7 +158,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "297c8b66-f58d-4141-99ec-3db42dfefbf2")
+		(uuid "0b513490-3e0a-4b36-b96b-77863761a32a")
 	)
 	(pad "3" thru_hole circle
 		(at -2.54 -5.08)
@@ -167,7 +166,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "2f0560ad-4fcf-4488-bad9-5bb2f2b7fea4")
+		(uuid "45acf88e-4978-4d31-a2b3-8028eef930fd")
 	)
 	(pad "4" thru_hole circle
 		(at 0 -5.08)
@@ -175,7 +174,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "16c221e9-2731-4301-b5f8-93dce5f91fb3")
+		(uuid "704297ea-c760-43b6-be66-f5a6afd82e43")
 	)
 	(pad "5" thru_hole circle
 		(at 5.08 -5.08)
@@ -183,7 +182,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "6bdbfdfe-dc29-4793-8734-22fa46198c78")
+		(uuid "ef0e4ca6-d079-497d-9954-8db748ded7ef")
 	)
 	(pad "6" thru_hole circle
 		(at 5.017498 -2.541857)
@@ -191,7 +190,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "799f2624-5ff8-44c2-a700-8dcd69f08561")
+		(uuid "dc3f8196-a6ef-4037-aaf9-416cc1ccbdab")
 	)
 	(pad "7" thru_hole circle
 		(at 5.08 0)
@@ -199,7 +198,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "9a198c6e-eadc-4d51-8914-7cbf5871b8f6")
+		(uuid "346499c0-9e17-4571-8cbd-9b2c7c289b1c")
 	)
 	(pad "8" thru_hole circle
 		(at 5.08 2.54)
@@ -207,7 +206,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "2baeaa68-8497-457d-a495-91d65bb25520")
+		(uuid "6999d8d1-53cd-4980-8d52-970eff9dece4")
 	)
 	(pad "9" thru_hole circle
 		(at 5.08 5.08)
@@ -215,7 +214,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "87f11d7c-96df-4376-ab6c-59fa2482aa03")
+		(uuid "f17fd076-cf24-4521-b467-478e2e8df72e")
 	)
 	(pad "10" thru_hole circle
 		(at 5.08 7.62)
@@ -223,7 +222,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "e42a7a5e-af95-4fb7-8c4f-ca9a39fac92b")
+		(uuid "3afb49c6-f750-4656-a3d4-798f24706b85")
 	)
 	(pad "11" thru_hole circle
 		(at -0.0125 7.56912)
@@ -231,7 +230,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "59c6549a-2635-41af-8ec6-e5202df7cb32")
+		(uuid "5dbbba0a-ee2d-4a27-977f-2f9a0fcf87d6")
 	)
 	(pad "12" thru_hole circle
 		(at -2.578479 7.603106)
@@ -239,7 +238,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "992ec4cd-7353-414c-80fa-fddcad9c03c4")
+		(uuid "76029f5f-325e-4326-8765-5c1e4b7be5ec")
 	)
 	(pad "13" thru_hole circle
 		(at -5.08 7.62)
@@ -247,7 +246,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "3d263dcd-89b3-463d-b638-2a709e39aaa7")
+		(uuid "18175db8-b043-4e23-855a-71d631bb4b8f")
 	)
 	(pad "14" thru_hole circle
 		(at -7.62 7.62)
@@ -255,7 +254,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "fa31ddc4-3ff6-4056-af55-ea6cf0147b98")
+		(uuid "e492fd78-a3fb-4ccf-8091-e320d3cb27a3")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/3dmodels/cp2102.step"

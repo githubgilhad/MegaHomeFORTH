@@ -42,15 +42,15 @@ Changes agains MHF-001
 * breakout VGA, PS/2 and RCA conectors to pinheader
 * LED on `PB7` aka `SYSTEM_LED` for bootloader may be usefull (even when it is `VGA_latch` so it will shine with VGA attached - like 10 |kOhm| green LED?)
 * LED on `Reset` may help to debug serial communication (`DTR` pin via capacitor)
+* Reset button changed to cheap common Arduino switch
+* breakout all USB pins to its own pinheader (and USB A can be attached with just piece of stripboard)
+* included CP2102 module
+
 
 ToDo changes
 ================================================================================
 
 * the label **"+ 5V -"** is wrong rotated (probabelly some autocorrect on schema -> PCB)
-* I destroyed the reset button when unsoldering it, so I improvised and used clasical Arduino pushbutton, bend its legs and solder it there - it works
-* I also destroyed USB connector while desoldering it, so I bought some replacements, should arrive after month or so ... I may improvise normal Serial connection or something else.
-	* breakout all USB pins to its own pinheader
-	* include USB A male connector for better durability somewhere (or at least module like SD card reader)
 * possibly enable to enable SBC use Shared RAM via open solderpads for signals X-A-B interconnected
 * It would be better to switch `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**

@@ -5,9 +5,9 @@
 	(layer "F.Cu")
 	(descr "Rework Jumper - pin+hole")
 	(property "Reference" "REF**"
-		(at 6.35 -0.006 0)
+		(at 6.35 -0.006001 180)
 		(layer "F.SilkS")
-		(uuid "81724f49-d944-4e0c-8a6e-a098fbcd4465")
+		(uuid "d8108174-d473-4a1f-92d7-86f3d14da0d7")
 		(effects
 			(font
 				(size 1 1)
@@ -15,10 +15,10 @@
 			)
 		)
 	)
-	(property "Value" "Rework_Jumper"
-		(at 0 2.8 0)
+	(property "Value" "USB_PWR"
+		(at 0 2.8 180)
 		(layer "F.Fab")
-		(uuid "e3ce8912-eb5c-4969-8879-bb1bfc00f696")
+		(uuid "df654e1d-c0f0-4665-abd7-495c85acd603")
 		(effects
 			(font
 				(size 1 1)
@@ -27,10 +27,10 @@
 		)
 	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3cb14128-6d9d-4391-88f3-8aa969d4a72c")
+		(uuid "55a66e58-2e00-483e-8b74-0c478b0dcb36")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -38,11 +38,11 @@
 			)
 		)
 	)
-	(property "Description" ""
-		(at 0 0 0)
+	(property "Description" "Rework Jumper, 2-pole, closed/bridged"
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "296b97d7-eefe-4109-80fc-361fd8865624")
+		(uuid "c1d462f7-5f60-488f-b06b-21c5eb31c558")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -50,7 +50,7 @@
 			)
 		)
 	)
-	(attr through_hole allow_soldermask_bridges)
+	(attr through_hole exclude_from_bom allow_soldermask_bridges)
 	(net_tie_pad_groups "1,2")
 	(fp_rect
 		(start 0.762 -0.254)
@@ -61,7 +61,7 @@
 		)
 		(fill yes)
 		(layer "F.Cu")
-		(uuid "59b82db7-e6b9-42e6-a7fe-7e2c24484cca")
+		(uuid "bd8e51c6-72e6-4f7d-a826-318729d36838")
 	)
 	(fp_rect
 		(start -0.9652 -0.9271)
@@ -72,7 +72,7 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "a764ad22-065b-4ac8-ba45-123b8b691ace")
+		(uuid "9ec7cade-1c79-4201-bc54-04f038d508ec")
 	)
 	(fp_rect
 		(start 0.762 -0.254)
@@ -83,7 +83,7 @@
 		)
 		(fill yes)
 		(layer "B.Cu")
-		(uuid "88595068-e6c7-4ab1-a489-486b3a15f0b5")
+		(uuid "45d5281d-924a-42d4-a74b-051709539271")
 	)
 	(fp_rect
 		(start -0.9652 -0.9271)
@@ -94,7 +94,7 @@
 		)
 		(fill yes)
 		(layer "B.Mask")
-		(uuid "82ed2a2a-d4e9-4c4d-abf4-62bcd5ff931b")
+		(uuid "303fd6e6-b999-4cf7-865b-14531ce1e56c")
 	)
 	(fp_rect
 		(start -1.0795 -1.016)
@@ -105,7 +105,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "ce5dcc5e-97e6-42f6-8418-764436682c11")
+		(uuid "7c31c02d-98e4-438e-b4ba-c00c071fff9c")
 	)
 	(fp_rect
 		(start -1.0795 -1.016)
@@ -116,7 +116,7 @@
 		)
 		(fill no)
 		(layer "B.SilkS")
-		(uuid "975b77d5-1d3a-428c-9240-d14b260cca06")
+		(uuid "672f3a43-6883-4d73-ae28-45a5a3f6e0e9")
 	)
 	(fp_rect
 		(start -1.143 -1.143)
@@ -127,7 +127,7 @@
 		)
 		(fill no)
 		(layer "B.CrtYd")
-		(uuid "8ed7ca0a-024e-412b-9dd9-1b45d6220a14")
+		(uuid "04242b0e-4dab-411c-a3b0-4189118737de")
 	)
 	(fp_rect
 		(start -1.143 -1.143)
@@ -138,7 +138,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "891fac93-cb77-4dc8-b139-f17c062f74fd")
+		(uuid "2702884f-3067-4525-8589-5e212baa47a5")
 	)
 	(pad "1" thru_hole rect
 		(at 0 0)
@@ -146,7 +146,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "253d888c-68b5-4163-975b-56c7bf49da38")
+		(uuid "ebfe2c59-0e1b-467e-9808-48149d868ef4")
 	)
 	(pad "2" thru_hole rect
 		(at 2.54 0)
@@ -154,7 +154,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "1740034a-765d-40b8-91b7-a61853103bd2")
+		(uuid "590737d5-4d4f-4f93-b8cb-45817a871734")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Vertical.step"
