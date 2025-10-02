@@ -16,29 +16,30 @@
 
 
 
-;	; SUPPRESS on PortD, pin 2 = D2
+;	; SUPPRESS on PortL, pin 3 = L3
 ;	#define UNSUPPRESS CBI  DDRD, 2
 ;	#define SUPPRESS   SBI  DDRD, 2
-#define UNSUPPRESS SBI PORTD, 2
-#define SUPPRESS   CBI PORTD, 2
-#define ECHO3 SBI PIND, 3
+; #define UNSUPPRESS SBI PORTL, 3
+; #define SUPPRESS   CBI PORT:, 3
+; #define ECHO3 SBI PIND, 3
+#define ECHO3
 
 ;    #define BUFFER_MASK 0x3F		; 64 byte buffer, I will use better algorythmus next time
 
-#define D13  PINB, 5
-#define D9  PINB, 1
-#define A0  PINC, 0
-#define A1  PINC, 1
-#define Tx1 PIND, 1
-#define Rx0 PIND, 0
-#define D2  PIND, 2
+#define D13  PINE, 6
+#define D9  PINL, 4
+#define A0  PINB, 2
+#define A1  PINB, 1
+#define Tx1 PIND, 3
+#define Rx0 PIND, 2
+#define L3  PINL, 3
 
 #define CLOCK A0		; PS/2 clock
 #define DATA A1			; PS/2 data
 #define INSIDE D13		; PS/2 clock envelope (RC diode trick)
 
 #define videosignal Tx1		; PIND, 1 (~1)
-#define supress_pin D2		; PIND, 2 (~5)
+#define supress_pin L3		; PINL, 3 (~5)
 #define sync_pin    D9		; PINB, 1 (~9)
 
 .section .data
@@ -57,6 +58,16 @@ Status:		.byte	0	; R25		; - wait_fall+grab/wait_top/store	;
 	;
 
 .section .text
+.macro SUPPRESS
+	lds R30,PINL
+	andi R30,0xF7
+	sts PORTL,R30
+.endm
+.macro UNSUPPRESS
+	lds R30,PINL
+	ori R30,8
+	sts PORTL,R30
+.endm
 ; {{{ MACROs
 ;;; {{{ original modified loop
 ;;;	loop:                                                 cycles
@@ -82,7 +93,7 @@ Status:		.byte	0	; R25		; - wait_fall+grab/wait_top/store	;
 				MOVW R30, R22 ; Z = fontSlice              // +1 =  7		;# 1 cycles, 2 bytes
 				ADD R30, R24 ;                             // +1 =  8		;# 1 cycles, 2 bytes
 				LPM R20, Z ; fetch 8 pixels                // +3 = 11		;# 3 cycles, 2 bytes
-				STS UDR0, R20 ; send them to the USART     // +2 = 13		;# 2 cycles, 4 bytes
+				STS UDR1, R20 ; send them to the USART     // +2 = 13		;# 2 cycles, 4 bytes
 ;								   // 14..16
 .endm	; }}}
 ; {{{					NOPx macros for waiting
@@ -422,7 +433,7 @@ jitterFix4:
 	NOP		; g	;# 1 cycles, 1 bytes
 	LOOP	;## 9 cycles ; (0)
 	LDI R24, 0x08		;# 1 cycles, 2 bytes
-	STS UCSR0B, R24 ; enable USART transmit		;# 2 cycles, 4 bytes
+	STS UCSR1B, R24 ; enable USART transmit		;# 2 cycles, 4 bytes
 	UNSUPPRESS
 	NOP		;# 1 cycles, 1 bytes
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -485,7 +496,7 @@ _4_L9_0
 ;			LOOP7	;## 16 cycles ; (45)
 			NOP3	;## 3 cycles
 ;
-			STS UCSR0B, R1 ; disable USART transmit		;# 2 cycles, 4 bytes
+			STS UCSR1B, R1 ; disable USART transmit		;# 2 cycles, 4 bytes
 NOP7	;## 7 cycles
 SUPPRESS
 			RET		;# 4 cycles, 2 bytes
