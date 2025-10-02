@@ -415,9 +415,6 @@ void BIOS::VGA_begin(){										// {{{
 			PORTL=0;
 		DDRH	= 0xFF;		// PH[0..7] for colors out
 			PORTH=0;
-// Debug
-DDRF = 0xFF;
-DDRK = 0xFF;
 		// timers
 		GTCCR= (1<<TSM) | (1<<PSRASY) | (1 <<PSRSYNC); // stop Timers 0,1,3,4,5 for synchronisation pg. 166:
 			/* Bit 7 - TSM: Timer/Counter Synchronization Mode
@@ -589,11 +586,11 @@ TIMSK1 = (1 << TOIE1);
 	volatile uint16_t scanline = 0;			// RCA counts 0 - 311 (312 scan lines per frame)
 // Function to enable/disable A0 interrupt
 void disableA0Interrupt() {
-//	PCMSK1 &= ~(1 << PCINT8);  // Disable interrupt for A0
+	PCMSK0 &= ~(1 << PCINT2);  // Disable interrupt for A0
 }
 void enableA0Interrupt() {
-//	PCIFR  |= bit (PCIF1);   // clear any outstanding interrupts
-//	PCMSK1 |= (1 << PCINT8);   // Enable interrupt for A0
+	PCIFR  |= bit (PCIF0);   // clear any outstanding interrupts
+	PCMSK0 |= (1 << PCINT2);   // Enable interrupt for A0
 }
 extern "C" {
 	void RCAout(uint8_t *pScreenRam, const uint8_t *fontSlice, uint16_t tcnt, uint16_t minTCNT);
@@ -605,19 +602,21 @@ ISR(TIMER3_OVF_vect) {
 		BIOS::frames++;
 		memchck();
 	} 						// }}}
-/*
-	else if ( BIOS::current_output == BIOS_RCA) {	// {{{ TIMER1_OVF vector occurs at the start of each scan line's sync pulse
+
+}
+ISR(TIMER5_OVF_vect) {
+	if ( BIOS::current_output == BIOS_RCA) {	// {{{ TIMER1_OVF vector occurs at the start of each scan line's sync pulse
 		if (++scanline == 312) {
-			OCR1A = 948; 		// scan lines 0 - 7 have wide 59.3us sync pulses
+			OCR5B = 948; 		// scan lines 0 - 7 have wide 59.3us sync pulses
 			scanline = 0;
 			BIOS::frames++;
 			memchck();
 		} else if (scanline == 8) {
-			OCR1A = 74;		// swap to short 4.7us sync pulses for scan lines 8 - 311
+			OCR5B = 74;		// swap to short 4.7us sync pulses for scan lines 8 - 311
 						// enabling the interrupt generates an immediate 'stored up' interrupt
 						// so enable it one scan line early, test and return within interrupt handler to ignore 1st one
 		} else if (scanline == RCA_TOP_EDGE) {	// scan line 51 is first 'text safe' scan line - will already have been incremented to 52 here
-			TIMSK1 |= _BV(OCIE1B);
+			TIMSK5 |= _BV(OCIE5A);
 		} else if (scanline == RCA_TOP_EDGE +1) {
 			disableA0Interrupt();
 			PS2_cont();
@@ -625,21 +624,21 @@ ISR(TIMER3_OVF_vect) {
 			PS2_cont();
 		};
 	};	// }}}
-*/
+
 }	//
 volatile uint16_t minTCNT = 0xFFFF;
 volatile uint16_t maxTCNT = 0;
 
 
 // Interrupt Service Routine for Pin Change Interrupt 1 (A0-A5)
-ISR(PCINT1_vect) {
+ISR(PCINT2_vect) {
 // asm volatile("SBI %[addr], 3 \n\t" : : [addr] "I" (_SFR_IO_ADDR(PIND)) );
-//	PS2_cont();	// pokracovaci funkce od RCAout vlozeneho kodu. Chceme ji volat kdykoli se zmeni A0 a klidne i casteji
+	PS2_cont();	// pokracovaci funkce od RCAout vlozeneho kodu. Chceme ji volat kdykoli se zmeni A0 a klidne i casteji
 //	++BIOS::vram[0][10];
 // asm volatile("SBI %[addr], 3 \n\t" : : [addr] "I" (_SFR_IO_ADDR(PIND)) );
 }
-/*
-ISR(TIMER1_COMPB_vect) {		// {{{ occurs at start of 'text safe' area of scan lines 51 - 280
+
+ISR(TIMER5_COMPA_vect) {		// {{{ occurs at start of 'text safe' area of scan lines 51 - 280
 	static uint8_t *pScreenRam;
 	static const uint8_t *fontSlice;
 	static uint8_t slice;
@@ -657,7 +656,7 @@ ISR(TIMER1_COMPB_vect) {		// {{{ occurs at start of 'text safe' area of scan lin
 		if (tcnt < minTCNT) minTCNT = tcnt;
 
 		if (scanline == RCA_BOTTOM_EDGE) {
-			TIMSK1 &= ~_BV(OCIE1B);	// we don't want any more COMPB interrupts this frame
+			TIMSK5 &= ~_BV(OCIE5A);	// we don't want any more COMPB interrupts this frame
 			enableA0Interrupt();
 		} else if (++slice == RCA_PIXELS_PER_CHARACTER) {
 			slice = 0;
@@ -670,7 +669,7 @@ ISR(TIMER1_COMPB_vect) {		// {{{ occurs at start of 'text safe' area of scan lin
 		}
 	}
 }	// }}}
-*/
+
 void BIOS::VGA_end(){										// {{{
 	current_output = BIOS_none;
 	noInterrupts();	// disable interrupts before messing around with timer registers
@@ -684,36 +683,39 @@ void BIOS::VGA_end(){										// {{{
 
 
 
-#define PIN_SUPPRESS 2
+#define PIN_SUPPRESS 46
 #define PIN_SUPPRESS3 3 // test
-#define PIN_SYNC 9
-#define PIN_PS2CLOCK A0	// 10
-#define PIN_PS2DATA A1	// 11
-#define PIN_PS2INSIDE 13
+#define PIN_SYNC 45
+#define PIN_PS2CLOCK 51	// A0	// 10
+#define PIN_PS2DATA 52	// A1	// 11
+#define PIN_PS2INSIDE 13 // PE6 unconnected
+#define PIN_TXout 18 // PD3 TX1
+// #define PIN_XCK1out  // PD5 SCK for SPI1, unconnected
 void BIOS::RCA_begin() {				// {{{
-	BIOS::VGA_begin();	// FIXME
-	return;	// FIXME
+
 	current_output = BIOS_RCA;
 ///////////////////////////////// better safe than sorry ///////////////////////
 //		EIMSK &= ~(1 << INT1);
-	pinMode(PIN_SUPPRESS3, OUTPUT);
+//	pinMode(PIN_SUPPRESS3, OUTPUT);
 	pinMode(PIN_SUPPRESS, OUTPUT);
 	pinMode(PIN_SYNC, OUTPUT);
 ///////////////////////////////// better safe than sorry ///////////////////////
 	BIOS_buffer_init();
 	pinMode(PIN_PS2CLOCK, INPUT);
 	pinMode(PIN_PS2DATA, INPUT);
-	pinMode(PIN_PS2INSIDE, INPUT);
+//	pinMode(PIN_PS2INSIDE, INPUT);
+	DDRE &= ~ _BV(6);
+	DDRD |=  _BV(5); // XCK1 OUTPUT (to be master)
 	
 	
 ////////////////////////////////////////////////////////////////////////////////
 	
 	scanline=0;
 	cli();  // Disable interrupts while configuring
-	// Enable Pin Change Interrupt for CLOCK A0 (which is on PCINT8 group - Port C)
-	PCMSK1 |= (1 << PCINT8); // Enable PCINT8 (A0 is PC0) want pin A0
-	PCIFR  |= (1 << PCIF1);   // clear any outstanding interrupts
-	PCICR  |= (1 << PCIE1);   // Enable Pin Change Interrupt for PCINT[14:8] (Port C)
+	// Enable Pin Change Interrupt for CLOCK A0 (which is on PCINT2 group - Port B)
+	PCMSK0 |= (1 << PCINT2); // Enable PCINT2 (A0 is PB2) want pin A0
+	PCIFR  |= (1 << PCIF0);   // clear any outstanding interrupts
+	PCICR  |= (1 << PCIE0);   // Enable Pin Change Interrupt for PCINT[14:8] (Port C)
 	sei();  // Enable interrupts
 
 	
@@ -723,24 +725,49 @@ void BIOS::RCA_begin() {				// {{{
 //	pinMode(PIN_SUPPRESS, INPUT);
 	digitalWrite(PIN_SUPPRESS, LOW);	// prime pixel suppressor - when Pin is switched to output, it will force BLACK
 					// configure USART as master SPI mode 0, MSB first, 8MHz
-	UCSR0A = _BV(U2X0);		// double speed
-	UCSR0B = _BV(TXEN0);
-	UCSR0C = _BV(UMSEL01) | _BV(UMSEL00);
-	UBRR0L = UBRR0H = 0x00;		// fastest possible baud
+	pinMode(PIN_TXout, OUTPUT);
+	UBRR1L = UBRR1H = 0x00;		// fastest possible baud (probabelly ignored here)
+	UCSR1A = _BV(U2X1);		// double speed
+	UCSR1B = _BV(TXEN1);
+	UCSR1C = _BV(UMSEL01) | _BV(UMSEL00);
+	UBRR1L = UBRR1H = 0x00;		// fastest possible baud (needed here)
 	
 					// output pin for sync pulses - low 4.7 us pulses at start of visible scan lines;  longer low pulses for vertical blank
 	digitalWrite(PIN_SYNC, HIGH);
 	pinMode(PIN_SYNC, OUTPUT);
-					// configure timer/counter 1 to output scanline sync pulses on Pin9 (OC1A)
+cli();  // vypni přerušení během nastavování
+
+// TCCR5A – nastavení režimu a výstupu
+TCCR5A = _BV(COM5B1) // not inverted?| _BV(COM5B0)     // Set OC5B on match (inverted)
+        | _BV(WGM51) | _BV(WGM50);     // Bits for Fast PWM, 10-bit (mód 7)
+
+// TCCR5B – další bity módu + prescaler
+TCCR5B = _BV(WGM52)                    // Mode 7 pokračuje zde
+        | _BV(CS50);                   // Clock / 1 → 16 MHz
+
+// Hodnoty pro porovnání
+OCR5B = 948;      //  59.3us wide sync pulse for first 8 scan lines
+OCR5A = RCA_LEFT_EDGE;   // Čas, kdy má dojít ke změně OC5A
+
+// Reset počítadla
+TCNT5 = 0;
+
+// Povolení přerušení na přetečení (nebo podle potřeby)
+TIMSK5 = _BV(TOIE5);  // nebo jiná přerušení, např. OCIE5A
+
+sei();  // znovu povol přerušení
+/*
+					// configure timer/counter 5 to output scanline sync pulses on PL4 (OC5B)
 					// use mode 7 (fast PWM 10-bit count to TOP=1023) at 16MHz fclk - one cycle per 64us scanline
 	cli(); 				// not necessary
-	TCCR1A =	_BV(COM1A1) | _BV(COM1A0) | _BV(WGM11) | _BV(WGM10);	// set OC1A output on compare match, (mode 3 so far)
+	TCCR1A =	_BV(COM1A1) | _BV(COM1A0) | _BV(WGM11) | _BV(WGM10);	// set OC5B output on compare match, (mode 3 so far)
 	TCCR1B = _BV(WGM12) | _BV(CS10);	// now mode 7 at clk/1 (16MHz)
 	OCR1A = 948; 			// 59.3us wide sync pulse for first 8 scan lines
 	OCR1B = RCA_LEFT_EDGE;
 	TIMSK1 = _BV(TOIE1); 		// _BV(OCIE1A);
 	TCNT1 = 0x0000;
 	sei();				// necessary
+*/
 	TIMSK0 &= ~_BV(TOIE0);		// disable timer0 - stops millis() working but necessary to stop timer 0 interrupts spoiling display timing
 
 /*
@@ -755,21 +782,20 @@ void BIOS::RCA_begin() {				// {{{
 }	// }}}
 void BIOS::RCA_end(){				// {{{
 	// TODO
-	return;	// FIXME
 	current_output = BIOS_none;
-	PCMSK1 &= ~(1 << PCINT8);	// Disable PCINT8 (A0 is PC0)
-	PCICR  &= ~(1 << PCIE1);	// Disable Pin Change Interrupt for PCINT[14:8] (Port C)
+	PCMSK0 &= ~(1 << PCINT2);	// Disable PCINT8 (A0 is PC0)
+	PCICR  &= ~(1 << PCIE0);	// Disable Pin Change Interrupt for PCINT[14:8] (Port C)
 	
-	TIMSK1 &= ~_BV(TOIE1); 		// _BV(OCIE1A);
+	TIMSK5 &= ~_BV(TOIE5); 		// _BV(OCIE1A);
 	TIMSK0 &= ~_BV(TOIE0);		// disable timer0 - stops millis() working but necessary to stop timer 0 interrupts spoiling display timing
-	PCMSK1 &= ~(1 << PCINT8);	// Disable interrupt for A0
+	PCMSK0 &= ~(1 << PCINT2);	// Disable interrupt for A0
 	
 	TIMSK0=0;
-	TIMSK1=0;
-	TIMSK2=0;
-	UCSR0A = 0;
-	UCSR0B = 0;
-	UCSR0C = 0;
+	TIMSK5=0;
+//	TIMSK2=0;
+	UCSR1A = 0;
+	UCSR1B = 0;
+	UCSR1C = 0;
 }	// }}}
 
 void BIOS::wait(unsigned int dt) { unsigned int t = BIOS::frames; while(BIOS::frames - t < dt); }

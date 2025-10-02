@@ -16,7 +16,8 @@ void sd_test(){
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
-
+    Serial.println("sd_test");
+/*
 
   Serial.print("Initializing SD card...");
 
@@ -57,7 +58,9 @@ void sd_test(){
     // if the file didn't open, print an error:
     Serial.println("error opening boot.txt");
   }
+  */
  }
+ 
 extern uint8_t  __data_load_end;
 extern uint8_t  __DATA_REGION_LENGTH__;
 //	 µFORTH
@@ -91,7 +94,7 @@ extern uint8_t vram[BIOS_ROWS][BIOS_COLS];
 }
 void setup(){
 	sd_test();
-	bios.set_output(BIOS_RCA);              // Inicializace BIOS
+//	bios.set_output(BIOS_RCA);              // Inicializace BIOS
 	bios.set_output(BIOS_VGA);              // Inicializace BIOS
 	bios.clear(' ',VGA_WHITE);
 	bios.inverting=true;
