@@ -45,24 +45,24 @@ Changes agains MHF-001
 * Reset button changed to cheap common Arduino switch
 * breakout all USB pins to its own pinheader (and USB A can be attached with just piece of stripboard)
 * included CP2102 module
+* switched `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
+	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
+* enabled isolation of  **CH340G** via closed solderpads (to freely use Serial headers)
+* breakout `DTR` to Serial headers
+* for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
+* make my own footprints with longer pads for SMD ICs to make soldering easier
+* PROBLEM - 74HC165 doubles the first bit (as it is shifted out and latched again before level latch returns inactive) and so ONECHAR have to be 9 clocks long (or lose the last bit) - 74HC166 should be better (as it is edge latched) but now I cannot feed it each 8 clocks, so last bit will be errornerous
+	* I should use some port A..F for VGA data **out** instead of **STS** too, to fit in 8 clocks
+* SD card reader needed little edge filing to not collide with ISCP connector and 3V3 connector - make little more place for it next time and add mounting holes in corner. Sitting just on Koptan tape looks good. (Alternatively unsolder all components and move them on PCB directly. Qualify MISO and MOSI (and maybe clock too) by CS, let CS go inside all the time. Use another pin than ISCP)
+* `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
+* each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
+* possibly enable to enable SBC use Shared RAM via open solderpads for signals X-A-B interconnected
 
 
 ToDo changes
 ================================================================================
 
 * the label **"+ 5V -"** is wrong rotated (probabelly some autocorrect on schema -> PCB)
-* possibly enable to enable SBC use Shared RAM via open solderpads for signals X-A-B interconnected
-* It would be better to switch `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
-	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
-	* enable isolate  **CH340G** via closed solderpads (to freely use Serial headers)
-	* breakout `DTR` to Serial headers
-* for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
-* `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
-* make my own footprints with longer pads for SMD ICs to make soldering easier
-* PROBLEM - 74HC165 doubles the first bit (as it is shifted out and latched again before level latch returns inactive) and so ONECHAR have to be 9 clocks long (or lose the last bit) - 74HC166 should be better (as it is edge latched) but now I cannot feed it each 8 clocks, so last bit will be errornerous
-	* I should use some port A..F for VGA data **out** instead of **STS** too, to fit in 8 clocks
-* each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
-* SD card reader needed little edge filing to not collide with ISCP connector and 3V3 connector - make little more place for it next time and add mounting holes in corner. Sitting just on Koptan tape looks good. (Alternatively unsolder all components and move them on PCB directly. Qualify MISO and MOSI (and maybe clock too) by CS, let CS go inside all the time. Use another pin than ISCP)
 * mark areas on SysBus, at least separate blocks as Data, Address, A, B, Other with lines
 
 
