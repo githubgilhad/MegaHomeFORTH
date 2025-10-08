@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "~"
-		(at 0.01778 0.25131 0)
+		(at 0.27178 0.50531 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "c7f1fe2a-6180-4743-b362-00220ea2c652")
@@ -57,27 +57,15 @@
 	)
 	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 	(net_tie_pad_groups "1, 2")
-	(fp_poly
-		(pts
-			(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "b1d72c54-6088-4b35-9573-83d04c49e51a")
-	)
-	(pad "1" smd circle
-		(at -0.5 0)
-		(size 0.5 0.5)
+	(pad "1" smd oval
+		(at 0 0)
+		(size 0.4572 0.254)
 		(layers "F.Cu")
 		(uuid "2ebdd16c-88f3-4d7c-91b7-cdcf2f4993d7")
 	)
-	(pad "2" smd circle
-		(at 0.5 0)
-		(size 0.5 0.5)
+	(pad "2" smd oval
+		(at 0.381 0)
+		(size 0.4572 0.254)
 		(layers "F.Cu")
 		(uuid "eba6719b-2e91-41a3-b202-4b3b669b1122")
 	)

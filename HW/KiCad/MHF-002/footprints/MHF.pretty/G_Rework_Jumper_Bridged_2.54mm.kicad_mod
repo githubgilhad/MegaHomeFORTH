@@ -53,17 +53,6 @@
 	(attr through_hole exclude_from_bom allow_soldermask_bridges)
 	(net_tie_pad_groups "1,2")
 	(fp_rect
-		(start 0.762 -0.254)
-		(end 1.778 0.254)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "bd8e51c6-72e6-4f7d-a826-318729d36838")
-	)
-	(fp_rect
 		(start -0.9652 -0.9271)
 		(end 3.5052 0.9271)
 		(stroke
@@ -73,17 +62,6 @@
 		(fill yes)
 		(layer "F.Mask")
 		(uuid "9ec7cade-1c79-4201-bc54-04f038d508ec")
-	)
-	(fp_rect
-		(start 0.762 -0.254)
-		(end 1.778 0.254)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "B.Cu")
-		(uuid "45d5281d-924a-42d4-a74b-051709539271")
 	)
 	(fp_rect
 		(start -0.9652 -0.9271)
@@ -148,12 +126,26 @@
 		(remove_unused_layers no)
 		(uuid "ebfe2c59-0e1b-467e-9808-48149d868ef4")
 	)
-	(pad "2" thru_hole rect
+	(pad "2" thru_hole custom
 		(at 2.54 0)
 		(size 1.905 1.778)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.9525 -0.889) (xy -0.9525 -0.254) (xy -1.6256 -0.254) (xy -1.6256 0.254) (xy -0.9525 0.254)
+					(xy -0.9525 0.889) (xy 0.9525 0.889) (xy 0.9525 -0.889)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
 		(uuid "590737d5-4d4f-4f93-b8cb-45817a871734")
 	)
 	(embedded_fonts no)

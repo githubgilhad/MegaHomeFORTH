@@ -47,6 +47,7 @@ Changes agains MHF-001
 * included CP2102 module
 * switched `X16` and `RTS` lines, so `RTS` could use interrupt on low. (RTS can be also ignored, or checked on regular schedule, like 50/sec in SW)
 	* `CTS` and `RTS` on atmega and on CH340G should be crossed the same way as RX/TX - **RTS** on **CH340G** is **OUTPUT**
+* RX0,TX0 RTS0,CTS0 are **Arduino** pins/points of view, should go to crossed ports on chips Arduino.RX0=CH340G.TX, Arduino.RTS0=CH340G.CTS
 * enabled isolation of  **CH340G** via closed solderpads (to freely use Serial headers)
 * breakout `DTR` to Serial headers
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)

@@ -1,4 +1,4 @@
-25788340670036774
+25788342639244372
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -68082,7 +68082,7 @@ diode
 2
 2
 MHF
-D_DO-41_SOD81_P10.16mm_Horizontal
+D_DO-41_SOD81_P9.4mm_Horizontal
 Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf
 Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
 0
@@ -68135,14 +68135,14 @@ G_TQFP-100_14x14mm_HandSolder
 TQFP, 100 Pin (JEDEC MS-026 variation AED, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://ww1.microchip.com/downloads/en/PackagingSpec/00000049BZ.pdf#page=683), generated with kicad-footprint-generator ipc_gullwing_generator.py modified by Gilhad
 TQFP QFP VQ100 CASE-932AN 983B-01 SOT386-1 C100-1
 0
-100
+108
 100
 MHF
 G_TSOP-I-32_18.4x8mm_HandSolder
 TSOP-I, 32 Pin (https://www.jedec.org/standards-documents/docs/mo-142-d variation BD), generated with kicad-footprint-generator ipc_gullwing_generator.py modifyed by Gilhad
 TSOP-I SO
 0
-32
+36
 32
 MHF
 J_Mini-DIN-6

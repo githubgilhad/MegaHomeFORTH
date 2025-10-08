@@ -58,28 +58,6 @@
 	)
 	(attr smd)
 	(net_tie_pad_groups "6")
-	(fp_rect
-		(start -4.15 -3.833)
-		(end -2.032 -2.96)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "22666ae1-3c6a-4657-84c7-c52da3122a19")
-	)
-	(fp_rect
-		(start 2.05 -3.833)
-		(end 4.168 -2.96)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.Cu")
-		(uuid "3f550193-dc8b-497b-9826-e8d4a14c134a")
-	)
 	(fp_line
 		(start -3.845 -1.16)
 		(end -3.845 1.33)
@@ -318,10 +296,16 @@
 		(primitives
 			(gr_poly
 				(pts
-					(xy 0.8 0.8) (xy -1.05 0.8) (xy -1.05 -0.8) (xy 1.05 -0.8) (xy 1.05 -0.35) (xy 0.55 0) (xy 0.55 0.4)
-					(xy 0.8 0.65)
+					(xy 0.8 0.8) (xy -1.177 0.8) (xy -1.177 -1.816) (xy 1.177 -1.816) (xy 1.177 -0.4389) (xy 0.55 0)
+					(xy 0.55 0.4) (xy 0.8 0.65)
 				)
 				(width 0)
+				(fill yes)
+			)
+			(gr_rect
+				(start -1.05 -1.673)
+				(end 1.068 -0.8)
+				(width 0.2)
 				(fill yes)
 			)
 		)
@@ -368,10 +352,16 @@
 		(primitives
 			(gr_poly
 				(pts
-					(xy -0.8 0.8) (xy 1.05 0.8) (xy 1.05 -0.8) (xy -1.05 -0.8) (xy -1.05 -0.35) (xy -0.55 0) (xy -0.55 0.4)
-					(xy -0.8 0.65)
+					(xy -0.8 0.8) (xy 1.177 0.8) (xy 1.177 -1.816) (xy -1.177 -1.816) (xy -1.177 -0.4389) (xy -0.55 0)
+					(xy -0.55 0.4) (xy -0.8 0.65)
 				)
 				(width 0)
+				(fill yes)
+			)
+			(gr_rect
+				(start -1.05 -1.673)
+				(end 1.068 -0.8)
+				(width 0.2)
 				(fill yes)
 			)
 		)

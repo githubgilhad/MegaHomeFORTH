@@ -19,7 +19,7 @@
 		)
 	)
 	(property "Value" "S8050"
-		(at -2.12272 -0.4351 90)
+		(at -2.63072 -0.4097 90)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "22847b4e-bd43-46cf-9da6-4c7da46d74a8")
@@ -58,8 +58,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -0.53 1.85)
-		(end 3.07 1.85)
+		(start -0.4792 1.7484)
+		(end 3.1208 1.7484)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -68,9 +68,9 @@
 		(uuid "1b1cae0d-3fd5-4d9a-bffe-ce7a63a11583")
 	)
 	(fp_arc
-		(start -0.568478 1.838478)
-		(mid -1.132087 -0.994977)
-		(end 1.27 -2.6)
+		(start -0.490221 1.760221)
+		(mid -1.024961 -0.964319)
+		(end 1.295342 -2.4892)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -79,9 +79,9 @@
 		(uuid "f6c2c1e7-8ba9-4448-a967-0bb828e95c34")
 	)
 	(fp_arc
-		(start 1.27 -2.6)
-		(mid 3.672087 -0.994977)
-		(end 3.108478 1.838478)
+		(start 1.2446 -2.4892)
+		(mid 3.564951 -0.964346)
+		(end 3.030222 1.760222)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -90,8 +90,8 @@
 		(uuid "c0e3151d-a3ac-4a5d-a68c-200be8aafc70")
 	)
 	(fp_line
-		(start -1.46 -2.73)
-		(end -1.46 2.01)
+		(start -1.27 -2.54)
+		(end -1.27 1.905)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -100,8 +100,8 @@
 		(uuid "ceb6bb19-871a-4b3f-ab98-29f860686ad9")
 	)
 	(fp_line
-		(start -1.46 -2.73)
-		(end 4 -2.73)
+		(start -1.27 -2.54)
+		(end 3.81 -2.54)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -110,8 +110,8 @@
 		(uuid "7070f039-ecaf-493b-97be-1dc25ba89999")
 	)
 	(fp_line
-		(start 4 2.01)
-		(end -1.46 2.01)
+		(start 3.81 1.905)
+		(end -1.27 1.905)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -120,8 +120,8 @@
 		(uuid "aa9ae25e-5e9c-42ad-8b2f-89381cf257f8")
 	)
 	(fp_line
-		(start 4 2.01)
-		(end 4 -2.73)
+		(start 3.81 1.905)
+		(end 3.81 -2.54)
 		(stroke
 			(width 0.05)
 			(type solid)
