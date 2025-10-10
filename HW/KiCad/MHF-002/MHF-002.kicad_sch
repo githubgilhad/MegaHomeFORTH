@@ -18127,6 +18127,10 @@
 		(uuid "1b775efd-e82d-4c9b-9cf4-33a5bfd49947")
 	)
 	(no_connect
+		(at 497.84 156.21)
+		(uuid "231d27cd-a747-4cc0-a501-23f69e0fe58f")
+	)
+	(no_connect
 		(at 728.98 111.76)
 		(uuid "23efb295-deb6-49c7-b5f4-60b09fa3eb69")
 	)
@@ -18493,10 +18497,6 @@
 	(no_connect
 		(at 869.95 87.63)
 		(uuid "d6a93de7-92b0-44b0-bc08-1872911e9385")
-	)
-	(no_connect
-		(at 535.94 156.21)
-		(uuid "d7feed91-7b03-4bf7-a7cc-aed83bff55b1")
 	)
 	(no_connect
 		(at 716.28 109.22)
@@ -23404,16 +23404,6 @@
 	)
 	(wire
 		(pts
-			(xy 519.43 156.21) (xy 516.89 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34f39c7b-2c98-419a-be70-4145236ff5e2")
-	)
-	(wire
-		(pts
 			(xy 95.25 57.15) (xy 96.52 57.15)
 		)
 		(stroke
@@ -24041,16 +24031,6 @@
 			(type default)
 		)
 		(uuid "428a478b-37e1-47b4-968b-90ddb0e134a7")
-	)
-	(wire
-		(pts
-			(xy 527.05 147.32) (xy 527.05 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42920a5b-d616-42f9-aac6-10ffb900e810")
 	)
 	(wire
 		(pts
@@ -27964,16 +27944,6 @@
 	)
 	(wire
 		(pts
-			(xy 509.27 147.32) (xy 509.27 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "953278ff-c0b6-4091-95e0-8132048b3e1a")
-	)
-	(wire
-		(pts
 			(xy 911.86 356.87) (xy 925.83 356.87)
 		)
 		(stroke
@@ -27981,16 +27951,6 @@
 			(type default)
 		)
 		(uuid "95549860-2689-4629-9265-a1beaa3fc918")
-	)
-	(wire
-		(pts
-			(xy 509.27 165.1) (xy 509.27 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "959e9d53-151d-4fcf-866e-30889aabb945")
 	)
 	(wire
 		(pts
@@ -28774,16 +28734,6 @@
 	)
 	(wire
 		(pts
-			(xy 501.65 156.21) (xy 497.84 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4862b59-3aa9-42b0-bb47-a1180383355a")
-	)
-	(wire
-		(pts
 			(xy 576.58 626.11) (xy 565.15 626.11)
 		)
 		(stroke
@@ -29141,16 +29091,6 @@
 			(type default)
 		)
 		(uuid "aa6fb70d-5c49-4eda-ac24-c5cd20f44c15")
-	)
-	(wire
-		(pts
-			(xy 527.05 165.1) (xy 527.05 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab25c0ae-fbb0-43f4-aeed-f746dc173f6d")
 	)
 	(wire
 		(pts
@@ -30631,16 +30571,6 @@
 			(type default)
 		)
 		(uuid "c8009a0f-e0a1-48dd-97b0-95eb4a310346")
-	)
-	(wire
-		(pts
-			(xy 535.94 156.21) (xy 534.67 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c81d9440-6e46-40f7-9a6d-45965d88c457")
 	)
 	(wire
 		(pts
@@ -42894,72 +42824,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:+5V")
-		(at 509.27 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "096a332a-68ba-4012-98f6-a8ade4b13a23")
-		(property "Reference" "#PWR0159"
-			(at 509.27 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 509.27 144.145 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 509.27 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 509.27 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 509.27 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "492b8219-af7b-4a85-a1ec-44161808fe75")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "#PWR0159")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MHF:GND")
 		(at 560.07 396.24 90)
 		(unit 1)
@@ -43559,7 +43423,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "HALTup 1k"
 			(at 332.74 66.04 90)
 			(effects
 				(font
@@ -44646,82 +44510,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:WS2812B")
-		(at 509.27 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17c85264-0000-443c-b318-b93911448b9b")
-		(property "Reference" "D10"
-			(at 520.7 149.7898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 520.7 152.3298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MHF:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder"
-			(at 510.54 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 511.81 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 509.27 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e802a34f-1a18-43bb-a508-615bdedd9976")
-		)
-		(pin "4"
-			(uuid "e7889b94-a86d-4558-9fdd-936976ae5a91")
-		)
-		(pin "2"
-			(uuid "b1216b02-2931-40a9-ba55-6babb96a4d34")
-		)
-		(pin "3"
-			(uuid "544c6087-1e14-4558-9690-5d8f2b5a48c0")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MHF:+5V")
 		(at 473.71 147.32 0)
 		(unit 1)
@@ -45078,6 +44866,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "WS2812B"
@@ -45086,6 +44875,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder"
@@ -45213,7 +45003,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1d8df564-7f99-48cd-8490-4b76e3ae52ed")
 		(property "Reference" "PD1"
 			(at 556.26 392.43 0)
@@ -45221,16 +45010,16 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PD0"
-			(at 558.8 403.8601 0)
+		(property "Value" "PD"
+			(at 557.53 407.6701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -46221,24 +46010,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "22a59915-5c01-4583-8231-238c5e924bb0")
 		(property "Reference" "PA1"
-			(at 556.26 323.85 0)
+			(at 560.07 336.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PA0"
-			(at 558.8 335.2801 0)
+		(property "Value" "PA"
+			(at 558.8 336.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -46460,7 +46248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Xhalt"
+		(property "Value" "XHalt"
 			(at 654.05 424.18 0)
 			(effects
 				(font
@@ -48318,72 +48106,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:GND")
-		(at 509.27 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "349630ee-6ccb-44d4-b3a8-4bb02e6e317e")
-		(property "Reference" "#PWR0160"
-			(at 509.27 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 509.27 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 509.27 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 509.27 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 509.27 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "705d2a17-b26f-46a2-aec3-6ba1a378efee")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "#PWR0160")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MHF:SolderJumper_2_Bridged")
 		(at 656.59 692.15 0)
 		(unit 1)
@@ -49133,72 +48855,6 @@
 			(project "MHF-002"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "LED5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MHF:+5V")
-		(at 527.05 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39ed0c39-27a9-45d4-a627-68f047c0bb04")
-		(property "Reference" "#PWR0161"
-			(at 527.05 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 527.05 144.145 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 527.05 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 527.05 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 527.05 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fd30c9af-e78f-43f4-936e-a96be9a7842c")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "#PWR0161")
 					(unit 1)
 				)
 			)
@@ -51241,7 +50897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MHF:PinHeader_2x32_P2.54mm_Vertical"
+		(property "Footprint" "MHF:PinHeader_2x32_P2.54mm_Vertical_down"
 			(at 721.36 83.82 0)
 			(effects
 				(font
@@ -53963,72 +53619,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:GND")
-		(at 527.05 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57bca40d-7691-42b3-8c67-8f8f8ea1f7d5")
-		(property "Reference" "#PWR0162"
-			(at 527.05 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 527.05 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 527.05 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 527.05 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 527.05 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f890198c-07da-4f3a-afb7-bdc37eaa5da8")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "#PWR0162")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MHF:Conn_01x01")
 		(at 943.61 83.82 0)
 		(unit 1)
@@ -54484,24 +54074,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5a9d5671-dcd5-4641-9dc2-3128c3d8e746")
 		(property "Reference" "PF1"
-			(at 556.26 438.15 0)
+			(at 560.07 450.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PF0"
-			(at 558.8 449.5801 0)
+		(property "Value" "PF"
+			(at 558.8 450.8501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -56631,16 +56220,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "PH0"
-			(at 471.17 467.3601 0)
+		(property "Value" "PH"
+			(at 471.17 468.6301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -59270,7 +58859,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7f9d58df-2d39-4bf8-806b-f6213421ddb6")
 		(property "Reference" "PE1"
 			(at 556.26 415.29 0)
@@ -59278,16 +58866,16 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PE0"
-			(at 558.8 426.7201 0)
+		(property "Value" "PE"
+			(at 558.8 427.9901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -61579,7 +61167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n DTR"
+		(property "Value" "DTR 100n"
 			(at 210.82 271.7799 0)
 			(effects
 				(font
@@ -66907,16 +66495,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "PJ0"
-			(at 471.17 444.5001 0)
+		(property "Value" "PJ"
+			(at 469.9 445.7701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -67668,24 +67256,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bdb761c6-a59b-4c8d-bf79-e9b317b3b1d9")
 		(property "Reference" "PB1"
-			(at 556.26 346.71 0)
+			(at 560.07 359.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PB0"
-			(at 558.8 358.1401 0)
+		(property "Value" "PB"
+			(at 558.8 359.4101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -69201,7 +68788,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "HALTdown 1k"
 			(at 332.74 71.12 90)
 			(effects
 				(font
@@ -72487,16 +72074,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "PL0"
-			(at 471.17 398.7801 0)
+		(property "Value" "PL"
+			(at 471.17 400.0501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -72623,82 +72210,6 @@
 			(project "MHF_001"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MHF:WS2812B")
-		(at 527.05 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3dacc38-9fe3-4e1c-a640-0f6f2fc7a751")
-		(property "Reference" "D11"
-			(at 538.48 149.7898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 538.48 152.3298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MHF:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm_HandSolder"
-			(at 528.32 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 529.59 165.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 527.05 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34905ca8-67c0-40f2-9c74-8e558cec486d")
-		)
-		(pin "4"
-			(uuid "4307efc8-26af-4cbf-8108-1dbf0517f24c")
-		)
-		(pin "2"
-			(uuid "58e59ad6-ff49-46f5-b100-80726eb010e2")
-		)
-		(pin "3"
-			(uuid "1e2e3ea0-964d-4a04-8dd0-b8d70f902604")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -74077,16 +73588,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "PG0"
-			(at 599.44 637.5401 0)
+		(property "Value" "PG"
+			(at 558.8 471.1701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x07_P2.54mm_Vertical"
@@ -74448,16 +73959,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "PK0"
-			(at 471.17 421.6401 0)
+		(property "Value" "PK"
+			(at 471.17 422.9101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"
@@ -75460,24 +74971,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f75f6466-9b60-43bf-ba25-c68e7ae34fa9")
 		(property "Reference" "PC1"
-			(at 556.26 369.57 0)
+			(at 560.07 382.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "PC0"
-			(at 558.8 381.0001 0)
+		(property "Value" "PC"
+			(at 558.8 382.2701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MHF:PinHeader_1x09_P2.54mm_Vertical"

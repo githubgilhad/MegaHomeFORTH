@@ -61,7 +61,7 @@
 	(net_tie_pad_groups "1, 2")
 	(fp_poly
 		(pts
-			(xy -0.25 -0.3) (xy 0.25 -0.3) (xy 0.25 0.3) (xy -0.25 0.3)
+			(xy -0.377 -0.3) (xy 0.377 -0.3) (xy 0.377 0.3) (xy -0.377 0.3)
 		)
 		(stroke
 			(width 0)
@@ -82,95 +82,37 @@
 		(layer "F.Mask")
 		(uuid "160f4ccc-80c8-480f-881f-337a59cb70a1")
 	)
-	(fp_line
-		(start -1.4 -1)
-		(end 1.4 -1)
+	(fp_rect
+		(start -1.143 -1.016)
+		(end 1.143 1.016)
 		(stroke
-			(width 0.12)
-			(type solid)
+			(width 0.1)
+			(type default)
 		)
+		(fill no)
 		(layer "F.SilkS")
-		(uuid "cfc185dd-5741-407e-990e-9ede9456c025")
+		(uuid "e5909578-d0e9-4ea9-9729-1c2e447b07ac")
 	)
-	(fp_line
-		(start -1.4 1)
-		(end -1.4 -1)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "f4546a9b-4533-4681-bac3-90ac0b7f7a16")
-	)
-	(fp_line
-		(start 1.4 -1)
-		(end 1.4 1)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "892c5553-f639-4486-9cb1-c757bb2c9590")
-	)
-	(fp_line
-		(start 1.4 1)
-		(end -1.4 1)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "585be305-1f3f-4612-a9a0-f06e4d91ff2a")
-	)
-	(fp_line
-		(start -1.65 -1.25)
-		(end -1.65 1.25)
+	(fp_rect
+		(start -1.143 -1.016)
+		(end 1.143 1.016)
 		(stroke
 			(width 0.05)
-			(type solid)
+			(type default)
 		)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "4c33a7f2-c985-4994-974b-351ad3c856f7")
-	)
-	(fp_line
-		(start -1.65 -1.25)
-		(end 1.65 -1.25)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "6e67f706-bfad-4208-ae5b-3e0351072fc2")
-	)
-	(fp_line
-		(start 1.65 1.25)
-		(end -1.65 1.25)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "e6326949-97c4-4d69-a981-4635f8c3c0df")
-	)
-	(fp_line
-		(start 1.65 1.25)
-		(end 1.65 -1.25)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "ef343d09-1b48-46be-aa0a-8fcca9f29c17")
+		(uuid "b7bc3ea9-80fa-4319-b7ad-54de78b9a86d")
 	)
 	(pad "1" smd rect
-		(at -0.65 0)
-		(size 1 1.5)
+		(at -0.635 0)
+		(size 0.762 1.524)
 		(layers "F.Cu" "F.Mask")
 		(uuid "15cdc09a-1921-467c-bd0c-68bbd19d6fbf")
 	)
 	(pad "2" smd rect
-		(at 0.65 0)
-		(size 1 1.5)
+		(at 0.635 0)
+		(size 0.762 1.524)
 		(layers "F.Cu" "F.Mask")
 		(uuid "2133d304-34f7-4af7-b29d-188dbbe75b6e")
 	)
