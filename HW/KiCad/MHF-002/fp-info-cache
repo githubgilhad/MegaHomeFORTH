@@ -1,4 +1,4 @@
-25790105174291743
+25791865584031382
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -68333,6 +68333,13 @@ TSSOP SO
 0
 20
 20
+MHF
+TestPoint_Pad_1.0x1.0mm
+SMD rectangular pad as test Point, square 1.0mm side length
+test point SMD pad rectangle square
+0
+1
+1
 MHF
 USB_Micro-B_XKB_U254-051T-4BH83-F1S
 XKB Connectivity, USB Micro-B, right-angle, SMT, https://datasheet.lcsc.com/lcsc/2206091745_XKB-Connectivity-U254-051T-4BH83-F1S_C397452.pdf
