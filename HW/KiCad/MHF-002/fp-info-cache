@@ -1,4 +1,4 @@
-25791865584031382
+25795387050984540
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -68082,6 +68082,13 @@ diode
 2
 2
 MHF
+D_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+Diode SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
+diode handsolder
+0
+2
+2
+MHF
 D_DO-41_SOD81_P9.4mm_Horizontal
 Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf
 Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm
@@ -68323,6 +68330,13 @@ MHF
 TO-92_Inline
 TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
 to-92 sc-43 sc-43a sot54 PA33 transistor
+0
+3
+3
+MHF
+TSOT-23_HandSoldering
+3-pin TSOT23 package, 
+TSOT-23 Hand-soldering
 0
 3
 3
