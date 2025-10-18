@@ -1,10 +1,10 @@
-(footprint "PinHeader_1x04_P2.54mm_Vertical"
+(footprint "PinHeader_1x03_P2.54mm_Vertical"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
-	(tags "Through hole pin header THT 1x04 2.54mm single row")
+	(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
+	(tags "Through hole pin header THT 1x03 2.54mm single row")
 	(property "Reference" "REF**"
 		(at 0 3.81 0)
 		(unlocked yes)
@@ -18,7 +18,7 @@
 			)
 		)
 	)
-	(property "Value" "SDcardpins"
+	(property "Value" ""
 		(at -2.00713 2.483989 270)
 		(unlocked yes)
 		(layer "F.SilkS")
@@ -43,7 +43,7 @@
 			)
 		)
 	)
-	(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+	(property "Description" "Generic connector, single row, 01x03"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -78,7 +78,7 @@
 	)
 	(fp_line
 		(start -1.38 1.27)
-		(end -1.38 9)
+		(end -1.38 6.333)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -97,8 +97,8 @@
 		(uuid "993a3a29-ec2b-4430-a636-beedafa4c273")
 	)
 	(fp_line
-		(start -1.38 9)
-		(end 1.38 9)
+		(start -1.38 6.333)
+		(end 1.38 6.333)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -108,7 +108,7 @@
 	)
 	(fp_line
 		(start 1.38 1.27)
-		(end 1.38 9)
+		(end 1.38 6.333)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -118,7 +118,7 @@
 	)
 	(fp_line
 		(start -1.77 -1.77)
-		(end -1.77 9.39)
+		(end -1.778 6.477)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -127,8 +127,8 @@
 		(uuid "82e739a9-0c21-4554-8b09-2a037aa85201")
 	)
 	(fp_line
-		(start -1.77 9.39)
-		(end 1.77 9.39)
+		(start -1.77 6.469)
+		(end 1.77 6.469)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -147,7 +147,7 @@
 		(uuid "fa69cf30-9dc6-4573-843d-917e82c43851")
 	)
 	(fp_line
-		(start 1.77 9.39)
+		(start 1.77 6.469)
 		(end 1.77 -1.77)
 		(stroke
 			(width 0.05)
@@ -167,7 +167,7 @@
 		(uuid "ace562cf-1d3f-49b8-9836-9254c5640237")
 	)
 	(fp_line
-		(start -1.27 8.89)
+		(start -1.27 6.223)
 		(end -1.27 -0.635)
 		(stroke
 			(width 0.1)
@@ -188,7 +188,7 @@
 	)
 	(fp_line
 		(start 1.27 -1.27)
-		(end 1.27 8.89)
+		(end 1.27 6.223)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -197,8 +197,8 @@
 		(uuid "68f746df-45fb-472c-8497-eba30d760bfe")
 	)
 	(fp_line
-		(start 1.27 8.89)
-		(end -1.27 8.89)
+		(start 1.27 6.223)
+		(end -1.27 6.223)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -242,16 +242,8 @@
 		(remove_unused_layers no)
 		(uuid "6f816913-326a-495d-a2ce-38c7cbdf578d")
 	)
-	(pad "4" thru_hole circle
-		(at 0 7.62)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "b8247a18-85a4-4ba5-a7a1-cf2446ed55a1")
-	)
 	(embedded_fonts no)
-	(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+	(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)

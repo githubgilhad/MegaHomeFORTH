@@ -1,4 +1,4 @@
-25795387050984540
+25797149165690368
 Arduino Mega 2560
 CAP_EEHZA1E470P
 
@@ -68193,6 +68193,13 @@ Through hole pin header THT 1x02 2.54mm single row
 0
 2
 2
+MHF
+PinHeader_1x03_P2.54mm_Vertical
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
 MHF
 PinHeader_1x04_P2.54mm_Vertical
 Through hole straight pin header, 1x04, 2.54mm pitch, single row
