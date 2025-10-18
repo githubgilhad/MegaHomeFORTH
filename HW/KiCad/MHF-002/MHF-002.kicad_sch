@@ -14277,132 +14277,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MHF:NetTie_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "NT"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NetTie_2"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Net tie, 2 pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "net tie short"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Net*Tie*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NetTie_2_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NetTie_2_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MHF:PNP"
 			(pin_names
 				(offset 0)
@@ -21718,16 +21592,6 @@
 		)
 		(uuid "063e4f46-5ed3-4510-a254-b83bfb287ed9")
 	)
-	(wire
-		(pts
-			(xy 601.98 429.26) (xy 598.17 429.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "065e5285-9eaf-439a-9038-1c3410618f71")
-	)
 	(bus
 		(pts
 			(xy 685.8 81.28) (xy 685.8 83.82)
@@ -25240,16 +25104,6 @@
 	)
 	(wire
 		(pts
-			(xy 551.18 355.6) (xy 591.82 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cad0142-ba6c-4c73-ab5a-8deb52b630e3")
-	)
-	(wire
-		(pts
 			(xy 593.09 54.61) (xy 621.03 54.61)
 		)
 		(stroke
@@ -26717,16 +26571,6 @@
 			(type default)
 		)
 		(uuid "6ae10cf0-f763-4c0a-825f-77685f3c7d2a")
-	)
-	(wire
-		(pts
-			(xy 596.9 355.6) (xy 604.52 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b0f064d-46e3-4841-a8f1-d15a54181e33")
 	)
 	(wire
 		(pts
@@ -31050,7 +30894,7 @@
 	)
 	(wire
 		(pts
-			(xy 551.18 429.26) (xy 593.09 429.26)
+			(xy 551.18 429.26) (xy 577.85 429.26)
 		)
 		(stroke
 			(width 0)
@@ -31637,6 +31481,16 @@
 			(type default)
 		)
 		(uuid "cf4b9acf-9b70-4fe6-afd1-f11d6dbba703")
+	)
+	(wire
+		(pts
+			(xy 551.18 355.6) (xy 577.85 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf73f9fe-5dfb-4849-9ceb-f1574252bb60")
 	)
 	(wire
 		(pts
@@ -34818,7 +34672,7 @@
 		)
 		(uuid "18829a6c-c892-4d9c-9760-2c9bd3e3fb28")
 	)
-	(label "Shared_Address_A7"
+	(label "Shared_Address_A4"
 		(at 332.74 431.8 180)
 		(effects
 			(font
@@ -35048,7 +34902,7 @@
 		)
 		(uuid "2926d8ea-bf8a-4e1e-8c3d-3d800204920e")
 	)
-	(label "Shared_Address_A13"
+	(label "Shared_Address_A11"
 		(at 334.01 447.04 180)
 		(effects
 			(font
@@ -35628,7 +35482,7 @@
 		)
 		(uuid "6663d8b5-600f-44cf-995e-076dadc242b3")
 	)
-	(label "Shared_Address_A14"
+	(label "Shared_Address_A13"
 		(at 334.01 449.58 180)
 		(effects
 			(font
@@ -35668,7 +35522,7 @@
 		)
 		(uuid "67ca97fd-4188-43c3-b219-f556361a9ef2")
 	)
-	(label "Shared_Address_A12"
+	(label "Shared_Address_A14"
 		(at 334.01 444.5 180)
 		(effects
 			(font
@@ -35678,7 +35532,7 @@
 		)
 		(uuid "681cf59a-e82d-4c37-885c-c20d7f623151")
 	)
-	(label "Shared_Address_A11"
+	(label "Shared_Address_A8"
 		(at 334.01 441.96 180)
 		(effects
 			(font
@@ -35758,7 +35612,7 @@
 		)
 		(uuid "6f565d03-b8c6-436c-bf53-a46d5cd7d8f1")
 	)
-	(label "Shared_Address_A6"
+	(label "Shared_Address_A5"
 		(at 332.74 429.26 180)
 		(effects
 			(font
@@ -35798,7 +35652,7 @@
 		)
 		(uuid "743a2803-1d70-4c47-8fa5-648e5a46d445")
 	)
-	(label "Shared_Address_A10"
+	(label "Shared_Address_A15"
 		(at 334.01 439.42 180)
 		(effects
 			(font
@@ -36148,7 +36002,7 @@
 		)
 		(uuid "96a4f8ad-6010-4f5d-b746-5fddee1dd5df")
 	)
-	(label "Shared_Address_A15"
+	(label "Shared_Address_A12"
 		(at 334.01 452.12 180)
 		(effects
 			(font
@@ -36688,7 +36542,7 @@
 		)
 		(uuid "c548a8dc-f787-4102-927f-350a383d1103")
 	)
-	(label "Shared_Address_A8"
+	(label "Shared_Address_A10"
 		(at 332.74 434.34 180)
 		(effects
 			(font
@@ -36928,7 +36782,7 @@
 		)
 		(uuid "df4b6394-8172-4055-90e6-066b07d2eefe")
 	)
-	(label "Shared_Address_A5"
+	(label "Shared_Address_A6"
 		(at 332.74 426.72 180)
 		(effects
 			(font
@@ -37138,7 +36992,7 @@
 		)
 		(uuid "f7f981db-d4b9-478e-9d19-2ce8c7d05b1c")
 	)
-	(label "Shared_Address_A4"
+	(label "Shared_Address_A7"
 		(at 332.74 424.18 180)
 		(effects
 			(font
@@ -37634,7 +37488,7 @@
 			)
 		)
 	)
-	(global_label "VSyncVGA"
+	(global_label "VSyncVGA_RCA"
 		(shape input)
 		(at 577.85 429.26 0)
 		(fields_autoplaced yes)
@@ -37674,28 +37528,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{SUPRESS}"
-		(shape input)
-		(at 604.52 355.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "17241423-c32d-4df3-8d07-405c0f82e625")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 616.1532 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -38250,7 +38082,7 @@
 			)
 		)
 	)
-	(global_label "SYNC_RCA"
+	(global_label "VSyncVGA_RCA"
 		(shape input)
 		(at 506.73 623.57 180)
 		(fields_autoplaced yes)
@@ -39064,7 +38896,7 @@
 			)
 		)
 	)
-	(global_label "HSyncVGA"
+	(global_label "HSyncVGA_SuppressRCA"
 		(shape input)
 		(at 599.44 728.98 0)
 		(fields_autoplaced yes)
@@ -40054,7 +39886,7 @@
 			)
 		)
 	)
-	(global_label "VSyncVGA"
+	(global_label "VSyncVGA_RCA"
 		(shape input)
 		(at 600.71 734.06 0)
 		(fields_autoplaced yes)
@@ -40692,7 +40524,7 @@
 			)
 		)
 	)
-	(global_label "~{SUPRESS}"
+	(global_label "HSyncVGA_SuppressRCA"
 		(shape input)
 		(at 505.46 604.52 180)
 		(fields_autoplaced yes)
@@ -41132,7 +40964,7 @@
 			)
 		)
 	)
-	(global_label "HSyncVGA"
+	(global_label "HSyncVGA_SuppressRCA"
 		(shape input)
 		(at 577.85 355.6 0)
 		(fields_autoplaced yes)
@@ -41326,28 +41158,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SYNC_RCA"
-		(shape input)
-		(at 601.98 429.26 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d3780404-3868-45f0-b37e-d2082eaf72cc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 614.46 429.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -70430,77 +70240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "MHF:NetTie_2")
-		(at 594.36 355.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c64742e9-31a4-4000-8aef-b26c7b093864")
-		(property "Reference" "N3"
-			(at 594.36 353.314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "~"
-			(at 594.36 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MHF:NetTie-2_SMD_Pad0.5mm"
-			(at 594.36 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 594.36 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 594.36 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff503948-d387-4848-863b-9efa7dcc8942")
-		)
-		(pin "1"
-			(uuid "fe40ae71-d540-49a9-b071-c3ebfe817c44")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "N3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MHF:R")
 		(at 544.83 601.98 90)
 		(unit 1)
@@ -71804,77 +71543,6 @@
 			(project "MHF-002"
 				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
 					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MHF:NetTie_2")
-		(at 595.63 429.26 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d220f534-9e66-472c-9288-0b45ea0646f6")
-		(property "Reference" "N1"
-			(at 595.63 426.974 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "~"
-			(at 595.63 425.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MHF:NetTie-2_SMD_Pad0.5mm"
-			(at 595.63 429.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 595.63 429.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 595.63 429.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "349c1b5b-5580-4435-8538-1670970d0c80")
-		)
-		(pin "1"
-			(uuid "e616f95d-c01a-439d-8607-a365dc7a8d94")
-		)
-		(instances
-			(project "MHF-002"
-				(path "/64851a36-d60f-4ef2-a652-2faeae5c6012"
-					(reference "N1")
 					(unit 1)
 				)
 			)
