@@ -23,9 +23,13 @@ This project is more about the HW part of solution (but with enought SW to be fu
 
 See `<../../HW/KiCad/MHF-002/>`_
 
-Changes agains MHF-001
+Changes from MHF-001
 ================================================================================
 
+
+* switched to SMD logical gates for more space avaiable
+* switched from 2 to 4 layers (internal are POWER exclusively) for better distribution of power and reducing noise
+* added more **Cx** capacitors, but cannont fit them exactly at each power pin for place restrictions - at least they are near and many
 * swaped **PORTL -- PORTF** ( VGA Data - Shared Data) for OUT instruction
 * moved **SYNC_RCA** to **PE4** (SYNC_VGA) for OC3B
 * moved **SUPPRESS** to **PF3** (with VGA Data) just follow suit
@@ -53,18 +57,35 @@ Changes agains MHF-001
 * for `ISCP` it is needed to set `hfuse` to 0xD9 (run program) instead of 0xD8 (run bootloader) as ICSP destroy bootloader (or what)
 * make my own footprints with longer pads for SMD ICs to make soldering easier
 * PROBLEM - 74HC165 doubles the first bit (as it is shifted out and latched again before level latch returns inactive) and so ONECHAR have to be 9 clocks long (or lose the last bit) - 74HC166 should be better (as it is edge latched) but now I cannot feed it each 8 clocks, so last bit will be errornerous
-	* I should use some port A..F for VGA data **out** instead of **STS** too, to fit in 8 clocks
+	* I should use some port A..F for VGA data **OUT** instead of **STS** too, to fit in 8 clocks
 * SD card reader needed little edge filing to not collide with ISCP connector and 3V3 connector - make little more place for it next time and add mounting holes in corner. Sitting just on Koptan tape looks good. (Alternatively unsolder all components and move them on PCB directly. Qualify MISO and MOSI (and maybe clock too) by CS, let CS go inside all the time. Use another pin than ISCP)
 * `blink_all <https://github.com/githubgilhad/memxFORTH-asm/tree/master/SW/progs/demo/blink_all>`__  from `memxFORTH-asm <https://github.com/githubgilhad/memxFORTH-asm>`__  may be usefull
-* each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use
+* each port connector should have at least `GND`, and ideally `+5V` too - for LEDS and other use (just GND, the +5V are not so needed and there are some free standing around)
 * possibly enable to enable SBC use Shared RAM via open solderpads for signals X-A-B interconnected
+* the label **"+ 5V -"** was wrong rotated (probabelly some autocorrect on schema -> PCB), fixed and repeatadly checked to be right (no problems found)
+* mark areas on SysBus, separate blocks as Data, Address, A, B, Power, MasterReset  with lines
+* added MasterReset with diode from Reset to SysBus
+* added emitor follower to I2C LED
+* added 8 TestPointProbes pads between D-Latch and RAM
+* reordered internal pin assignement for RAMs for better routing
+* moved PS/2 PsDat to port with IN instructon
+* moved RCA Sync and Suppress to share pins with VGA
+* switch for using 74HC166 for RCA (marked **40** for old method and **80** for new one after max number of characters per line) - not tested, but Grant Searle uses something similar
+* marked PS/2, VGA, RCA, USB areas of PCB on both sides
+* better marking of parts and jumpers
+* 6 **WS2812B** LEDs for status signalling as "debug diodes" on **X_SHARE_GRANTED** as leds use specific output signal, while X_SHARE_GRANTED is input, which will not pulse on the right frequency. Separated both by 1k resistors.
+* **SBC** jumpers for easier (and more consistent) configuration as SBC
+* **/VGA_Enabled** active **LOW** enables VGA output. If disabled, VGA gets only black color, regardless of **VGA_Data[0..7]** and **VGA Colors [0..7]** so **PORT F** and **PORT H** may be used for anything else
 
+Some numbers
+================================================================================
+
+10x10cm, 4 layers, around 153 parts, 338 vias, 11.4m of tracks, 1174 pads, 378 nets, 4069 segments, 164 solder points, bridges, pinholes, probes and similar copper pieces :)
+3x AND, 1x NOT gates was unused and are breaked out for user, 8x9 pinholes as universal expansion area (under SD Card)
 
 ToDo changes
 ================================================================================
 
-* the label **"+ 5V -"** is wrong rotated (probabelly some autocorrect on schema -> PCB)
-* mark areas on SysBus, at least separate blocks as Data, Address, A, B, Other with lines
 
 
 License
