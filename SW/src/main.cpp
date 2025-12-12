@@ -6,17 +6,15 @@
 #include "bios.h"
 #include "MemoryFree.h"
 #include "defines.h"
-
+/*
 #include <SPI.h>
 #include <SD.h>
 extern File myFile;
 void sd_test(){
+*/
 
-  Serial.begin(115200);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }
-    Serial.println("sd_test");
+
+
 /*
 
   Serial.print("Initializing SD card...");
@@ -59,7 +57,10 @@ void sd_test(){
     Serial.println("error opening boot.txt");
   }
   */
+
+/*
  }
+ */
  
 extern uint8_t  __data_load_end;
 extern uint8_t  __DATA_REGION_LENGTH__;
@@ -93,7 +94,17 @@ extern uint8_t vram[BIOS_ROWS][BIOS_COLS];
 	}
 }
 void setup(){
-	sd_test();
+
+DDRD |= _BV(0);
+PORTD &= ~ _BV(0);  // I2C led on
+  Serial.begin(115200);
+  while (!Serial) {
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+    Serial.println("sd_test");
+    Serial.println("====== FORTH ======");
+    Serial.flush();
+//	sd_test();
 //	bios.set_output(BIOS_RCA);              // Inicializace BIOS
 	bios.set_output(BIOS_VGA);              // Inicializace BIOS
 	bios.clear(' ',VGA_WHITE);

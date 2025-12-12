@@ -83,10 +83,13 @@ Some numbers
 10x10cm, 4 layers, around 153 parts, 338 vias, 11.4m of tracks, 1174 pads, 378 nets, 4069 segments, 164 solder points, bridges, pinholes, probes and similar copper pieces :)
 3x AND, 1x NOT gates was unused and are breaked out for user, 8x9 pinholes as universal expansion area (under SD Card)
 
-ToDo changes
+Next time changes
 ================================================================================
 
-
+* put PS/2 Clock before NOT-NOT, so MCU can also talk to keyboard (Caps,Num, Scrl LEDs)
+* mark power +5V 3V3 and both GND from bottom, where it will be readable (universal solder board under SD card)
+* pulldowns RTS, CTS for default communication enabled
+* Debug LEDS should have pin at end of line to attach even more of them
 
 License
 -------

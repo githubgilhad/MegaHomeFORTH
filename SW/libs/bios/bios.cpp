@@ -3,15 +3,6 @@
 #include <Arduino.h>
 #include "../MemoryFree/MemoryFree.h"
 
-#ifdef __AVR_ATmega2560__
-#define D2 2
-#define D10 10
-#define D11 11
-#define D12 12
-#define D13 13
-#endif
-
-
 volatile void_fn_t frame_hook = default_frame_hook;	// called at end of frame
 
 // void default_frame_hook() __attribute__((section(".fartext")));
@@ -408,13 +399,15 @@ void BIOS::VGA_begin(){										// {{{
 //		pinMode(D10,INPUT_PULLUP);	// PB[4] D10 PS/2 clock
 //		pinMode(D11,INPUT_PULLUP);	// PB[5] D11 PS/2 data
 // }}}
-		DDRE |= _BV(7) | _BV(4) ;	// 16MHz | Vsync | ! INSIDE
-		DDRB |= _BV(6) | _BV(7) | _BV(4);		// Hsync | Latch | PS2-OE
-		PORTB |=  _BV(4); // PS2-OE not enabled by default
-		DDRL	= 0xFF;		// PL[0..7] for data out
-			PORTL=0;
+		DDRE |= _BV(7) | _BV(4) |_BV(2) ;	// 16MHz | Vsync | ! INSIDE | PS2-OE
+		PORTE |=  _BV(2); // PS2-OE not enabled by default
+		DDRB |= _BV(6) | _BV(7) ;		// Hsync | Latch 
+		DDRF	= 0xFF;		// PF[0..7] for data out
+			PORTF=0;
 		DDRH	= 0xFF;		// PH[0..7] for colors out
 			PORTH=0;
+		DDRD |= _BV(2);
+		PORTD &= ~ _BV(2);	// VGA Enable (active low)
 		// timers
 		GTCCR= (1<<TSM) | (1<<PSRASY) | (1 <<PSRSYNC); // stop Timers 0,1,3,4,5 for synchronisation pg. 166:
 			/* Bit 7 - TSM: Timer/Counter Synchronization Mode
@@ -683,11 +676,11 @@ void BIOS::VGA_end(){										// {{{
 
 
 
-#define PIN_SUPPRESS 46
-#define PIN_SUPPRESS3 3 // test
-#define PIN_SYNC 45
-#define PIN_PS2CLOCK 51	// A0	// 10
-#define PIN_PS2DATA 52	// A1	// 11
+#define  PIN_SUPPRESS 13	// PB6
+#define PIN_SUPPRESS3 12	// B6
+#define PIN_SYNC 2		// E4
+#define PIN_PS2CLOCK 51		// B2
+#define PIN_PS2DATA 50		// B3
 #define PIN_PS2INSIDE 13 // PE6 unconnected
 #define PIN_TXout 18 // PD3 TX1
 // #define PIN_XCK1out  // PD5 SCK for SPI1, unconnected
@@ -704,7 +697,7 @@ void BIOS::RCA_begin() {				// {{{
 	pinMode(PIN_PS2CLOCK, INPUT);
 	pinMode(PIN_PS2DATA, INPUT);
 //	pinMode(PIN_PS2INSIDE, INPUT);
-	DDRE &= ~ _BV(6);
+	DDRE &= ~ _BV(6);	// E6 Inside input
 	DDRD |=  _BV(5); // XCK1 OUTPUT (to be master)
 	
 	

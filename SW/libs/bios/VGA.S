@@ -18,7 +18,7 @@ data: .word 0				// PS/2 datagram as it is received bit by bit
 old_frame_hook:				// 16bit - func or trampoline
 	.word 0
 .section .text
-; PORTL PL0-7 D49-42 8bit data out
+; PORTF PF0-7 8bit data out
 ; PORTB PB6 D12 HSYNC
 ; PORTB PB7 D13 = 74HC166 Latch
 ; PORTE PE7 xx - 16 MHZ
@@ -27,7 +27,7 @@ old_frame_hook:				// 16bit - func or trampoline
 ; XX PINB  PB2 D10 Clock PS/2 - handled by regHandler
 ; XX PINB  PB1 D11 Data PS/2
 ; PORTH PH0-7 xxxx RGBY out
-; PORTH PH0-7 xxxx PS/2 data in
+; PORTF PF0-7 xxxx PS/2 data in
 ; PORTB PB4 #PS2-OE active LOW
 
 ; one PS/2 character is like 15 rows, it is possible to get like 5 characters per frame - so managing it in between lines is possible and easy
@@ -78,8 +78,8 @@ lib_VGA_end:
 .macro ONECHAR				//     Z: address of char data (MSB is fixed, LSB depends on char), X: current VRAM position (one line)
 	ld    ZL, X+			// 2CP ZL = (X), X = X + 1
 	lpm   r21, Z			// 3CP get font byte from program memory for current chr on current line
-;	out   PORTL, r21	// 1CP put data to shift register's parallel input
-	sts PORTL,r21			// 2CP - L cannot be `out`
+	out   PORTF, r21	// 1CP put data to shift register's parallel input
+;	sts PORTF,r21			// 2CP - L cannot be `out`
 	
 ;	out   PORTB, r24	// 1CP /PE LOW (next CLK rising edge will load pixel data)
 ;	out   PORTB, r23	// 1CP /PE HIGH (now CLK will pump out 8 pixels)
@@ -283,9 +283,9 @@ regHandler:				// regHandler handles PS/2                                       
 	sbrs r23, 6			// ? if we were INSIDE last time, skip next instruction
 	rjmp regEnd			// no, we was not INSIDE, so just finish (nothing new)
 	// now we have data, get it
-	sts PORTH,r21			// clear Colors
-	sts DDRH, r21			// enable input from PORTH
-	cbi PORTB,4			// enable output from PS/2
+	sts PORTF,r21			// clear Data
+	sts DDRF, r21			// enable input from PORTF
+	cbi PORTE,2			// enable output from PS/2
 	
 	ldi ZH, hi8(BIOS_buffer)	// prepare Z for an indirect store                                         ;
 	ldi ZL, lo8(BIOS_buffer)                                                                                   ;
@@ -293,11 +293,11 @@ regHandler:				// regHandler handles PS/2                                       
 	add ZL, r24                                                                                                ;
 	adc ZH, r21                                                                                                ;
 	                                                                                                           ;
-	lds r25,PINH			// get PS/2 data into r25
+	lds r25,PINF			// get PS/2 data into r25
 	
-	sbi PORTB,4			// disable output from PS/2
-	sts DDRH, r27			// set PORTH for output again
-	sts PORTH, r21
+	sbi PORTE,2			// disable output from PS/2
+	sts DDRF, r27			// set PORTF for output again
+	sts PORTF, r21
                                                                                                                    ;
 	st Z, r25			// store scan code -> (Z)                                                  ;
 
@@ -311,7 +311,7 @@ regHandler:				// regHandler handles PS/2                                       
 regEndSave:                                                                                                            ;
 	sts prev, r22			// remember the state of CLK                                               ;
 regEnd:                                                                                                            ;
-	sts PORTH, r21
+	sts PORTF, r21
 	pop r31				// restore previous values of used registers                               ;
 	pop r30				// Z                                                                       ;
 	pop r27                                                                                                    ;
