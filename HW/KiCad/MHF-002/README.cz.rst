@@ -24,6 +24,10 @@ Global Goals
 
 |MHF-002.png|
 
+|MHF-002.a.s.jpg|
+
+|MHF-002.b.s.jpg|
+
 MHF vzniknul jako realizace návrhu grafické a I/O karty pro 8-bitový počítač založený na procesoru HD6309 (dále značený CPU). Vlastní provedení je postaveno na mikrokontroleru ATmega2560 (použitém například v Arduino Mega Pro, dále ho budu označovat MCU) doplněném pamětí RAM a několika jednoduchými obvody pro vstup a výstup. Další chip RAM slouží pro přenášení dat oběma směry, střídavě ho sdílí CPU a MCU. Výhodou je velká propustnost (za cenu latence) a snadný přístup z obou systémů.
 
 
@@ -36,6 +40,15 @@ Podrobná konfigurace a možnosti použití boudou rozepsány na samostatné str
 Dále následují náhledy na MHF-002 a odkazy na schéma a PCB (jen horní a dolní vrstva, obě prostřední jsou vyhrazeny pro napájení), které byly vygenerovány ze souborů pro KiCad.
 
 
+.. |MHF-002.a.s.jpg| image:: MHF-002.a.s.jpg
+	:width: 250
+	:align: top
+	:target: MHF-002.a.s.jpg
+
+.. |MHF-002.b.s.jpg| image:: MHF-002.b.s.jpg
+	:width: 250
+	:align: top
+	:target: MHF-002.b.s.jpg
 
 .. |MHF-002.png| image:: MHF-002.png
 	:width: 250

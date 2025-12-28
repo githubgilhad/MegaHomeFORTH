@@ -23,6 +23,10 @@ This project is more about the HW part of solution (but with enought SW to be fu
 
 See `<../../HW/KiCad/MHF-002/>`_
 
+Errata:
+================================================================================
+* all 10 |kOhm| resistors in PS/2 (8+2) should be rather 1 |kOhm| (otherwise it take too long for reading values, like 10 clock cycles)
+
 Changes from MHF-001
 ================================================================================
 

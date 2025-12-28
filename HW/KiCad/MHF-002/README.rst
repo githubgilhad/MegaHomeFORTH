@@ -24,6 +24,10 @@ Global Goals
 
 |MHF-002.png|
 
+|MHF-002.a.s.jpg|
+
+|MHF-002.b.s.jpg|
+
 MHF was created as an implementation of a graphical and I/O card design for an 8-bit computer based on the HD6309 processor (hereafter referred to as CPU). The actual design is built around the ATmega2560 microcontroller (used, for example, in the Arduino Mega), which I will refer to as the MCU. The MCU is supplemented with RAM and several simple circuits for input and output. Another RAM chip is used for data transfer in both directions, shared alternately between the CPU and MCU. The advantage of this design is high throughput (at the cost of latency) and easy access from both systems.
 
 
@@ -35,6 +39,16 @@ Detailed configuration and usage options will be described on a separate page, b
 
 Next, there are previews of MHF-002 and links to the schematic and PCB (only the top and bottom layers, as both middle layers are reserved for power), which were generated from KiCad files.
 
+
+.. |MHF-002.a.s.jpg| image:: MHF-002.a.s.jpg
+	:width: 250
+	:align: top
+	:target: MHF-002.a.s.jpg
+
+.. |MHF-002.b.s.jpg| image:: MHF-002.b.s.jpg
+	:width: 250
+	:align: top
+	:target: MHF-002.b.s.jpg
 
 .. |MHF-002.png| image:: MHF-002.png
 	:width: 250
