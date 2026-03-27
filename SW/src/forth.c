@@ -1750,7 +1750,7 @@ void f_CHAR() {	// {{{ // ( -- C) read one char
 	for(CELL_t i=0;i<l;i++) *(char*)B3PTR(d+i)=B1at(s+i);
 	NEXT;
 }	// }}}
-	void f_LITSTRING() {	// {{{ // ( -- daddr len ) push daddr and len of string on the stach - similar to LIT
+	void f_LITSTRING() {	// {{{ // ( -- daddr len ) push daddr and len of string on the stack - similar to LIT
 	TRACE("LITSTRING");
 	CELL_t len=B2at(IP);
 	IP+=4;
